@@ -45,3 +45,17 @@ ClearPath Content operates the organic program for ClearPath Pediatrics (clearpa
 ## Relationship to other ClearPath entities
 - ClearPath Content (clearpath-content.com) — this business: organic visibility infrastructure for businesses in any industry
 - ClearPath Pediatrics (clearpathpediatrics.com) — a separate pediatric care navigation and health education service; it is a client and reference deployment of ClearPath Content, not the same offering
+
+## Industries served
+ClearPath Content deploys for one business per niche, per metro. Dedicated pages:
+- HVAC companies: https://clearpath-content.com/content-marketing-for-hvac-companies
+- Law firms: https://clearpath-content.com/content-marketing-for-law-firms
+- Dental practices: https://clearpath-content.com/content-marketing-for-dental-practices
+- Home service businesses (plumbing, roofing, electrical, landscaping): https://clearpath-content.com/content-marketing-for-home-services
+- B2B software companies: https://clearpath-content.com/content-marketing-for-b2b-software
+- Professional services firms (accounting, consulting, financial advice): https://clearpath-content.com/content-marketing-for-professional-services
+
+## Key pages
+- What a deployment delivers: https://clearpath-content.com/what-you-get
+- Frequently asked questions: https://clearpath-content.com/faq
+- Field notes (blog, published continuously): https://clearpath-content.com/blog
