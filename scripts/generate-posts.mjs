@@ -20,7 +20,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { pickAngles } from "./topics.data.mjs";
+import { pickAngles, CLUSTERS } from "./topics.data.mjs";
 import { SITE, BRAND, esc, slugify, CSS, NAV, FOOTER, head } from "./blog-theme.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -308,7 +308,11 @@ async function main() {
   }
 
   const recentTitles = posts.slice(0, 20).map(p => p.title);
-  const picks = pickAngles(iso, DRYRUN ? 1 : need, recentTitles);
+  // In dry-run the body is a fixed sample, so pin it to the cluster it actually
+  // belongs to rather than whatever the rotation happens to select.
+  const picks = DRYRUN
+    ? [{ cluster: CLUSTERS.find(c => c.key === "aeo-geo"), angle: "how AI answer engines choose which sources to cite" }]
+    : pickAngles(iso, need, recentTitles);
   console.log(`[cpc] ${prettyDate} — generating ${picks.length} post(s) (${todayCount} already today) — model: ${DRYRUN ? "DRY-RUN" : MODEL}`);
 
   let client = null;
