@@ -302,8 +302,14 @@ async function main() {
 
   const todayCount = posts.filter(p => p.iso === iso).length;
   const need = Math.max(0, POSTS_PER_RUN - todayCount);
-  if (!DRYRUN && need === 0) {
-    console.log(`[cpc] ${iso} already has ${todayCount}/${POSTS_PER_RUN} posts — nothing to do.`);
+  // Note: we still rebuild the index and sitemap below even when nothing new is
+  // generated, so a manual edit to posts.json (e.g. removing a post) is picked
+  // up on the next run instead of leaving the index stale.
+  const REBUILD_ONLY = process.env.CPC_REBUILD_ONLY === "1";
+  if (!DRYRUN && (need === 0 || REBUILD_ONLY)) {
+    console.log(`[cpc] ${iso} has ${todayCount}/${POSTS_PER_RUN} posts — rebuilding index + sitemap only.`);
+    fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
+    fs.writeFileSync(SITEMAP, renderSitemap(posts));
     return;
   }
 

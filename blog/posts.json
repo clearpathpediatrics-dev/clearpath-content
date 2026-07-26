@@ -16,23 +16,5 @@
     "iso": "2026-07-25",
     "prettyDate": "July 25, 2026",
     "readMinutes": 8
-  },
-  {
-    "slug": "how-ai-answer-engines-choose-sources",
-    "title": "How AI Answer Engines Decide Which Sources to Cite",
-    "excerpt": "ChatGPT, Perplexity and Google's AI Overviews all pick a handful of sources per answer. The selection is not random, and it is not the same as ranking first.",
-    "metaDescription": "AI assistants cite a small number of sources per answer. Here is how that selection actually works, and what makes a page more likely to be one of them.",
-    "tags": [
-      "AI search optimization",
-      "answer engine optimization",
-      "AEO",
-      "Perplexity",
-      "AI Overviews"
-    ],
-    "cluster": "AI Search & Answer Engine Optimization",
-    "clusterKey": "aeo-geo",
-    "iso": "2026-07-25",
-    "prettyDate": "July 25, 2026",
-    "readMinutes": 6
   }
 ]
