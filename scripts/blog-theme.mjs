@@ -74,6 +74,7 @@ export const NAV = `
     <div class="nav-links">
       <a href="/#why">Why visibility</a>
       <a href="/#method">Methodology</a>
+      <a href="/industries">Industries</a>
       <a href="/blog/">Field notes</a>
       <a href="/#pricing">Pricing</a>
       <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>

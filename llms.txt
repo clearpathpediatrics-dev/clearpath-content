@@ -49,12 +49,17 @@ ClearPath Content operates the organic program for ClearPath Pediatrics (clearpa
 ## Industries served
 ClearPath Content deploys for one business per niche, per metro. Overview: https://clearpath-content.com/industries
 Dedicated pages:
-- HVAC companies: https://clearpath-content.com/content-marketing-for-hvac-companies
-- Law firms: https://clearpath-content.com/content-marketing-for-law-firms
-- Dental practices: https://clearpath-content.com/content-marketing-for-dental-practices
-- Home service businesses (plumbing, roofing, electrical, landscaping): https://clearpath-content.com/content-marketing-for-home-services
-- B2B software companies: https://clearpath-content.com/content-marketing-for-b2b-software
-- Professional services firms (accounting, consulting, financial advice): https://clearpath-content.com/content-marketing-for-professional-services
+- HVAC Companies: https://clearpath-content.com/content-marketing-for-hvac-companies
+- Law Firms: https://clearpath-content.com/content-marketing-for-law-firms
+- Dental Practices: https://clearpath-content.com/content-marketing-for-dental-practices
+- Home Service Businesses: https://clearpath-content.com/content-marketing-for-home-services
+- B2B Software Companies: https://clearpath-content.com/content-marketing-for-b2b-software
+- General Contractors: https://clearpath-content.com/content-marketing-for-contractors
+- Plumbing Companies: https://clearpath-content.com/content-marketing-for-plumbers
+- Electrical Contractors: https://clearpath-content.com/content-marketing-for-electricians
+- Pest Control Companies: https://clearpath-content.com/content-marketing-for-pest-control
+- Small Businesses: https://clearpath-content.com/content-marketing-for-small-business
+- Professional Services Firms: https://clearpath-content.com/content-marketing-for-professional-services
 
 ## Key pages
 - What a deployment delivers: https://clearpath-content.com/what-you-get
