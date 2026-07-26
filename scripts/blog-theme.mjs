@@ -84,7 +84,7 @@ export const NAV = `
 export const FOOTER = `
 <footer>
   <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure · <a href="mailto:${CONTACT}">${CONTACT}</a></span>
+    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
     <nav class="foot-nav">
       <a href="/">Home</a>
       <a href="/#method">Methodology</a>
