@@ -1,5 +1,23 @@
 [
   {
+    "slug": "b2b-software-content-buying-committee",
+    "title": "How B2B Software Companies Should Structure Content Around the Buying Committee",
+    "excerpt": "Most B2B software content targets one reader and ignores the four to seven people who actually approve the purchase. Here is how to map your content to the whole buying committee.",
+    "metaDescription": "A practical guide to content marketing for B2B software companies: map content to the buying committee and buyer stages so more deals close faster.",
+    "tags": [
+      "b2b software content marketing",
+      "buying committee content",
+      "saas content strategy",
+      "b2b demand generation",
+      "content mapping"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-07-25",
+    "prettyDate": "July 25, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "how-ai-answer-engines-choose-sources",
     "title": "How AI Answer Engines Decide Which Sources to Cite",
     "excerpt": "ChatGPT, Perplexity and Google's AI Overviews all pick a handful of sources per answer. The selection is not random, and it is not the same as ranking first.",
