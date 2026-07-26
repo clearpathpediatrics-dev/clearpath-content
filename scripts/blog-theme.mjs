@@ -113,7 +113,8 @@ export const NAV = `
       <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
-</nav>`;
+</nav>
+<a class="mobile-cta" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>`;
 
 export const FOOTER = `
 <footer>
