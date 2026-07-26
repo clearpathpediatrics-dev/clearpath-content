@@ -21,6 +21,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { pickAngles, CLUSTERS } from "./topics.data.mjs";
+import { INDUSTRIES, CAPABILITIES } from "./pages.data.mjs";
 import { SITE, BRAND, esc, slugify, CSS, NAV, FOOTER, head } from "./blog-theme.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -283,9 +284,15 @@ ${FOOTER}
 
 function renderSitemap(posts) {
   const today = phoenixParts().iso;
+  // Must stay in sync with build-pages.mjs — this script runs daily via CI and
+  // rewrites sitemap.xml, so omitting the evergreen pages here would silently
+  // drop them from the sitemap on the next cron run.
   const urls = [
     { loc: `${SITE}/`, pri: "1.0", freq: "weekly", mod: today },
+    { loc: `${SITE}/${CAPABILITIES.slug}`, pri: "0.9", freq: "monthly", mod: today },
+    { loc: `${SITE}/faq`, pri: "0.8", freq: "monthly", mod: today },
     { loc: `${SITE}/blog`, pri: "0.9", freq: "daily", mod: today },
+    ...INDUSTRIES.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.8", freq: "monthly", mod: today })),
     ...posts.map(p => ({ loc: `${SITE}/blog/${p.slug}`, pri: "0.7", freq: "monthly", mod: p.iso })),
   ];
   const rows = urls.map(u =>
