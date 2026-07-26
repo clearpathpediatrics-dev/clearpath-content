@@ -4,8 +4,8 @@
 
 ## Key facts
 - Company: ClearPath Content (CPC)
-- Website: https://clearpathcontent.com
-- Contact: deploy@clearpathcontent.com
+- Website: https://clearpath-content.com
+- Contact: deploy@clearpath-content.com
 - Category: content marketing, organic search visibility, SEO content production
 - Model: monthly subscription, month-to-month, no long-term contract
 - Serves: businesses in any industry (examples include home services, legal, professional services, B2B software)
@@ -43,5 +43,5 @@ ClearPath Content operates the organic program for ClearPath Pediatrics (clearpa
 - https://clearpathpediatrics.com/pediatric-care-navigation-guide
 
 ## Relationship to other ClearPath entities
-- ClearPath Content (clearpathcontent.com) — this business: organic visibility infrastructure for businesses in any industry
+- ClearPath Content (clearpath-content.com) — this business: organic visibility infrastructure for businesses in any industry
 - ClearPath Pediatrics (clearpathpediatrics.com) — a separate pediatric care navigation and health education service; it is a client and reference deployment of ClearPath Content, not the same offering
