@@ -76,7 +76,7 @@ export const NAV = `
       <a href="/#method">Methodology</a>
       <a href="/blog/">Field notes</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn" href="/#pricing">Request access</a>
+      <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
 </nav>`;
