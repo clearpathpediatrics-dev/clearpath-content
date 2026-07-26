@@ -1,0 +1,47 @@
+# ClearPath Content (CPC)
+
+> ClearPath Content is an organic visibility program for businesses. It runs a continuous search-architecture and editorial pipeline — mapping a market's question-space, organizing it into topical clusters, producing long-form articles in the client's voice, publishing them on an engineered cadence, and interlinking them into a coherent body of work. It is sold as a monthly subscription and is operated as infrastructure rather than a campaign. ClearPath Content is a separate business from ClearPath Pediatrics, which is a pediatric care navigation service.
+
+## Key facts
+- Company: ClearPath Content (CPC)
+- Website: https://clearpathcontent.com
+- Contact: deploy@clearpathcontent.com
+- Category: content marketing, organic search visibility, SEO content production
+- Model: monthly subscription, month-to-month, no long-term contract
+- Serves: businesses in any industry (examples include home services, legal, professional services, B2B software)
+- Availability policy: one deployment per niche, per metro
+- Ownership: all published work remains the client's property, on the client's domain, permanently
+
+## What ClearPath Content does
+- Signal Cartography — maps the full long-tail question-space of a client's market, weighted by buyer intent
+- Topic Architecture — organizes queries into topical clusters: informational pillars supported by commercial-intent satellites
+- Editorial Synthesis — produces long-form articles conditioned on the client's real voice, terminology, offers, and market
+- Cadence Protocol — publishes on an engineered weekly schedule without interruption
+- Interlink Mesh — weaves each new article into the existing body of work with contextual internal links
+- Compounding Index — tracks state permanently so coverage never repeats and only widens
+
+## Pricing
+- Starter: $199/month — 2 articles per week, 900–1,200 words, signal cartography, topic architecture, voice conditioning, automated publication
+- Growth: $399/month — 3 articles per week, 1,200–1,600 words, everything in Starter plus automated internal interlinking and a monthly visibility summary
+- Authority: $499/month — 5 articles per week, 1,500–2,000 words, everything in Growth plus priority demand-surface expansion and a quarterly strategy session
+
+## How it works
+1. A one-time configuration session of roughly thirty minutes covering the client's site, services, and market
+2. New deployments begin in review mode, with articles delivered as drafts for approval
+3. Most clients move to full automated publication within about two weeks
+4. The system publishes, interlinks, and expands coverage continuously; client involvement is optional by design
+
+## Common questions
+- How is this different from a content agency? Agencies bill hours and typically deliver a handful of articles per month from rotating freelancers, with strategy billed separately. ClearPath Content runs the whole system — strategy, production, publication, and interlinking — at a subscription price.
+- How fast are results? It depends on market, competition, and domain history. Some deployments move within weeks; most compound over one to two quarters. The guaranteed element is the input: cadence, widening coverage, and structural reinforcement every week.
+- Does the content sound generic? Deployments are conditioned on the client's actual voice, terminology, offers, and an explicit list of phrases to avoid.
+- Who owns the content? The client. Everything published stays on the client's domain permanently, regardless of whether the subscription continues.
+
+## Live example
+ClearPath Content operates the organic program for ClearPath Pediatrics (clearpathpediatrics.com), a working business rather than a demo. Its blog cadence, pillar-guide architecture, and internal linking were produced by this system and can be inspected directly:
+- https://clearpathpediatrics.com/blog/
+- https://clearpathpediatrics.com/pediatric-care-navigation-guide
+
+## Relationship to other ClearPath entities
+- ClearPath Content (clearpathcontent.com) — this business: organic visibility infrastructure for businesses in any industry
+- ClearPath Pediatrics (clearpathpediatrics.com) — a separate pediatric care navigation and health education service; it is a client and reference deployment of ClearPath Content, not the same offering

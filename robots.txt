@@ -1,0 +1,6 @@
+# ClearPath Content (CPC) — clearpathcontent.com
+# This is a separate property from clearpathpediatrics.com.
+User-agent: *
+Allow: /
+
+Sitemap: https://clearpathcontent.com/sitemap.xml

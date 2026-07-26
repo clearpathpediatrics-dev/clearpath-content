@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClearPath Content — The Visibility Engine</title>
+<meta name="description" content="ClearPath Content (CPC) is a compounding organic visibility system. Engineered search presence for businesses that refuse to be invisible.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpathcontent.com/">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="ClearPath Content — The Visibility Engine">
+<meta property="og:description" content="A compounding organic visibility system: strategy, production, publication and interlinking — running every week, without your time.">
+<meta property="og:url" content="https://clearpathcontent.com/">
+<meta property="og:image" content="https://clearpathcontent.com/assets/cpc-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://clearpathcontent.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ClearPath Content — The Visibility Engine">
+<meta name="twitter:description" content="Engineered search presence for businesses that refuse to be invisible.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ClearPath Content","alternateName":"CPC","url":"https://clearpathcontent.com/","description":"A compounding organic visibility system: search architecture, editorial production, automated publication and internal interlinking for businesses.","email":"deploy@clearpathcontent.com","areaServed":"US"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"ClearPath Content — Organic Visibility Program","serviceType":"Content marketing and search visibility","provider":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpathcontent.com/"},"areaServed":"US","hasOfferCatalog":{"@type":"OfferCatalog","name":"Deployment tiers","itemListElement":[
+{"@type":"Offer","name":"Starter","price":"199","priceCurrency":"USD","description":"2 articles published weekly, 900-1,200 words, signal cartography, topic architecture, voice conditioning, automated publication.","priceSpecification":{"@type":"UnitPriceSpecification","price":"199","priceCurrency":"USD","billingDuration":1,"billingIncrement":1,"unitCode":"MON"}},
+{"@type":"Offer","name":"Growth","price":"399","priceCurrency":"USD","description":"3 articles published weekly, 1,200-1,600 words, everything in Starter plus automated internal interlinking and a monthly visibility summary.","priceSpecification":{"@type":"UnitPriceSpecification","price":"399","priceCurrency":"USD","billingDuration":1,"billingIncrement":1,"unitCode":"MON"}},
+{"@type":"Offer","name":"Authority","price":"499","priceCurrency":"USD","description":"5 articles published weekly, 1,500-2,000 words, everything in Growth plus priority demand-surface expansion and a quarterly strategy session.","priceSpecification":{"@type":"UnitPriceSpecification","price":"499","priceCurrency":"USD","billingDuration":1,"billingIncrement":1,"unitCode":"MON"}}]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How is this different from hiring a content agency?","acceptedAnswer":{"@type":"Answer","text":"Agencies sell hours; ClearPath Content runs systems. A typical agency retainer buys a small number of articles per month from rotating freelancers. CPC publishes 8-22 deeply structured articles a month on a cadence no human team sustains, interlinked and tracked so coverage never repeats and only widens. You are not buying content, you are installing infrastructure."}},
+{"@type":"Question","name":"How fast should I expect results?","acceptedAnswer":{"@type":"Answer","text":"It depends on your market, competition, and domain history. Some deployments see meaningful movement within weeks; most compound over one to two quarters. What is guaranteed is the input side: relentless cadence, widening coverage, and structural reinforcement every week."}},
+{"@type":"Question","name":"Do I get to review what's published?","acceptedAnswer":{"@type":"Answer","text":"Yes. New deployments start in review mode, with articles arriving as drafts for approval until you are comfortable with the voice. Most clients switch to full autopilot within two weeks, and standing preferences are encoded permanently into your configuration."}},
+{"@type":"Question","name":"Will this sound like my business, or like generic filler?","acceptedAnswer":{"@type":"Answer","text":"Your deployment is conditioned on your actual voice: real excerpts from your site, your terminology, your offers, your market, and an explicit list of phrases you never want to see."}},
+{"@type":"Question","name":"What do you need from me?","acceptedAnswer":{"@type":"Answer","text":"About thirty minutes, once. We take your site, your services, and your market and configure your deployment. After that your involvement is optional by design."}},
+{"@type":"Question","name":"Is there a contract?","acceptedAnswer":{"@type":"Answer","text":"Month to month. Everything published stays on your domain, owned by you, permanently, regardless."}}]}
+</script>
+<style>
+:root{
+  --bg:#F5F7FB;
+  --surface:#FFFFFF;
+  --ink:#0E1B2E;
+  --muted:#5B6B80;
+  --pine:#0B2240;
+  --pine-2:#153E6B;
+  --spring:#3E8EDE;
+  --spring-soft:#E4EFFA;
+  --mint:#9CC9F0;
+  --border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);
+  --shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;
+  --r-lg:32px;
+  --display:'Outfit',sans-serif;
+  --body:'Plus Jakarta Sans',sans-serif;
+  --mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:var(--body);font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.12;letter-spacing:-.02em}
+h2{font-size:clamp(30px,4.4vw,46px);margin:16px 0 18px}
+.lede{color:var(--muted);font-size:18px;max-width:62ch}
+section{padding:110px 0;position:relative}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--body);font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);
+  padding:8px 18px;border-radius:999px;
+}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+/* ---------- ambient blobs ---------- */
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;pointer-events:none;z-index:0}
+.blob.g{background:#C4DCF4}
+.blob.m{background:#DEEBF8}
+section > .wrap, header > .wrap{position:relative;z-index:1}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky;top:16px;z-index:50;padding:0 24px;
+}
+.nav-pill{
+  max-width:1140px;margin:0 auto;height:64px;
+  background:rgba(255,255,255,.82);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px;
+}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:26px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--pine)}
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+.btn{
+  display:inline-block;font-family:var(--body);font-weight:600;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,var(--pine) 0%,var(--pine-2) 100%);color:#fff;
+  box-shadow:0 8px 24px rgba(11,34,64,.22);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(11,34,64,.3)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700;box-shadow:0 8px 24px rgba(31,95,168,.4)}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+/* ---------- hero ---------- */
+header.hero{padding:96px 0 120px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(42px,5.6vw,66px);font-weight:700;margin:22px 0 22px;color:var(--pine)}
+.hero h1 .grad{
+  background:linear-gradient(120deg,var(--spring) 0%,#2F72C4 60%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .lede{margin-bottom:36px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap}
+.chipstat{
+  background:#fff;border:1px solid var(--border);border-radius:18px;
+  padding:14px 22px;box-shadow:var(--shadow);
+}
+.chipstat b{display:block;font-family:var(--display);font-size:22px;color:var(--pine)}
+.chipstat span{font-size:12.5px;color:var(--muted);font-weight:500}
+
+/* hero visual — compounding curve card */
+.hero-visual{position:relative}
+.curve-card{
+  background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-lg);padding:30px 30px 26px;
+}
+.curve-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.curve-head span{font-size:13px;font-weight:600;color:var(--muted)}
+.pill-up{
+  font-family:var(--mono);font-size:12px;color:#1F5FA8;background:var(--spring-soft);
+  border-radius:999px;padding:5px 13px;font-weight:500;
+}
+.rank-row{margin-top:20px;padding-top:20px;border-top:1px solid var(--border)}
+.rank-label{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.rank-chips{display:flex;flex-wrap:wrap;gap:10px}
+.qchip{
+  background:var(--bg);border:1px solid var(--border);border-radius:999px;
+  padding:8px 16px;font-size:12.5px;font-weight:600;color:var(--pine-2);
+  display:inline-flex;align-items:center;gap:7px;white-space:nowrap;
+}
+.qchip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--spring)}
+.illus{
+  display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted);background:var(--bg);border:1px solid var(--border);
+  border-radius:999px;padding:3px 10px;margin-top:12px;
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+
+/* ---------- why ---------- */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px}
+.card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
+  padding:36px 32px;box-shadow:var(--shadow);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.card .icon{
+  width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+  background:var(--spring-soft);margin-bottom:20px;
+}
+.card h3{font-size:19px;margin-bottom:10px;color:var(--pine)}
+.card p{color:var(--muted);font-size:15px}
+.pullquote{
+  margin:70px auto 0;max-width:760px;text-align:center;
+  font-family:var(--display);font-size:clamp(21px,2.6vw,27px);font-weight:500;line-height:1.45;color:var(--pine);
+}
+.pullquote .grad{color:var(--spring)}
+
+/* ---------- methodology ---------- */
+.method{background:linear-gradient(180deg,#0B2240 0%,#0A3227 100%);border-radius:var(--r-lg);margin:0 24px;color:#EAF5EF}
+.method-inner{max-width:1092px;margin:0 auto;padding:100px 24px}
+.method .eyebrow{background:rgba(255,255,255,.1);color:var(--mint)}
+.method .eyebrow::before{background:var(--mint)}
+.method h2{color:#fff}
+.method .lede{color:#B8D2C6}
+.stages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:54px}
+.stage{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r);padding:30px 28px;
+  transition:background .2s;
+}
+.stage:hover{background:rgba(255,255,255,.1)}
+.stage .num{
+  font-family:var(--mono);font-size:12px;color:var(--mint);
+  background:rgba(156,201,240,.12);border-radius:999px;padding:4px 12px;display:inline-block;margin-bottom:16px;
+}
+.stage h3{font-size:18px;color:#fff;margin-bottom:4px}
+.stage .sub{font-size:12.5px;color:var(--mint);font-weight:600;margin-bottom:12px}
+.stage p{color:#AFCBBF;font-size:14.5px}
+
+/* ---------- proof ---------- */
+.proof{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);
+  padding:44px 44px;box-shadow:var(--shadow-lg);margin-top:56px;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.proof h3{font-size:24px;color:var(--pine);margin-bottom:12px}
+.proof p{color:var(--muted);font-size:15.5px;margin-bottom:16px}
+.proof .live{display:flex;flex-wrap:wrap;gap:12px}
+.prooflink{font-family:var(--mono);font-size:12.5px;color:var(--pine-2);background:var(--spring-soft);
+  border-radius:999px;padding:9px 18px;text-decoration:none;font-weight:500;transition:background .2s}
+.prooflink:hover{background:#D3E5F7}
+.proofstats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pstat{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:18px 20px}
+.pstat b{display:block;font-family:var(--display);font-size:24px;color:var(--pine)}
+.pstat span{font-size:12px;color:var(--muted);font-weight:500}
+
+/* ---------- mockups ---------- */
+.mock-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;margin-top:56px;align-items:start}
+.browser{border:1px solid var(--border);border-radius:24px;overflow:hidden;background:#fff;box-shadow:var(--shadow-lg)}
+.browser-bar{display:flex;align-items:center;gap:8px;padding:13px 18px;border-bottom:1px solid var(--border);background:#FAFCFE}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--border)}
+.url{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-left:10px;background:var(--bg);padding:6px 16px;border-radius:999px;flex:1}
+.browser-body{padding:30px 34px}
+.serp-q{font-size:13px;color:var(--muted);font-weight:600;margin-bottom:18px}
+.serp-q b{color:var(--ink)}
+.serp-item{padding:16px 18px;border-radius:16px;margin-bottom:8px}
+.serp-item.win{background:var(--spring-soft);border:1px solid #C6DDF5}
+.serp-pos{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.06em}
+.serp-item.win .serp-pos{color:#1F5FA8}
+.serp-title{font-family:var(--display);font-size:16.5px;font-weight:600;margin:4px 0 3px;color:var(--pine)}
+.serp-url{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.serp-item.faded{opacity:.55}
+.article-kicker{font-size:11.5px;letter-spacing:.08em;color:var(--spring);text-transform:uppercase;font-weight:700}
+.article-h{font-family:var(--display);font-size:22px;font-weight:600;line-height:1.3;margin:12px 0 12px;color:var(--pine)}
+.article-meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:18px}
+.skeleton p{height:9px;border-radius:99px;background:#EBF0F7;margin:11px 0}
+.skeleton p.w80{width:80%}.skeleton p.w60{width:60%}.skeleton p.w90{width:90%}
+.skeleton .sk-h{height:12px;width:45%;background:#D9E3F0;border-radius:99px;margin:22px 0 14px}
+.mock-caption{font-size:12.5px;color:var(--muted);font-weight:500;margin-top:16px}
+
+/* ---------- tiers ---------- */
+.compare{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.cmp{
+  background:#fff;border:1px solid var(--border);border-radius:var(--r);
+  padding:28px 26px;box-shadow:var(--shadow);
+}
+.cmp-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.cmp-price{font-family:var(--display);font-size:26px;font-weight:700;color:var(--ink);margin-bottom:12px}
+.cmp-price span{font-size:14px;color:var(--muted);font-weight:500;font-family:var(--body)}
+.cmp p{font-size:13.5px;color:var(--muted);line-height:1.6}
+.cmp p b{color:var(--pine-2)}
+.featured-cmp{border-color:var(--spring);background:linear-gradient(180deg,#F0F6FD,#fff 70%)}
+.featured-cmp .cmp-label{color:#1F5FA8}
+.featured-cmp .cmp-price{color:var(--pine)}
+.cmp-note{font-size:11.5px;color:var(--muted);margin-top:14px;max-width:74ch}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.tier{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--r-lg);
+  padding:38px 32px;display:flex;flex-direction:column;position:relative;box-shadow:var(--shadow);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.tier:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.tier.featured{
+  border-color:var(--spring);
+  background:linear-gradient(180deg,#F0F6FD 0%,#fff 55%);
+  box-shadow:0 24px 70px rgba(62,142,222,.18);
+}
+.tier .flag{
+  position:absolute;top:-15px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--spring),#2F72C4);color:#fff;
+  font-size:11.5px;letter-spacing:.05em;padding:6px 18px;border-radius:999px;font-weight:700;white-space:nowrap;
+}
+.tier h3{font-family:var(--display);font-size:22px;color:var(--pine)}
+.tier .tier-sub{font-size:12.5px;color:var(--muted);font-weight:600;margin:4px 0 22px}
+.price{font-family:var(--display);font-size:44px;font-weight:700;color:var(--pine);letter-spacing:-.02em}
+.price span{font-size:15px;color:var(--muted);font-weight:500;font-family:var(--body)}
+.tier ul{list-style:none;margin:24px 0 30px;flex:1}
+.tier li{padding:9px 0;font-size:14.5px;color:var(--muted);display:flex;gap:11px;align-items:flex-start}
+.tier li::before{
+  content:"✓";flex-shrink:0;width:20px;height:20px;border-radius:50%;
+  background:var(--spring-soft);color:#1F5FA8;font-size:11px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.tier li b{color:var(--ink);font-weight:600}
+.tier .btn{text-align:center}
+
+/* ---------- faq ---------- */
+.faq{max-width:800px;margin:52px auto 0;display:flex;flex-direction:column;gap:14px}
+details{
+  background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow);
+  transition:box-shadow .2s;overflow:hidden;
+}
+details[open]{box-shadow:var(--shadow-lg)}
+summary{
+  cursor:pointer;list-style:none;padding:22px 28px;
+  font-family:var(--display);font-weight:600;font-size:17px;color:var(--pine);
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"+";flex-shrink:0;width:30px;height:30px;border-radius:50%;
+  background:var(--spring-soft);color:#1F5FA8;font-size:17px;
+  display:flex;align-items:center;justify-content:center;
+}
+details[open] summary::after{content:"–"}
+details p{padding:0 28px 24px;color:var(--muted);font-size:15px;max-width:64ch}
+
+/* ---------- final cta ---------- */
+.final-card{
+  background:linear-gradient(135deg,#0B2240 0%,#12365E 60%,#1F5FA8 130%);
+  border-radius:var(--r-lg);text-align:center;padding:96px 40px;color:#fff;position:relative;overflow:hidden;
+}
+.final-card h2{color:#fff;font-size:clamp(32px,4.6vw,50px);max-width:20ch;margin:20px auto 18px}
+.final-card .lede{color:#C4DDD2;margin:0 auto 38px}
+.final-card .eyebrow{background:rgba(255,255,255,.12);color:var(--mint)}
+.final-card .eyebrow::before{background:var(--mint)}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;background:var(--spring)}
+footer{padding:44px 0;font-size:13px;color:var(--muted);font-weight:500}
+.foot-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.foot-inner a{color:var(--pine-2);text-decoration:none}
+.foot-inner a:hover{text-decoration:underline}
+
+@media (max-width:900px){
+  .hero-grid,.case-grid,.mock-grid,.proof{grid-template-columns:1fr}
+  .cards3,.stages,.tiers,.compare{grid-template-columns:1fr}
+  .nav-links a:not(.btn){display:none}
+  section{padding:80px 0}
+  header.hero{padding:64px 0 80px}
+  .method{margin:0 12px}
+  .curve-card{padding:24px 22px 22px}
+  .curve-card svg{max-height:200px}
+  .proof{padding:32px 26px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="#top">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <div class="nav-links">
+      <a href="#why">Why visibility</a>
+      <a href="#method">Methodology</a>
+      <a href="#output">The output</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn green" href="#pricing">Request access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="blob g" style="width:480px;height:480px;top:-140px;right:-120px"></div>
+  <div class="blob m" style="width:380px;height:380px;bottom:-120px;left:-140px"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Organic visibility, on autopilot</span>
+      <h1>The market can't buy from a business it <span class="grad">never sees.</span></h1>
+      <p class="lede">ClearPath Content is a compounding visibility engine: a systematized editorial and search-architecture program that puts your business in front of buyers at the exact moment they're looking — and keeps compounding while you sleep.</p>
+      <div class="hero-ctas">
+        <a class="btn green" href="#pricing">Request access</a>
+        <a class="btn ghost" href="#method">Study the methodology</a>
+      </div>
+      <div class="hero-meta">
+        <div class="chipstat"><b>24/7</b><span>Always publishing</span></div>
+        <div class="chipstat"><b>0 hrs</b><span>Of your time per week</span></div>
+        <div class="chipstat"><b>∞</b><span>Compounding shelf-life</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="curve-card" aria-label="Illustration of compounding organic traffic">
+        <div class="curve-head">
+          <span>Organic sessions</span>
+          <span class="pill-up">▲ compounding</span>
+        </div>
+        <svg viewBox="0 0 480 280" width="100%" role="img" aria-label="Smooth rising curve representing compounding organic traffic">
+          <defs>
+            <linearGradient id="heroFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3E8EDE" stop-opacity=".28"/>
+              <stop offset="1" stop-color="#3E8EDE" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="heroLine" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#9CC9F0"/>
+              <stop offset="1" stop-color="#2F72C4"/>
+            </linearGradient>
+          </defs>
+          <g stroke="#EBF0F7" stroke-width="1.5">
+            <line x1="0" y1="60" x2="480" y2="60"/><line x1="0" y1="120" x2="480" y2="120"/>
+            <line x1="0" y1="180" x2="480" y2="180"/><line x1="0" y1="240" x2="480" y2="240"/>
+          </g>
+          <path d="M0 244 C 90 242, 150 234, 210 216 C 280 194, 330 150, 380 100 C 420 60, 450 40, 480 28 L480 260 L0 260 Z" fill="url(#heroFill)"/>
+          <path d="M0 244 C 90 242, 150 234, 210 216 C 280 194, 330 150, 380 100 C 420 60, 450 40, 480 28" fill="none" stroke="url(#heroLine)" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="480" cy="28" r="7" fill="#3E8EDE"/>
+          <circle cx="480" cy="28" r="13" fill="#3E8EDE" opacity=".18"/>
+        </svg>
+        <span class="illus">Illustrative — shape of compounding, not client data</span>
+        <div class="rank-row">
+          <div class="rank-label">Queries your buyers are typing right now</div>
+          <div class="rank-chips">
+            <span class="qchip">emergency ac repair near me</span>
+            <span class="qchip">how much does an estate lawyer cost</span>
+            <span class="qchip">best accounting software for contractors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= WHY ================= -->
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow">The economics of being found</span>
+    <h2>Attention is the scarcest asset in your market.<br>Search is where it concentrates.</h2>
+    <p class="lede">Every purchase begins as a question. The businesses that answer those questions — publicly, consistently, and in the language buyers actually use — quietly intercept demand before their competitors even know it exists. The ones that don't are invisible by definition, no matter how good their product is.</p>
+
+    <div class="cards3">
+      <div class="card">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#1F5FA8" stroke-width="2"/><path d="M16.5 16.5 L21 21" stroke="#1F5FA8" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Discovery precedes trust</h3>
+        <p>The majority of online journeys begin with a search, and most searchers never look past the first page. Ranking isn't a vanity metric — it is the modern storefront location. Position determines whether the conversation about your category includes you at all.</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 20 V10 M10 20 V4 M16 20 V13 M22 20 V8" stroke="#1F5FA8" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Rented reach vs. owned reach</h3>
+        <p>Paid ads are rented attention: the moment spend stops, presence stops. Organic visibility is owned infrastructure — an appreciating asset on your own domain. Each published answer keeps working next month, next quarter, next year, at zero marginal cost.</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 17 C 7 16, 9 13, 12 9 C 14.5 5.5, 18 4.5, 21 4.5" stroke="#1F5FA8" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="21" cy="4.5" r="2.4" fill="#3E8EDE"/></svg>
+        </div>
+        <h3>Consistency beats brilliance</h3>
+        <p>Search engines reward domains that demonstrate sustained topical authority — depth, cadence, and internal coherence. One great article is noise. A structured, interlinked body of work is a signal. Almost no business can sustain that manually. That's the gap ClearPath Content closes.</p>
+      </div>
+    </div>
+
+    <p class="pullquote">"Visibility compounds like interest. Every week you're not publishing, a competitor is collecting <span class="grad">your buyers'</span> questions."</p>
+  </div>
+</section>
+
+<!-- ================= METHODOLOGY ================= -->
+<div class="method" id="method">
+  <div class="method-inner">
+    <span class="eyebrow">Methodology</span>
+    <h2>The ClearPath Method: six systems, one compounding output.</h2>
+    <p class="lede">This is not "blogging." It is a search-architecture pipeline that runs continuously against your market — mapping demand, manufacturing authority, and reinforcing itself with every cycle.</p>
+
+    <div class="stages">
+      <div class="stage">
+        <span class="num">01</span>
+        <h3>Signal Cartography</h3>
+        <div class="sub">Demand mapping</div>
+        <p>We chart the full question-space of your market: the long-tail queries your buyers actually type, weighted by intent. Most businesses target ten obvious keywords; your real demand surface contains hundreds of underpriced ones.</p>
+      </div>
+      <div class="stage">
+        <span class="num">02</span>
+        <h3>Topic Architecture</h3>
+        <div class="sub">Authority planning</div>
+        <p>Queries are organized into topical clusters engineered for authority accumulation — informational pillars supported by commercial-intent satellites. Structure is what separates a library from a pile of pages.</p>
+      </div>
+      <div class="stage">
+        <span class="num">03</span>
+        <h3>Editorial Synthesis</h3>
+        <div class="sub">Production, in your voice</div>
+        <p>Long-form, genuinely useful articles produced through our editorial engine — conditioned on your brand's real voice, terminology, offers, and market. Specific advice, real numbers, zero filler.</p>
+      </div>
+      <div class="stage">
+        <span class="num">04</span>
+        <h3>Cadence Protocol</h3>
+        <div class="sub">Freshness signaling</div>
+        <p>Publication runs on an engineered schedule, every week, without exception. Sustained cadence is one of the strongest trust signals a domain can emit — and the first thing manual efforts abandon.</p>
+      </div>
+      <div class="stage">
+        <span class="num">05</span>
+        <h3>Interlink Mesh</h3>
+        <div class="sub">Internal reinforcement</div>
+        <p>Every new article is woven into your existing body of work with contextual internal links, concentrating authority where it converts and helping search engines model your site as a coherent knowledge system.</p>
+      </div>
+      <div class="stage">
+        <span class="num">06</span>
+        <h3>Compounding Index</h3>
+        <div class="sub">The flywheel</div>
+        <p>State is tracked permanently: nothing repeats, coverage only widens, and each cycle strengthens the last. Month three outperforms month one by design. This is infrastructure, not a campaign.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PROOF — the system running live ================= -->
+<section id="proof" style="padding-bottom:40px">
+  <div class="wrap">
+    <span class="eyebrow">Running in production</span>
+    <h2>You can go read what it published this morning.</h2>
+    <p class="lede">ClearPath Content runs the organic program for ClearPath Pediatrics — a live business, not a demo. Every article, the publishing cadence, the pillar architecture and the internal linking were produced by this system.</p>
+
+    <div class="proof">
+      <div>
+        <h3>See the engine's own output</h3>
+        <p>A daily publishing cadence held without interruption, organized under a pillar guide that links every article into a single coherent structure — exactly the architecture described in the methodology above. Go look at the actual pages.</p>
+        <div class="live">
+          <a class="prooflink" href="https://clearpathpediatrics.com/blog/" target="_blank" rel="noopener">clearpathpediatrics.com/blog →</a>
+          <a class="prooflink" href="https://clearpathpediatrics.com/pediatric-care-navigation-guide" target="_blank" rel="noopener">the pillar architecture →</a>
+        </div>
+      </div>
+      <div class="proofstats">
+        <div class="pstat"><b>Daily</b><span>Publishing cadence</span></div>
+        <div class="pstat"><b>20+</b><span>Articles live</span></div>
+        <div class="pstat"><b>100%</b><span>Interlinked to pillar</span></div>
+        <div class="pstat"><b>0 hrs</b><span>Weekly owner time</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MOCKUPS ================= -->
+<section id="output">
+  <div class="wrap">
+    <span class="eyebrow">The output</span>
+    <h2>What lands on your domain — and where it lands in the results.</h2>
+    <p class="lede">Every cycle produces long-form, search-architected articles published directly to your site, in your voice, targeting queries your buyers are typing right now.</p>
+
+    <div class="mock-grid">
+      <div>
+        <div class="browser">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="url">yourdomain.com/blog/estate-lawyer-cost-arizona</span>
+          </div>
+          <div class="browser-body">
+            <span class="article-kicker">Client Guides</span>
+            <div class="article-h">How Much Does an Estate Lawyer Cost in Arizona? Real 2026 Numbers</div>
+            <div class="article-meta">1,540 words · published automatically · interlinked ×3</div>
+            <div class="skeleton">
+              <p class="w90"></p><p></p><p class="w80"></p>
+              <div class="sk-h"></div>
+              <p></p><p class="w90"></p><p class="w60"></p>
+              <div class="sk-h"></div>
+              <p class="w80"></p><p></p><p class="w90"></p><p class="w60"></p>
+            </div>
+          </div>
+        </div>
+        <p class="mock-caption"><b>Illustrative example.</b> The shape of a guide the system produces, publishes and interlinks without client involvement.</p>
+      </div>
+
+      <div>
+        <div class="browser">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="url">search — "estate lawyer cost arizona"</span>
+          </div>
+          <div class="browser-body">
+            <p class="serp-q">Results for <b>"estate lawyer cost arizona"</b></p>
+            <div class="serp-item win">
+              <div class="serp-pos">ILLUSTRATIVE — THE OBJECTIVE</div>
+              <div class="serp-title">How Much Does an Estate Lawyer Cost in Arizona? Real…</div>
+              <div class="serp-url">yourdomain.com › blog</div>
+            </div>
+            <div class="serp-item faded">
+              <div class="serp-pos">POSITION 2</div>
+              <div class="serp-title">National Legal Directory</div>
+              <div class="serp-url">big-directory.com</div>
+            </div>
+            <div class="serp-item faded">
+              <div class="serp-pos">POSITION 3</div>
+              <div class="serp-title">Forum Thread (2019)</div>
+              <div class="serp-url">forum-site.com</div>
+            </div>
+          </div>
+        </div>
+        <p class="mock-caption"><b>Illustrative example</b>, not a reported client result. The objective: own the answer to your buyers' questions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing">
+  <div class="blob g" style="width:420px;height:420px;bottom:-100px;left:-160px"></div>
+  <div class="wrap">
+    <span class="eyebrow">Deployment tiers</span>
+    <h2>Priced like a subscription.<br>Behaves like infrastructure.</h2>
+    <p class="lede">Every tier runs the full ClearPath Method. Tiers scale cadence, article depth, and reinforcement — the variables that determine how fast authority compounds. First, some market context.</p>
+
+    <div class="compare">
+      <div class="cmp">
+        <div class="cmp-label">Typical content agency</div>
+        <div class="cmp-price">Thousands<span>/mo</span></div>
+        <p>Agency content retainers commonly run into the thousands per month — and typically buy a handful of articles, produced by rotating freelancers, with strategy billed on top.</p>
+      </div>
+      <div class="cmp">
+        <div class="cmp-label">Freelance writers</div>
+        <div class="cmp-price">Per article<span> + your time</span></div>
+        <p>You pay per piece, and you become the strategist: keyword research, briefs, editing, publishing, and internal linking all stay on your plate. The writing is outsourced. The system is not.</p>
+      </div>
+      <div class="cmp featured-cmp">
+        <div class="cmp-label">ClearPath Content</div>
+        <div class="cmp-price">$199–$499<span>/mo</span></div>
+        <p>8–22 fully architected articles a month — strategy, production, publication, and interlinking included. That works out to <b>roughly $20–$35 per article</b>, with the entire system running for you rather than the writing alone.</p>
+      </div>
+    </div>
+    <p class="cmp-note">Per-article figures are derived from the published tier cadence below. Agency and freelance ranges are given as general market context — ask any provider for their own current pricing.</p>
+
+    <div class="tiers">
+      <div class="tier">
+        <h3>Starter</h3>
+        <div class="tier-sub">Establish presence</div>
+        <div class="price">$199<span>/mo</span></div>
+        <ul>
+          <li><b>2 articles</b> published weekly</li>
+          <li>900–1,200 word depth</li>
+          <li>Signal cartography &amp; topic architecture</li>
+          <li>Voice conditioning to your brand</li>
+          <li>Fully automated publication</li>
+        </ul>
+        <a class="btn ghost" href="#contact">Deploy Starter</a>
+      </div>
+
+      <div class="tier featured">
+        <span class="flag">Most deployed</span>
+        <h3>Growth</h3>
+        <div class="tier-sub">Compound authority</div>
+        <div class="price">$399<span>/mo</span></div>
+        <ul>
+          <li><b>3 articles</b> published weekly</li>
+          <li>1,200–1,600 word depth</li>
+          <li>Everything in Starter</li>
+          <li><b>Interlink Mesh</b> — automated internal linking</li>
+          <li>Monthly visibility summary</li>
+        </ul>
+        <a class="btn green" href="#contact">Deploy Growth</a>
+      </div>
+
+      <div class="tier">
+        <h3>Authority</h3>
+        <div class="tier-sub">Own the category</div>
+        <div class="price">$499<span>/mo</span></div>
+        <ul>
+          <li><b>5 articles</b> published weekly</li>
+          <li>1,500–2,000 word depth</li>
+          <li>Everything in Growth</li>
+          <li>Priority demand-surface expansion</li>
+          <li>Quarterly strategy session</li>
+        </ul>
+        <a class="btn ghost" href="#contact">Deploy Authority</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" style="padding-top:30px">
+  <div class="wrap">
+    <span class="eyebrow">Due diligence</span>
+    <h2>Questions serious operators ask.</h2>
+    <div class="faq">
+      <details open>
+        <summary>How is this different from hiring a content agency?</summary>
+        <p>Agencies sell hours; ClearPath Content runs systems. A typical agency retainer runs into the thousands per month and usually buys a handful of articles from rotating freelancers, with strategy billed separately. CPC publishes 8–22 deeply structured articles a month, on a cadence no human team sustains, interlinked and tracked so coverage never repeats and only widens. You're not buying content. You're installing infrastructure.</p>
+      </details>
+      <details>
+        <summary>How fast should I expect results?</summary>
+        <p>Honestly: it depends on your market, competition, and domain history. Some deployments see meaningful movement within weeks; most compound over one to two quarters — that's the nature of owned visibility, and it's also why it's defensible once built. What we guarantee is the input side: relentless cadence, widening coverage, and structural reinforcement, every single week.</p>
+      </details>
+      <details>
+        <summary>Do I get to review what's published?</summary>
+        <p>Yes. New deployments start in review mode — articles arrive as drafts for your approval until you're comfortable with the voice. Most clients switch to full autopilot within two weeks. Every standing preference you give us ("always mention free estimates," "never use industry jargon") is encoded permanently into your configuration.</p>
+      </details>
+      <details>
+        <summary>Will this sound like my business, or like generic filler?</summary>
+        <p>Your deployment is conditioned on your actual voice: real excerpts from your site, your terminology, your offers, your market, and an explicit list of phrases you never want to see. The output is specific, useful, and unmistakably yours — content a buyer would thank you for, not filler that embarrasses you.</p>
+      </details>
+      <details>
+        <summary>What do you need from me?</summary>
+        <p>About thirty minutes, once. We take your site, your services, and your market, and configure your deployment. After that, your involvement is optional by design — the system publishes, links, and expands on its own, and you can inspect everything it does at any time.</p>
+      </details>
+      <details>
+        <summary>Is there a contract?</summary>
+        <p>Month to month. Visibility infrastructure should keep earning its place every thirty days — and everything published stays on your domain, owned by you, forever, regardless.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section id="contact" style="padding-top:20px">
+  <div class="wrap">
+    <div class="final-card">
+      <div class="orb" style="width:340px;height:340px;top:-120px;right:-80px"></div>
+      <div class="orb" style="width:280px;height:280px;bottom:-110px;left:-60px"></div>
+      <span class="eyebrow">One deployment per niche, per metro</span>
+      <h2>Your buyers are searching tonight.</h2>
+      <p class="lede">We deploy for one business per niche, per metro — because the whole point is that you own the answers. Claim your market before a competitor does.</p>
+      <a class="btn green" href="mailto:deploy@clearpathcontent.com?subject=ClearPath%20Content%20Deployment%20Request">Request your deployment</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>ClearPath Content (CPC) — Visibility infrastructure · <a href="mailto:deploy@clearpathcontent.com">deploy@clearpathcontent.com</a></span>
+    <span>© 2026 ClearPath Content (CPC) · All published work remains client property</span>
+  </div>
+</footer>
+
+</body>
+</html>
