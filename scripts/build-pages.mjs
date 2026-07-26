@@ -146,7 +146,7 @@ ${crumbs(p.industry)}
 
 <section class="blk"><div class="narrow">
   <h2>Other industries we deploy for</h2>
-  <div class="related">${others.map(o => `<a href="/${o.slug}">${esc(o.industry)} →</a>`).join("")}</div>
+  <div class="related">${others.map(o => `<a href="/${o.slug}">${esc(o.industry)} →</a>`).join("")}<a href="/industries">All industries →</a></div>
 </div></section>
 
 <section class="blk">${ctaBand("One deployment per niche, per metro.", "The point is that you own the answers in your market. Book a call and we'll tell you if yours is still open.")}</section>
@@ -192,11 +192,6 @@ ${crumbs("What you get")}
   <div class="related" style="margin-top:22px"><a href="/faq">All questions →</a><a href="/#pricing">Deployment tiers →</a></div>
 </div></section>
 
-<section class="blk"><div class="narrow">
-  <h2>Deployments by industry</h2>
-  <div class="related">${INDUSTRIES.map(o => `<a href="/${o.slug}">${esc(o.industry)} →</a>`).join("")}</div>
-</div></section>
-
 <section class="blk">${ctaBand("See whether your market is still open.", "We deploy for one business per niche, per metro. Thirty minutes tells you if yours is available.")}</section>
 ${FOOTER}
 </body>
@@ -232,13 +227,68 @@ ${FAQ_HUB.map(g => `
   ${faqBlock(g.items)}
 </div></section>`).join("")}
 
-<section class="blk"><div class="narrow">
-  <h2>Deployments by industry</h2>
-  <div class="related">${INDUSTRIES.map(o => `<a href="/${o.slug}">${esc(o.industry)} →</a>`).join("")}</div>
-</div></section>
-
 <section class="blk">${ctaBand("Still have questions?", "Thirty minutes, no pitch. We'll tell you honestly whether this fits your market.")}</section>
 </main>
+${FOOTER}
+</body>
+</html>`;
+}
+
+/* ------------------------------------------------------------ industries hub */
+function renderIndustriesHub() {
+  const url = `${SITE}/industries`;
+  const listLd = {
+    "@context": "https://schema.org", "@type": "ItemList",
+    name: "Industries ClearPath Content deploys for",
+    itemListElement: INDUSTRIES.map((p, i) => ({
+      "@type": "ListItem", position: i + 1, name: p.industry, url: `${SITE}/${p.slug}`,
+    })),
+  };
+  return head({
+    title: `Industries We Deploy For | ${BRAND}`,
+    description: "ClearPath Content runs organic visibility programs for home services, legal, dental, B2B software and professional services — one business per niche, per metro.",
+    url, og: "website",
+    keywords: ["content marketing by industry", "industry content marketing", "vertical content marketing", "content marketing for service businesses"],
+    jsonld: [breadcrumbLd("Industries", url), listLd],
+  }) + `<style>${PAGE_CSS}
+.indgrid{display:grid;gap:16px;margin-top:26px}
+@media(min-width:720px){.indgrid{grid-template-columns:1fr 1fr}}
+.indcard{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:26px 28px;
+  box-shadow:var(--shadow);text-decoration:none;display:block;transition:transform .2s,box-shadow .2s,border-color .2s}
+.indcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--spring)}
+.indcard h3{font-size:19px;margin-bottom:8px}
+.indcard p{color:var(--muted);font-size:14.5px;margin-bottom:14px}
+.indcard .go{font-size:13.5px;font-weight:700;color:var(--pine-2)}
+</style>
+</head>
+<body>
+${NAV}
+${crumbs("Industries")}
+<header class="hero"><div class="narrow">
+  <span class="eyebrow">Industries</span>
+  <h1>Who we deploy for</h1>
+  <p>The program works best where buyers research before they contact anyone — which is most considered purchases. Below is where we currently run deployments, with a page for each covering what that market searches for and what a deployment delivers.</p>
+  <p><strong>One business per niche, per metro.</strong> The entire value is that you own the answers in your market, and that does not survive selling the same coverage to your competitor.</p>
+  <div class="cta-row"><a class="btn" href="${CAL}" target="_blank" rel="noopener">Check if your market is open</a></div>
+</div></header>
+
+<section class="blk"><div class="narrow">
+  <div class="indgrid">${INDUSTRIES.map(p => `
+    <a class="indcard" href="/${p.slug}">
+      <h3>${esc(p.industry)}</h3>
+      <p>${esc(p.metaDescription)}</p>
+      <span class="go">See the ${esc(p.industry.toLowerCase())} page →</span>
+    </a>`).join("")}
+  </div>
+</div></section>
+
+<section class="blk"><div class="narrow">
+  <h2>Not on this list?</h2>
+  <p>These are the verticals we publish pages for, not the limit of what the program covers. It fits any business whose buyers research first — the mechanics are the same, only the question-space changes. If your industry isn't here, a call is the fastest way to find out whether it's a fit.</p>
+  <div class="related" style="margin-top:18px"><a href="/what-you-get">What a deployment delivers →</a><a href="/faq">Common questions →</a></div>
+</div></section>
+
+<section class="blk">${ctaBand("Is your market still open?", "We deploy for one business per niche, per metro. Thirty minutes tells you whether yours is available.")}</section>
 ${FOOTER}
 </body>
 </html>`;
@@ -256,6 +306,7 @@ function buildSitemap() {
     { loc: `${SITE}/`, pri: "1.0", freq: "weekly", mod: today },
     { loc: `${SITE}/what-you-get`, pri: "0.9", freq: "monthly", mod: today },
     { loc: `${SITE}/faq`, pri: "0.8", freq: "monthly", mod: today },
+    { loc: `${SITE}/industries`, pri: "0.9", freq: "monthly", mod: today },
     { loc: `${SITE}/blog`, pri: "0.9", freq: "daily", mod: today },
     ...INDUSTRIES.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.8", freq: "monthly", mod: today })),
     ...posts.map(p => ({ loc: `${SITE}/blog/${p.slug}`, pri: "0.7", freq: "monthly", mod: p.iso })),
@@ -277,6 +328,10 @@ for (const p of INDUSTRIES) {
 fs.mkdirSync(path.join(ROOT, CAPABILITIES.slug), { recursive: true });
 fs.writeFileSync(path.join(ROOT, CAPABILITIES.slug, "index.html"), renderCapabilities());
 console.log(`  ✓ /${CAPABILITIES.slug}`); n++;
+
+fs.mkdirSync(path.join(ROOT, "industries"), { recursive: true });
+fs.writeFileSync(path.join(ROOT, "industries", "index.html"), renderIndustriesHub());
+console.log("  ✓ /industries"); n++;
 
 fs.mkdirSync(path.join(ROOT, "faq"), { recursive: true });
 fs.writeFileSync(path.join(ROOT, "faq", "index.html"), renderFaqHub());

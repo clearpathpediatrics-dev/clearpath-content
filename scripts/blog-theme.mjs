@@ -89,6 +89,7 @@ export const FOOTER = `
       <a href="/">Home</a>
       <a href="/#method">Methodology</a>
       <a href="/blog/">Field notes</a>
+      <a href="/industries">Industries</a>
       <a href="/what-you-get">What you get</a>
       <a href="/faq">FAQ</a>
       <a href="/#pricing">Pricing</a>
