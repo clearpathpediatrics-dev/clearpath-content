@@ -349,9 +349,6 @@ footer{padding:44px 0;font-size:13px;color:var(--muted);font-weight:500}
   .nav-pill .btn{padding:10px 18px;font-size:13.5px;white-space:nowrap;flex:none}
   .nav-links{width:100%;order:3;gap:12px 18px;flex-wrap:wrap;font-size:13.5px;padding:2px 0 2px}
 }
-@media (max-width:560px){
-  .nav-pill .btn{width:100%;text-align:center;margin-top:2px}
-}
 @media (max-width:430px){
   .wordmark{font-size:15.5px;gap:8px}
   .wordmark svg{width:22px;height:22px}
@@ -360,6 +357,36 @@ footer{padding:44px 0;font-size:13px;color:var(--muted);font-weight:500}
   .nav-links{gap:10px 14px;font-size:13px}
 }
 
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
 </style>
 </head>
 <body>
@@ -375,6 +402,8 @@ footer{padding:44px 0;font-size:13px;color:var(--muted);font-weight:500}
       </svg>
       ClearPath&nbsp;Content
     </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
     <div class="nav-links">
       <a href="#why">Why visibility</a>
       <a href="#method">Methodology</a>
