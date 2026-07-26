@@ -325,6 +325,9 @@ details p{padding:0 28px 24px;color:var(--muted);font-size:15px;max-width:64ch}
 .orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;background:var(--spring)}
 footer{padding:44px 0;font-size:13px;color:var(--muted);font-weight:500}
 .foot-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-nav a{color:var(--pine-2);text-decoration:none;font-weight:500}
+.foot-nav a:hover{text-decoration:underline}
 .foot-inner a{color:var(--pine-2);text-decoration:none}
 .foot-inner a:hover{text-decoration:underline}
 
@@ -719,8 +722,13 @@ footer{padding:44px 0;font-size:13px;color:var(--muted);font-weight:500}
 <footer>
   <div class="wrap foot-inner">
     <span>ClearPath Content (CPC) — Visibility infrastructure · <a href="mailto:deploy@clearpath-content.com">deploy@clearpath-content.com</a></span>
-    <span>© 2026 ClearPath Content (CPC) · All published work remains client property</span>
+    <nav class="foot-nav">
+      <a href="/blog/">Field notes</a>
+      <a href="/#method">Methodology</a>
+      <a href="/#pricing">Pricing</a>
+    </nav>
   </div>
+  <div class="wrap" style="margin-top:16px;opacity:.85">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 
 </body>

@@ -1,0 +1,26 @@
+{
+  "name": "clearpath-content-site",
+  "version": "1.0.0",
+  "description": "ClearPath Content (CPC) — marketing site with an auto-published blog. Organic visibility infrastructure for businesses.",
+  "private": true,
+  "homepage": "https://clearpath-content.com",
+  "author": "ClearPath Content",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "python3 -m http.server 8920",
+    "serve": "python3 -m http.server 8920",
+    "generate:blog": "node scripts/generate-posts.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  },
+  "keywords": [
+    "clearpath-content",
+    "content-marketing",
+    "seo",
+    "aeo",
+    "geo",
+    "static-site"
+  ]
+}

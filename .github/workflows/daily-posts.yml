@@ -1,0 +1,50 @@
+name: Publish daily articles
+
+on:
+  schedule:
+    # Three fallback times (UTC). The generator is idempotent per day — the
+    # first run that succeeds publishes; later ones see the quota is met and
+    # exit cleanly. GitHub's scheduler drops runs fairly often, so redundancy
+    # is deliberate.
+    - cron: "0 14 * * *"   #  7am Phoenix
+    - cron: "0 17 * * *"   # 10am Phoenix
+    - cron: "0 20 * * *"   #  1pm Phoenix
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-posts
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Generate articles
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CPC_POSTS_PER_RUN: "2"
+        run: node scripts/generate-posts.mjs
+
+      - name: Commit and push
+        run: |
+          git config user.name  "ClearPath Content Bot"
+          git config user.email "deploy@clearpath-content.com"
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git add -A
+          git commit -m "posts: $(date -u +%Y-%m-%d)"
+          git push
