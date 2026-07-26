@@ -131,7 +131,7 @@ export const INDUSTRIES = [
     slug: "content-marketing-for-home-services",
     industry: "Home Service Businesses",
     h1: "Content Marketing for Home Service Businesses",
-    title: "Content Marketing for Home Service Businesses | ClearPath Content",
+    title: "Content Marketing for Home Services | ClearPath Content",
     metaDescription: "Plumbing, roofing, electrical, landscaping — customers search before they call. A publishing program that puts you in those results, permanently.",
     keywords: ["content marketing for home services", "plumber SEO", "roofing marketing", "electrician SEO", "home service lead generation"],
     intro: [
@@ -167,7 +167,7 @@ export const INDUSTRIES = [
     slug: "content-marketing-for-b2b-software",
     industry: "B2B Software Companies",
     h1: "Content Marketing for B2B Software Companies",
-    title: "Content Marketing for B2B Software Companies | ClearPath Content",
+    title: "Content Marketing for B2B Software | ClearPath Content",
     metaDescription: "Long sales cycles, multiple stakeholders, expensive paid channels. A publishing program that builds the organic pipeline your CAC needs.",
     keywords: ["B2B software content marketing", "SaaS content marketing", "B2B SaaS SEO", "software company blog", "SaaS demand generation"],
     intro: [
@@ -312,7 +312,7 @@ export const INDUSTRIES = [
     industry: "Pest Control Companies",
     h1: "Content Marketing for Pest Control Companies",
     metaDescription: "Pest problems start with a search — identification, safety, cost. A publishing program that makes your company the answer, and turns one call into a recurring plan.",
-    title: "Content Marketing for Pest Control Companies | ClearPath Content",
+    title: "Content Marketing for Pest Control | ClearPath Content",
     keywords: ["content marketing for pest control", "pest control SEO", "exterminator marketing", "pest control leads", "termite treatment marketing"],
     intro: [
       "Pest control has an unusually clean search pattern: somebody sees something, photographs it, and searches to identify it. Then they search whether it's dangerous, then what treatment costs. Three searches, in order, often within an hour.",
@@ -384,7 +384,7 @@ export const INDUSTRIES = [
     slug: "content-marketing-for-professional-services",
     industry: "Professional Services Firms",
     h1: "Content Marketing for Professional Services Firms",
-    title: "Content Marketing for Professional Services Firms | ClearPath Content",
+    title: "Content Marketing for Professional Services | ClearPath",
     metaDescription: "Accounting, consulting, financial advice, insurance — clients research expertise before they call. A publishing program that demonstrates it continuously.",
     keywords: ["professional services content marketing", "accounting firm SEO", "consulting firm marketing", "financial advisor content", "CPA marketing"],
     intro: [

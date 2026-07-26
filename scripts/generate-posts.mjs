@@ -76,7 +76,7 @@ HONESTY RULES (strict):
 
 REQUIREMENTS:
 - 1,100-1,500 words in the body.
-- Title: specific and searchable, matching how a business owner would phrase the query. No colons-with-clever-subtitle formula every time; vary the structure.
+- Title: specific and searchable, matching how a business owner would phrase the query. Keep it UNDER 60 CHARACTERS so it does not truncate in search results. No colons-with-clever-subtitle formula every time; vary the structure.
 - Meta description: 150-160 characters, includes the primary keyword, ends with a concrete benefit.
 - At least 4 H2 subheadings. Use H3 where a section needs sub-parts.
 - Include 2 sections written as a direct question-and-answer, so AI answer engines can surface them (the question as an H2 phrased exactly as someone would ask it, followed by a direct, complete answer in the first sentence of the paragraph beneath).
@@ -162,7 +162,7 @@ function renderPost(post) {
   };
 
   return head({
-    title: `${post.title} | ${BRAND}`,
+    title: post.title.length <= 40 ? `${post.title} | ${BRAND}` : post.title,
     description: post.metaDescription, url, keywords: post.tags,
     jsonld: [articleLd, crumbs, ...(faqLd ? [faqLd] : [])],
   }) + `<style>${CSS}
@@ -239,7 +239,7 @@ function renderIndex(posts) {
   };
 
   return head({
-    title: `Field Notes — Organic Visibility & AI Search | ${BRAND}`,
+    title: `Field Notes — Organic Visibility & AI Search | ClearPath`,
     description: "Practical writing on organic visibility, AI answer-engine optimisation, local search and content strategy — published continuously by ClearPath Content.",
     url: `${SITE}/blog`, og: "website",
     keywords: ["content marketing", "SEO", "AI search optimization", "AEO", "organic visibility"],
