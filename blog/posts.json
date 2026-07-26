@@ -1,5 +1,41 @@
 [
   {
+    "slug": "publishing-cadence-vs-article-quality",
+    "title": "Why Publishing Cadence Beats One Perfect Article",
+    "excerpt": "A single excellent article rarely moves a business. A steady cadence of solid articles builds coverage, internal links, and topical depth that compounds. Here's the mechanics and a worked example.",
+    "metaDescription": "Publishing cadence beats individual article quality over time because search visibility compounds. Here's how steady output builds coverage that one great post can't",
+    "tags": [
+      "publishing cadence",
+      "organic visibility",
+      "content strategy",
+      "topical authority",
+      "content compounding"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-07-26",
+    "prettyDate": "July 26, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "b2b-software-content-long-sales-cycle",
+    "title": "B2B Software Content That Survives a Long Sales Cycle",
+    "excerpt": "Most B2B software content targets people ready to buy today. That's a fraction of the market. Here's how to build content that works across a multi-month evaluation.",
+    "metaDescription": "B2B software content marketing that matches a 3-9 month sales cycle. Map content to problem-aware, solution-aware, and vendor-comparison stages to close more deals.",
+    "tags": [
+      "b2b software content marketing",
+      "saas content strategy",
+      "b2b sales cycle content",
+      "software buyer journey",
+      "b2b seo"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-07-26",
+    "prettyDate": "July 26, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "b2b-software-content-buying-committee",
     "title": "Structuring B2B Software Content for the Buying Committee",
     "excerpt": "Most B2B software content targets one reader and ignores the four to seven people who actually approve the purchase. Here is how to map your content to the whole buying committee.",
