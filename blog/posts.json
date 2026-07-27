@@ -1,5 +1,41 @@
 [
   {
+    "slug": "how-to-vet-a-content-subscription-service",
+    "title": "How to Vet a Content Subscription Service",
+    "excerpt": "A practical checklist for evaluating content subscription services, covering ownership, quality control, cadence, interlinking, and the contract terms that trip up business owners.",
+    "metaDescription": "Learn what to look for in a content subscription service, from ownership terms to quality checks, so you pick a plan that actually builds organic visibility.",
+    "tags": [
+      "content subscription service",
+      "content marketing",
+      "buying guide",
+      "SEO content",
+      "vetting agencies"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "iso": "2026-07-27",
+    "prettyDate": "July 27, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "b2b-software-content-map-to-use-cases",
+    "title": "How B2B Software Content Should Map to Use Cases",
+    "excerpt": "Most B2B software content is organized around features or generic topics. Organizing it around use cases attracts buyers who already match your product and shortens the qualification conversation.",
+    "metaDescription": "A practical guide to content marketing for B2B software companies built around use cases, so you attract buyers who match your product and skip the tire-kickers.",
+    "tags": [
+      "b2b software content marketing",
+      "saas content strategy",
+      "use case content",
+      "b2b lead generation",
+      "content marketing playbook"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-07-27",
+    "prettyDate": "July 27, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "publishing-cadence-vs-article-quality",
     "title": "Why Publishing Cadence Beats One Perfect Article",
     "excerpt": "A single excellent article rarely moves a business. A steady cadence of solid articles builds coverage, internal links, and topical depth that compounds. Here's the mechanics and a worked example.",
