@@ -1,5 +1,41 @@
 [
   {
+    "slug": "how-topical-authority-builds-on-a-domain",
+    "title": "How Topical Authority Builds on a Domain",
+    "excerpt": "Topical authority is not a score you earn once. It accumulates as coverage, internal structure, and consistency compound over time. Here's the actual mechanism.",
+    "metaDescription": "Learn how topical authority accumulates on a domain through coverage depth, internal links, and consistent publishing so your best pages start ranking faster.",
+    "tags": [
+      "topical authority",
+      "organic visibility",
+      "content strategy",
+      "internal linking",
+      "SEO fundamentals"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-07-28",
+    "prettyDate": "July 28, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "blog-strategy-home-service-businesses",
+    "title": "Blog Strategy for Home Service Businesses",
+    "excerpt": "Most home service blogs fail because they answer questions no customer is asking. Here is how to build one around the jobs you actually get paid for.",
+    "metaDescription": "A practical blog strategy for home service businesses: what to write, how to structure it around jobs and service areas, and how to turn readers into booked calls.",
+    "tags": [
+      "home service marketing",
+      "blog strategy",
+      "local SEO",
+      "HVAC content",
+      "contractor marketing"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-07-28",
+    "prettyDate": "July 28, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "how-to-vet-a-content-subscription-service",
     "title": "How to Vet a Content Subscription Service",
     "excerpt": "A practical checklist for evaluating content subscription services, covering ownership, quality control, cadence, interlinking, and the contract terms that trip up business owners.",
