@@ -1,5 +1,41 @@
 [
   {
+    "slug": "red-flags-seo-content-marketing-proposals",
+    "title": "12 Red Flags in SEO and Content Proposals",
+    "excerpt": "A practical field guide to the warning signs buried in SEO and content proposals, with the exact questions that separate a real plan from a sales script.",
+    "metaDescription": "Learn the red flags in SEO and content marketing proposals so you can spot vague promises, padded deliverables, and dead-end contracts before you sign.",
+    "tags": [
+      "seo proposals",
+      "content marketing",
+      "vetting agencies",
+      "buying guides",
+      "marketing contracts"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "iso": "2026-07-29",
+    "prettyDate": "July 29, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "why-some-topics-rank-and-others-never-do",
+    "title": "Why Some Topics Rank and Others Never Do",
+    "excerpt": "Topical authority is not a score you earn by publishing more. It accumulates unevenly, topic by topic, based on how completely you cover a subject. Here is the mechanism and how to work with it.",
+    "metaDescription": "Learn how topical authority accumulates on a domain, why coverage gaps stall rankings, and how to structure a topic so search engines trust it faster.",
+    "tags": [
+      "topical authority",
+      "organic visibility",
+      "content strategy",
+      "SEO for small business",
+      "content clusters"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-07-29",
+    "prettyDate": "July 29, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "how-topical-authority-builds-on-a-domain",
     "title": "How Topical Authority Builds on a Domain",
     "excerpt": "Topical authority is not a score you earn once. It accumulates as coverage, internal structure, and consistency compound over time. Here's the actual mechanism.",
