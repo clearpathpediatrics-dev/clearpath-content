@@ -1,5 +1,41 @@
 [
   {
+    "slug": "what-hvac-content-to-write-first",
+    "title": "What HVAC Content Should You Write First?",
+    "excerpt": "Most HVAC blogs fail because they start with the wrong pages. Here's the order that actually maps to how homeowners search and buy.",
+    "metaDescription": "HVAC content marketing works when you write the right pages in order. Here's how to build a topic map that turns searches into booked service calls.",
+    "tags": [
+      "HVAC content marketing",
+      "HVAC SEO",
+      "home service content strategy",
+      "local service marketing",
+      "HVAC lead generation"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-07-31",
+    "prettyDate": "July 31, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "how-often-update-google-business-profile",
+    "title": "How Often Should You Update Google Business Profile?",
+    "excerpt": "Most Google Business Profiles rot after setup. Here's a realistic maintenance cadence, which fields move ranking, and which are busywork.",
+    "metaDescription": "How often to update your Google Business Profile and which fields actually affect local ranking, with a realistic maintenance cadence you can run in an hour a month.",
+    "tags": [
+      "google business profile",
+      "local seo",
+      "gbp optimisation",
+      "local search visibility",
+      "google maps ranking"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "iso": "2026-07-31",
+    "prettyDate": "July 31, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "hvac-content-marketing-off-season-leads",
     "title": "HVAC Content Marketing That Wins Off-Season Leads",
     "excerpt": "Most HVAC content sits unread because it targets the wrong moment in the buying cycle. Here's how to build articles that pull work during slow months and back up your paid ads year-round.",
