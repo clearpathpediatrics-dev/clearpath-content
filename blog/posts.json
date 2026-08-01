@@ -1,5 +1,41 @@
 [
   {
+    "slug": "rented-reach-vs-owned-reach",
+    "title": "Rented Reach vs Owned Reach: What's the Difference?",
+    "excerpt": "Ads, social feeds, and platform reach disappear the moment you stop paying or the algorithm shifts. Here's how to tell rented reach from owned reach, and why the mix matters for a business that wants to stop starting from zero.",
+    "metaDescription": "Rented reach vs owned reach explained for business owners. Learn which channels you control, which ones you rent, and how to shift the balance toward assets you keep",
+    "tags": [
+      "rented reach vs owned reach",
+      "owned media",
+      "organic visibility strategy",
+      "content marketing",
+      "SEO strategy"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-08-01",
+    "prettyDate": "August 1, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-marketing-veterinary-practices",
+    "title": "Content Marketing for Veterinary Practices That Works",
+    "excerpt": "Most vet clinic blogs read like textbook filler. Here is what actually pulls new clients: the questions pet owners search, how to structure the answers, and a first-90-days publishing plan.",
+    "metaDescription": "A practical guide to content marketing for veterinary practices: what to write, how to structure it, and how to turn pet-owner questions into new clients.",
+    "tags": [
+      "veterinary content marketing",
+      "vet clinic SEO",
+      "veterinary blog strategy",
+      "local content marketing",
+      "pet owner content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-01",
+    "prettyDate": "August 1, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "what-hvac-content-to-write-first",
     "title": "What HVAC Content Should You Write First?",
     "excerpt": "Most HVAC blogs fail because they start with the wrong pages. Here's the order that actually maps to how homeowners search and buy.",
