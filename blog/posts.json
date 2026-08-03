@@ -1,5 +1,41 @@
 [
   {
+    "slug": "why-small-business-blogs-fail-three-months",
+    "title": "Why Most Small Business Blogs Die in 3 Months",
+    "excerpt": "The reasons a blog dies at the 90-day mark are almost always the same. Here's what actually kills them and how to build one that survives.",
+    "metaDescription": "Most small business blogs fail within three months for predictable reasons. Learn why blogs stall and how to build one that keeps producing leads.",
+    "tags": [
+      "small business blog",
+      "content strategy",
+      "organic visibility",
+      "publishing cadence",
+      "content marketing"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-08-03",
+    "prettyDate": "August 3, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "landscaping-seasonal-search-strategy",
+    "title": "How Landscapers Rank for Seasonal Search Demand",
+    "excerpt": "Landscaping search demand swings hard by season. Here's how to map that demand, publish ahead of it, and turn a slow winter into your ranking window.",
+    "metaDescription": "Learn how landscaping companies build an organic strategy around seasonal search demand so you capture leads before every spring rush and fall cleanup.",
+    "tags": [
+      "landscaping SEO",
+      "seasonal content strategy",
+      "organic marketing",
+      "home services content",
+      "local search"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-03",
+    "prettyDate": "August 3, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "rented-reach-vs-owned-reach-platform-risk",
     "title": "What Happens to Your Reach If Facebook Turns Off Ads",
     "excerpt": "Rented reach disappears the moment you stop paying or a platform changes its rules. Owned reach compounds. Here is how to tell which one you are building.",
