@@ -1,5 +1,41 @@
 [
   {
+    "slug": "how-ai-answer-engines-choose-sources-to-cite",
+    "title": "How AI Answer Engines Pick Which Sources to Cite",
+    "excerpt": "AI answer engines don't cite the highest-ranking page or the biggest brand by default. Here's what actually drives which sources get named, and how to make yours one of them.",
+    "metaDescription": "Learn how AI answer engines choose which sources to cite, the signals they weigh, and the practical steps that make your pages citation-worthy.",
+    "tags": [
+      "answer engine optimization",
+      "AI search",
+      "content strategy",
+      "citations",
+      "organic visibility"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "iso": "2026-08-04",
+    "prettyDate": "August 4, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "landscaping-service-area-content-plan",
+    "title": "How Landscapers Should Structure a Service-Area Content Plan",
+    "excerpt": "Most landscaping websites have a homepage, a services page, and a contact form. That structure ranks for your company name and almost nothing else. Here is how to build pages that match how people actually search.",
+    "metaDescription": "A practical service-area content plan for landscaping companies: how to map towns, services, and questions into pages that rank and pull in local leads.",
+    "tags": [
+      "landscaping seo",
+      "service area pages",
+      "local content strategy",
+      "landscaping marketing",
+      "organic lead generation"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-04",
+    "prettyDate": "August 4, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "why-small-business-blogs-fail-three-months",
     "title": "Why Most Small Business Blogs Die in 3 Months",
     "excerpt": "The reasons a blog dies at the 90-day mark are almost always the same. Here's what actually kills them and how to build one that survives.",
