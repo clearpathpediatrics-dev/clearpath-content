@@ -1,5 +1,41 @@
 [
   {
+    "slug": "long-tail-keyword-strategy-no-authority",
+    "title": "Long-Tail Keywords for New Sites With No Authority",
+    "excerpt": "If your site is new and nobody links to you, chasing head terms is a waste of money. Here's how to find and rank for the specific searches you can actually win.",
+    "metaDescription": "A practical long-tail keyword strategy for businesses with no domain authority, so you rank for searches your competitors ignore and win qualified leads.",
+    "tags": [
+      "long-tail keywords",
+      "keyword research",
+      "organic visibility",
+      "content strategy",
+      "domain authority"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-08-05",
+    "prettyDate": "August 5, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "seo-content-chiropractors-physical-therapists",
+    "title": "SEO Content for Chiropractors and PTs That Ranks",
+    "excerpt": "Chiropractic and PT clinics compete for the same local searches. Here's how to build content that ranks for condition searches and books more evaluations.",
+    "metaDescription": "A practical guide to SEO content for chiropractors and physical therapists: which pages to build, what to write, and how to earn patient searches.",
+    "tags": [
+      "chiropractor SEO",
+      "physical therapy marketing",
+      "local SEO",
+      "healthcare content",
+      "clinic content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-05",
+    "prettyDate": "August 5, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "how-ai-answer-engines-choose-sources-to-cite",
     "title": "How AI Answer Engines Pick Which Sources to Cite",
     "excerpt": "AI answer engines don't cite the highest-ranking page or the biggest brand by default. Here's what actually drives which sources get named, and how to make yours one of them.",
