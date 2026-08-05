@@ -143,6 +143,9 @@ export function scoreLead(lead = {}, audit = null) {
 export const industryPhrase = (label = "") =>
   label.split(" ").map(w => /^(HVAC|B2B)$/i.test(w) ? w.toUpperCase() : w.toLowerCase()).join(" ");
 
+export const industrySentence = (label = "") =>
+  industryPhrase(label).replace(/^./, c => c.toUpperCase());
+
 export function playbook(band) {
   return {
     HOT:  { priority: "Call today", why: "High ticket, research-driven buyers, and visibly no coverage. This is the profile the program was built for." },

@@ -12,9 +12,10 @@
  * fires — this runs alongside it, not instead of it.
  */
 import { auditSite, headlineFindings } from "../../scripts/site-audit.mjs";
-import { scoreLead, playbook, industryPhrase } from "../../scripts/icp.mjs";
+import { scoreLead, playbook, industryPhrase, industrySentence, INDUSTRY_PRIORS } from "../../scripts/icp.mjs";
+import { CITIES } from "../../scripts/hubs.data.mjs";
 import {
-  CAL, SITE, ALERT_TO, leadStore, emailKey, sendEmail, layout,
+  CAL, SITE, ALERT_TO, leadStore, emailKey, sendEmail, layout, statStrip, ctaBand,
   unsubUrlFor, toText, esc, isSuppressed,
 } from "../lib/shared.mjs";
 
@@ -95,28 +96,61 @@ export default async function handler(req) {
 
   // --- email the lead -----------------------------------------------------
   if (!(await isSuppressed(lead.email))) {
+    const a = audit && audit.ok ? audit : null;
+
+    // Metrics strip — only real numbers, only when we actually looked.
+    const cells = a ? [
+      { n: a.hasBlog ? a.blogPostCount : 0, k: a.hasBlog ? "Articles" : "No blog", warn: !a.hasBlog || a.blogPostCount < 6 },
+      { n: a.staleMonths != null ? `${a.staleMonths}mo` : (a.hasBlog ? "—" : "n/a"), k: "Since last post", warn: (a.staleMonths ?? 0) >= 6 },
+      { n: a.pageCount ?? "—", k: "Indexed pages", warn: (a.pageCount ?? 99) <= 8 },
+      { n: a.hasSchema ? "Yes" : "No", k: "AI-readable", warn: !a.hasSchema },
+    ] : [];
+
+    // The real queries this market types, straight off their own city page.
+    const metro = CITIES.find(c =>
+      c.city.toLowerCase() === lead.city.toLowerCase() ||
+      (lead.city && c.city.toLowerCase().includes(lead.city.toLowerCase())));
+    const queryBlock = metro ? `
+<h2>What ${esc(metro.city)} is typing right now</h2>
+<p>Real search shapes from this market — specific, local, and asked by someone close to spending money:</p>
+${metro.queries.slice(0, 5).map(q => `<div class="q"><b>&ldquo;${esc(q)}&rdquo;</b></div>`).join("")}
+<p style="margin-top:16px">${esc(metro.landscape)}</p>
+<p><a href="${SITE}/${metro.slug}">See the full ${esc(metro.city)} breakdown &rarr;</a></p>` : "";
+
     const findingsHtml = findings.length
-      ? `<p>Three things stood out looking at your site:</p><ul>${findings.map(f => `<li>${esc(f)}</li>`).join("")}</ul>`
+      ? `<h2>What stood out on your site</h2><ul>${findings.map(f => `<li>${esc(f)}</li>`).join("")}</ul>`
       : `<p>You did not include a website, so I could not look at what you have today. Reply with the URL and I will send the site-specific half of this.</p>`;
+
+    const prior = INDUSTRY_PRIORS[lead.industry];
+    const mathLine = prior && prior.ticket >= 0.75
+      ? `<div class="note"><strong>Why the maths works here.</strong> ${esc(prior.note)}. At that customer value, a single additional job covers a year of publishing — which is why this category rewards being the answer rather than buying the click.</div>`
+      : "";
 
     const body = `
 <h1>Your ${esc(where)} snapshot, ${esc(first)}</h1>
-<p>Thanks for the request. Here is the short version, based on your site and what buyers in your category actually search for.</p>
+<p>Thanks for the request. This is built from two things: what is actually on ${a ? `<a href="${esc(a.origin)}">${esc(a.origin.replace(/^https?:\/\//, ""))}</a>` : "your site"} right now, and what buyers in ${esc(where)} are searching before they call anyone.</p>
+${a ? `<h2>Your site today</h2>${statStrip(cells)}` : ""}
 ${findingsHtml}
-<div class="note">None of this is a criticism of the business — it is the normal state of almost every ${esc(industryPhrase(lead.industry))} website. It is only worth mentioning because it is fixable, and because the businesses that fix it stop competing on price.</div>
-<p>The pattern in ${esc(where)} is the one we see nearly everywhere: the highest-intent local questions are answered by national directories and lead marketplaces. They cannot do the work. They capture the searcher and sell the enquiry on — often the same enquiry, to three of you.</p>
-<p>If you want the longer version, this is the guide that covers your situation directly:</p>
+${mathLine}
+${queryBlock}
+<h2>Why those results are not yours</h2>
+<p>The highest-intent local questions in ${esc(where)} are answered by national directories and lead marketplaces. None of them can do the work. They capture the searcher and sell the enquiry on &mdash; often the same enquiry, to three of you.</p>
+<p>Outbidding them is expensive and stops the day you stop paying. Out-answering them does not. What something costs here, how local permitting works, what the housing stock does &mdash; a national page cannot write any of it credibly, and most of your competitors have not tried.</p>
+<h2>If you want the long version</h2>
+<p>This guide covers your situation specifically, and it is free whether or not we ever speak:</p>
 <p><a class="btn" href="${SITE}/blog/${guideSlug}">${esc(guideTitle)}</a></p>
-<p>And if it is easier to just talk it through, my calendar is open. Thirty minutes, no pitch — I will tell you honestly if this is the wrong answer for you.</p>
-<p><a class="btn" href="${CAL}">Book 30 minutes</a></p>
-<p class="sig">— Dean<br>ClearPath Content</p>`;
+<p class="sig">&mdash; Dean<br>ClearPath Content</p>`;
 
-    const html = layout({ body, unsubUrl: unsub, preheader: findings[0] || `What ${where} is searching for` });
+    const html = layout({
+      body, unsubUrl: unsub,
+      preheader: findings[0] || `What ${where} is searching for`,
+      band: ctaBand(
+        `One deployment per niche, per metro. ${industrySentence(lead.industry)} in ${where} is open right now.`,
+        CAL, "Book 30 minutes"),
+    });
     const r = await sendEmail({
       to: lead.email,
-      subject: findings.length
-        ? `${first} — what I found on your site`
-        : `Your ${where} snapshot`,
+      subject: findings.length ? `${first} — what I found on your site` : `Your ${where} snapshot`,
       html, text: toText(html), replyTo: ALERT_TO, tag: "inbound-snapshot",
     });
     record.history.push({ at: new Date().toISOString(), event: r.sent ? "snapshot-sent" : `snapshot-failed:${r.error}` });
