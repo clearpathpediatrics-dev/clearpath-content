@@ -6,7 +6,7 @@
 
 export const SITE = "https://clearpath-content.com";
 export const BRAND = "ClearPath Content";
-export const CONTACT = "deploy@clearpath-content.com";
+export const CONTACT = "admin@clearpath-content.com";
 
 export const esc = (s = "") => String(s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
