@@ -50,9 +50,20 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--pine)}
-.btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;text-decoration:none;
-  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 8px 24px rgba(31,95,168,.35)}
-.btn:hover{transform:translateY(-2px)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
 footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
@@ -169,7 +180,7 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
       <a href="/industries">Industries</a>
       <a href="/locations">Locations</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      <a class="btn green" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
 </nav>

@@ -20,7 +20,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Content Marketing for Plumbers","description":"Plumbing searches are urgent and high-intent. A publishing program that puts your company in those results before the emergency happens.","url":"https://clearpath-content.com/content-marketing-for-plumbers","serviceType":"Content marketing and organic search visibility","provider":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"audience":{"@type":"Audience","audienceType":"Plumbing Companies"},"areaServed":"US"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Content Marketing for Plumbers","item":"https://clearpath-content.com/content-marketing-for-plumbers"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do plumbers rank for emergency searches?","acceptedAnswer":{"@type":"Answer","text":"By publishing before the emergency. Emergency-intent queries are competitive and slow to win, so ranking is the result of work done months earlier. The companies that appear when a pipe bursts started publishing long before that homeowner had a problem."}},{"@type":"Question","name":"Is content marketing worth it for a small plumbing company?","acceptedAnswer":{"@type":"Answer","text":"Often more than for large ones, because the winnable queries are specific and local. National directories cannot credibly answer what a repipe costs in your city or how local water conditions affect a water heater's lifespan. You can."}}]}</script>
 <style>
 :root{
@@ -52,9 +51,20 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--pine)}
-.btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;text-decoration:none;
-  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 8px 24px rgba(31,95,168,.35)}
-.btn:hover{transform:translateY(-2px)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
 footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
@@ -137,8 +147,6 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .hero h1{font-size:clamp(32px,5vw,52px);margin:18px 0 16px}
 .hero p{color:var(--muted);font-size:18px;max-width:62ch;margin-bottom:14px}
 .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none}
-.btn.ghost:hover{border-color:var(--spring)}
 section.blk{padding:44px 0}
 section.blk h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:14px}
 section.blk > .narrow > p{color:var(--muted);max-width:64ch;margin-bottom:8px}
@@ -168,8 +176,6 @@ details[open] summary::after{content:"–"}
 details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
 .faqgroup{margin-top:34px}
 .faqgroup > h2{font-size:22px;margin-bottom:4px}
-.crumbs{font-size:12.5px;color:var(--muted);padding-top:22px}
-.crumbs a{color:var(--muted);text-decoration:none}
 .related{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .related a{background:var(--spring-soft);color:var(--pine-2);border-radius:999px;padding:9px 17px;font-size:13.5px;
   font-weight:600;text-decoration:none}
@@ -197,12 +203,11 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
       <a href="/industries">Industries</a>
       <a href="/locations">Locations</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      <a class="btn green" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
 </nav>
 <a class="mobile-cta" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
-<div class="narrow"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span>Plumbing Companies</span></nav></div>
 <header class="hero"><div class="narrow">
   <span class="eyebrow">Plumbing Companies</span>
   <h1>Content Marketing for Plumbers</h1>

@@ -155,19 +155,11 @@ function renderPost(post) {
     "@context": "https://schema.org", "@type": "FAQPage",
     mainEntity: post.faq.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
   } : null;
-  const crumbs = {
-    "@context": "https://schema.org", "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "Field notes", item: `${SITE}/blog` },
-      { "@type": "ListItem", position: 3, name: post.title, item: url },
-    ],
-  };
 
   return head({
     title: post.title.length <= 40 ? `${post.title} | ${BRAND}` : post.title,
     description: post.metaDescription, url, keywords: post.tags,
-    jsonld: [articleLd, crumbs, ...(faqLd ? [faqLd] : [])],
+    jsonld: [articleLd, ...(faqLd ? [faqLd] : [])],
   }) + `<style>${CSS}
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
@@ -185,9 +177,6 @@ function renderPost(post) {
 .body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
 .body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
-.crumbs{font-size:12.5px;color:var(--muted);padding-top:22px}
-.crumbs a{color:var(--muted);text-decoration:none}
-.crumbs a:hover{color:var(--pine-2)}
 .endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
@@ -202,7 +191,6 @@ function renderPost(post) {
 </head>
 <body>
 ${NAV}
-<div class="narrow"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/blog/">Field notes</a> › <span>${esc(post.cluster)}</span></nav></div>
 <main class="article">
   <div class="narrow">
     <span class="eyebrow">${esc(post.cluster)}</span>

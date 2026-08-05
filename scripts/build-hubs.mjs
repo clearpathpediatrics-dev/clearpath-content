@@ -27,10 +27,6 @@ const HUB_CSS = `${CSS}
 .hero h1{font-size:clamp(30px,4.6vw,48px);margin:18px 0 16px}
 .hero p{color:var(--muted);font-size:18px;max-width:64ch;margin-bottom:14px}
 .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none}
-.crumbs{font-size:12.5px;color:var(--muted);padding-top:22px}
-.crumbs a{color:var(--muted);text-decoration:none}
-.crumbs a:hover{color:var(--pine-2)}
 .toc{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px 28px;margin:8px 0 10px;box-shadow:var(--shadow)}
 .toc h2{font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .toc ol{margin:0;padding-left:20px;color:var(--pine-2)}
@@ -110,16 +106,6 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
 const md = (s) => esc(s).replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
 const anchor = (h) => h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
-const crumbs = (parts) =>
-  `<div class="narrow"><nav class="crumbs" aria-label="Breadcrumb">${parts
-    .map((p, i) => (i === parts.length - 1 ? `<span>${esc(p.n)}</span>` : `<a href="${p.u}">${esc(p.n)}</a>`))
-    .join(" › ")}</nav></div>`;
-
-const breadcrumbLd = (parts) => ({
-  "@context": "https://schema.org", "@type": "BreadcrumbList",
-  itemListElement: parts.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p.n, item: SITE + p.u })),
-});
-
 const faqLd = (f) => ({
   "@context": "https://schema.org", "@type": "FAQPage",
   mainEntity: f.map(x => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: x.a } })),
@@ -149,7 +135,6 @@ function renderPillar(p, posts) {
     publisher: { "@type": "Organization", name: BRAND, url: SITE },
     image: `${SITE}/assets/cpc-og.jpg`, keywords: p.keywords.join(", "),
   };
-  const crumbParts = [{ n: "Home", u: "/" }, { n: "Field notes", u: "/blog" }, { n: p.eyebrow, u: "/" + p.slug }];
 
   const body = p.sections.map(s => `
 <section class="sec" id="${anchor(s.h)}"><div class="narrow">
@@ -172,12 +157,11 @@ function renderPillar(p, posts) {
 
   return head({
     title: p.title, description: p.metaDescription, url, keywords: p.keywords, og: "article",
-    jsonld: [articleLd, breadcrumbLd(crumbParts), faqLd(p.faq)],
+    jsonld: [articleLd, faqLd(p.faq)],
   }) + `<style>${HUB_CSS}</style>
 </head>
 <body>
 ${NAV}
-${crumbs(crumbParts)}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">${esc(p.eyebrow)}</span>
   <h1>${esc(p.h1)}</h1>
@@ -215,7 +199,6 @@ ${FOOTER}
 /* -------------------------------------------------------------------- city */
 function renderCity(c) {
   const url = `${SITE}/${c.slug}`;
-  const crumbParts = [{ n: "Home", u: "/" }, { n: `${c.city} content marketing`, u: "/" + c.slug }];
   const svc = {
     "@context": "https://schema.org", "@type": "Service",
     name: `Content Marketing in ${c.city}, ${c.state}`,
@@ -234,12 +217,11 @@ function renderCity(c) {
     description: `Organic visibility programs for ${c.city} businesses — published to your own domain, on a fixed cadence, targeting what ${c.city} buyers actually search.`,
     url, og: "website",
     keywords: [`content marketing ${c.city}`, `${c.city} SEO`, `${c.city} content marketing agency`, `SEO company ${c.city}`, `${c.city} digital marketing`],
-    jsonld: [svc, breadcrumbLd(crumbParts), faqLd(faq)],
+    jsonld: [svc, faqLd(faq)],
   }) + `<style>${HUB_CSS}</style>
 </head>
 <body>
 ${NAV}
-${crumbs(crumbParts)}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">${esc(c.city)}, ${esc(c.state)}</span>
   <h1>Content Marketing in ${esc(c.city)}</h1>
@@ -309,7 +291,6 @@ const REGION_ORDER = ["Northeast", "Mid-Atlantic", "Southeast", "Midwest", "Sout
 
 function renderLocations() {
   const url = `${SITE}/locations`;
-  const crumbParts = [{ n: "Home", u: "/" }, { n: "Locations", u: "/locations" }];
   const byRegion = REGION_ORDER
     .map(r => [r, CITIES.filter(c => c.region === r)])
     .filter(([, list]) => list.length);
@@ -341,12 +322,11 @@ function renderLocations() {
     description: `Organic visibility programs for businesses across the United States. ${CITIES.length} metros with dedicated pages, one deployment per niche per metro, published to your own domain.`,
     url, og: "website",
     keywords: ["content marketing near me", "local content marketing company", "content marketing by city", "nationwide SEO content", "local SEO agency"],
-    jsonld: [ld, breadcrumbLd(crumbParts), faqLd(faq)],
+    jsonld: [ld, faqLd(faq)],
   }) + `<style>${HUB_CSS}</style>
 </head>
 <body>
 ${NAV}
-${crumbs(crumbParts)}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">Nationwide</span>
   <h1>Where we deploy</h1>
@@ -398,7 +378,6 @@ ${FOOTER}
 /* -------------------------------------------------------------- comparison */
 function renderComparison(c) {
   const url = `${SITE}/${c.slug}`;
-  const crumbParts = [{ n: "Home", u: "/" }, { n: c.eyebrow, u: "/" + c.slug }];
   const heads = c.slug === "diy-content-vs-outsourcing"
     ? ["", "Doing it yourself", "Outsourcing it"]
     : ["", "Agency retainer", "Content subscription"];
@@ -412,13 +391,12 @@ function renderComparison(c) {
       { "@context": "https://schema.org", "@type": "Article", headline: c.h1, description: c.metaDescription,
         mainEntityOfPage: url, author: { "@type": "Organization", name: BRAND, url: SITE },
         publisher: { "@type": "Organization", name: BRAND, url: SITE } },
-      breadcrumbLd(crumbParts), faqLd(c.faq),
+      faqLd(c.faq),
     ],
   }) + `<style>${HUB_CSS}</style>
 </head>
 <body>
 ${NAV}
-${crumbs(crumbParts)}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">${esc(c.eyebrow)}</span>
   <h1>${esc(c.h1)}</h1>

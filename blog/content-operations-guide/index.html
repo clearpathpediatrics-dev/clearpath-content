@@ -20,7 +20,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Content Operations: Why Publishing Stops and How to Make It Not","description":"Most content programs die from operations, not ideas. What actually causes publishing to stop, and the minimum system that keeps it running.","mainEntityOfPage":"https://clearpath-content.com/blog/content-operations-guide","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"image":"https://clearpath-content.com/assets/cpc-og.jpg","keywords":"content operations, editorial calendar, content workflow, brand voice documentation, content production process"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"The complete guide","item":"https://clearpath-content.com/blog/content-operations-guide"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do content programs stop publishing?","acceptedAnswer":{"@type":"Answer","text":"Four operational failures: no single named owner, a review bottleneck with no deadline, no topic queue so every piece starts from a blank page, and perfectionism that keeps good work in drafts. Ideas are almost never the constraint."}},{"@type":"Question","name":"How much time does maintaining a blog actually take?","acceptedAnswer":{"@type":"Answer","text":"Roughly four to six hours a week for a modest cadence — indefinitely, including weeks when something else is on fire. That is the honest number, and underestimating it is why most in-house programs stall."}},{"@type":"Question","name":"What should brand voice documentation contain?","acceptedAnswer":{"@type":"Answer","text":"Not adjectives. Three paragraphs you would be happy to publish, three you would not and why, terms you always use, phrases you never want to see, and how you refer to your customers."}}]}</script>
 <style>
 :root{
@@ -52,9 +51,20 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--pine)}
-.btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;text-decoration:none;
-  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 8px 24px rgba(31,95,168,.35)}
-.btn:hover{transform:translateY(-2px)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
 footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
@@ -137,10 +147,6 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .hero h1{font-size:clamp(30px,4.6vw,48px);margin:18px 0 16px}
 .hero p{color:var(--muted);font-size:18px;max-width:64ch;margin-bottom:14px}
 .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none}
-.crumbs{font-size:12.5px;color:var(--muted);padding-top:22px}
-.crumbs a{color:var(--muted);text-decoration:none}
-.crumbs a:hover{color:var(--pine-2)}
 .toc{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px 28px;margin:8px 0 10px;box-shadow:var(--shadow)}
 .toc h2{font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .toc ol{margin:0;padding-left:20px;color:var(--pine-2)}
@@ -238,12 +244,11 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
       <a href="/industries">Industries</a>
       <a href="/locations">Locations</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      <a class="btn green" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
 </nav>
 <a class="mobile-cta" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
-<div class="narrow"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/blog">Field notes</a> › <span>The complete guide</span></nav></div>
 <header class="hero"><div class="narrow">
   <span class="eyebrow">The complete guide</span>
   <h1>Content Operations: Why Publishing Stops and How to Make It Not</h1>

@@ -65,8 +65,6 @@ const PAGE_CSS = `${CSS}
 .hero h1{font-size:clamp(32px,5vw,52px);margin:18px 0 16px}
 .hero p{color:var(--muted);font-size:18px;max-width:62ch;margin-bottom:14px}
 .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none}
-.btn.ghost:hover{border-color:var(--spring)}
 section.blk{padding:44px 0}
 section.blk h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:14px}
 section.blk > .narrow > p{color:var(--muted);max-width:64ch;margin-bottom:8px}
@@ -96,24 +94,12 @@ details[open] summary::after{content:"–"}
 details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
 .faqgroup{margin-top:34px}
 .faqgroup > h2{font-size:22px;margin-bottom:4px}
-.crumbs{font-size:12.5px;color:var(--muted);padding-top:22px}
-.crumbs a{color:var(--muted);text-decoration:none}
 .related{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .related a{background:var(--spring-soft);color:var(--pine-2);border-radius:999px;padding:9px 17px;font-size:13.5px;
   font-weight:600;text-decoration:none}
 .related a:hover{background:#D3E5F7}
 `;
 
-const crumbs = (name) =>
-  `<div class="narrow"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span>${esc(name)}</span></nav></div>`;
-
-const breadcrumbLd = (name, url) => ({
-  "@context": "https://schema.org", "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-    { "@type": "ListItem", position: 2, name, item: url },
-  ],
-});
 
 const faqLd = (pairs) => ({
   "@context": "https://schema.org", "@type": "FAQPage",
@@ -145,12 +131,11 @@ function renderIndustry(p) {
 
   return head({
     title: p.title, description: p.metaDescription, url, keywords: p.keywords, og: "website",
-    jsonld: [serviceLd, breadcrumbLd(p.h1, url), faqLd(p.faq)],
+    jsonld: [serviceLd, faqLd(p.faq)],
   }) + `<style>${PAGE_CSS}</style>
 </head>
 <body>
 ${NAV}
-${crumbs(p.industry)}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">${esc(p.industry)}</span>
   <h1>${esc(p.h1)}</h1>
@@ -218,12 +203,11 @@ function renderCapabilities() {
   const url = `${SITE}/${c.slug}`;
   return head({
     title: c.title, description: c.metaDescription, url, keywords: c.keywords, og: "website",
-    jsonld: [breadcrumbLd(c.h1, url), faqLd(c.faq)],
+    jsonld: [faqLd(c.faq)],
   }) + `<style>${PAGE_CSS}</style>
 </head>
 <body>
 ${NAV}
-${crumbs("What you get")}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">Deliverables</span>
   <h1>${esc(c.h1)}</h1>
@@ -266,12 +250,11 @@ function renderFaqHub() {
     description: "Straight answers on how ClearPath Content works, what it costs, what you own, how fast results come, and what is required from you.",
     url, og: "website",
     keywords: ["content marketing FAQ", "content subscription questions", "how content marketing works", "content marketing cost"],
-    jsonld: [breadcrumbLd("FAQ", url), faqLd(all)],
+    jsonld: [faqLd(all)],
   }) + `<style>${PAGE_CSS}</style>
 </head>
 <body>
 ${NAV}
-${crumbs("FAQ")}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">Straight answers</span>
   <h1>Frequently asked questions</h1>
@@ -310,7 +293,7 @@ function renderIndustriesHub() {
     description: "ClearPath Content runs organic visibility programs for home services, legal, dental, B2B software and professional services — one business per niche, per metro.",
     url, og: "website",
     keywords: ["content marketing by industry", "industry content marketing", "vertical content marketing", "content marketing for service businesses"],
-    jsonld: [breadcrumbLd("Industries", url), listLd],
+    jsonld: [listLd],
   }) + `<style>${PAGE_CSS}
 .indgrid{display:grid;gap:16px;margin-top:26px}
 @media(min-width:720px){.indgrid{grid-template-columns:1fr 1fr}}
@@ -324,7 +307,6 @@ function renderIndustriesHub() {
 </head>
 <body>
 ${NAV}
-${crumbs("Industries")}
 <header class="hero"><div class="narrow">
   <span class="eyebrow">Industries</span>
   <h1>Who we deploy for</h1>

@@ -20,7 +20,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Content Marketing in Las Vegas, Nevada","description":"Organic visibility programs for Las Vegas businesses.","url":"https://clearpath-content.com/content-marketing-las-vegas","provider":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"areaServed":{"@type":"City","name":"Las Vegas","containedInPlace":{"@type":"State","name":"Nevada"}}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Las Vegas content marketing","item":"https://clearpath-content.com/content-marketing-las-vegas"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does content marketing cost in Las Vegas?","acceptedAnswer":{"@type":"Answer","text":"Agency retainers in the Las Vegas market commonly run into the thousands per month for a handful of articles. ClearPath Content deployment tiers run $199 to $499 per month, month to month, with everything published staying yours permanently."}},{"@type":"Question","name":"Do you only work with Las Vegas businesses?","acceptedAnswer":{"@type":"Answer","text":"No — we deploy for businesses across the United States, and Las Vegas is one of the markets we run dedicated programs in. Local markets are simply where genuinely local content has the biggest advantage, because national competitors cannot write credibly about a place they do not operate in."}},{"@type":"Question","name":"Can you work with more than one business in Las Vegas?","acceptedAnswer":{"@type":"Answer","text":"Not in the same niche. We deploy for one business per niche, per metro — the entire value is that you own the answers in your market, and that does not survive selling the same coverage to your competitor."}},{"@type":"Question","name":"What would you publish for a Las Vegas business?","acceptedAnswer":{"@type":"Answer","text":"Work grounded in this market specifically. Vegas results split between national franchises and hospitality-sector directories. Neither addresses the residential market that has grown up around the Strip. The published answers address that directly — how often to service AC in Las Vegas; hard water damage to appliances Las Vegas; commercial kitchen equipment repair Las Vegas — rather than the generic version of those questions that already ranks and helps nobody."}}]}</script>
 <style>
 :root{
@@ -52,9 +51,20 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--pine)}
-.btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;text-decoration:none;
-  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 8px 24px rgba(31,95,168,.35)}
-.btn:hover{transform:translateY(-2px)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
 footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
@@ -137,10 +147,6 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .hero h1{font-size:clamp(30px,4.6vw,48px);margin:18px 0 16px}
 .hero p{color:var(--muted);font-size:18px;max-width:64ch;margin-bottom:14px}
 .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none}
-.crumbs{font-size:12.5px;color:var(--muted);padding-top:22px}
-.crumbs a{color:var(--muted);text-decoration:none}
-.crumbs a:hover{color:var(--pine-2)}
 .toc{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px 28px;margin:8px 0 10px;box-shadow:var(--shadow)}
 .toc h2{font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .toc ol{margin:0;padding-left:20px;color:var(--pine-2)}
@@ -238,12 +244,11 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
       <a href="/industries">Industries</a>
       <a href="/locations">Locations</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      <a class="btn green" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
 </nav>
 <a class="mobile-cta" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
-<div class="narrow"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span>Las Vegas content marketing</span></nav></div>
 <header class="hero"><div class="narrow">
   <span class="eyebrow">Las Vegas, Nevada</span>
   <h1>Content Marketing in Las Vegas</h1>
