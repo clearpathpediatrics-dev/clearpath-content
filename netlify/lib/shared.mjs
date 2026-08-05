@@ -152,10 +152,30 @@ ${preheader ? `<div style="display:none;max-height:0;overflow:hidden;opacity:0">
 export const unsubUrlFor = (email) =>
   `${SITE}/.netlify/functions/unsubscribe?e=${encodeURIComponent(emailKey(email))}`;
 
-/** Very rough plain-text fallback so the message is readable without HTML. */
+/**
+ * Plain-text alternative. Worth doing properly: receivers compare the text and
+ * HTML parts when scoring, and a mangled text part reads as machine-generated.
+ * Block elements become line breaks, table cells get a separator so the
+ * metrics strip does not collapse into one word, and entities are decoded.
+ */
+const ENTITIES = {
+  "&nbsp;": " ", "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"',
+  "&#39;": "'", "&apos;": "'", "&ldquo;": '"', "&rdquo;": '"',
+  "&lsquo;": "'", "&rsquo;": "'", "&mdash;": "—", "&ndash;": "–",
+  "&rarr;": "→", "&hellip;": "…",
+};
+
 export const toText = (html) => html
-  .replace(/<style[\s\S]*?<\/style>/gi, "")
-  .replace(/<li>/gi, "\n- ").replace(/<\/(p|h1|div|li)>/gi, "\n")
-  .replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "")
-  .replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"')
-  .replace(/\n{3,}/g, "\n\n").trim();
+  .replace(/<style[\s\S]*?<\/style>|<head[\s\S]*?<\/head>/gi, "")
+  .replace(/<li[^>]*>/gi, "\n- ")
+  .replace(/<\/span>\s*<span[^>]*>/gi, " ")     // "3" + "Articles" -> "3 Articles"
+  .replace(/<\/td>\s*<td[^>]*>/gi, "  ·  ")     // metrics cells stay separated
+  .replace(/<\/(td|tr|table)>/gi, "\n")
+  .replace(/<br\s*\/?>/gi, "\n")
+  .replace(/<\/(p|h1|h2|h3|div|li)>/gi, "\n")
+  .replace(/<[^>]+>/g, "")
+  .replace(/&[a-z#0-9]+;/gi, (m) => ENTITIES[m.toLowerCase()] ?? m)
+  .split("\n").map((l) => l.replace(/[ \t]+/g, " ").trim())
+  .join("\n")
+  .replace(/\n{3,}/g, "\n\n")
+  .trim();
