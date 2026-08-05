@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How Landscapers Rank for Seasonal Search Demand","description":"Learn how landscaping companies build an organic strategy around seasonal search demand so you capture leads before every spring rush and fall cleanup.","datePublished":"2026-08-03","dateModified":"2026-08-03","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/landscaping-seasonal-search-strategy","keywords":"landscaping SEO, seasonal content strategy, organic marketing, home services content, local search","articleSection":"Industry Content Playbooks"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"How Landscapers Rank for Seasonal Search Demand","item":"https://clearpath-content.com/blog/landscaping-seasonal-search-strategy"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you decide what topics to write for a landscaping business?","acceptedAnswer":{"@type":"Answer","text":"Start by listing every service you sell, then break each one into the questions customers ask before, during, and after the job. That question list is your topic map, and it maps directly to how people actually search. A single service like aeration yields six or more pages: what it is, when to do it, aeration vs dethatching, cost, whether to overseed after, and aftercare. Prioritise the topics with high buying intent that hit soonest by season."}},{"@type":"Question","name":"How long before a landscaping company sees organic results?","acceptedAnswer":{"@type":"Answer","text":"Expect meaningful movement in three to six months of consistent publishing, with the first season often serving as setup rather than payoff. Results vary by domain age, competition, and how well content matches search intent, so specific-date promises are guesses. The site you build content on this winter is the one that catches next winter's planning wave with a full head start, and the compounding strengthens each season you keep the cadence."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>Landscaping demand isn't flat. Search interest for terms like "lawn aeration" or "spring cleanup" climbs and collapses on a predictable annual curve, and most landscaping companies react to it instead of publishing ahead of it. By the time a business owner decides to write about spring cleanup, it's already April and the customers who searched in February hired someone else.</p><p>The organic strategy that actually works for landscapers is built around that seasonal curve, not against it. You write and publish content 60 to 90 days before demand peaks, so Google has time to index and rank it while your competitors are still busy in the field. This piece walks through how to map the demand, what to publish when, and how to use your slow months as your ranking window.</p><h2>Why landscaping search is a timing problem, not a volume problem</h2><p>Most landscaping searches are seasonal, which means the question isn't "how much content do I need" but "when does this content need to already be ranking." A page that ranks in May for "when to fertilize lawn" is worthless. A page that ranks in early March for the same term catches the whole planning wave.</p><p>Google generally takes weeks to months to trust a new page enough to rank it on the first page, especially on a domain without much history. So a page you publish the week demand spikes will usually miss that entire season. The fix is to work backward from each demand peak and publish early enough that the page has ranking runway.</p><p>Here's the mental model for a company in a four-season climate:</p><ul><li><strong>Late winter (Jan–Feb):</strong> demand builds for planning-stage searches — spring cleanup, lawn programs, design ideas.</li><li><strong>Spring (Mar–May):</strong> peak for cleanup, mulch, planting, mowing contracts.</li><li><strong>Summer (Jun–Aug):</strong> irrigation, pest and weed problems, drought and brown-lawn questions.</li><li><strong>Fall (Sep–Nov):</strong> aeration, overseeding, leaf removal, winterization.</li></ul><p>Each of those clusters needs content live at least a season ahead.</p><h2>How do you decide what topics to write for a landscaping business?</h2><p>Start by listing every service you sell, then break each one into the questions a customer asks before they buy, during the job, and after. That list — not a keyword tool's raw suggestions — is your topic map, and it maps directly to how people actually search.</p><p>Take a single service like lawn aeration. The question-space around it looks like this:</p><ul><li>What is lawn aeration and does my lawn need it</li><li>When is the best time to aerate in [your region]</li><li>Aeration vs dethatching — what's the difference</li><li>How much does lawn aeration cost</li><li>Should I overseed after aerating</li><li>What to do after aeration</li></ul><p>Every one of those is a searchable page. Six pages from one service. Do that across eight or ten services and you have a year of publishing that covers real buying questions rather than filler like "5 reasons a green lawn matters."</p><h3>Prioritise by buying intent and season</h3><p>Not every question is worth the same effort. Rank them on two axes: how close the searcher is to hiring ("lawn aeration cost near me" is closer than "what is aeration") and how soon the season hits. Write the high-intent, near-season topics first. A cost page for a service that peaks next month beats a definitional page for a service six months out.</p><h2>A 12-month publishing sequence for a landscaping company</h2><p>Suppose a landscaping company in Columbus, Ohio publishes one to two articles a week. Here's how a year sequenced against demand could look. The key is that each cluster goes live roughly a season before it peaks.</p><table><thead><tr><th>Publish window</th><th>Cluster to write</th><th>Demand it targets</th></tr></thead><tbody><tr><td>January</td><td>Spring cleanup, lawn program planning, landscape design</td><td>March–May</td></tr><tr><td>February</td><td>Mulch types and cost, planting timing, mowing contracts</td><td>April–May</td></tr><tr><td>March–April</td><td>Irrigation setup, grub and weed prevention</td><td>June–July</td></tr><tr><td>May–June</td><td>Drought stress, brown lawn, watering schedules</td><td>July–August</td></tr><tr><td>July</td><td>Aeration timing, overseeding, fall fertilization</td><td>September–October</td></tr><tr><td>August–September</td><td>Leaf removal, winterization, snow and ice services</td><td>October–December</td></tr><tr><td>October–December</td><td>Hardscape and evergreen topics, next-year design content</td><td>Year-round / next spring</td></tr></tbody></table><p>The winter months look counterintuitive — you're writing about spring while it's snowing — but that's exactly the point. Your slowest field months are your best writing months, and the content needs the lead time anyway.</p><h2>Structure each article so it can actually rank and convert</h2><p>Ranking is only half the job. The page has to answer the question completely and then move the reader toward calling you. A repeatable structure for a landscaping service page:</p><ol><li><strong>Answer the core question in the first two sentences.</strong> If the title is "when to aerate a lawn in Ohio," say "early fall, roughly September to mid-October" up top. Don't bury it.</li><li><strong>Explain the reasoning.</strong> Why that timing, what happens if you do it wrong, how local climate affects it.</li><li><strong>Add the specifics a buyer needs.</strong> Rough cost ranges, what's included, how long it takes, what the lawn looks like after.</li><li><strong>Handle the obvious follow-up questions</strong> in short subsections — this is what helps you surface in AI answers and featured snippets.</li><li><strong>Link to the related cluster pages</strong> — overseeding, fall fertilization — so the reader and Google both see the topic depth.</li><li><strong>Close with a clear next step</strong> and a service-area line so local intent is unmistakable.</li></ol><p>Local relevance matters more in landscaping than in almost any other content niche because timing and plant advice are regional. A generic "best time to plant grass" page competes with the whole internet. A "best time to plant grass in central Ohio" page competes with your actual local market and signals to Google exactly who should see it.</p><h3>Interlink the clusters so authority compounds</h3><p>A single aeration article sitting alone rarely ranks well. Six connected pages on lawn health — aeration, overseeding, fertilization schedule, dethatching, soil testing, watering — reinforce each other. Each internal link passes relevance and tells search engines your site is a genuine resource on lawn care, not a one-off. This is how a home-service site builds enough topical depth to outrank thinner competitors.</p><h2>How long before a landscaping company sees organic results?</h2><p>Expect meaningful movement in three to six months of consistent publishing, with the first season often serving as setup rather than payoff. Results genuinely vary by domain age, competition, and how well the content matches search intent — anyone promising rankings by a specific date is guessing. The honest version is that the site you build content on this winter is the one that catches next winter's planning wave with a full head start, and the compounding gets stronger each season you keep the cadence.</p><p>The most common failure isn't bad writing — it's stopping. Landscapers get busy in spring, publishing dies, and the momentum resets. A steady one-to-two-per-week rhythm through the busy months beats a heroic burst in January followed by silence. If keeping that cadence while running crews isn't realistic, that's the specific problem a managed program like ClearPath Content is built to solve: mapping the question-space, writing in your voice, and publishing on schedule so the seasonal timing never slips.</p><h2>The practical takeaway</h2><p>Treat your organic strategy like a planting calendar. Work backward from each demand peak, publish the cluster a season early, answer the buyer's real question in the first two sentences, keep everything regionally specific, and interlink related pages so authority builds. Do that on a cadence you can sustain through the busy season, and by this time next year you'll be ranking for the searches your competitors only start writing about after the phones stop ringing.</p>
     </div>
+    <a class="pillarlink" href="/blog/industry-content-playbooks">
+      <span>Full guide</span>
+      <strong>Content Marketing Playbooks by Industry</strong>
+      <em>What buyers search for, where each industry&#39;s content usually fails, and what actually converts — playbooks for home services, legal, dental, real estate and B2B.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

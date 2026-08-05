@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Organic Content Strategy for Landscaping Companies","description":"A practical organic content strategy for landscaping companies: what to write, how seasonality works, and how to turn searches into booked estimates.","datePublished":"2026-08-02","dateModified":"2026-08-02","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/organic-content-strategy-landscaping-companies","keywords":"landscaping marketing, organic strategy, local SEO, content marketing, home service leads","articleSection":"Industry Content Playbooks"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"Organic Content Strategy for Landscaping Companies","item":"https://clearpath-content.com/blog/organic-content-strategy-landscaping-companies"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How should a landscaping company structure its content around seasons?","acceptedAnswer":{"@type":"Answer","text":"Publish each seasonal topic six to eight weeks before demand peaks, so the page has time to be indexed and gain traction before people start searching. Map your year backward from demand: spring cleanup and renovation content by January, fall aeration and overseeding by August, snow removal contracts by October. Well-built seasonal pages keep ranking year after year and surge on schedule."}},{"@type":"Question","name":"What content brings landscaping leads instead of just traffic?","acceptedAnswer":{"@type":"Answer","text":"Cost guides, service-plus-location pages, and specific project breakdowns bring leads, because they intercept people actively deciding to hire someone rather than idle browsers. Inspiration lists get shares but few calls. A page like \"cost to install a retaining wall in [your county]\" gets fewer visits but a far higher share turn into estimate requests. The filter: would the reader be ready to call a contractor by the end?"}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>Landscaping is three things at once from a search standpoint: seasonal, local, and radius-bound. A dental practice can publish evergreen content that earns leads in July as easily as January. You can't. Your demand for lawn renovation spikes in spring, your snow removal demand hits in December, and the person searching for you is almost always within 20 miles. A content strategy that ignores any of those three realities wastes money.</p><p>This piece lays out how to build an organic program that respects all three, in the order that actually moves the needle for a service business booking estimates.</p><h2>Start with the money pages, not the blog</h2><p>Most landscaping companies get this backwards. They start a blog before they have solid service and location pages, then wonder why articles about "best mulch colors" bring traffic but no calls.</p><p>Your foundation is a page per service crossed with your real service area. Not one "Services" page listing everything. Separate, substantial pages for the things people search and pay for:</p><ul><li>Lawn care and maintenance</li><li>Landscape design and installation</li><li>Hardscaping (patios, retaining walls, walkways)</li><li>Irrigation installation and repair</li><li>Tree and shrub care</li><li>Seasonal cleanup (spring and fall)</li><li>Snow removal, if you do it</li></ul><p>Each of those pages should name your service area explicitly, describe what the job actually involves, show what it costs in ranges, and answer the questions a homeowner has before they call. A "patio installation" page that says "we build beautiful patios" ranks for nothing. One that explains paver vs. concrete, drainage, permit realities in your county, and a realistic price band for a 300-square-foot patio gives Google something to rank and a homeowner a reason to trust you.</p><h3>The location layer</h3><p>If you serve six towns, you need a defensible page for each town you genuinely work in. "Defensible" is the key word. Six near-identical pages with the town name swapped in are worse than nothing and can get you filtered. A real location page mentions specific neighborhoods, soil or climate quirks, local regulations, and jobs you've done in that area. If you can't write something genuinely different about a town, you probably shouldn't have a page for it yet.</p><h2>How should a landscaping company structure its content around seasons?</h2><p>Publish each seasonal topic six to eight weeks before demand peaks, so the page has time to be indexed and gain traction before people start searching. Google doesn't rank a fresh page instantly, and homeowners plan projects ahead of the season. If you publish your spring cleanup guide in April, you've already missed the searches that started in February.</p><p>Map your year backward from demand. A rough calendar for a company in a four-season climate:</p><table><thead><tr><th>Publish by</th><th>Topics</th><th>Demand window</th></tr></thead><tbody><tr><td>January</td><td>Spring cleanup, lawn renovation planning, design consultations</td><td>Feb-April</td></tr><tr><td>March</td><td>Mulching, planting, irrigation startup, patio/hardscape projects</td><td>April-June</td></tr><tr><td>June</td><td>Summer lawn stress, watering, grub control, mid-season maintenance</td><td>July-August</td></tr><tr><td>August</td><td>Fall cleanup, aeration, overseeding, leaf removal</td><td>Sept-Nov</td></tr><tr><td>October</td><td>Snow removal contracts, winter prep, irrigation blowout</td><td>Nov-Jan</td></tr></tbody></table><p>The seasonal pages don't disappear in the off-season. A well-built "fall aeration and overseeding" page keeps ranking year after year and gets its annual traffic surge on schedule. You're building assets, not disposable posts. The work is front-loaded once; the returns repeat every year the page holds its position.</p><h2>Match content to how homeowners actually decide</h2><p>A landscaping purchase runs from vague interest to booked estimate, and different searches map to different stages. Your content should cover all of them, not just one.</p><ol><li><strong>Problem-aware:</strong> "why is my lawn turning brown in patches," "how to fix a soggy backyard." These bring in people who don't yet know they need you. Answer the question honestly, then explain when it's a DIY fix and when it needs a pro.</li><li><strong>Solution-aware:</strong> "cost to install a paver patio," "how much does lawn aeration cost." These are close to money. The person is comparing options and budgets. Give real ranges and the factors that move the price.</li><li><strong>Provider-aware:</strong> "landscaping companies near [town]," "best patio installers in [county]." This is your service and location pages plus your Google Business Profile. Content here is about proof: process, guarantees, before-and-after specifics.</li></ol><p>Cost content deserves special attention because landscaping companies avoid it out of fear. Homeowners are searching for prices whether or not you publish them. If you refuse to give ranges, they get their numbers from a competitor or from a generic national site that's wrong for your market. A page that says "a paver patio in our area typically runs $18 to $30 per square foot depending on base prep, material, and access" earns trust and pre-qualifies the leads who call. The ones who balk at that number were never going to book.</p><h2>What content brings landscaping leads instead of just traffic?</h2><p>Cost guides, service-plus-location pages, and specific project breakdowns bring leads, because they intercept people who are actively deciding to hire someone rather than people who are idly curious. "10 beautiful backyard ideas" gets shares and pins; it rarely gets phone calls. "Cost to install a retaining wall in [your county]" gets fewer visits but a much higher share of them turn into estimate requests.</p><p>The filter is simple: would someone reading this be ready to talk to a contractor by the end? If the honest answer is no, it's traffic content, not lead content. You can publish some traffic content for topical breadth, but the core of your program should be the pages where reading them and calling you are the natural next steps.</p><h2>Interlink so pages reinforce each other</h2><p>A pile of unconnected articles doesn't build authority. A connected set does. When your "fall cleanup" guide links to your "aeration and overseeding" service page, and that page links to "lawn care maintenance plans," you're doing two things: guiding the homeowner toward booking, and telling Google these pages form a coherent body of expertise about lawns.</p><p>A practical linking pattern for a landscaping site:</p><ul><li>Every blog article links to at least one relevant service page.</li><li>Every service page links to its matching location pages.</li><li>Seasonal guides link to the service that solves the seasonal problem.</li><li>Cost guides link to the service page and to a nearby town page.</li></ul><p>This is the part most companies skip, and it's where a lot of the compounding value lives. Building this kind of interconnected structure across dozens of pages is time-consuming to do by hand, which is one reason a managed program like ClearPath Content maps the whole question-space first and interlinks as it publishes, rather than posting one-off articles.</p><h2>A four-week starter sequence</h2><p>If you're beginning from nothing, don't try to publish 40 pages at once. Build in a sensible order:</p><ol><li><strong>Week 1:</strong> Write or rewrite your two highest-margin service pages. Include real price ranges and your service area.</li><li><strong>Week 2:</strong> Build location pages for your top two towns, each with genuinely local detail.</li><li><strong>Week 3:</strong> Publish one cost guide for a high-value service, timed to the next season.</li><li><strong>Week 4:</strong> Publish one problem-aware guide that links back to the service page from week 1.</li></ol><p>Then repeat, adding services, towns, and seasonal guides on a steady cadence. Consistency over months beats a single burst of activity that stops.</p><h2>The takeaway</h2><p>Landscaping content works when it respects the three constraints of the business: publish seasonal topics six to eight weeks ahead of demand, anchor everything to real services and real towns, and prioritize the cost and decision-stage pages that actually convert readers into estimate requests. Get the money pages right first, publish on a calendar that matches your season, and link the pieces together. That's a program that books jobs, not one that just collects pageviews.</p>
     </div>
+    <a class="pillarlink" href="/blog/industry-content-playbooks">
+      <span>Full guide</span>
+      <strong>Content Marketing Playbooks by Industry</strong>
+      <em>What buyers search for, where each industry&#39;s content usually fails, and what actually converts — playbooks for home services, legal, dental, real estate and B2B.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

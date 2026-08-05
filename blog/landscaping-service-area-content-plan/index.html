@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How Landscapers Should Structure a Service-Area Content Plan","description":"A practical service-area content plan for landscaping companies: how to map towns, services, and questions into pages that rank and pull in local leads.","datePublished":"2026-08-04","dateModified":"2026-08-04","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/landscaping-service-area-content-plan","keywords":"landscaping seo, service area pages, local content strategy, landscaping marketing, organic lead generation","articleSection":"Industry Content Playbooks"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"How Landscapers Should Structure a Service-Area Content Plan","item":"https://clearpath-content.com/blog/landscaping-service-area-content-plan"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you decide which landscaping pages to build first?","acceptedAnswer":{"@type":"Answer","text":"Build your highest-margin service crossed with your best town first, then work outward. Prioritize by which service makes you the most money and which town you most want more jobs in, rather than mirroring your current job mix. Start with a small cluster of pages that reinforce one theme instead of scattering effort across dozens of thin pages."}},{"@type":"Question","name":"What should a landscaping service page actually contain?","acceptedAnswer":{"@type":"Answer","text":"A strong landscaping service page should explain the service, show proof you can do it, address cost honestly, and answer the objections that come up before a call. Include your process, cost ranges and what drives them, material options, photos of real work, a short FAQ, and a clear next step for requesting an estimate."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>Most landscaping websites are built the same way: a homepage, one services page that lists everything, a gallery, and a contact form. That structure ranks for your company name and not much else. When someone in the next town over searches "paver patio installation" or "lawn aeration cost," Google has nothing specific on your site to show them. The fix is a service-area content plan — a deliberate map of which services, which towns, and which questions each get their own page.</p><p>This is not about writing more blog posts. It is about building a structure that matches how people actually type problems into a search bar, then filling that structure with pages that answer them.</p><h2>Why one services page is not enough</h2><p>A single page trying to rank for "lawn care," "tree removal," "retaining walls," "irrigation," and "snow removal" at once will rank well for none of them. Google reads a page and tries to decide what it is about. When a page is about eight things, its topical signal is weak for each. A page about one thing — say, retaining wall installation — sends a strong, unambiguous signal.</p><p>The same logic applies to geography. Landscaping is a local business, and search demand is local. Someone in Naperville searching for a landscaper wants a company that clearly serves Naperville, not a generic page that says "serving the greater Chicago area." A page that names the town, references local conditions, and speaks to that area's specifics will outperform a vague catch-all every time.</p><h2>The three axes of a landscaping content plan</h2><p>Think of your content as a grid built on three axes. You do not fill every cell — that produces thin, duplicate junk — but you use the grid to decide what deserves a page.</p><h3>1. Services</h3><p>List every distinct service you sell and would happily do more of. Not categories — specific services. For example:</p><ul><li>Paver patio installation</li><li>Retaining wall construction</li><li>Lawn aeration and overseeding</li><li>Spring and fall cleanups</li><li>Drainage and grading</li><li>Landscape lighting</li><li>Mulch installation</li><li>Sod installation</li></ul><p>Each of these is its own search behavior with its own intent. Someone searching "paver patio cost" is in a different mindset than someone searching "weekly lawn mowing service." They need different pages.</p><h3>2. Towns and neighborhoods</h3><p>List the towns you actually serve and want more work in. Be honest about your radius. A page for a town 45 minutes away that you would only drive to for a huge job is not worth building. Rank your service area by where you want to grow.</p><h3>3. Questions and money topics</h3><p>These are the informational searches that happen before someone hires. "How much does a retaining wall cost," "when to aerate lawn in [state]," "paver vs concrete patio," "how deep should a drainage trench be." These pull in people earlier in their decision and let you demonstrate you know what you are doing.</p><h2>How do you decide which pages to build first?</h2><p>Build your highest-margin service crossed with your best town first, then work outward from there. Do not try to build 60 pages in month one — that produces rushed, thin content and burns you out. Prioritize by two questions: which service makes you the most money, and which town do you most want more jobs in.</p><p>Suppose a landscaping company outside Columbus does mostly mowing contracts but wants more hardscaping work because patios and walls carry far better margins. Their build order should start with hardscaping, not mowing, even though mowing is their current bread and butter. The content plan is a growth tool, not a mirror of your current job mix.</p><p>A sensible first-quarter sequence:</p><ol><li><strong>Core service page</strong> — "Paver Patio Installation" — deep, specific, with real project photos, process, and typical cost ranges.</li><li><strong>Top service-area page</strong> — "Paver Patios in Dublin, OH" — same service, localized with real references to that area.</li><li><strong>A money-question article</strong> — "How Much Does a Paver Patio Cost in Central Ohio?"</li><li><strong>Second service page</strong> — "Retaining Wall Construction" — repeat the pattern.</li><li><strong>Interlink</strong> the patio question article to the patio service page and the local page.</li></ol><p>That is five pages that reinforce each other on one theme, rather than 20 scattered ones that reinforce nothing.</p><h2>Making service-area pages that are not spam</h2><p>The old tactic was to take one template and swap the town name across 30 pages. Google caught onto this a long time ago, and those pages either do not rank or get filtered out. A service-area page earns its place by being genuinely about that place.</p><p>What makes a local page real:</p><ul><li><strong>Projects from that area</strong> — photos and short descriptions of jobs you actually did nearby.</li><li><strong>Local specifics</strong> — soil type, common drainage issues, HOA rules, typical lot sizes, permit notes for that municipality.</li><li><strong>Nearby landmarks or neighborhoods</strong> named naturally, not stuffed.</li><li><strong>A distinct intro and body</strong>, not a find-and-replace of the town name in an otherwise identical template.</li></ul><p>If you serve 15 towns and cannot write something genuinely different for each, build fewer pages and make them better. Five strong local pages beat 15 hollow ones.</p><h2>What should a landscaping service page actually contain?</h2><p>A strong landscaping service page should explain the service, show proof you can do it, address cost honestly, and answer the objections that come up before a call. Length matters less than covering what a buyer needs to move forward. Here is a workable structure:</p><ul><li><strong>Opening</strong> that names the service and who it is for.</li><li><strong>Your process</strong> — the steps from first call to finished job. This reassures people who have been burned by no-shows.</li><li><strong>Cost guidance</strong> — ranges and what drives them. You do not have to give a fixed price; explaining the variables builds trust and pre-qualifies leads.</li><li><strong>Materials and options</strong> — the choices a customer will face.</li><li><strong>Photos of real work</strong> — before and after beats stock every time.</li><li><strong>FAQs</strong> — the four or five questions you answer on every sales call.</li><li><strong>A clear next step</strong> — how to request an estimate.</li></ul><p>The cost section is where most landscapers get squeamish. You do not want to publish a number and get held to it. The move is to explain the range and the factors: "A basic 200-square-foot paver patio typically runs from X to Y depending on base prep, drainage, and material grade." That is honest, useful, and it filters out people looking for a $500 patio before they ever call you.</p><h2>How the pages work together</h2><p>Individual pages are worth more when they link to each other in a way that mirrors how the topics relate. Your patio cost article links to your patio service page. Your patio service page links to your local patio pages. Your retaining wall page links to your drainage page, because those jobs often go together. This internal linking helps both readers and search engines understand your site as an organized body of work on landscaping in your area, rather than a pile of loose pages.</p><p>This is the slow-compounding part. A single page might do little on its own. Twenty interconnected pages covering your services across your real service area start to establish that your site is a genuine authority on landscaping locally — and that is what earns rankings for terms you never explicitly targeted.</p><p>Building and maintaining this structure is steady work, which is why some landscaping companies hand the mapping and writing to a service like ClearPath Content while they run the crews. Either way, the structure is the same.</p><h2>The practical takeaway</h2><p>Stop thinking about your website as a brochure and start thinking about it as a grid: services down one axis, towns down another, buyer questions down a third. Pick the intersection that makes you the most money in the town you most want to grow, and build that cluster of pages properly before moving to the next. Five real pages that reinforce one theme will do more for you than a homepage and a services list ever have.</p>
     </div>
+    <a class="pillarlink" href="/blog/industry-content-playbooks">
+      <span>Full guide</span>
+      <strong>Content Marketing Playbooks by Industry</strong>
+      <em>What buyers search for, where each industry&#39;s content usually fails, and what actually converts — playbooks for home services, legal, dental, real estate and B2B.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

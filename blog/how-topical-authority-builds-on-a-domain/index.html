@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How Topical Authority Builds on a Domain","description":"Learn how topical authority accumulates on a domain through coverage depth, internal links, and consistent publishing so your best pages start ranking faster.","datePublished":"2026-07-28","dateModified":"2026-07-28","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/how-topical-authority-builds-on-a-domain","keywords":"topical authority, organic visibility, content strategy, internal linking, SEO fundamentals","articleSection":"Organic Visibility Strategy"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"How Topical Authority Builds on a Domain","item":"https://clearpath-content.com/blog/how-topical-authority-builds-on-a-domain"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does topical authority take to build?","acceptedAnswer":{"@type":"Answer","text":"Topical authority typically takes several months of consistent publishing before it changes how new pages perform, and there is no fixed timeline because it depends on competition, domain history, and publishing rate. You're waiting for a behavior shift: new pages on the topic start ranking within days instead of weeks. A domain with adjacent coverage or a higher publishing rate reaches that point faster."}},{"@type":"Question","name":"Why does covering more subtopics help pages you already published?","acceptedAnswer":{"@type":"Answer","text":"Covering more subtopics helps existing pages because each new page adds internal links and contextual signals that reinforce the whole cluster, so authority flows backward to older pages as well as forward to new ones. When you publish a new article and link it to existing pages, you strengthen them too, which is why coverage compounds instead of adding linearly."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>Topical authority gets talked about like it's a badge a search engine hands you. It isn't. It's a pattern that emerges when a domain covers a subject completely enough, and connects that coverage tightly enough, that the algorithms start treating your pages as a reliable source for that subject. The practical result: new articles on the same topic rank faster and higher than they would from a domain with no established coverage.</p><p>Below is how that accumulation actually works, what speeds it up, and what stalls it.</p><h2>What topical authority actually is</h2><p>Topical authority is the accumulated signal that a domain covers a subject area thoroughly, not the strength of any single page. It comes from three things working together: breadth of coverage across the questions a topic contains, the depth of individual pages, and the internal link structure that ties them into a coherent body of work. A search engine does not have a single "authority number" it displays. What you observe instead is a behavior: once a domain has covered a topic densely, its later pages on that topic tend to get indexed sooner and compete for rankings they couldn't have touched in isolation.</p><p>Think of it less like a reputation score and more like a map. If your site has filled in most of the map for "commercial roof maintenance," a new page on "how often to inspect a TPO roof" lands inside terrain the engine already trusts you to describe.</p><h2>The three inputs that compound</h2><h3>1. Coverage of the question-space</h3><p>Every topic is a set of questions people ask. Authority accumulates when you answer a large share of them rather than the same three high-volume ones everyone writes about. Suppose a commercial HVAC company only publishes "how much does a rooftop unit cost." That's one node. A domain that also covers unit sizing, refrigerant transitions, economizer maintenance, and short-cycling diagnosis has covered a region of the map. The engine has more evidence that this domain is about commercial HVAC, not just chasing one keyword.</p><h3>2. Depth per page</h3><p>A page that fully resolves the question it targets contributes more than a thin one. Depth means the page answers the primary question and the obvious follow-ups, so a reader doesn't have to leave to finish the job. Ten complete pages build authority faster than forty shallow ones, because shallow pages create the opposite signal: a lot of URLs that don't satisfy intent.</p><h3>3. Internal links that express relationships</h3><p>This is the input most sites neglect. Coverage and depth are wasted if the pages sit isolated. Internal links tell the engine which pages belong to the same topic and which is the anchor page for a subtopic. A cluster of twelve interlinked articles reads as a body of work. Twelve unlinked articles read as twelve unrelated posts that happen to share a domain.</p><h2>How long does topical authority take to build?</h2><p>Topical authority typically takes several months of consistent publishing before you see it change how new pages perform, and there is no fixed timeline because it depends on competition, domain history, and publishing rate. What you're waiting for is a shift in behavior: early pages in a cluster may take weeks to gain any traction, then at some point new pages on the same topic start ranking within days instead of weeks. That inflection is the authority becoming visible. It is not a date you can promise. A domain with existing coverage in an adjacent topic reaches it faster than a brand-new site. A domain publishing four solid pages a month reaches it faster than one publishing one. Anyone who quotes you a guaranteed timeline is guessing.</p><h2>Why does covering more subtopics help pages you already published?</h2><p>Covering more subtopics helps existing pages because each new page adds internal links and contextual signals that reinforce the whole cluster, so authority flows backward to older pages as well as forward to new ones. When you publish a new article and link it to three existing pages in the cluster, you have strengthened those three pages, not just launched a fourth. This is why coverage compounds instead of adding linearly. The first ten pages in a topic often underperform. The domain hasn't earned the topic yet. As you keep filling the map, the earlier pages frequently start climbing without being touched, because the cluster around them got denser and better connected.</p><h2>A worked example: building authority in a narrow topic</h2><p>Suppose a family law firm in Denver wants authority for "child custody in Colorado." Here's a sequence that accumulates authority rather than scattering effort.</p><ol><li><strong>Define the anchor page.</strong> One comprehensive page on "child custody in Colorado" that covers the legal framework, custody types, and process at a high level. This is the hub.</li><li><strong>Map the question-space.</strong> List the real questions: how is custody decided, what is parenting time, can a parenting plan be modified, how does relocation affect custody, what happens if one parent won't follow the order, how do courts treat a child's preference. That's your first fifteen to twenty article targets.</li><li><strong>Publish on a cadence.</strong> Three to four articles a month, each fully answering one question. Do not publish twenty thin stubs at once.</li><li><strong>Link every new article to the anchor and to two or three siblings.</strong> The relocation article links to the modification article and the parenting-time article. The anchor links out to all of them.</li><li><strong>Revisit the anchor quarterly.</strong> As subtopic pages accumulate, expand the hub to reference and link them, keeping it the strongest page.</li></ol><p>After this runs for a few months, the firm's page on a new sub-question, say "how a domestic violence finding affects custody in Colorado," enters a domain the engine already associates with Colorado custody. It competes from a stronger starting position than the firm's very first article did.</p><h2>What stalls accumulation</h2><p>Several common patterns prevent authority from ever compounding:</p><ul><li><strong>Topic drift.</strong> Publishing across unrelated subjects spreads the signal thin. A domain writing about custody law one week and personal injury the next builds neither map quickly.</li><li><strong>Orphaned pages.</strong> Articles with no internal links in or out. They don't join the cluster, so they contribute little beyond their own URL.</li><li><strong>Thin coverage of high-value terms only.</strong> Chasing the two keywords with the biggest search volume and ignoring the surrounding questions. The engine sees a domain skimming, not covering.</li><li><strong>Stop-start publishing.</strong> A burst of ten articles then six months of silence. Consistency is part of the signal; a dormant cluster loses momentum.</li><li><strong>Cannibalization.</strong> Three near-identical pages targeting the same question, splitting signals and confusing which page should rank.</li></ul><h2>A short audit checklist</h2><p>Run this against any topic you're trying to own:</p><ul><li>Do we have a clear anchor page for the topic, and is it the most comprehensive page in the cluster?</li><li>Have we covered at least fifteen of the real questions in this topic, or just the obvious few?</li><li>Does every article link to the anchor and to two or three related articles?</li><li>Are there any orphaned pages with no internal links?</li><li>Are we publishing on a steady cadence rather than in bursts?</li><li>Are any two pages competing for the same query and splitting rankings?</li></ul><p>If you can answer yes to the first five and no to the last, the mechanism is in place. The rest is time and continued coverage.</p><p>This is the core of what a structured content program does, and it's the reason a service like ClearPath Content maps the full question-space before writing a single article rather than producing one-off posts. The map is what makes the coverage compound.</p><h2>The practical takeaway</h2><p>Stop treating authority as something you earn per article. Pick one topic narrow enough to actually cover, map the questions inside it, and publish complete pages on a steady cadence with tight internal links back to a strong anchor. The early pages will feel slow. That's normal, and it's not a sign the approach is failing. Keep filling the map, keep the links tight, and the point where new pages start ranking faster will arrive on its own. Depth in one topic beats shallow presence across ten.</p>
     </div>
+    <a class="pillarlink" href="/blog/organic-visibility-guide">
+      <span>Full guide</span>
+      <strong>Organic Visibility: Why Cadence and Structure Beat Individual Articles</strong>
+      <em>Most business blogs fail for structural reasons, not quality ones. How topical authority actually accumulates, and why publishing cadence outperforms brilliance.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

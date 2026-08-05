@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"What HVAC Content Should You Write First?","description":"HVAC content marketing works when you write the right pages in order. Here's how to build a topic map that turns searches into booked service calls.","datePublished":"2026-07-31","dateModified":"2026-07-31","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/what-hvac-content-to-write-first","keywords":"HVAC content marketing, HVAC SEO, home service content strategy, local service marketing, HVAC lead generation","articleSection":"Industry Content Playbooks"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"What HVAC Content Should You Write First?","item":"https://clearpath-content.com/blog/what-hvac-content-to-write-first"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which HVAC blog topics actually get people to call?","acceptedAnswer":{"@type":"Answer","text":"The topics that get people to call are the ones where the searcher already has a symptom or a decision in front of them — repair diagnostics, replacement cost breakdowns, and \"should I repair or replace\" comparisons. A homeowner searching \"AC compressor not turning on\" has a broken unit right now, and an honest article that explains the cause earns the call before a competitor's ad loads."}},{"@type":"Question","name":"How long before HVAC content produces leads?","acceptedAnswer":{"@type":"Answer","text":"Realistically, expect a few months before a new cluster earns steady rankings, and results genuinely vary by market competition, domain age, and publishing consistency. A new domain in a competitive metro moves slower than an established company with reviews. What you control is the input: a consistent cadence on the right topics, properly interlinked, which compounds over time."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>The problem with most HVAC blogs is not writing quality. It's sequence. A contractor gets talked into content marketing, publishes ten articles about "the history of air conditioning" and "5 fun facts about your furnace," and six months later nothing ranks and nothing converts. The articles were fine. They just answered questions no homeowner types into Google before spending money.</p><p>Content marketing for HVAC companies works when you write the pages that match how someone moves from a problem to a phone call — and you write them in the order that builds authority fastest. This piece lays out that order, with a worked example you can copy.</p><h2>Start with the money questions, not the awareness questions</h2><p>Homeowners search HVAC topics in three broad modes: something is broken, something is about to be replaced, or something is being researched before a decision. The first two are where the money is, and they're where most blogs never go because those queries feel too obvious or too commercial to write about.</p><p>Here's the ranking of intent, roughly highest-value first:</p><ul><li><strong>Emergency and repair</strong> — "AC blowing warm air," "furnace won't turn on," "why is my heat pump freezing up." High urgency, ready to call.</li><li><strong>Replacement and cost</strong> — "how much does a new furnace cost," "3 ton vs 4 ton AC," "heat pump vs gas furnace." Big-ticket, weeks of research.</li><li><strong>Maintenance and seasonal</strong> — "how often to change furnace filter," "should I get a tune-up before winter." Builds trust, seeds recurring revenue.</li><li><strong>Broad awareness</strong> — "how does central air work." Lots of traffic, almost no buying intent.</li></ul><p>Most agencies default to the bottom of that list because those topics are easy to write and rank for. They pull traffic that never books a call. Flip it. Write the top two categories first even though they're harder, because those are the searches your business is actually built to satisfy.</p><h2>Which HVAC blog topics actually get people to call?</h2><p>The topics that get people to call are the ones where the searcher already has a symptom or a decision in front of them — repair diagnostics, replacement cost breakdowns, and "should I repair or replace" comparisons. A homeowner searching "AC compressor not turning on" has a broken unit right now. If your article walks them through what causes it, what they can safely check themselves, and when it needs a licensed tech, you've earned the call before a competitor's ad ever loads.</p><p>The mechanism is trust plus timing. You're not interrupting them. They came looking for exactly this. When your page gives an honest answer — including the parts they can fix without you — the homeowner reads you as the competent local pro instead of a sales funnel. That reputation carries into the call.</p><p>Contrast that with a "top 5 signs you need HVAC service" listicle. It reads like every other one, targets a vague query, and gives the reader no reason to trust your specific company. It might get indexed. It won't get dialed.</p><h3>A quick test for any topic idea</h3><ul><li>Would a homeowner search this exact phrase <em>while having a problem</em>? If no, deprioritize.</li><li>Can you answer it more usefully than the manufacturer PDFs already ranking? If no, you won't outrank them.</li><li>Does answering it well set up a natural reason to call your company? If no, it's a traffic page, not a lead page.</li></ul><h2>A worked example: an HVAC company in Boise</h2><p>Suppose an HVAC company in Boise wants to start content that produces service calls within a heating season. Here's a first-12-article map, grouped so each cluster reinforces the next.</p><p><strong>Cluster 1 — Furnace repair (write first, late summer):</strong></p><ol><li>Furnace won't turn on: what to check before you call</li><li>Furnace blowing cold air — common causes and fixes</li><li>What that furnace smell means (and which ones are dangerous)</li><li>Furnace short cycling: why it happens and what it costs to fix</li></ol><p><strong>Cluster 2 — Replacement and cost (write second):</strong></p><ol><li>What a new furnace costs to install in the Boise area</li><li>Repair or replace? How to decide on a 15-year-old furnace</li><li>Gas furnace vs heat pump for our winters</li><li>How furnace sizing works and why an oversized unit costs you</li></ol><p><strong>Cluster 3 — Maintenance and seasonal (write third):</strong></p><ol><li>How often to change your furnace filter (and which MERV rating)</li><li>What a furnace tune-up actually includes</li><li>How to get your heating ready before the first cold snap</li><li>Frozen heat pump in winter: normal vs a real problem</li></ol><p>Notice the local cost article in Cluster 2. National pages dominate "furnace cost" searches because they're generic. A page written for the Boise market — local permit realities, regional equipment preferences, the actual price band a homeowner sees — can win the searches that national pages can't answer specifically. That's a page a national site structurally cannot write.</p><h3>Why this order and this cadence</h3><p>Repair articles publish first because they're the fastest to earn engagement and links, and the season is arriving. The cost cluster interlinks with the repair cluster — someone reading "furnace short cycling" is a good candidate for "repair or replace," so those articles point at each other. The maintenance cluster comes last because it's the easiest to write and least time-sensitive, and it seeds your maintenance-agreement revenue for spring.</p><h2>Interlinking so the cluster ranks as a unit</h2><p>Individual articles rank weakly. Clusters rank because internal links tell Google these pages are one authoritative body of work on a subject. The practical rule: every new article links to two or three related articles you've already published, using descriptive anchor text — not "click here" but "how furnace sizing works."</p><p>A worked interlinking pass for the furnace cluster above:</p><ul><li>"Repair or replace" links to all four repair diagnostic articles and to the cost article.</li><li>Each repair diagnostic article links up to "repair or replace" as the natural next question.</li><li>The cost article links to sizing, and sizing links back to cost.</li><li>Every article links to your actual service or contact page with anchor text that names the service.</li></ul><p>Do this deliberately as you publish. Retrofitting links across 30 articles later is tedious and usually gets skipped.</p><h2>How long before HVAC content produces leads?</h2><p>Realistically, expect a few months before a new cluster earns steady rankings, and results genuinely vary by market competition, domain age, and how consistently you publish. A brand-new domain in a competitive metro moves slower than an established company with an aged domain and existing reviews. Anyone who quotes you a guaranteed date or a specific traffic number is guessing or lying.</p><p>What you can control is the input: a consistent cadence on the right topics, properly interlinked, in your company's actual voice. A page or two a week, sustained, compounds. Ten articles in month one followed by silence does not. The compounding comes from the growing web of internal links and the topical signal that you cover furnaces thoroughly — and that takes a body of work, not a burst.</p><p>If you don't have time to run this yourself, a subscription program like ClearPath Content maps the question-space for your market, writes in your voice, and keeps the interlinking tight so the cluster ranks as a unit rather than as scattered pages. That's the mechanical work most contractors can't sustain between service calls.</p><h2>The practical takeaway</h2><p>Don't start with awareness fluff. Map your market's repair and replacement questions first, write the local-cost pages national sites can't match, interlink each cluster on purpose, and publish on a cadence you can hold for a full season. The order matters more than the polish. Twelve well-sequenced, interlinked articles built around real buying questions will out-earn fifty scattered blog posts every time — and you can start the first cluster this week.</p>
     </div>
+    <a class="pillarlink" href="/blog/industry-content-playbooks">
+      <span>Full guide</span>
+      <strong>Content Marketing Playbooks by Industry</strong>
+      <em>What buyers search for, where each industry&#39;s content usually fails, and what actually converts — playbooks for home services, legal, dental, real estate and B2B.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

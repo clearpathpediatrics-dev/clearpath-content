@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Vet a Content Subscription Service","description":"Learn what to look for in a content subscription service, from ownership terms to quality checks, so you pick a plan that actually builds organic visibility.","datePublished":"2026-07-27","dateModified":"2026-07-27","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/how-to-vet-a-content-subscription-service","keywords":"content subscription service, content marketing, buying guide, SEO content, vetting agencies","articleSection":"Comparisons & Buying Guides"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"How to Vet a Content Subscription Service","item":"https://clearpath-content.com/blog/how-to-vet-a-content-subscription-service"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a content subscription service actually help with SEO?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only if the service is built around a topic architecture rather than a monthly quota of unrelated posts. Search visibility comes from covering a subject deeply and interlinking related pages, so a service that maps the questions your buyers ask and works through that map in a deliberate order will compound, while one that ships disconnected articles produces motion without direction."}},{"@type":"Question","name":"What questions should I ask before signing up for a content subscription?","acceptedAnswer":{"@type":"Answer","text":"Ask these six in writing: Do I own the content permanently and does anything break if I cancel? What's the cancellation notice period? Who writes and who edits? How do you decide what to write next and can I see the topic map? How do you handle internal linking? How do you learn my brand voice? Clear, consistent answers signal a real operation; dodges on ownership or strategy mean you're buying volume without direction."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>A content subscription trades a lump-sum project fee for a monthly output: some number of articles, published on a schedule, for a flat price. On paper it solves a real problem. Most businesses stop publishing not because they run out of ideas but because writing consistently is nobody's job. A subscription makes it somebody's job.</p><p>The trouble is that the pricing model hides enormous quality variation. Two services can both charge $299 a month for four articles and produce completely different results — one builds a coherent body of work that earns rankings over a year, the other fills your blog with interchangeable filler that no one links to and Google ignores. This guide walks through what actually separates them, so you can tell which one you're buying before you sign.</p><h2>Start with who owns the work and how you leave</h2><p>Before you look at anything else, read the exit terms. This is where subscriptions quietly punish you.</p><p>Three things matter. First, <strong>content ownership</strong>: you should own every article outright the moment it's published, with no license reverting to the vendor if you cancel. Some services technically retain rights and can force you to take content down when you leave. Second, <strong>the cancellation window</strong>: month-to-month with 30 days' notice is fair. A 12-month lock-in for a service you can't yet judge is not. Third, <strong>what happens to your interlinking</strong>: if the vendor built an internal linking structure across your articles and that structure lives in their system, make sure the links are hard-coded into your pages, not injected by a plugin that stops working when the subscription ends.</p><p>Ask directly: "If I cancel after four months, do I keep everything, and does anything break?" A confident vendor answers in one sentence. A vague answer is your answer.</p><h2>Judge the quality by asking for the wrong kind of sample</h2><p>Every service shows you a polished sample. That tells you what they can do once, with unlimited time, to close a sale. It does not tell you what shows up in month three.</p><p>Ask for two things instead. Ask to see <strong>three consecutive articles they published for one client</strong> — not their best three, three in a row from the same account. That reveals whether quality holds across a real cadence and whether the pieces connect to each other or just sit side by side. Then ask <strong>who writes and who edits</strong>. If the answer is a single tier of writers with no editorial pass, expect regression to the mean. If there's a defined editor reviewing structure, accuracy, and voice before anything ships, quality tends to hold.</p><h3>Signs a sample is thin even when it reads fine</h3><ul><li>It answers a question no one searches for, or restates the query without adding anything a reader couldn't guess.</li><li>Every section is the same length, which usually means it was padded to a word count rather than written to a point.</li><li>No specific numbers, examples, or mechanics — just categories and adjectives.</li><li>The introduction spends three sentences explaining that the topic is important.</li><li>It could be published on any competitor's site with the logo swapped.</li></ul><h2>Does a content subscription service actually help with SEO?</h2><p>Yes, but only if the service is built around a topic architecture rather than a monthly quota of unrelated posts. Search visibility comes from covering a subject deeply enough that a site becomes a credible answer to a whole cluster of related questions, and from internal links that pass authority between those pages. A service that hands you four disconnected articles a month — one on hiring, one on pricing, one on a holiday theme, one on a trend — produces motion without direction. A service that maps the questions your buyers actually ask, then works through that map in a deliberate order and links the pieces together, is doing the thing search engines reward. When you evaluate a vendor, ask how they decide what to write next. If the answer is "we send you a list of ideas each month," that's a red flag. If they can show you a topic map and explain the sequencing logic, that's the model that compounds.</p><h2>Match the cadence and format to your actual sales cycle</h2><p>More articles is not automatically better. The right volume depends on how competitive your space is and how much your buyers read before they decide.</p><p>A dental practice competing in one city needs less volume than a B2B software company selling into a committee over six months. Two well-structured articles a month, sustained for a year, will outperform eight thin ones that stop after quarter one. Ask the vendor how they'd set cadence for a business like yours, and whether they adjust it based on what's ranking, or just ship the number in your plan regardless.</p><h3>A worked example</h3><p>Suppose you run an HVAC company in a mid-sized metro and you're weighing a $299 plan that produces four articles a month. Here's how to pressure-test it before committing:</p><ol><li><strong>Ask for their topic map for a similar client.</strong> You want to see 40 to 60 planned articles organized into clusters — emergency repair, system replacement, maintenance, indoor air quality — not a loose list.</li><li><strong>Check the sequencing.</strong> The first articles should target the questions buyers ask when they're close to hiring ("cost to replace a furnace in [climate]"), not broad awareness topics that won't convert for a year.</li><li><strong>Confirm the interlinking plan.</strong> Each new article should link to two or three existing ones and get linked back from future pieces. Ask to see this on a live client site.</li><li><strong>Verify the voice-matching step.</strong> Request the intake process. A good service interviews you or reviews existing material so the articles don't read like generic templated copy.</li><li><strong>Run the math on a year.</strong> Four articles a month at $299 is $3,588 for roughly 48 articles — about $75 each. That's cheap only if the articles are structured to rank. At that price, thin filler is expensive.</li></ol><h2>What questions should I ask before signing up for a content subscription?</h2><p>Ask these six, and get answers in writing: (1) Do I own the content permanently, and does anything break if I cancel? (2) What's the cancellation notice period? (3) Who writes and who edits, and is there an editorial pass before publishing? (4) How do you decide what to write next — can I see the topic map and the sequencing logic? (5) How do you handle internal linking, and are the links permanent on my pages? (6) How do you learn and hold my brand voice? A service that answers all six clearly and consistently is running a real operation. One that dodges ownership, hand-waves on strategy, or can't explain its editorial process is selling you volume and hoping you don't notice the direction is missing.</p><h2>Watch the pricing tiers for the real trade</h2><p>Subscription pricing usually scales on article count, and the temptation is to buy the biggest tier you can afford. Resist that. The variable that determines results is whether the work is structured and edited, not how many pieces arrive. A $499 plan producing eight strategically sequenced, well-edited articles is worth more than a $499 plan producing sixteen unedited ones — and both exist at that price.</p><p>Look at what changes between tiers. If the only difference is quantity, the service treats content as a commodity. If higher tiers add editorial oversight, deeper research, or strategic planning, the pricing reflects where the value actually lives. This is the model behind a service like ClearPath Content, where the plan maps your market's question-space first and then produces and interlinks articles against that map, rather than shipping a fixed number of standalone posts.</p><h2>The practical takeaway</h2><p>Before you sign, get three consecutive real articles, a topic map, and written answers on ownership and cancellation. If a vendor can produce all three without friction, you're likely buying a program that compounds. If any one of them turns into a vague answer or a delay, treat that as the product — because in twelve months, that's what you'll be living with.</p>
     </div>
+    <a class="pillarlink" href="/blog/content-marketing-buying-guide">
+      <span>Full guide</span>
+      <strong>How to Buy Content Marketing Without Getting Burned</strong>
+      <em>Agency, freelancer, in-house or subscription — what each actually costs, where each fails, and the questions that separate real providers from bad ones.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Blog Strategy for Home Service Businesses","description":"A practical blog strategy for home service businesses: what to write, how to structure it around jobs and service areas, and how to turn readers into booked calls.","datePublished":"2026-07-28","dateModified":"2026-07-28","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/blog-strategy-home-service-businesses","keywords":"home service marketing, blog strategy, local SEO, HVAC content, contractor marketing","articleSection":"Industry Content Playbooks"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"Blog Strategy for Home Service Businesses","item":"https://clearpath-content.com/blog/blog-strategy-home-service-businesses"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you make a blog rank for local searches?","acceptedAnswer":{"@type":"Answer","text":"You make a home service blog rank locally by tying content to specific service areas and real job details rather than stuffing city names into generic articles. Depth on the topic plus genuine local specifics — permit rules, common equipment in older neighborhoods, seasonal patterns you actually see — works far better than 40 near-identical city pages, which search engines treat as thin, low-value content."}},{"@type":"Question","name":"How often should a home service business post?","acceptedAnswer":{"@type":"Answer","text":"A home service business should post consistently rather than frequently — roughly two to four articles a month held to a steady cadence beats a burst of ten followed by months of silence. Coverage matters most: build out problem-aware, solution-aware, and ready-to-book articles for every major job type over time, then refresh price and decision articles each season."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>Most home service blogs read like they were written to fill a quota. "5 Tips for a Cozy Winter Home." "The History of Air Conditioning." Nobody hiring a plumber reads that, and nobody searching for a plumber finds it. A blog earns its keep when it maps to the jobs you get paid for and the way people actually search when something is broken, expensive, or confusing.</p><p>This is a strategy built around three things a home service business already has: a list of services, a set of service areas, and a stack of questions customers ask before they book. Get those three intersecting on the page and the blog stops being decoration.</p><h2>Start with the jobs, not the topics</h2><p>Pull your last 50 invoices. Sort them by job type. You will usually see a short list doing most of the revenue — say water heater replacement, drain clearing, sump pump installs, and repiping for a plumbing company. That list is your content spine. Every high-value job should have a page or article that answers what someone types before they call.</p><p>The mistake is writing about your services the way you'd describe them at a trade show. Customers don't search "comprehensive drain solutions." They search "why is my kitchen sink draining slow," "cost to replace water heater," and "is a slab leak covered by insurance." Those are three different intents, and each deserves its own article.</p><h3>Sort every idea into one of three buckets</h3><ul><li><strong>Problem-aware:</strong> something is wrong and they're diagnosing it. "Furnace blowing cold air." These pull people early and build trust.</li><li><strong>Solution-aware:</strong> they know what they need and are weighing options. "Tankless vs tank water heater." "Repair or replace AC."</li><li><strong>Ready-to-book:</strong> price and logistics. "How much does a new furnace cost in [city]." "Same-day AC repair near me." These convert fastest.</li></ul><p>A healthy blog carries all three. If you only write ready-to-book pages, you never reach people early. If you only write problem-aware pieces, you get traffic that never dials.</p><h2>How do you make a blog rank for local searches?</h2><p>You make a home service blog rank locally by tying content to specific service areas and real job details rather than stuffing city names into generic articles. A single "Furnace Repair" post that lists 40 towns in the footer does almost nothing. What works better is depth on the topic plus genuine local specificity: the permit rules in your county, the common furnace brands in older neighborhoods you serve, the hard-water problems in a particular suburb, seasonal patterns you actually see.</p><p>For multi-city coverage, resist creating 40 near-identical pages. Search engines treat thin duplicated pages as low value, and they can drag down your whole site. A better pattern is one strong pillar article on the service, plus a handful of genuinely distinct city pages only where you have real volume and something specific to say. If the only difference between two pages is the town name, you have one page, not two.</p><h2>A worked example: mapping a season</h2><p>Suppose an HVAC company in Tucson wants a spring content push before cooling season. Here's a concrete four-week sequence built from the buckets above:</p><ol><li><strong>Week 1 (problem-aware):</strong> "Why Is My AC Running But Not Cooling?" — covers dirty filters, low refrigerant, frozen coils, and when it's a DIY fix versus a service call.</li><li><strong>Week 2 (solution-aware):</strong> "Repair or Replace: How to Decide on an AC Over 10 Years Old" — a decision framework with the rough cost ranges (as ranges, not promises) and the failure signs that tip toward replacement.</li><li><strong>Week 3 (ready-to-book):</strong> "What a New AC Costs in Southern Arizona and What Drives the Price" — tonnage, SEER, ductwork condition, install access. Honest about variables.</li><li><strong>Week 4 (trust-builder):</strong> "How to Read an HVAC Quote So You Don't Overpay" — teaches the reader to evaluate quotes, which positions the company as the straight shooter.</li></ol><p>Then interlink them. The repair-or-replace article links to the cost article. The cost article links to the quote-reading article. Someone who lands on any one of them can walk the whole path in the order that matches their decision. That internal linking is where a lot of home service blogs leave value on the table — every article should point to the logical next step and to the service page that books the job.</p><h2>Write it so a human trusts it in 10 seconds</h2><p>Home service buyers are wary. They've been upsold. Your writing has to signal that you know the trade and won't play games. A few concrete habits:</p><ul><li><strong>Give real numbers as ranges.</strong> "Most water heater replacements run $1,200 to $2,500 depending on tank size and whether the connections are up to code." That's more credible than "affordable pricing."</li><li><strong>Say when NOT to call you.</strong> If a tripped breaker fixes their problem, tell them. Readers remember the company that saved them a service fee.</li><li><strong>Name the variables.</strong> Explaining <em>why</em> a price swings builds more trust than any guarantee.</li><li><strong>Skip the stock language.</strong> "Your comfort is our priority" is invisible. "We stock the three most common igniter models on the truck so most no-heat calls get fixed the same visit" is specific and memorable.</li></ul><h2>How often should a home service business post?</h2><p>A home service business should post consistently rather than frequently — roughly two to four articles a month, held to a steady cadence, beats a burst of ten followed by six months of silence. Search engines and readers both reward sites that keep moving. The bigger factor is coverage: you want every meaningful job type to have its problem-aware, solution-aware, and ready-to-book articles built out over time, then refreshed as prices and seasons change.</p><p>Refreshing matters more than most owners expect. A cost article from two years ago with outdated numbers hurts you. Put a reminder to review your top price and "repair or replace" articles every spring and fall. Updating an existing ranking article often produces better results than publishing a brand-new one.</p><h2>A short quality checklist before you publish</h2><ul><li>Does the title match a phrase a customer would actually type?</li><li>Does the first paragraph answer the core question directly, not after 300 words of throat-clearing?</li><li>Are there real numbers, ranges, or specifics only a practitioner would know?</li><li>Does it link to at least one related article and one service or booking page?</li><li>Is there one clear next step for a reader who's ready to act?</li><li>Would you be comfortable if a competitor read it? (If it gives away nothing useful, it converts nothing.)</li></ul><p>That last point trips people up. The instinct is to hold back so customers still need to call. In practice, the article that teaches the most earns the most trust, and trust is what gets the call. You are not competing on secret knowledge; you're competing on being the company that was straight with them first.</p><h2>Where a subscription model fits</h2><p>The reason most home service blogs die is bandwidth. An owner writes three good posts in January and then a busy season hits. A program that maps the full question-space for your services and areas, then produces and interlinks articles on a set cadence — which is the model we run at ClearPath Content — exists mainly to solve that consistency problem, so the spine gets built out whether or not you have a spare hour that week.</p><p><strong>The practical takeaway:</strong> open your invoices, list your top five jobs, and for each one write down the exact phrase a customer types at the problem stage, the comparison stage, and the price stage. That grid of fifteen questions is your blog for the next few months. Answer them honestly, link them together, and revisit the price ones every season. That is the entire strategy — the rest is just showing up to write it.</p>
     </div>
+    <a class="pillarlink" href="/blog/industry-content-playbooks">
+      <span>Full guide</span>
+      <strong>Content Marketing Playbooks by Industry</strong>
+      <em>What buyers search for, where each industry&#39;s content usually fails, and what actually converts — playbooks for home services, legal, dental, real estate and B2B.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

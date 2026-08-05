@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How AI Answer Engines Pick Which Sources to Cite","description":"Learn how AI answer engines choose which sources to cite, the signals they weigh, and the practical steps that make your pages citation-worthy.","datePublished":"2026-08-04","dateModified":"2026-08-04","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/how-ai-answer-engines-choose-sources-to-cite","keywords":"answer engine optimization, AI search, content strategy, citations, organic visibility","articleSection":"AI Search & Answer Engine Optimization"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"How AI Answer Engines Pick Which Sources to Cite","item":"https://clearpath-content.com/blog/how-ai-answer-engines-choose-sources-to-cite"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does ranking #1 on Google guarantee an AI citation?","acceptedAnswer":{"@type":"Answer","text":"No. Ranking #1 makes your page more likely to be retrieved as a candidate, but AI answer engines cite passages, not pages. A lower-ranking page with a crisp, direct paragraph answering the exact question often gets cited over a #1 result that buries or vaguely states the answer. Test the actual questions to see who gets cited."}},{"@type":"Question","name":"What signals decide which sources an AI answer engine cites?","acceptedAnswer":{"@type":"Answer","text":"The main signals are passage-level relevance to the specific question, retrievability (being indexed and not blocking AI crawlers), factual density with concrete numbers and steps, topical consistency across the domain, corroboration with other trusted sources, freshness for time-sensitive queries, and clean structure that makes passages easy to isolate. Domain authority and ad spend are not direct inputs."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>When someone asks ChatGPT, Perplexity, or Google's AI Overviews a question, the tool writes an answer and, increasingly, names a handful of sources it pulled from. If your business is one of those named sources, you get visibility and sometimes a click. If you're not, you're invisible in that answer no matter how good your page is.</p><p>The question I keep getting from clients is simple: how does the machine decide who gets cited? It's not random, and it's not the same as ranking first on Google. Below is what actually drives the choice, based on how these systems retrieve and assemble answers, plus the practical steps that make a page citation-worthy.</p><h2>How an answer engine actually builds a response</h2><p>Most AI answer engines run a two-step process. First, retrieval: the system searches an index (its own, or a live search engine like Bing or Google) and pulls back a set of candidate documents that seem relevant to the question. Second, generation: a language model reads those candidates and writes an answer, citing the specific passages it leaned on.</p><p>The important part is that citations happen at the passage level, not the page level. The model isn't rewarding your whole domain. It's grabbing a specific paragraph, sentence, or table that directly answered part of the question, and attaching your URL to it. This changes what you optimize for. You're not trying to make a page "authoritative" in some vague sense. You're trying to make individual passages easy to retrieve, easy to lift, and safe to attribute.</p><h2>What signals decide which sources get named</h2><p>No engine publishes its exact formula, and they differ from each other. But across the major systems, the same patterns show up. In rough order of impact:</p><ul><li><strong>Passage-level relevance.</strong> Does a specific chunk of your page directly and completely answer the sub-question? A paragraph that states the answer in its first sentence beats one that buries it after three sentences of setup.</li><li><strong>Retrievability.</strong> Can the engine find the page at all? If it's not indexed by the search engine feeding the model, or it's blocked to AI crawlers, it can't be cited. Perplexity and Google use live search; ChatGPT's browsing mode uses Bing.</li><li><strong>Specificity and factual density.</strong> Pages with concrete numbers, named steps, and clear definitions get cited more than pages of general commentary. The model is looking for something quotable and checkable.</li><li><strong>Topical consistency of the domain.</strong> A site that covers a subject in depth across many pages tends to get pulled more often than a site with one thin post on the topic. This is the same topical-authority effect that helps in regular search.</li><li><strong>Corroboration.</strong> If your claim matches what other trusted sources say, the model is more comfortable citing you. If you're the lone outlier making a claim nothing else supports, you're more likely to be skipped or flagged.</li><li><strong>Freshness, for time-sensitive queries.</strong> For "current" questions (pricing, regulations, latest versions), recently updated pages win. For stable questions, freshness matters far less.</li><li><strong>Clean structure.</strong> Clear headings, short paragraphs, lists, and tables make it mechanically easier for the system to isolate the passage it needs.</li></ul><p>Notice what's not on that list: domain authority scores, backlink counts as a direct input, or ad spend. Those things influence whether you rank in the underlying search index, which affects retrieval indirectly. But the citation decision itself is about whether your specific passage is the cleanest answer to the specific question.</p><h2>Does ranking #1 on Google guarantee an AI citation?</h2><p>No. Ranking #1 helps because it makes your page more likely to be retrieved as a candidate, but the AI still chooses passages, not pages. A page that ranks third with a crisp, direct paragraph answering the exact question often gets cited over the #1 result that answers the question vaguely or buries it. I've watched answer engines pull from page-two results when those pages had a tighter, more literal match to the query. Retrieval gets you into the room. Passage quality decides whether you get named.</p><p>The practical read: don't assume your top-ranking pages are covering you in AI answers. Test the actual questions and see who gets cited. It's frequently not who you'd expect.</p><h2>A worked example: two pages, same topic</h2><p>Suppose a commercial HVAC company writes about how often rooftop units need servicing. Two versions of the page exist.</p><p><strong>Version A</strong> opens with: "Maintaining your HVAC system is one of the most important things a facility manager can do, and in today's competitive environment, staying on top of maintenance has never been more critical..." The actual answer — twice a year, spring and fall — appears in paragraph four.</p><p><strong>Version B</strong> opens a section headed "How often should rooftop HVAC units be serviced?" with: "Commercial rooftop units should be serviced twice a year — once in spring before cooling season and once in fall before heating season. Units in high-dust environments or running continuously may need quarterly service."</p><p>Ask an answer engine that question and Version B is far more likely to be cited. It matches the query phrasing in the heading, states the answer in the first sentence, and includes the specific exception (high-dust, continuous run) that makes the passage feel complete. The model can lift it cleanly and attribute it. Version A forces the model to hunt, and it may just grab a competitor who made it easy.</p><h2>A checklist to make your pages citation-worthy</h2><ol><li><strong>Phrase a heading as the exact question</strong> someone would ask. Match natural language, not keyword-stuffed fragments.</li><li><strong>Answer in the first sentence</strong> beneath that heading. State it plainly, then add detail and exceptions after.</li><li><strong>Include a concrete number, range, or named step</strong> in each answer where one honestly exists.</li><li><strong>Keep passages self-contained.</strong> A cited chunk should make sense lifted out of the page, without depending on the paragraph before it.</li><li><strong>Use structure the machine can parse:</strong> short paragraphs, lists for sequences, tables for comparisons.</li><li><strong>Confirm you're indexed</strong> and not blocking AI crawlers in robots.txt if you want the visibility. Decide this deliberately.</li><li><strong>Cover the topic across several pages</strong> so your domain reads as a genuine authority on it, not a one-off.</li><li><strong>Keep time-sensitive pages current</strong> and stamp the update date.</li></ol><h2>Why breadth on a topic still matters</h2><p>Answer engines lean toward sources that demonstrate they know a subject thoroughly. A dental practice with fifteen interlinked pages covering implants — cost, recovery, candidacy, alternatives, aftercare — signals depth that a single "about implants" page never will. When the engine retrieves candidates for any implant-related question, that site keeps surfacing because it has a relevant passage for each angle.</p><p>This is the same mechanism behind topical authority in regular search, and it's why a scattered blog rarely gets cited. The systems reward the site that has actually mapped the question-space. Building that map deliberately — the full set of questions a market asks, each answered on its own well-structured page — is the core of what an AEO-focused content program does. It's the work we build subscriptions around at ClearPath Content, and it's the same work you can do in-house if you're disciplined about it.</p><p><strong>The takeaway:</strong> AI citations aren't won by being the biggest name or ranking first. They're won at the passage level — by answering the exact question, in the first sentence, with a specific and self-contained fact the machine can safely lift. Go pull up the five questions your customers actually ask, run them through an answer engine, and see whether your pages are structured to be the source it names. If they're not, that's a fixable problem, and it's mostly about how you write, not how much you spend.</p>
     </div>
+    <a class="pillarlink" href="/blog/ai-search-optimization-guide">
+      <span>Full guide</span>
+      <strong>AI Search Optimization: How to Get Cited by ChatGPT, Perplexity and AI Overviews</strong>
+      <em>AI assistants cite a handful of sources per answer. A complete guide to how that selection works and how to structure content so yours is one of them.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How B2B Software Content Should Map to Use Cases","description":"A practical guide to content marketing for B2B software companies built around use cases, so you attract buyers who match your product and skip the tire-kickers.","datePublished":"2026-07-27","dateModified":"2026-07-27","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/b2b-software-content-map-to-use-cases","keywords":"b2b software content marketing, saas content strategy, use case content, b2b lead generation, content marketing playbook","articleSection":"Industry Content Playbooks"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"How B2B Software Content Should Map to Use Cases","item":"https://clearpath-content.com/blog/b2b-software-content-map-to-use-cases"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you find the right use cases to write about?","acceptedAnswer":{"@type":"Answer","text":"Start with your own sales conversations, because the use cases that close deals are the ones your buyers already describe in their own words. Pull the last 20–30 discovery calls or demo requests, find the sentence where each prospect explained why they started looking, and cluster the recurring ones. Layer in support questions, problem-shaped search queries, and the patterns behind your best-retaining customers, then rank by win-frequency and product fit."}},{"@type":"Question","name":"How is use-case content different from feature and comparison content?","acceptedAnswer":{"@type":"Answer","text":"Use-case content serves a different stage and buyer question than feature or comparison content. Feature content answers whether the tool does a specific thing and serves people already evaluating you. Comparison content answers which tool to pick and captures late-stage shoppers. Use-case content answers whether there's a better way to handle a problem and captures earlier-stage, problem-aware buyers — the largest and least-contested group, reached before a shortlist forms."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>Most B2B software companies organize their content around one of two things: features ("introducing our new reporting module") or broad topics ("what is workflow automation"). Both are weak. Feature content only interests people who already know you exist. Broad topic content pulls in students, competitors, and job seekers who will never buy.</p><p>The stronger organizing principle is the <strong>use case</strong> — the specific job a specific type of buyer is trying to get done with software like yours. Use-case content attracts people who already have the problem, are further along in the buying process, and can tell within 30 seconds whether your product is a fit. That last part matters more than most teams admit: content that helps a bad-fit prospect disqualify themselves is doing you a favor.</p><h2>What a use case actually is (and what it isn't)</h2><p>A use case is a job-to-be-done tied to a role and a trigger, not a feature and not a vague topic. "Reporting" is a feature. "Automation" is a topic. "How a 12-person agency invoices retainer clients without double-entering hours" is a use case. It names who has the problem, what the problem is, and the specific moment they start looking.</p><p>The test: could a real buyer read the headline and think "that is literally my situation"? If the headline could describe half your market, it's a topic, not a use case. If it describes a narrow, recognizable person with a recurring pain, you're on the right track.</p><h3>Why narrow beats broad here</h3><p>A common worry is that narrow content limits reach. In practice the opposite happens with B2B software. A page about "project management software" competes with every generalist tool and every listicle, and the traffic it earns is mostly unqualified. A page about "tracking change orders on commercial construction projects" earns less traffic, but nearly everyone who lands on it is a plausible buyer. Fewer visitors, more of whom convert, is the better trade for a company selling a $199–$499 monthly product to a defined segment.</p><h2>How do you find the right use cases to write about?</h2><p>Start with your own sales conversations, because the use cases that close deals are the ones your buyers already describe in their own words. Pull the last 20–30 discovery calls or demo requests and look for the sentence where the prospect explains why they started looking. That sentence is a use case. You will usually find five to ten distinct ones clustering across a market segment.</p><p>Layer three sources on top of that:</p><ol><li><strong>Sales and support notes.</strong> The recurring "can your tool do X" questions are use cases in disguise. Each one is a page.</li><li><strong>Search behavior.</strong> Look for problem-shaped queries, not product-shaped ones. "How to reconcile Stripe payouts in QuickBooks" is a use case query. "Best accounting software" is not — it's a comparison query you handle separately.</li><li><strong>Won-deal patterns.</strong> Which use cases correlate with customers who stick around and don't churn? Weight those. Content that attracts your best-fit customers is worth more than content that attracts the most customers.</li></ol><p>Once you have the list, rank it by two factors: how often the use case appears in winning deals, and how specifically your product solves it. Write the ones that score high on both first.</p><h2>The structure of a use-case page that converts</h2><p>A use-case page has a job different from a blog post. It has to confirm the reader's problem, show the mechanics of the solution, and let a fit assessment happen. Here's the sequence that works.</p><ol><li><strong>Name the situation in the first two sentences.</strong> Mirror the reader's language. If your discovery calls surface "we lose track of which invoices got approved," open with that, not with an abstract framing.</li><li><strong>Describe the current painful workaround.</strong> Spreadsheets, email chains, a second tool, manual re-entry. This confirms you understand the actual day-to-day, which builds more trust than a feature list.</li><li><strong>Walk through the mechanics of the better approach.</strong> Show the steps, not just the promise. This is where feature detail belongs — in service of a job, not as a standalone brag.</li><li><strong>State the fit boundaries honestly.</strong> "This works well if you invoice on retainer; if you bill purely per-project, the setup is heavier." Disqualifying language increases conversion among the people who do fit, because it makes the whole page more credible.</li><li><strong>Link to the adjacent use cases and the comparison pages.</strong> Buyers rarely have one job. Internal links to related situations keep them on your architecture instead of bouncing to a competitor's.</li></ol><h3>A worked example</h3><p>Suppose you sell time-tracking and billing software aimed at small professional-services firms. A weak content plan produces pages like "Benefits of time tracking" and "Our new mobile timer." A use-case plan produces:</p><ul><li>"How a design agency bills a client who keeps changing scope mid-project"</li><li>"Tracking billable vs. non-billable hours when your team also does internal work"</li><li>"Splitting one invoice across three budget codes for a client's finance team"</li><li>"Reconciling logged hours against a fixed monthly retainer"</li></ul><p>Each of those is a searchable problem, each describes a recognizable buyer, and each can end with a demo request from someone who already sees themselves in it. The four pages interlink — a reader who has the scope-creep problem probably also has the retainer-reconciliation problem — so the cluster compounds instead of sitting as isolated posts.</p><h2>How is use-case content different from feature and comparison content?</h2><p>Use-case content serves a different stage and buyer question than feature or comparison content, and a complete program needs all three doing distinct jobs. Feature content answers "can it do the specific thing I already know I need" and mostly serves people already evaluating you. Comparison content answers "which of these two tools should I pick" and captures late-stage buyers actively shopping. Use-case content answers "is there even a better way to handle this problem" and captures earlier-stage buyers who haven't yet decided software is the answer — the largest and least-contested group.</p><p>Here's how the three map:</p><table><thead><tr><th>Type</th><th>Buyer question</th><th>Stage</th><th>Competition</th></tr></thead><tbody><tr><td>Use case</td><td>Is there a better way to do this job?</td><td>Early / problem-aware</td><td>Low</td></tr><tr><td>Feature</td><td>Can this tool do the specific thing?</td><td>Mid / evaluating</td><td>Medium</td></tr><tr><td>Comparison</td><td>Which tool should I choose?</td><td>Late / deciding</td><td>High</td></tr></tbody></table><p>The mistake is spending your whole budget on comparison content because it looks closest to a sale. Those queries are the most crowded and the most expensive to win, and you're arriving after the buyer has already built a shortlist you may not be on. Use-case content gets you into the consideration set before the shortlist forms.</p><h2>A publishing plan you can actually run</h2><p>You don't need 200 pages. A defined segment usually has 15–25 genuine use cases worth a full page, plus a handful of feature and comparison pages. That's a body of work a small team can produce over several months at a steady cadence, and it holds up because the problems it describes don't expire when you ship a new release.</p><p>Practical sequence for a quarter:</p><ol><li>Interview sales and pull the raw use-case list (week 1).</li><li>Rank by win-frequency and product fit; pick the top eight (week 1).</li><li>Draft one page per week in the buyer's language, using the five-part structure above.</li><li>Interlink each new page to two or three existing ones as you go.</li><li>Review after 90 days: which pages drove demo requests, not just traffic, and write more in those clusters.</li></ol><p>If mapping a market's full question-space and producing pages on a steady cadence is more than your team can carry, that's the kind of program ClearPath Content runs — but the method above works regardless of who does the writing.</p><p><strong>Takeaway:</strong> Stop organizing your software content around features and topics. Pull your last 30 sales conversations, write down the sentence where each prospect explained why they started looking, and turn the recurring ones into pages. Content built around the jobs your best customers hire your product to do will out-convert content built around your product every time.</p>
     </div>
+    <a class="pillarlink" href="/blog/industry-content-playbooks">
+      <span>Full guide</span>
+      <strong>Content Marketing Playbooks by Industry</strong>
+      <em>What buyers search for, where each industry&#39;s content usually fails, and what actually converts — playbooks for home services, legal, dental, real estate and B2B.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

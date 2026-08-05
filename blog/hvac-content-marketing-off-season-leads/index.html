@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"HVAC Content Marketing That Wins Off-Season Leads","description":"A practical guide to content marketing for HVAC companies: which articles rank, how to fill slow seasons, and a topic plan you can start this week.","datePublished":"2026-07-30","dateModified":"2026-07-30","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/hvac-content-marketing-off-season-leads","keywords":"HVAC content marketing, HVAC SEO, HVAC lead generation, home services content, local SEO","articleSection":"Industry Content Playbooks"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"HVAC Content Marketing That Wins Off-Season Leads","item":"https://clearpath-content.com/blog/hvac-content-marketing-off-season-leads"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long before HVAC content brings in leads?","acceptedAnswer":{"@type":"Answer","text":"Expect meaningful movement in three to six months, though organic timing varies by market and domain age. New articles take weeks to index and rank for lower-competition terms, while high-value cost and replacement queries take longer. Consistent publishing, specific local phrasing, and an established domain all speed it up. Treat it as a compounding asset, not an on-off switch — the articles keep working and often rank higher a year later."}},{"@type":"Question","name":"Should HVAC companies write content themselves or outsource it?","acceptedAnswer":{"@type":"Answer","text":"Write it yourself only if a knowledgeable person will reliably produce two to four articles a month; most owners can't sustain that. The best setup keeps your technical expertise in the loop while removing the writing burden — a technician explains how they handle real decisions in a short call, and a writer turns it into the article. Pure DIY usually fails on consistency, and pure outsourcing without your input produces generic content that ranks poorly."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>Most HVAC companies treat content marketing as an afterthought — a few blog posts about "changing your filter" that no one reads and no one links to. Then the phone goes quiet in April and October, and the owner wonders why the website isn't producing anything.</p><p>The problem usually isn't effort. It's that the content targets the wrong moment. Someone whose AC just died isn't reading a 1,500-word article — they're calling the first three companies that show up. Content earns its keep earlier and later than the emergency: when people are researching a replacement they know is coming, comparing repair versus replace, or trying to understand a quote they already have. That's where a written program pulls work, and it's the part paid ads can't cover cheaply.</p><h2>What content actually does for an HVAC business</h2><p>Content does three specific jobs, and it helps to separate them because they need different articles.</p><ul><li><strong>Captures research-phase demand.</strong> People planning a system replacement often research for weeks. "How long does a furnace last," "is it worth repairing a 15-year-old AC," "what size furnace do I need" — these are searched by homeowners who will spend $6,000 to $14,000 in the next month or two.</li><li><strong>Answers the questions that stall a sale.</strong> After a quote, buyers Google the brand, the SEER rating, financing, and whether the price is fair. If your site answers those questions in your voice, you stay in the conversation.</li><li><strong>Builds the topical footprint that makes the whole domain rank better.</strong> A site with 40 useful, interlinked HVAC articles is treated more seriously by search engines than one with a services page and a contact form. That lift helps your money pages, not just the blog.</li></ul><p>None of these are the emergency "AC repair near me" search — that's a local-pack and ads game. Content works the flanks around it.</p><h2>Which HVAC topics are worth writing</h2><p>The topics that produce work fall into a few reliable buckets. Rank them by how close the reader is to spending money, then write the closest ones first.</p><h3>Repair-or-replace and cost questions</h3><p>These are your highest-intent articles. Someone asking "should I repair or replace my furnace" is halfway to a purchase. Write the honest version — the $5,000 rule, age thresholds, efficiency math — and you become the company they trust to give it straight. Cost articles ("how much does a new AC cost in [region]") pull enormous search volume and are usually written badly by everyone, which is your opening.</p><h3>Symptom and diagnosis articles</h3><p>"Furnace blowing cold air," "AC running but not cooling," "what does a frozen evaporator coil mean." These catch people mid-problem. Some will DIY; many will call after reading that the fix isn't simple. Include a clear "when to call a pro" line — it's honest and it converts.</p><h3>Maintenance and seasonal timing</h3><p>"When should I service my furnace," "how often to replace HVAC filters," "is a spring AC tune-up worth it." These fill the slow shoulder seasons because that's exactly when the searches spike. Publish the spring pieces in February, not May.</p><h3>Local and system-specific pages</h3><p>"Heat pumps in [cold-climate city]," "ductless mini-split for a [older home type]." Specificity ranks. A generic "benefits of heat pumps" article competes with the whole internet; "do heat pumps work in Minnesota winters" competes with almost no one and speaks to the exact objection a local buyer has.</p><h2>A worked example: three months of an HVAC content plan</h2><p>Suppose a residential HVAC company in Columbus publishes eight articles a month at a $299 cadence. Here's how a focused quarter might be sequenced — closest-to-money topics first, seasonal timing respected.</p><table><thead><tr><th>Month</th><th>Sample articles</th><th>Why now</th></tr></thead><tbody><tr><td>Month 1</td><td>"Repair or replace a furnace in Columbus," "How much does a new furnace cost in Ohio," "Furnace blowing cold air: causes and fixes"</td><td>High-intent, evergreen, catches winter breakdowns</td></tr><tr><td>Month 2</td><td>"When to schedule a spring AC tune-up," "AC size calculator for a 2,000 sq ft home," "Heat pump vs gas furnace for Ohio winters"</td><td>Seasonal shoulder demand, replacement research</td></tr><tr><td>Month 3</td><td>"AC running but house won't cool," "How often to replace your HVAC filter," "Is a mini-split worth it for a home addition"</td><td>Early-summer symptoms, maintenance capture</td></tr></tbody></table><p>Each article links to the two or three most related pieces and to the relevant service page. By month three you have a small web of connected articles that reinforce each other and the core services — the interlinking is what turns 24 posts into a system instead of 24 orphans.</p><h2>How long before HVAC content brings in leads?</h2><p>Expect meaningful movement in three to six months, with the caveat that organic timing genuinely varies by market and domain age. New articles typically take weeks to be indexed and start ranking for lower-competition terms, and the higher-value cost and replacement queries take longer because more established sites already hold those spots. What speeds it up: publishing consistently rather than in one burst, targeting specific local and system phrasing instead of broad terms, and having a domain that already ranks for your service area. A brand-new site with no history will be slower than an established company that's simply never published. The honest framing for any owner: this is a compounding asset, not a switch. The articles you publish this quarter are still working — and often ranking higher — a year from now, which is the opposite of a paid ad that stops the day you stop paying.</p><h2>Should HVAC companies write content themselves or outsource it?</h2><p>Write it yourself only if a knowledgeable person will genuinely produce two to four solid articles a month without fail — most owners can't, and the program dies by month two. The technical knowledge in an HVAC business is real and valuable, so the ideal setup keeps that expertise in the loop while removing the writing burden. A good arrangement looks like this: a technician or the owner spends 20 minutes on a call explaining how they actually handle repair-versus-replace decisions, what they tell customers about SEER ratings, the mistakes they see in competitors' quotes. A writer turns that into the article. The expertise is yours; the production is off your plate. That's the split that survives busy season. Pure DIY fails on consistency; pure outsourcing without your input produces generic content that reads like every other HVAC blog and ranks like it too.</p><h3>A quick checklist before you publish any HVAC article</h3><ul><li>Does it answer the exact question someone would type, in the first paragraph?</li><li>Is there a specific location, system, or home type mentioned where relevant?</li><li>Does it include an honest "call a pro when" or "here's the real cost range" moment?</li><li>Does it link to at least two related articles and one service page?</li><li>Would a technician read it and agree it's accurate?</li><li>Is the title under about 60 characters and phrased the way a homeowner searches?</li></ul><h2>Where a subscription fits</h2><p>The hard part of HVAC content isn't writing one good article — it's writing 30 of them in the right order, on a schedule, while running a business through two busy seasons. That's the specific gap a managed program like ClearPath Content fills: mapping the question-space for your service area, producing articles in your voice from short interviews, and publishing on a cadence so the footprint actually compounds. Whether you use a service or build it in-house, the mechanics are the same.</p><p><strong>The practical takeaway:</strong> stop writing filler-tip posts and start with your three highest-intent topics — repair-or-replace, local cost, and the symptom your phone rings about most. Publish them well, interlink them, and add to the set every month. Respect seasonal timing by writing spring content in winter. Do that consistently and the content becomes the quiet layer that keeps leads coming when the emergencies slow down.</p>
     </div>
+    <a class="pillarlink" href="/blog/industry-content-playbooks">
+      <span>Full guide</span>
+      <strong>Content Marketing Playbooks by Industry</strong>
+      <em>What buyers search for, where each industry&#39;s content usually fails, and what actually converts — playbooks for home services, legal, dental, real estate and B2B.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

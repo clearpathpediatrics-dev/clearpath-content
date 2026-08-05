@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Which Google Business Profile Fixes Actually Rank","description":"Learn which Google Business Profile optimisation moves affect local rankings and which are cosmetic, so you spend time on the fields that pull calls and map visibili","datePublished":"2026-07-30","dateModified":"2026-07-30","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/google-business-profile-optimisation-that-ranks","keywords":"google business profile, local seo, local pack ranking, gbp optimisation, map pack visibility","articleSection":"Local Search Visibility"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clearpath-content.com/"},{"@type":"ListItem","position":2,"name":"Field notes","item":"https://clearpath-content.com/blog"},{"@type":"ListItem","position":3,"name":"Which Google Business Profile Fixes Actually Rank","item":"https://clearpath-content.com/blog/google-business-profile-optimisation-that-ranks"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I choose the right primary category?","acceptedAnswer":{"@type":"Answer","text":"Choose the category that describes what your business is, not the services it offers, then add the services as secondary categories. Google gives the primary category the most ranking weight, so it should match the term you most want to appear for, while up to nine secondary categories keep you eligible for related searches."}},{"@type":"Question","name":"Do Google Posts and photos help rankings?","acceptedAnswer":{"@type":"Answer","text":"Photos have a modest but real effect on prominence and engagement, while Posts have little direct ranking effect but do influence whether someone chooses you. Genuine photos of your work and premises draw more profile views, and that engagement is a signal; Posts mainly keep the profile active and can drive clicks on specific offers."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -57,11 +56,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -95,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
 
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
 .article{padding:56px 0 10px}
 .article .eyebrow{margin-bottom:16px}
 .article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
@@ -118,6 +155,12 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -155,6 +198,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="body">
 <p>If you own a business with a physical location or a service area, your Google Business Profile (GBP) is doing more work than your website homepage. The three-result map pack sits above the organic results for most local searches, and the profile that fills those slots gets the majority of the calls. So it matters which parts of the profile you spend time on.</p><p>Most GBP advice is a long checklist that treats every field as equally important. It is not. Some edits move you in the ranking. Some just make the profile look complete. This piece separates the two, in the order that gives you the best return.</p><h2>What Google actually ranks in the local pack</h2><p>Google has been open about the three broad factors for local ranking: relevance, distance, and prominence. Relevance is how well your profile matches the search. Distance is how close you are to the searcher. Prominence is how well-known and well-regarded your business is, drawn from reviews, links, mentions, and general web presence.</p><p>You cannot change distance. The searcher's location is fixed. That leaves relevance and prominence as the two levers you control, and it tells you where to spend effort. Fields that feed relevance and prominence move the needle. Fields that do neither are cosmetic.</p><h3>The high-leverage fields</h3><ul><li><strong>Primary category.</strong> This is the single most important setting on the profile. It defines what searches you are eligible to appear in. A dentist listed under "Dentist" and a dentist listed under "Cosmetic dentist" compete for different queries.</li><li><strong>Business name.</strong> Google weights keywords in the name heavily. Your legal name matters here, because stuffing keywords you are not entitled to is a suspension risk.</li><li><strong>Reviews.</strong> Volume, recency, rating, and whether reviews mention your services all feed prominence and relevance.</li><li><strong>Service area or address consistency.</strong> The location Google trusts must match what appears across the web.</li></ul><h3>The lower-leverage fields</h3><ul><li>Business description (helps users decide, minimal ranking effect)</li><li>Cover photo and logo selection</li><li>Opening-date field</li><li>Most attributes, unless a searcher specifically filters for one</li></ul><p>None of the lower-leverage items are wrong to fill in. They help a person choose you once they see you. They just do not help you get seen in the first place, so they belong at the end of the list, not the start.</p><h2>How do I choose the right primary category?</h2><p>Choose the category that describes what your business <em>is</em>, not the services it offers, then add the services as secondary categories. Google lets you set one primary category and up to nine additional ones. The primary carries the most ranking weight, so it should match the term you most want to appear for.</p><p>Suppose you run a firm in Tucson that does both general plumbing and drain cleaning, and drain calls are your best margin. If "Plumber" is your primary and "Drain cleaning service" is secondary, you are strong for general plumbing searches and present but weaker for drain searches. If drain work is where you want to grow, consider whether the more specific primary serves you better, then use secondary categories to stay eligible for the broader terms.</p><p>A practical way to check what categories your competitors use: search the term you want to rank for, click the businesses ranking in the map pack, and inspect their profiles. Tools exist that reveal category settings, but even a manual review of the top three tells you what Google associates with that query in your market.</p><h2>Reviews: the part most owners under-invest in</h2><p>Reviews are the prominence signal you have the most direct control over, and they compound. Rating and count are the obvious parts. The less obvious part is that the words inside reviews feed relevance. A review that says "they fixed our tankless water heater in an afternoon" tells Google you are relevant to tankless water heater searches in a way your own profile description cannot.</p><h3>A review system that produces steady flow</h3><ol><li><strong>Ask at the moment of satisfaction.</strong> For a home service business, that is when the technician finishes and the customer is happy, not three days later by email.</li><li><strong>Send a direct link.</strong> Generate your GBP review link from the profile and put it in a text message. Every extra click loses people.</li><li><strong>Prompt for specifics.</strong> "If you have a minute, a line about what we did helps other people find us." This nudges reviewers toward the service language that feeds relevance, without scripting them.</li><li><strong>Respond to every review.</strong> Responses signal an active, monitored profile, and they give you a natural place to use service terms in your reply.</li><li><strong>Aim for steady, not bursts.</strong> A trickle of new reviews every week reads more naturally than 30 in one day followed by silence for six months.</li></ol><p>There is no magic number of reviews. What matters is being competitive with the profiles already ranking in your market. If the top three in your area have 80 to 150 reviews and you have 12, that gap is your first project.</p><h2>Do Google Posts and photos help rankings?</h2><p>Photos have a modest but real effect on prominence and engagement, while Posts have little direct ranking effect but do influence whether someone chooses you. Profiles with a steady supply of genuine photos tend to draw more profile views and clicks, and that engagement is itself a signal. Real photos of your work, your team, and your premises outperform stock imagery.</p><p>Google Posts, the short updates that appear on your profile, rarely move ranking on their own. They do occupy space on your profile, keep it looking active, and can drive a click on a specific offer. Treat them as a conversion and freshness tool, not a ranking tactic. If posting weekly is realistic, do it. If it is a chore that pulls time from reviews and categories, it is the wrong priority.</p><h2>NAP consistency and why it still matters</h2><p>Your Name, Address, and Phone number need to match across your website, your GBP, and the directories that list you. Google cross-checks these to confirm your business is real and located where you claim. Conflicting information, an old address on a directory, a phone number that changed two years ago, chips away at the trust that feeds prominence.</p><p>You do not need to be listed in hundreds of directories. You need the major ones to be accurate and consistent: your own website, Apple Maps, Bing Places, and the main industry directories for your field. Fix the conflicts you already have before chasing new listings.</p><h2>A priority order to work through</h2><p>If you are starting from a neglected profile, work in this sequence rather than tackling everything at once:</p><ol><li>Verify the profile is claimed and you have full control of it.</li><li>Set the correct primary category, then add relevant secondary categories.</li><li>Confirm the business name and address are accurate and consistent with your website.</li><li>Build a repeatable review-request process and start it running.</li><li>Add 15 to 20 genuine photos, then keep adding a few each month.</li><li>Fill the description, services, hours, and attributes.</li><li>Fix NAP conflicts on the major directories.</li><li>Start Posts only if you can sustain them.</li></ol><p>The first four items are where the ranking movement lives. The rest support conversion and trust. A common mistake is spending a weekend perfecting the description and photos while the primary category is wrong and the review count has not moved in a year.</p><p>The profile also does not sit in isolation. It works alongside the pages on your website that answer the questions people ask before they call. When your service pages, your location content, and your profile all point at the same set of terms, Google gets a consistent picture of what you do and where. That alignment between on-page content and the profile is the kind of connected work we build into the programs we run at ClearPath Content.</p><h2>The practical takeaway</h2><p>Audit your own profile against relevance and prominence, not against a generic checklist. Is your primary category right for the searches you want? Are your reviews competitive with the businesses already ranking near you? Are your name and address consistent everywhere Google can check? Fix those three before touching anything cosmetic. That is where the calls come from.</p>
     </div>
+    <a class="pillarlink" href="/blog/local-seo-guide">
+      <span>Full guide</span>
+      <strong>Local Search Visibility for Service Businesses</strong>
+      <em>How local ranking actually works for service businesses — the map pack, service-area pages that don&#39;t read as duplicates, and where content fits.</em>
+    </a>
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -165,19 +213,60 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>
