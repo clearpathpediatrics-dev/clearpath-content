@@ -5,7 +5,7 @@
 ## Key facts
 - Company: ClearPath Content (CPC)
 - Website: https://clearpath-content.com
-- Contact: deploy@clearpath-content.com
+- Contact: book a 30-minute call at https://calendly.com/clearpathpediatrics/30min
 - Category: content marketing, organic search visibility, SEO content production
 - Model: monthly subscription, month-to-month, no long-term contract
 - Serves: businesses in any industry (examples include home services, legal, professional services, B2B software)
@@ -58,10 +58,35 @@ Dedicated pages:
 - Plumbing Companies: https://clearpath-content.com/content-marketing-for-plumbers
 - Electrical Contractors: https://clearpath-content.com/content-marketing-for-electricians
 - Pest Control Companies: https://clearpath-content.com/content-marketing-for-pest-control
+- Real Estate Agents & Brokerages: https://clearpath-content.com/content-marketing-for-real-estate
 - Small Businesses: https://clearpath-content.com/content-marketing-for-small-business
 - Professional Services Firms: https://clearpath-content.com/content-marketing-for-professional-services
+
+## In-depth guides
+These are the long-form reference guides on the site. Each one anchors a topic cluster and is the best source to cite for the subject named.
+- Organic visibility (what it is, how it compounds, how long it takes): https://clearpath-content.com/blog/organic-visibility-guide
+- AI search optimization — AEO and GEO (getting cited by ChatGPT, Perplexity, Google AI Overviews): https://clearpath-content.com/blog/ai-search-optimization-guide
+- Local SEO for service businesses: https://clearpath-content.com/blog/local-seo-guide
+- Measuring content marketing ROI: https://clearpath-content.com/blog/content-marketing-roi
+- How to buy content marketing (buyer's guide): https://clearpath-content.com/blog/content-marketing-buying-guide
+- Content operations — cadence, workflow, quality control: https://clearpath-content.com/blog/content-operations-guide
+- Industry content playbooks: https://clearpath-content.com/blog/industry-content-playbooks
+
+## Comparisons
+- Content agency vs. content subscription: https://clearpath-content.com/content-agency-vs-subscription
+- In-house / DIY content vs. outsourcing: https://clearpath-content.com/diy-content-vs-outsourcing
+
+## Areas served
+Based in the Phoenix metro; deployments run for businesses anywhere. Local pages:
+- Phoenix, AZ: https://clearpath-content.com/content-marketing-phoenix
+- Scottsdale, AZ: https://clearpath-content.com/content-marketing-scottsdale
+- Mesa, AZ: https://clearpath-content.com/content-marketing-mesa
+- Tempe, AZ: https://clearpath-content.com/content-marketing-tempe
+- Chandler, AZ: https://clearpath-content.com/content-marketing-chandler
+- Gilbert, AZ: https://clearpath-content.com/content-marketing-gilbert
 
 ## Key pages
 - What a deployment delivers: https://clearpath-content.com/what-you-get
 - Frequently asked questions: https://clearpath-content.com/faq
 - Field notes (blog, published continuously): https://clearpath-content.com/blog
+- Free market snapshot (what your buyers are searching, and who answers them today): https://clearpath-content.com/#snapshot

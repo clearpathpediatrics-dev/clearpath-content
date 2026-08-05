@@ -344,6 +344,43 @@ export const INDUSTRIES = [
     ],
   },
   {
+    slug: "content-marketing-for-real-estate",
+    industry: "Real Estate Agents & Brokerages",
+    h1: "Content Marketing for Real Estate Agents",
+    metaDescription: "Buyers and sellers research for months before choosing an agent. A publishing program that makes you the local authority they keep finding.",
+    title: "Content Marketing for Real Estate | ClearPath Content",
+    keywords: ["content marketing for real estate", "real estate agent SEO", "realtor marketing", "real estate lead generation", "real estate blog"],
+    intro: [
+      "Real estate is the longest research cycle in local business. A seller thinks about listing for six to eighteen months before they interview anyone. A buyer spends months reading about neighbourhoods, financing and process before they contact an agent.",
+      "That entire window is decided by search, and almost all of it is captured by Zillow, Redfin and Realtor.com — portals that will happily sell your own lead back to you. Publishing on your own domain is how you get found directly instead of renting access to your market.",
+    ],
+    queries: [
+      "is now a good time to sell my house in [city]",
+      "how much does it cost to sell a house",
+      "what are closing costs for a buyer in [state]",
+      "how long does it take to sell a home",
+      "should i sell before i buy",
+      "what is my house worth in [neighborhood]",
+    ],
+    problem: [
+      { t: "Portals own your market and resell your leads", d: "Zillow and Realtor.com rank for the queries in your own city, then sell that homeowner back to you as a lead — shared with two other agents." },
+      { t: "Neighbourhood expertise is invisible online", d: "Local knowledge is the entire reason to hire an agent, and it is the thing agent websites communicate worst. A headshot and an IDX feed prove nothing." },
+      { t: "Prospecting eats the time content would take", d: "Between showings, negotiation and follow-up, nothing gets published. The agents who do publish consistently are usually paying someone, and paying a lot." },
+    ],
+    outcomes: [
+      "Neighbourhood and market-specific content the national portals cannot credibly write",
+      "Answers to the cost, timing and process questions that precede every transaction",
+      "Seller-intent and buyer-intent coverage, not just listings",
+      "A pipeline that is yours, not rented from a portal or shared with two competitors",
+      "No time from you between showings",
+    ],
+    faq: [
+      { q: "Can a real estate agent actually outrank Zillow?", a: "Not for broad head terms like a city plus homes for sale — those are effectively locked up. You can consistently win the specific, local, high-intent questions the portals answer generically or not at all: what closing costs look like in your state, whether a specific neighbourhood is appreciating, whether to sell before buying. Those searches come from people with real, near-term intent." },
+      { q: "What kind of real estate content actually generates clients?", a: "Seller-intent content converts best, because a listing is worth far more than a buyer-side transaction and sellers research longer. Cost, timing, and process questions signal someone genuinely preparing to move rather than browsing photos." },
+      { q: "Does this work for a solo agent or only for a brokerage?", a: "It works especially well for a solo agent, because the winnable ground is hyper-local and personal. A brokerage's generic market page cannot compete with genuine, specific answers about the neighbourhoods you actually work in." },
+    ],
+  },
+  {
     slug: "content-marketing-for-small-business",
     industry: "Small Businesses",
     h1: "Content Marketing for Small Businesses",

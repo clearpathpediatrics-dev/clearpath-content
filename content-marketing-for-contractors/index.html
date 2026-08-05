@@ -57,11 +57,21 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
 .btn:hover{transform:translateY(-2px)}
 .nav-pill .btn{padding:11px 22px;font-size:14px}
 
-footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:48px 0 40px;font-size:13.5px;color:var(--muted)}
-.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--pine-2);text-decoration:underline}
-.foot-nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
 
 
 /* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
@@ -94,6 +104,34 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .wordmark{font-size:15px}
   .mobile-cta{font-size:14.5px;padding:14px 18px}
 }
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
 
 .hero{padding:64px 0 34px}
 .hero h1{font-size:clamp(32px,5vw,52px);margin:18px 0 16px}
@@ -208,6 +246,49 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
   <div class="related"><a href="/content-marketing-for-hvac-companies">HVAC Companies →</a><a href="/content-marketing-for-law-firms">Law Firms →</a><a href="/content-marketing-for-dental-practices">Dental Practices →</a><a href="/content-marketing-for-home-services">Home Service Businesses →</a><a href="/content-marketing-for-b2b-software">B2B Software Companies →</a><a href="/industries">All industries →</a></div>
 </div></section>
 
+<section class="blk"><div class="narrow">
+  <h2>Go deeper</h2>
+  <p style="color:var(--muted);margin-bottom:16px">The strategy behind a deployment, written out in full.</p>
+  <div class="related"><a href="/blog/ai-search-optimization-guide">The complete guide →</a><a href="/blog/organic-visibility-guide">The complete guide →</a><a href="/blog/content-marketing-buying-guide">Buyer&#39;s guide →</a><a href="/blog/local-seo-guide">The complete guide →</a><a href="/blog/content-marketing-roi">The complete guide →</a><a href="/blog/industry-content-playbooks">Playbook index →</a><a href="/blog/content-operations-guide">The complete guide →</a></div>
+  <h2 style="margin-top:34px">Areas we serve</h2>
+  <div class="related"><a href="/content-marketing-phoenix">Phoenix →</a><a href="/content-marketing-scottsdale">Scottsdale →</a><a href="/content-marketing-mesa">Mesa →</a><a href="/content-marketing-tempe">Tempe →</a><a href="/content-marketing-chandler">Chandler →</a><a href="/content-marketing-gilbert">Gilbert →</a></div>
+</div></section>
+
+<section class="blk"><div class="narrow">
+<div class="capture" id="cap-ind">
+  <span class="eyebrow">Free market snapshot</span>
+  <h2>See what contracting buyers are searching in your market</h2>
+  <p>Tell us your industry and city. We will send back a short snapshot of the questions buyers in your market are typing, and who is currently answering them.</p>
+  <ul>
+    <li>The real questions your buyers search before they call anyone</li>
+    <li>Which of those questions your site answers today — and which it does not</li>
+    <li>Who is capturing that traffic in your market right now</li>
+  </ul>
+  <form name="market-snapshot" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/snapshot-requested/">
+    <input type="hidden" name="form-name" value="market-snapshot">
+    <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
+    <div class="row2">
+      <div><label for="cap-ind-name">Your name</label>
+        <input id="cap-ind-name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"></div>
+      <div><label for="cap-ind-email">Work email</label>
+        <input id="cap-ind-email" name="email" type="email" autocomplete="email" required placeholder="jane@yourcompany.com"></div>
+    </div>
+    <div class="row2">
+      <div><label for="cap-ind-industry">Industry</label>
+        <select id="cap-ind-industry" name="industry" required>
+          <option value=""  disabled>Select one…</option>
+          <option>HVAC</option><option>Plumbing</option><option>Electrical</option><option selected>Roofing / Contracting</option><option>Pest control</option><option>Law firm</option><option>Dental practice</option><option>Real estate</option><option>Home services</option><option>B2B software</option><option>Professional services</option><option>Other</option>
+        </select></div>
+      <div><label for="cap-ind-city">City / metro</label>
+        <input id="cap-ind-city" name="city" type="text" required placeholder="Phoenix, AZ"></div>
+    </div>
+    <div><label for="cap-ind-site">Website (optional)</label>
+      <input id="cap-ind-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    <button type="submit">Send me the snapshot</button>
+    <p class="fine">One email with your snapshot. No newsletter, no list rental, no automated sequence — unsubscribe is a reply.</p>
+  </form>
+</div></div></section>
+
 <section class="blk">
 <div class="narrow"><div class="band">
   <h2>One deployment per niche, per metro.</h2>
@@ -216,19 +297,60 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
 </div></div></section>
 
 <footer>
-  <div class="wrap foot-grid">
-    <span>ClearPath Content (CPC) — Visibility infrastructure</span>
-    <nav class="foot-nav">
-      <a href="/">Home</a>
-      <a href="/#method">Methodology</a>
-      <a href="/blog/">Field notes</a>
-      <a href="/industries">Industries</a>
-      <a href="/what-you-get">What you get</a>
-      <a href="/faq">FAQ</a>
-      <a href="/#pricing">Pricing</a>
-    </nav>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/content-marketing-scottsdale">Scottsdale</a>
+        <a href="/content-marketing-mesa">Mesa</a>
+        <a href="/content-marketing-tempe">Tempe</a>
+        <a href="/content-marketing-chandler">Chandler</a>
+        <a href="/content-marketing-gilbert">Gilbert</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-  <div class="wrap" style="margin-top:18px">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
 </footer>
 </body>
 </html>

@@ -22,7 +22,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { pickAngles, CLUSTERS } from "./topics.data.mjs";
 import { INDUSTRIES, CAPABILITIES } from "./pages.data.mjs";
-import { SITE, BRAND, esc, slugify, CSS, NAV, FOOTER, head } from "./blog-theme.mjs";
+import { SITE, BRAND, esc, slugify, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
+import { PILLARS } from "./hubs.data.mjs";
+import { renderSitemap } from "./sitemap.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -138,6 +140,7 @@ const SAMPLE = {
 
 // ---------- renderers ----------
 function renderPost(post) {
+  const pillar = PILLARS.find(g => g.clusterKey === post.clusterKey);
   const url = `${SITE}/blog/${post.slug}`;
   const articleLd = {
     "@context": "https://schema.org", "@type": "BlogPosting",
@@ -189,6 +192,12 @@ function renderPost(post) {
 .endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
 .endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
 .backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -203,6 +212,11 @@ ${NAV}
     <div class="body">
 ${post.html}
     </div>
+    ${pillar ? `<a class="pillarlink" href="/${pillar.slug}">
+      <span>Full guide</span>
+      <strong>${esc(pillar.h1)}</strong>
+      <em>${esc(pillar.metaDescription)}</em>
+    </a>` : ""}
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
@@ -276,30 +290,47 @@ ${NAV}
   <div class="wrap">
     ${posts.length ? `<div class="grid">${cards}\n    </div>` : `<p class="empty">First articles publishing shortly.</p>`}
   </div>
+  <div class="wrap" style="padding-top:34px">
+    <h2 style="font-size:24px;margin-bottom:6px">Start with a guide</h2>
+    <p style="color:var(--muted);margin-bottom:18px;max-width:60ch">Each cluster has a full guide that ties its articles together. If you are new here, start with one of these.</p>
+    <div class="grid">${PILLARS.map(g => `
+      <a class="pcard" href="/${g.slug}">
+        <span class="ptag">${esc(g.eyebrow)}</span>
+        <h2>${esc(g.h1)}</h2>
+        <p>${esc(g.metaDescription)}</p>
+      </a>`).join("")}
+    </div>
+  </div>
+  <div class="narrow" style="padding-top:20px">${captureBlock({ id: "cap-blog" })}</div>
 </main>
 ${FOOTER}
 </body>
 </html>`;
 }
 
-function renderSitemap(posts) {
-  const today = phoenixParts().iso;
-  // Must stay in sync with build-pages.mjs — this script runs daily via CI and
-  // rewrites sitemap.xml, so omitting the evergreen pages here would silently
-  // drop them from the sitemap on the next cron run.
-  const urls = [
-    { loc: `${SITE}/`, pri: "1.0", freq: "weekly", mod: today },
-    { loc: `${SITE}/${CAPABILITIES.slug}`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/faq`, pri: "0.8", freq: "monthly", mod: today },
-    { loc: `${SITE}/industries`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/blog`, pri: "0.9", freq: "daily", mod: today },
-    ...INDUSTRIES.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.8", freq: "monthly", mod: today })),
-    ...posts.map(p => ({ loc: `${SITE}/blog/${p.slug}`, pri: "0.7", freq: "monthly", mod: p.iso })),
-  ];
-  const rows = urls.map(u =>
-    `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.mod}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`
-  ).join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows}\n</urlset>\n`;
+/**
+ * Re-render every existing article page from its stored body HTML so that
+ * changes to the shared chrome (nav, footer, CSS, pillar links) propagate to
+ * posts published before the change. The body is recovered from the rendered
+ * file when posts.json predates the `html` field; if it cannot be recovered
+ * the file is left untouched rather than rewritten with an empty body.
+ */
+function rehydratePosts(posts) {
+  let n = 0;
+  for (const post of posts) {
+    const file = path.join(BLOG_DIR, post.slug, "index.html");
+    let html = post.html;
+    if (!html) {
+      let existing;
+      try { existing = fs.readFileSync(file, "utf8"); } catch { continue; }
+      const m = existing.match(/<div class="body">\n([\s\S]*?)\n    <\/div>/);
+      if (!m) continue;
+      html = m[1];
+    }
+    fs.writeFileSync(file, renderPost({ ...post, html }));
+    n++;
+  }
+  if (n) console.log(`[cpc] rehydrated ${n} article page${n === 1 ? "" : "s"} with current chrome`);
 }
 
 // ---------- main ----------
@@ -316,6 +347,7 @@ async function main() {
   const REBUILD_ONLY = process.env.CPC_REBUILD_ONLY === "1";
   if (!DRYRUN && (need === 0 || REBUILD_ONLY)) {
     console.log(`[cpc] ${iso} has ${todayCount}/${POSTS_PER_RUN} posts — rebuilding index + sitemap only.`);
+    rehydratePosts(posts);
     fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
     fs.writeFileSync(SITEMAP, renderSitemap(posts));
     return;
@@ -401,6 +433,7 @@ async function main() {
   fs.mkdirSync(BLOG_DIR, { recursive: true });
   fs.writeFileSync(POSTS_JSON, JSON.stringify(updated, null, 2) + "\n");
   fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(updated));
+  rehydratePosts(updated);
   fs.writeFileSync(SITEMAP, renderSitemap(updated));
   console.log(`[cpc] ${updated.length} total posts · index + sitemap rebuilt`);
 }

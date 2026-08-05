@@ -14,7 +14,40 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { INDUSTRIES, FAQ_HUB, CAPABILITIES, CAL } from "./pages.data.mjs";
-import { SITE, BRAND, esc, CSS, NAV, FOOTER, head } from "./blog-theme.mjs";
+import { SITE, BRAND, esc, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
+import { PILLARS, CITIES } from "./hubs.data.mjs";
+
+/* industry slug -> the matching option label in the capture form's dropdown */
+const CAPTURE_LABEL = {
+  "content-marketing-for-hvac-companies": "HVAC",
+  "content-marketing-for-plumbers": "Plumbing",
+  "content-marketing-for-electricians": "Electrical",
+  "content-marketing-for-contractors": "Roofing / Contracting",
+  "content-marketing-for-pest-control": "Pest control",
+  "content-marketing-for-law-firms": "Law firm",
+  "content-marketing-for-dental-practices": "Dental practice",
+  "content-marketing-for-real-estate": "Real estate",
+  "content-marketing-for-home-services": "Home services",
+  "content-marketing-for-b2b-software": "B2B software",
+  "content-marketing-for-professional-services": "Professional services",
+};
+
+/* the noun that reads naturally in "See what <noun> buyers are searching" */
+const CAPTURE_NOUN = {
+  "content-marketing-for-hvac-companies": "HVAC",
+  "content-marketing-for-plumbers": "plumbing",
+  "content-marketing-for-electricians": "electrical",
+  "content-marketing-for-contractors": "contracting",
+  "content-marketing-for-pest-control": "pest control",
+  "content-marketing-for-law-firms": "legal",
+  "content-marketing-for-dental-practices": "dental",
+  "content-marketing-for-real-estate": "real estate",
+  "content-marketing-for-home-services": "home services",
+  "content-marketing-for-b2b-software": "B2B software",
+  "content-marketing-for-small-business": "local",
+  "content-marketing-for-professional-services": "professional services",
+};
+import { renderSitemap } from "./sitemap.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -149,6 +182,20 @@ ${crumbs(p.industry)}
   <div class="related">${others.map(o => `<a href="/${o.slug}">${esc(o.industry)} →</a>`).join("")}<a href="/industries">All industries →</a></div>
 </div></section>
 
+<section class="blk"><div class="narrow">
+  <h2>Go deeper</h2>
+  <p style="color:var(--muted);margin-bottom:16px">The strategy behind a deployment, written out in full.</p>
+  <div class="related">${PILLARS.map(g => `<a href="/${g.slug}">${esc(g.eyebrow)} →</a>`).join("")}</div>
+  <h2 style="margin-top:34px">Areas we serve</h2>
+  <div class="related">${CITIES.map(c => `<a href="/${c.slug}">${esc(c.city)} →</a>`).join("")}</div>
+</div></section>
+
+<section class="blk"><div class="narrow">${captureBlock({
+  id: "cap-ind",
+  heading: `See what ${CAPTURE_NOUN[p.slug] || "your"} buyers are searching in your market`,
+  preselect: CAPTURE_LABEL[p.slug] || "",
+})}</div></section>
+
 <section class="blk">${ctaBand("One deployment per niche, per metro.", "The point is that you own the answers in your market. Book a call and we'll tell you if yours is still open.")}</section>
 ${FOOTER}
 </body>
@@ -192,6 +239,8 @@ ${crumbs("What you get")}
   <div class="related" style="margin-top:22px"><a href="/faq">All questions →</a><a href="/#pricing">Deployment tiers →</a></div>
 </div></section>
 
+<section class="blk"><div class="narrow">${captureBlock({ id: "cap-cap" })}</div></section>
+
 <section class="blk">${ctaBand("See whether your market is still open.", "We deploy for one business per niche, per metro. Thirty minutes tells you if yours is available.")}</section>
 ${FOOTER}
 </body>
@@ -226,6 +275,8 @@ ${FAQ_HUB.map(g => `
   <h2>${esc(g.group)}</h2>
   ${faqBlock(g.items)}
 </div></section>`).join("")}
+
+<section class="blk"><div class="narrow">${captureBlock({ id: "cap-faq" })}</div></section>
 
 <section class="blk">${ctaBand("Still have questions?", "Thirty minutes, no pitch. We'll tell you honestly whether this fits your market.")}</section>
 </main>
@@ -288,33 +339,12 @@ ${crumbs("Industries")}
   <div class="related" style="margin-top:18px"><a href="/what-you-get">What a deployment delivers →</a><a href="/faq">Common questions →</a></div>
 </div></section>
 
+<section class="blk"><div class="narrow">${captureBlock({ id: "cap-hub" })}</div></section>
+
 <section class="blk">${ctaBand("Is your market still open?", "We deploy for one business per niche, per metro. Thirty minutes tells you whether yours is available.")}</section>
 ${FOOTER}
 </body>
 </html>`;
-}
-
-/* ------------------------------------------------------------------ sitemap */
-function buildSitemap() {
-  const today = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "America/Phoenix", year: "numeric", month: "2-digit", day: "2-digit",
-  }).format(new Date());
-  let posts = [];
-  try { posts = JSON.parse(fs.readFileSync(path.join(ROOT, "blog", "posts.json"), "utf8")); } catch {}
-
-  const urls = [
-    { loc: `${SITE}/`, pri: "1.0", freq: "weekly", mod: today },
-    { loc: `${SITE}/what-you-get`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/faq`, pri: "0.8", freq: "monthly", mod: today },
-    { loc: `${SITE}/industries`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/blog`, pri: "0.9", freq: "daily", mod: today },
-    ...INDUSTRIES.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.8", freq: "monthly", mod: today })),
-    ...posts.map(p => ({ loc: `${SITE}/blog/${p.slug}`, pri: "0.7", freq: "monthly", mod: p.iso })),
-  ];
-  const rows = urls.map(u =>
-    `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.mod}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`
-  ).join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows}\n</urlset>\n`;
 }
 
 // ---- run ----
@@ -337,5 +367,5 @@ fs.mkdirSync(path.join(ROOT, "faq"), { recursive: true });
 fs.writeFileSync(path.join(ROOT, "faq", "index.html"), renderFaqHub());
 console.log("  ✓ /faq"); n++;
 
-fs.writeFileSync(path.join(ROOT, "sitemap.xml"), buildSitemap());
+fs.writeFileSync(path.join(ROOT, "sitemap.xml"), renderSitemap());
 console.log(`[pages] built ${n} pages + sitemap.`);
