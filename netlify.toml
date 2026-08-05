@@ -22,7 +22,7 @@
 [functions]
   node_bundler = "esbuild"
   # scripts/ holds the shared audit + scoring modules the functions import
-  included_files = ["scripts/**"]
+  included_files = ["scripts/**", "netlify/lib/**"]
 
 [[headers]]
   for = "/.netlify/functions/unsubscribe"

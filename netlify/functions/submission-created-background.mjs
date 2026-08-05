@@ -16,7 +16,7 @@ import { scoreLead, playbook, industryPhrase } from "../../scripts/icp.mjs";
 import {
   CAL, SITE, ALERT_TO, leadStore, emailKey, sendEmail, layout,
   unsubUrlFor, toText, esc, isSuppressed,
-} from "./_shared.mjs";
+} from "../lib/shared.mjs";
 
 const GUIDE_FOR = {
   "HVAC": ["local-seo-guide", "Local Search Visibility for Service Businesses"],

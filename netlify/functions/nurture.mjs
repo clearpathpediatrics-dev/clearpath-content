@@ -15,7 +15,7 @@ import { industryPhrase } from "../../scripts/icp.mjs";
 import {
   CAL, SITE, ALERT_TO, leadStore, sendEmail, layout, unsubUrlFor,
   toText, esc, isSuppressed,
-} from "./_shared.mjs";
+} from "../lib/shared.mjs";
 
 export const config = { schedule: "0 16 * * *" }; // 16:00 UTC — 9am Phoenix
 

@@ -8,7 +8,7 @@
  *
  * Set CPC_ADMIN_TOKEN in Netlify. Without it the endpoint refuses everything.
  */
-import { leadStore, esc } from "./_shared.mjs";
+import { leadStore, esc } from "../lib/shared.mjs";
 
 const BAND_COLOUR = { HOT: "#B4451F", WARM: "#1F5FA8", COOL: "#5B6B80", LOW: "#8494A8" };
 

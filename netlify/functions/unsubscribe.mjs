@@ -3,7 +3,7 @@
  * Adds the address to the suppression store and closes any open sequence.
  * Also answers POST so RFC 8058 one-click unsubscribe works from Gmail.
  */
-import { suppress, leadStore, emailKey, esc } from "./_shared.mjs";
+import { suppress, leadStore, emailKey, esc } from "../lib/shared.mjs";
 
 const page = (title, msg) => `<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
