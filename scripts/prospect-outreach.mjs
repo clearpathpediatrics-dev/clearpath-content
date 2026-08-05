@@ -31,7 +31,7 @@ import path from "node:path";
 import { auditSite, headlineFindings } from "./site-audit.mjs";
 import { scoreLead, playbook, industryPhrase, INDUSTRY_PRIORS, BANDS } from "./icp.mjs";
 
-const CAL = "https://calendly.com/clearpathpediatrics/30min";
+import { CAL } from "./blog-theme.mjs";
 const CONCURRENCY = 4;   // polite: a handful of requests per site, four sites at a time
 const args = process.argv.slice(2);
 

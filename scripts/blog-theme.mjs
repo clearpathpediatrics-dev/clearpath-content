@@ -8,6 +8,18 @@ export const SITE = "https://clearpath-content.com";
 export const BRAND = "ClearPath Content";
 export const CONTACT = "admin@clearpath-content.com";
 
+/**
+ * Canonical booking link. Every CTA on the site, in the funnel emails and in
+ * the outbound drafts resolves to this one constant — changing it here and
+ * rebuilding updates all of them. Still points at the pediatrics Calendly;
+ * swap in a CPC-branded event when one exists.
+ *
+ * To change it: set CPC_CALENDLY_URL (locally or in Netlify) and rebuild, or
+ * edit the default here. index.html is hand-authored and not generated, so it
+ * needs a find/replace of the old URL at the same time — it holds 8 copies.
+ */
+export const CAL = process.env.CPC_CALENDLY_URL || "https://calendly.com/clearpathpediatrics/30min";
+
 export const esc = (s = "") => String(s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
   .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -238,11 +250,11 @@ export const NAV = `
       <a href="/industries">Industries</a>
       <a href="/locations">Locations</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn green" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+      <a class="btn green" href="${CAL}" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
 </nav>
-<a class="mobile-cta" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>`;
+<a class="mobile-cta" href="${CAL}" target="_blank" rel="noopener">Request access</a>`;
 
 export const FOOTER = `
 <footer>
@@ -251,7 +263,7 @@ export const FOOTER = `
       <div class="foot-brand">
         <span class="foot-mark">ClearPath Content</span>
         <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
-        <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
+        <a class="foot-btn" href="${CAL}" target="_blank" rel="noopener">Request access</a>
       </div>
       <div class="foot-col">
         <h3>Company</h3>

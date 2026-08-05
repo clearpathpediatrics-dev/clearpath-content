@@ -13,7 +13,8 @@
  * already on the homepage.
  */
 
-export const CAL = "https://calendly.com/clearpathpediatrics/30min";
+// Re-exported from blog-theme so there is exactly one definition site-wide.
+export { CAL } from "./blog-theme.mjs";
 
 /* ---------------------------------------------------------------- industries */
 export const INDUSTRIES = [

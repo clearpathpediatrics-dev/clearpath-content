@@ -11,7 +11,7 @@
 import { getStore } from "@netlify/blobs";
 
 export const SITE = "https://clearpath-content.com";
-export const CAL = "https://calendly.com/clearpathpediatrics/30min";
+export const CAL = process.env.CPC_CALENDLY_URL || "https://calendly.com/clearpathpediatrics/30min";
 
 export const FROM = process.env.CPC_FROM_EMAIL || "ClearPath Content <admin@clearpath-content.com>";
 export const ALERT_TO = process.env.CPC_ALERT_EMAIL || "admin@clearpath-content.com";

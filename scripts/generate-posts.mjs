@@ -22,7 +22,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { pickAngles, CLUSTERS } from "./topics.data.mjs";
 import { INDUSTRIES, CAPABILITIES } from "./pages.data.mjs";
-import { SITE, BRAND, esc, slugify, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
+import { SITE, BRAND, CAL, esc, slugify, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
 import { PILLARS } from "./hubs.data.mjs";
 import { renderSitemap } from "./sitemap.mjs";
 
@@ -208,7 +208,7 @@ ${post.html}
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
-      <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+      <a class="btn" href="${CAL}" target="_blank" rel="noopener">Book a 30-minute call</a>
     </div>
     <a class="backlink" href="/blog/">← All field notes</a>
   </div>
