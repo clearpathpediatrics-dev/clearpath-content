@@ -82,6 +82,25 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
 .band{background:var(--pine);color:#fff;border-radius:var(--r-lg);padding:44px 40px;margin:40px 0 10px;text-align:center}
 .band h2{color:#fff;margin-bottom:10px;font-size:clamp(22px,3vw,30px)}
 .band p{color:#C4DDF2;max-width:54ch;margin:0 auto 24px;font-size:16px}
+.regionblk{margin-bottom:34px}
+.regionblk h2{font-size:20px;margin-bottom:4px}
+.regionblk .rc{color:var(--muted);font-size:13.5px;margin-bottom:14px}
+.citygrid{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:560px){.citygrid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.citygrid{grid-template-columns:1fr 1fr 1fr}}
+.citycard{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px 18px;
+  text-decoration:none;display:block;box-shadow:0 3px 12px rgba(11,34,64,.05);transition:transform .18s,border-color .18s}
+.citycard:hover{transform:translateY(-3px);border-color:var(--spring)}
+.citycard strong{display:block;font-family:var(--display);font-size:16.5px;color:var(--pine)}
+.citycard span{display:block;color:var(--muted);font-size:12.5px;margin-top:3px}
+.statelist{columns:2;column-gap:26px;color:#33445A;font-size:15.5px;margin-top:12px}
+@media(min-width:760px){.statelist{columns:4}}
+.statelist li{list-style:none;padding:4px 0;break-inside:avoid}
+.qlist{list-style:none;margin-top:16px;display:grid;gap:10px}
+.qlist li{background:#fff;border:1px solid var(--border);border-radius:12px;padding:13px 18px 13px 44px;
+  position:relative;font-size:15.5px;color:#33445A;box-shadow:0 2px 8px rgba(11,34,64,.04)}
+.qlist li::before{content:"";position:absolute;left:17px;top:50%;width:13px;height:13px;margin-top:-7px;
+  border:2px solid var(--spring);border-radius:50%;box-shadow:2px 3px 0 -1px var(--spring)}
 .citynotes{list-style:none;margin-top:14px}
 .citynotes li{position:relative;padding:11px 0 11px 28px;border-bottom:1px solid var(--border);font-size:16px;color:#33445A}
 .citynotes li:last-child{border-bottom:none}
@@ -206,11 +225,12 @@ function renderCity(c) {
   };
   const faq = [
     { q: `How much does content marketing cost in ${c.city}?`, a: `Agency retainers in the ${c.city} market commonly run into the thousands per month for a handful of articles. ClearPath Content deployment tiers run $199 to $499 per month, month to month, with everything published staying yours permanently.` },
-    { q: `Do you only work with ${c.city} businesses?`, a: `No — the program runs for businesses anywhere. ${c.city} and the surrounding metro is simply where we are based, and local markets are where genuinely local content has the biggest advantage over national competitors.` },
+    { q: `Do you only work with ${c.city} businesses?`, a: `No — we deploy for businesses across the United States, and ${c.city} is one of the markets we run dedicated programs in. Local markets are simply where genuinely local content has the biggest advantage, because national competitors cannot write credibly about a place they do not operate in.` },
     { q: `Can you work with more than one business in ${c.city}?`, a: `Not in the same niche. We deploy for one business per niche, per metro — the entire value is that you own the answers in your market, and that does not survive selling the same coverage to your competitor.` },
+    { q: `What would you publish for a ${c.city} business?`, a: `Work grounded in this market specifically. ${c.landscape} The published answers address that directly — ${c.queries.slice(0, 3).join("; ")} — rather than the generic version of those questions that already ranks and helps nobody.` },
   ];
   return head({
-    title: `Content Marketing in ${c.city}, AZ | ${BRAND}`,
+    title: `Content Marketing in ${c.city}, ${c.abbr} | ${BRAND}`,
     description: `Organic visibility programs for ${c.city} businesses — published to your own domain, on a fixed cadence, targeting what ${c.city} buyers actually search.`,
     url, og: "website",
     keywords: [`content marketing ${c.city}`, `${c.city} SEO`, `${c.city} content marketing agency`, `SEO company ${c.city}`, `${c.city} digital marketing`],
@@ -224,7 +244,7 @@ ${crumbs(crumbParts)}
   <span class="eyebrow">${esc(c.city)}, ${esc(c.state)}</span>
   <h1>Content Marketing in ${esc(c.city)}</h1>
   <p>${esc(c.blurb)}</p>
-  <p>We run organic visibility programs for ${esc(c.city)} businesses — published to your own domain, on a fixed cadence, targeting the questions your local buyers actually type. One business per niche, per metro.</p>
+  <p>We run organic visibility programs for ${esc(c.city)} businesses — published to your own domain, on a fixed cadence, targeting the questions your local buyers actually type. One business per niche, per metro, so the coverage we build in ${esc(c.city)} is not sold to the competitor down the road.</p>
   <div class="cta-row">
     <a class="btn" href="${CAL}" target="_blank" rel="noopener">Check if your ${esc(c.city)} niche is open</a>
     <a class="btn ghost" href="/industries">See industries</a>
@@ -238,9 +258,17 @@ ${crumbs(crumbParts)}
 </div></section>
 
 <section class="sec"><div class="narrow">
-  <h2>Why local businesses lose their own market</h2>
-  <p>Search results in ${esc(c.city)} for the highest-intent local questions are dominated by national directories, portals and lead aggregators. None of them can actually do the work — they capture the searcher, then sell that lead back to the local business, often shared with two competitors.</p>
-  <p>The way out is not to outbid them. It is to answer the specific questions they answer generically and badly: what something costs in this market, how local permitting works, what the housing stock here does, which neighbourhoods you actually serve. That ground is winnable, and most local competitors are not even contesting it.</p>
+  <h2>What ${esc(c.city)} buyers are actually typing</h2>
+  <p>These are the shapes of query that matter in this market — specific, local, and asked by someone close to spending money. They are not head terms, and that is precisely why they are winnable.</p>
+  <ul class="qlist">${c.queries.map(q => `<li>${esc(q)}</li>`).join("")}</ul>
+  <p class="after">Each one of these is a page. Answer it properly once and it keeps earning — in Google, and increasingly in the AI assistants that now summarise these answers for people who never see a results page at all.</p>
+</div></section>
+
+<section class="sec"><div class="narrow">
+  <h2>Who holds those results in ${esc(c.city)} today</h2>
+  <p>${esc(c.landscape)}</p>
+  <p>The pattern is the same across most of the ${esc(c.region)}: national directories, portals and lead aggregators sit on the highest-intent local questions. None of them can do the work. They capture the searcher, then sell that enquiry back to a local business — frequently the same enquiry, to three of them.</p>
+  <p>Outbidding them is expensive and stops the moment you stop paying. Out-answering them is not. What costs in ${esc(c.city)}, how permitting works here, what the housing stock does, which areas you actually cover — a national page cannot write any of it credibly, and most of your local competitors have not tried.</p>
 </div></section>
 
 <section class="sec"><div class="narrow">
@@ -253,14 +281,115 @@ ${crumbs(crumbParts)}
   <div class="related" style="margin-top:20px"><a href="/blog/local-seo-guide">The local SEO guide →</a><a href="/what-you-get">What you get →</a></div>
 </div></section>
 
+<section class="sec"><div class="narrow">
+  <h2>Other markets in the ${esc(c.region)}</h2>
+  <p style="color:var(--muted);margin-bottom:14px">We deploy nationwide. These are the other ${esc(c.region)} metros with a dedicated page.</p>
+  <div class="related">${CITIES.filter(x => x.region === c.region && x.slug !== c.slug)
+    .map(x => `<a href="/${x.slug}">${esc(x.city)}, ${esc(x.abbr)} →</a>`).join("")}<a href="/locations">All locations →</a></div>
+</div></section>
+
 <section class="sec"><div class="narrow">${captureBlock({
   id: "cap-city",
   heading: `See what ${c.city} is already searching`,
   sub: `Tell us your industry. We will send back a short snapshot of what buyers in ${c.city} are typing before they call anyone, and who is answering them today.`,
-  city: `${c.city}, AZ`,
+  city: c.city,
+  state: c.abbr,
 })}</div></section>
 
 <section class="sec">${band(`Is your ${c.city} niche still open?`, "One deployment per niche, per metro. Thirty minutes tells you whether yours is available.", "Check availability")}</section>
+${FOOTER}
+</body>
+</html>`;
+}
+
+
+/* --------------------------------------------------------- locations hub */
+const REGION_ORDER = ["Northeast", "Mid-Atlantic", "Southeast", "Midwest", "South Central",
+  "Southwest", "Mountain West", "West Coast", "Pacific Northwest"];
+
+function renderLocations() {
+  const url = `${SITE}/locations`;
+  const crumbParts = [{ n: "Home", u: "/" }, { n: "Locations", u: "/locations" }];
+  const byRegion = REGION_ORDER
+    .map(r => [r, CITIES.filter(c => c.region === r)])
+    .filter(([, list]) => list.length);
+  const states = [...new Set(CITIES.map(c => c.state))].sort();
+
+  const faq = [
+    { q: "Do you only work in the cities listed here?", a: "No. Deployments run for businesses anywhere in the United States. The cities listed here are markets we have built dedicated pages for; if yours is not on the list it simply means we have not written that page yet, not that we cannot deploy there." },
+    { q: "How does 'one business per niche, per metro' work nationally?", a: "Availability is scoped to a niche within a metro. An HVAC deployment in Denver does not affect an HVAC deployment in Dallas, and it does not affect a dental deployment in Denver. It only closes HVAC in Denver." },
+    { q: "Does local content still matter if I serve a whole region?", a: "Yes, and usually more than businesses expect. Buyers search with local qualifiers even for regional providers, and national directories rank for those queries by default. Content that is specifically about a market is what displaces them." },
+    { q: "Do you understand markets you are not physically in?", a: "The program is built around what a given market actually searches, which is observable rather than intuited. What matters is that the published answers are accurate and specific to that market — climate, housing stock, regulation, local pricing — not where the writing desk sits." },
+  ];
+
+  const ld = {
+    "@context": "https://schema.org", "@type": "Service",
+    name: "Content Marketing & Organic Visibility Programs",
+    description: "Organic visibility programs for businesses across the United States.",
+    url, provider: { "@type": "Organization", name: BRAND, url: SITE },
+    areaServed: { "@type": "Country", name: "United States" },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog", name: "Markets with dedicated programs",
+      itemListElement: CITIES.map((c, i) => ({
+        "@type": "ListItem", position: i + 1, name: `Content Marketing in ${c.city}, ${c.abbr}`, url: `${SITE}/${c.slug}`,
+      })),
+    },
+  };
+
+  return head({
+    title: `Content Marketing by City — Nationwide | ${BRAND}`,
+    description: `Organic visibility programs for businesses across the United States. ${CITIES.length} metros with dedicated pages, one deployment per niche per metro, published to your own domain.`,
+    url, og: "website",
+    keywords: ["content marketing near me", "local content marketing company", "content marketing by city", "nationwide SEO content", "local SEO agency"],
+    jsonld: [ld, breadcrumbLd(crumbParts), faqLd(faq)],
+  }) + `<style>${HUB_CSS}</style>
+</head>
+<body>
+${NAV}
+${crumbs(crumbParts)}
+<header class="hero"><div class="narrow">
+  <span class="eyebrow">Nationwide</span>
+  <h1>Where we deploy</h1>
+  <p>ClearPath Content runs organic visibility programs for businesses across the United States. Every deployment publishes to your own domain, targets the questions your buyers actually type, and stays yours permanently.</p>
+  <p>Availability is scoped by market: <strong>one business per niche, per metro</strong>. An HVAC deployment in Denver has no bearing on one in Dallas — it only closes HVAC in Denver.</p>
+  <div class="cta-row">
+    <a class="btn" href="${CAL}" target="_blank" rel="noopener">Check if your market is open</a>
+    <a class="btn ghost" href="/industries">See industries</a>
+  </div>
+</div></header>
+
+<section class="sec"><div class="wrap">
+  <h2 style="font-size:clamp(22px,3vw,28px);margin-bottom:6px">${CITIES.length} metros with a dedicated page</h2>
+  <p style="color:var(--muted);max-width:64ch;margin-bottom:26px">Each of these pages covers what actually shapes search in that market — climate, housing stock, local regulation, who currently holds the results. If your city is not listed, we still deploy there; the page just has not been written yet.</p>
+  ${byRegion.map(([region, list]) => `
+  <div class="regionblk">
+    <h2>${esc(region)}</h2>
+    <p class="rc">${list.length} market${list.length === 1 ? "" : "s"}</p>
+    <div class="citygrid">${list.map(c => `
+      <a class="citycard" href="/${c.slug}"><strong>${esc(c.city)}, ${esc(c.abbr)}</strong><span>${esc(c.state)}</span></a>`).join("")}
+    </div>
+  </div>`).join("")}
+</div></section>
+
+<section class="sec"><div class="narrow">
+  <h2>States we currently have market pages in</h2>
+  <ul class="statelist">${states.map(st => `<li>${esc(st)}</li>`).join("")}</ul>
+  <p style="color:var(--muted);font-size:15px;margin-top:16px">Not an exhaustive list of where we work — deployments run in all fifty states. These are simply the states where a metro page exists today.</p>
+</div></section>
+
+<section class="sec"><div class="narrow">
+  <h2>Industries we deploy for</h2>
+  <div class="related">${INDUSTRIES.map(i => `<a href="/${i.slug}">${esc(i.industry)} →</a>`).join("")}</div>
+</div></section>
+
+<section class="sec"><div class="narrow">
+  <h2>Common questions</h2>${faqBlock(faq)}
+  <div class="related" style="margin-top:20px"><a href="/blog/local-seo-guide">The local SEO guide →</a><a href="/what-you-get">What you get →</a></div>
+</div></section>
+
+<section class="sec"><div class="narrow">${captureBlock({ id: "cap-loc" })}</div></section>
+
+<section class="sec">${band("Is your market still open?", "One deployment per niche, per metro, anywhere in the country. Thirty minutes tells you whether yours is available.", "Check availability")}</section>
 ${FOOTER}
 </body>
 </html>`;
@@ -342,6 +471,10 @@ for (const c of CITIES) {
   fs.writeFileSync(path.join(dir, "index.html"), renderCity(c));
   console.log(`  ✓ /${c.slug}`); n++;
 }
+fs.mkdirSync(path.join(ROOT, "locations"), { recursive: true });
+fs.writeFileSync(path.join(ROOT, "locations", "index.html"), renderLocations());
+console.log("  ✓ /locations"); n++;
+
 for (const c of COMPARISONS) {
   const dir = path.join(ROOT, c.slug);
   fs.mkdirSync(dir, { recursive: true });

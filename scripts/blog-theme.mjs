@@ -43,7 +43,7 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
   border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
   display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
 .wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
-.nav-links{display:flex;gap:26px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--pine)}
 .btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;text-decoration:none;
@@ -104,11 +104,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
 .capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
 .capture .eyebrow::before{background:var(--mint)}
-.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
-.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
-.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
-.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
-.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
 .capture form{display:grid;gap:12px}
 @media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
 .capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
@@ -128,6 +128,21 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   .capture button{width:100%;justify-self:stretch;text-align:center}}
 `;
 
+/** US states + DC, for the capture form's state select. */
+export const US_STATES = [
+  ["AL","Alabama"],["AK","Alaska"],["AZ","Arizona"],["AR","Arkansas"],["CA","California"],
+  ["CO","Colorado"],["CT","Connecticut"],["DE","Delaware"],["DC","District of Columbia"],
+  ["FL","Florida"],["GA","Georgia"],["HI","Hawaii"],["ID","Idaho"],["IL","Illinois"],
+  ["IN","Indiana"],["IA","Iowa"],["KS","Kansas"],["KY","Kentucky"],["LA","Louisiana"],
+  ["ME","Maine"],["MD","Maryland"],["MA","Massachusetts"],["MI","Michigan"],["MN","Minnesota"],
+  ["MS","Mississippi"],["MO","Missouri"],["MT","Montana"],["NE","Nebraska"],["NV","Nevada"],
+  ["NH","New Hampshire"],["NJ","New Jersey"],["NM","New Mexico"],["NY","New York"],
+  ["NC","North Carolina"],["ND","North Dakota"],["OH","Ohio"],["OK","Oklahoma"],["OR","Oregon"],
+  ["PA","Pennsylvania"],["RI","Rhode Island"],["SC","South Carolina"],["SD","South Dakota"],
+  ["TN","Tennessee"],["TX","Texas"],["UT","Utah"],["VT","Vermont"],["VA","Virginia"],
+  ["WA","Washington"],["WV","West Virginia"],["WI","Wisconsin"],["WY","Wyoming"],
+];
+
 /** Industry options shared by every capture form (label only — value is the label). */
 const CAPTURE_INDUSTRIES = [
   "HVAC", "Plumbing", "Electrical", "Roofing / Contracting", "Pest control",
@@ -146,6 +161,7 @@ export function captureBlock({
   sub = "Tell us your industry and city. We will send back a short snapshot of the questions buyers in your market are typing, and who is currently answering them.",
   preselect = "",
   city = "",
+  state = "",
   id = "capture",
 } = {}) {
   return `
@@ -174,10 +190,17 @@ export function captureBlock({
           ${CAPTURE_INDUSTRIES.map(i => `<option${i === preselect ? " selected" : ""}>${esc(i)}</option>`).join("")}
         </select></div>
       <div><label for="${id}-city">City / metro</label>
-        <input id="${id}-city" name="city" type="text" required placeholder="Phoenix, AZ"${city ? ` value="${esc(city)}"` : ""}></div>
+        <input id="${id}-city" name="city" type="text" autocomplete="address-level2" required placeholder="Your city"${city ? ` value="${esc(city)}"` : ""}></div>
     </div>
-    <div><label for="${id}-site">Website (optional)</label>
-      <input id="${id}-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    <div class="row2">
+      <div><label for="${id}-state">State</label>
+        <select id="${id}-state" name="state" required>
+          <option value="" ${state ? "" : "selected"} disabled>Select a state…</option>
+          ${US_STATES.map(([ab, nm]) => `<option value="${ab}"${ab === state ? " selected" : ""}>${esc(nm)}</option>`).join("")}
+        </select></div>
+      <div><label for="${id}-site">Website (optional)</label>
+        <input id="${id}-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    </div>
     <button type="submit">Send me the snapshot</button>
     <p class="fine">One email with your snapshot. No newsletter, no list rental, no automated sequence — unsubscribe is a reply.</p>
   </form>
@@ -202,6 +225,7 @@ export const NAV = `
       <a href="/#why">Why visibility</a>
       <a href="/#method">Methodology</a>
       <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
       <a href="/#pricing">Pricing</a>
       <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
@@ -215,7 +239,7 @@ export const FOOTER = `
     <div class="foot-cols">
       <div class="foot-brand">
         <span class="foot-mark">ClearPath Content</span>
-        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
         <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
       </div>
       <div class="foot-col">
@@ -242,12 +266,14 @@ export const FOOTER = `
         <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
         <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
         <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
         <a href="/content-marketing-phoenix">Phoenix</a>
-        <a href="/content-marketing-scottsdale">Scottsdale</a>
-        <a href="/content-marketing-mesa">Mesa</a>
-        <a href="/content-marketing-tempe">Tempe</a>
-        <a href="/content-marketing-chandler">Chandler</a>
-        <a href="/content-marketing-gilbert">Gilbert</a>
+        <a href="/locations">All locations →</a>
       </div>
       <div class="foot-col">
         <h3>Industries</h3>

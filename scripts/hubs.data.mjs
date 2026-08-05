@@ -11,6 +11,8 @@
  * daily articles feed into; each lives at the cluster's `pillar` path.
  * `clusterKey` links a pillar to its articles so the page auto-lists them.
  */
+import { CITY_DEPTH } from "./cities.depth.mjs";
+
 export const PILLARS = [
   {
     slug: "blog/ai-search-optimization-guide",
@@ -454,27 +456,179 @@ export const PILLARS = [
   },
 ];
 
-/* ================================================================== CITIES */
-export const CITIES = [
-  { slug: "content-marketing-phoenix", city: "Phoenix", state: "Arizona", short: "Phoenix",
+/* ================================================================== CITIES
+ * Metro landing pages. Deployments run nationwide; these are the markets with
+ * dedicated pages. Every entry must carry genuinely market-specific `notes`
+ * — near-identical city pages are doorway pages and are treated as such.
+ * `region` drives the grouping on /locations.
+ */
+const CITY_BASE = [
+  /* ---------------------------------------------------------- Southwest */
+  { slug: "content-marketing-phoenix", city: "Phoenix", state: "Arizona", abbr: "AZ", region: "Southwest",
     blurb: "The fifth-largest city in the country, with a service-business market to match. Competition for the obvious keywords is heavy; the long-tail questions Phoenix homeowners and business owners actually type are wide open.",
     notes: ["Extreme summer heat drives predictable seasonal search spikes in HVAC, plumbing and pest control", "Rapid population growth means constant new-mover searches — new to Phoenix, best neighbourhoods, who to hire", "A large share of the market is transplants with no established provider relationships"] },
-  { slug: "content-marketing-scottsdale", city: "Scottsdale", state: "Arizona", short: "Scottsdale",
+  { slug: "content-marketing-scottsdale", city: "Scottsdale", state: "Arizona", abbr: "AZ", region: "Southwest",
     blurb: "Higher household income, higher-ticket services, and buyers who research more before committing. Content does disproportionate work here because the purchases are considered rather than urgent.",
     notes: ["Premium services — med spas, remodels, cosmetic dentistry, luxury real estate — with long research cycles", "Buyers compare carefully and read before contacting anyone", "Design and quality signals matter more than price positioning"] },
-  { slug: "content-marketing-mesa", city: "Mesa", state: "Arizona", short: "Mesa",
+  { slug: "content-marketing-mesa", city: "Mesa", state: "Arizona", abbr: "AZ", region: "Southwest",
     blurb: "Arizona's third-largest city and one of the most under-served markets in the metro for genuinely local content. Most competitors here publish nothing at all.",
     notes: ["Large established housing stock driving steady repair and replacement demand", "Significant retiree population researching carefully before hiring", "Local competitors are largely absent from organic search"] },
-  { slug: "content-marketing-tempe", city: "Tempe", state: "Arizona", short: "Tempe",
+  { slug: "content-marketing-tempe", city: "Tempe", state: "Arizona", abbr: "AZ", region: "Southwest",
     blurb: "A dense, young, university-anchored market with a high concentration of small businesses and a rental-heavy housing mix that shapes what people search for.",
     notes: ["High rental density shifts demand toward landlords and property managers", "Dense small-business and startup community", "Younger demographic that researches almost exclusively online"] },
-  { slug: "content-marketing-chandler", city: "Chandler", state: "Arizona", short: "Chandler",
+  { slug: "content-marketing-chandler", city: "Chandler", state: "Arizona", abbr: "AZ", region: "Southwest",
     blurb: "A tech-employer corridor with high household income and newer housing. Buyers here skew technical and research thoroughly before choosing a provider.",
     notes: ["Major tech and semiconductor employment base", "Newer housing stock shifting demand toward upgrades over repairs", "Technically literate buyers who compare in depth"] },
-  { slug: "content-marketing-gilbert", city: "Gilbert", state: "Arizona", short: "Gilbert",
+  { slug: "content-marketing-gilbert", city: "Gilbert", state: "Arizona", abbr: "AZ", region: "Southwest",
     blurb: "One of the fastest-growing towns in the country, heavily family-oriented, with strong word-of-mouth networks that content amplifies rather than replaces.",
     notes: ["Rapid growth and continuous new-construction activity", "Family-heavy demographic with high referral behaviour", "Prospects almost always research a referral before calling"] },
+  { slug: "content-marketing-las-vegas", city: "Las Vegas", state: "Nevada", abbr: "NV", region: "Southwest",
+    blurb: "A hospitality-anchored economy sitting on top of a large and fast-growing residential market. Two very different sets of buyers search here, and most local competitors write for neither.",
+    notes: ["Desert heat and hard water drive year-round HVAC, plumbing and water-treatment demand", "A hospitality and events economy means a deep pool of B2B service buyers alongside homeowners", "High population turnover keeps new-resident and relocation queries continuously fresh"] },
+  { slug: "content-marketing-albuquerque", city: "Albuquerque", state: "New Mexico", abbr: "NM", region: "Southwest",
+    blurb: "A mid-sized market where national directories dominate the results by default, simply because so few local businesses publish anything. The bar to own a topic here is unusually low.",
+    notes: ["Adobe and stucco construction creates repair questions with no useful national answer", "High-desert climate swings drive distinct heating and cooling seasonality", "Very thin local publishing means directory sites hold rankings almost unopposed"] },
+
+  /* ------------------------------------------------------- South Central */
+  { slug: "content-marketing-houston", city: "Houston", state: "Texas", abbr: "TX", region: "South Central",
+    blurb: "One of the largest and least zoned metros in the country, which makes local knowledge genuinely valuable. What is true in the Heights is not true in Katy, and buyers can tell when content knows the difference.",
+    notes: ["Humidity, storm and flood exposure drive urgent, high-value search across trades and insurance-adjacent services", "A vast energy and industrial base creates a deep B2B and professional-services market", "Minimal zoning means permitting and property questions vary sharply by area"] },
+  { slug: "content-marketing-dallas", city: "Dallas", state: "Texas", abbr: "TX", region: "South Central",
+    blurb: "A corporate relocation magnet with continuous inbound population and a service market growing to meet it. High competition on head terms, wide-open long tail.",
+    notes: ["Expansive clay soils make foundation, plumbing and structural questions a persistent local search category", "Constant corporate relocations feed new-mover and new-office service demand", "A crowded agency market means competitors buy ads rather than build organic coverage"] },
+  { slug: "content-marketing-fort-worth", city: "Fort Worth", state: "Texas", abbr: "TX", region: "South Central",
+    blurb: "Frequently treated as an appendage of Dallas by national competitors, which is exactly why genuinely Fort Worth-specific content outperforms here.",
+    notes: ["Content written for 'DFW' rarely answers Fort Worth-specific questions, leaving the gap open", "A strong logistics, aviation and manufacturing base drives industrial and commercial service demand", "A mix of historic and new-build housing splits repair versus upgrade demand"] },
+  { slug: "content-marketing-austin", city: "Austin", state: "Texas", abbr: "TX", region: "South Central",
+    blurb: "One of the most research-heavy buyer populations in the country. People here read before they call, compare more options, and reward businesses that explain themselves clearly.",
+    notes: ["A technology workforce that researches thoroughly and reads long-form before contacting anyone", "Rapid growth keeps relocation, new-build and first-time-owner queries continuously active", "Heavy inbound migration means limited established loyalty to incumbent providers"] },
+  { slug: "content-marketing-san-antonio", city: "San Antonio", state: "Texas", abbr: "TX", region: "South Central",
+    blurb: "A large, affordable, family-heavy market with far less organic competition than its size suggests. Most of the search demand here is answered by out-of-market directories.",
+    notes: ["A substantial military and veteran population with distinct service and benefits-related questions", "Long cooling season and hard water sustain year-round trade demand", "Local organic competition is materially lighter than in the other big Texas metros"] },
+  { slug: "content-marketing-oklahoma-city", city: "Oklahoma City", state: "Oklahoma", abbr: "OK", region: "South Central",
+    blurb: "Severe-weather exposure makes several service categories urgent and seasonal here, and urgency is exactly where being the answer already published pays off.",
+    notes: ["Storm, hail and tornado exposure drives roofing, restoration and insurance-claim search spikes", "An energy-anchored economy with a broad small-business base", "Buyers often search mid-emergency, so the business already ranking captures the call"] },
+
+  /* ----------------------------------------------------------- Southeast */
+  { slug: "content-marketing-atlanta", city: "Atlanta", state: "Georgia", abbr: "GA", region: "Southeast",
+    blurb: "A sprawling, multi-county metro where 'Atlanta' means twenty different submarkets. National competitors write one page for all of them; that is the opening.",
+    notes: ["Sprawl means service-area and 'do you cover my suburb' questions carry real search volume", "Humidity, pollen and pests generate a distinct and predictable seasonal calendar", "A dense corporate headquarters base supports a deep B2B and professional-services market"] },
+  { slug: "content-marketing-miami", city: "Miami", state: "Florida", abbr: "FL", region: "Southeast",
+    blurb: "A market shaped by weather risk, condo regulation and a genuinely bilingual buyer base. Very few competitors publish content that reflects any of the three.",
+    notes: ["Hurricane season and building-safety regulation drive high-stakes, high-intent search", "A dense condo and HOA market creates questions no national page answers", "A large Spanish-speaking population is underserved by most local publishing"] },
+  { slug: "content-marketing-tampa", city: "Tampa", state: "Florida", abbr: "FL", region: "Southeast",
+    blurb: "Fast-growing, storm-exposed and full of new arrivals with no provider relationships. Nearly every high-intent question here is being asked by someone new to the area.",
+    notes: ["Storm and flood exposure drives urgent seasonal demand across trades and restoration", "Heavy in-migration keeps relocation and first-time-hire queries continuously fresh", "A large retiree population that researches carefully and reads thoroughly before calling"] },
+  { slug: "content-marketing-orlando", city: "Orlando", state: "Florida", abbr: "FL", region: "Southeast",
+    blurb: "A tourism economy layered over a booming residential one. The short-term rental market alone generates a category of search demand almost nobody local is writing for.",
+    notes: ["A large short-term rental and property-management segment with its own service questions", "Continuous new construction shifts demand toward warranty, upgrade and finish-out work", "Tourism seasonality creates a commercial service cycle distinct from the residential one"] },
+  { slug: "content-marketing-jacksonville", city: "Jacksonville", state: "Florida", abbr: "FL", region: "Southeast",
+    blurb: "Geographically one of the largest cities in the country, which makes 'who actually serves my part of town' a live question — and a searchable one.",
+    notes: ["Enormous city footprint makes neighbourhood and service-area content unusually valuable", "Coastal salt exposure drives distinct maintenance and corrosion questions", "A military and logistics employment base with steady relocation turnover"] },
+  { slug: "content-marketing-charlotte", city: "Charlotte", state: "North Carolina", abbr: "NC", region: "Southeast",
+    blurb: "A banking and professional-services hub absorbing steady inbound migration. Buyers skew financially literate and compare in writing before they compare on a call.",
+    notes: ["A financial-services employment base with analytical, comparison-driven buyers", "Sustained in-migration keeps new-resident service queries continuously active", "Rapid suburban expansion outruns the coverage of existing local content"] },
+  { slug: "content-marketing-raleigh", city: "Raleigh", state: "North Carolina", abbr: "NC", region: "Southeast",
+    blurb: "One of the most educated buyer populations in the country. Thin marketing copy performs badly here; substantive published answers perform unusually well.",
+    notes: ["A research-and-university economy producing buyers who read before they contact anyone", "Steady technology and life-sciences relocation into the Triangle", "Competitors rely on referral flow and publish very little"] },
+  { slug: "content-marketing-nashville", city: "Nashville", state: "Tennessee", abbr: "TN", region: "Southeast",
+    blurb: "Growth has outpaced the local service market, and it shows in search: high demand, thin local answers, and directories filling the gap.",
+    notes: ["A major healthcare-industry base supporting deep B2B and professional-services demand", "Sustained in-migration and new construction across the surrounding counties", "Tourism and events add a commercial service cycle on top of the residential one"] },
+  { slug: "content-marketing-louisville", city: "Louisville", state: "Kentucky", abbr: "KY", region: "Southeast",
+    blurb: "A mid-sized market with a large logistics economy and very little local organic competition. The cost of owning a topic here is a fraction of what it is in a top-ten metro.",
+    notes: ["A major logistics and distribution hub driving commercial and fleet service demand", "Older housing stock with humid summers and freezing winters, so repair demand runs year-round", "Very few local competitors publish substantive content of any kind"] },
+
+  /* --------------------------------------------------------- Mid-Atlantic */
+  { slug: "content-marketing-washington-dc", city: "Washington", state: "District of Columbia", abbr: "DC", region: "Mid-Atlantic",
+    blurb: "A government and contractor economy with unusually high scrutiny on who you hire. Credentials, process and clear written explanation carry more weight here than almost anywhere.",
+    notes: ["A federal and contractor buyer base that vets providers in writing before engaging", "Dense historic districts with permitting and preservation rules national pages ignore", "A transient professional population continuously searching as newcomers"] },
+  { slug: "content-marketing-baltimore", city: "Baltimore", state: "Maryland", abbr: "MD", region: "Mid-Atlantic",
+    blurb: "Dense, historic housing stock and a large institutional employment base. The specific questions here — rowhome systems, permits, older infrastructure — have almost no good local answers online.",
+    notes: ["Rowhome and historic construction creates repair questions no national page addresses", "A large medical and university employment base supporting steady professional demand", "Aging infrastructure keeps plumbing, electrical and structural search demand high"] },
+  { slug: "content-marketing-philadelphia", city: "Philadelphia", state: "Pennsylvania", abbr: "PA", region: "Mid-Atlantic",
+    blurb: "Old housing, tight streets, historic districts and neighbourhood identities that matter to buyers. Content written for 'the Northeast' answers none of it.",
+    notes: ["Rowhouse and pre-war construction drives highly specific repair and renovation questions", "Strong neighbourhood identity makes area-level content genuinely useful, not filler", "Freeze-thaw cycles create a sharp and predictable seasonal demand pattern"] },
+  { slug: "content-marketing-pittsburgh", city: "Pittsburgh", state: "Pennsylvania", abbr: "PA", region: "Mid-Atlantic",
+    blurb: "Hills, basements, old housing and hard winters generate a set of local problems that national content simply does not cover.",
+    notes: ["Hillside lots and basements drive persistent drainage, waterproofing and foundation search", "A healthcare, university and robotics employment base supporting B2B demand", "Older housing stock keeps repair and replacement demand steady year-round"] },
+  { slug: "content-marketing-richmond", city: "Richmond", state: "Virginia", abbr: "VA", region: "Mid-Atlantic",
+    blurb: "A government, legal and insurance market with historic housing around it. Buyers here are process-oriented and respond to content that explains rather than sells.",
+    notes: ["A legal, insurance and state-government employment base with credential-conscious buyers", "Historic districts with preservation requirements that shape renovation questions", "Humid summers and freeze-thaw winters split the repair calendar in two"] },
+
+  /* ------------------------------------------------------------ Northeast */
+  { slug: "content-marketing-new-york", city: "New York", state: "New York", abbr: "NY", region: "Northeast",
+    blurb: "The most competitive search market in the country on head terms — and one of the most winnable on the specific, procedural questions New Yorkers actually type.",
+    notes: ["Co-op and condo board approval processes create questions with no national equivalent", "Borough and neighbourhood-level differences make city-wide content nearly useless", "Head terms are saturated, so the opening is entirely in specific, procedural long tail"] },
+  { slug: "content-marketing-boston", city: "Boston", state: "Massachusetts", abbr: "MA", region: "Northeast",
+    blurb: "Some of the oldest housing stock in the country, hard winters, and a highly educated buyer base that reads before it hires.",
+    notes: ["Very old housing stock drives specific systems, permitting and renovation questions", "Harsh winters create sharp seasonal spikes in heating, roofing and burst-pipe demand", "A university and hospital economy producing thorough, comparison-driven buyers"] },
+
+  /* -------------------------------------------------------------- Midwest */
+  { slug: "content-marketing-chicago", city: "Chicago", state: "Illinois", abbr: "IL", region: "Midwest",
+    blurb: "A huge market with severe seasonality and strong neighbourhood identity. Most local competitors publish nothing beyond a service-area page.",
+    notes: ["Freeze-thaw cycles and hard winters drive urgent, high-value seasonal demand", "Pre-war housing stock creates specific systems and renovation questions", "Distinct neighbourhood markets make city-level content read as generic"] },
+  { slug: "content-marketing-detroit", city: "Detroit", state: "Michigan", abbr: "MI", region: "Midwest",
+    blurb: "Older housing, harsh winters and a steadily rebuilding market. Search demand here is real and the local organic competition is thin.",
+    notes: ["Aging housing stock keeps repair, replacement and rehab demand consistently high", "Severe winters drive heating, roofing and freeze-damage search every year", "Ongoing renovation and redevelopment activity across the metro"] },
+  { slug: "content-marketing-minneapolis", city: "Minneapolis", state: "Minnesota", abbr: "MN", region: "Midwest",
+    blurb: "Extreme winters make several service categories genuinely urgent, and a dense corporate base makes the B2B side unusually deep.",
+    notes: ["Severe cold drives heating, insulation, roofing and frozen-pipe demand on a predictable calendar", "A dense concentration of large corporate headquarters supporting B2B services", "A short outdoor season compresses exterior work into a narrow, competitive window"] },
+  { slug: "content-marketing-columbus", city: "Columbus", state: "Ohio", abbr: "OH", region: "Midwest",
+    blurb: "A steadily growing, insurance- and logistics-heavy market where most local businesses still treat their website as a brochure.",
+    notes: ["An insurance, logistics and university employment base supporting professional services", "Steady growth without the competitive saturation of larger Midwest metros", "Four-season climate producing an even spread of demand across the year"] },
+  { slug: "content-marketing-indianapolis", city: "Indianapolis", state: "Indiana", abbr: "IN", region: "Midwest",
+    blurb: "A large logistics and manufacturing base with a mid-sized metro's level of organic competition. That gap is the whole opportunity.",
+    notes: ["A logistics and distribution economy creating commercial and fleet service demand", "Affordable housing stock with a high owner-occupancy rate and steady maintenance demand", "Local organic competition is light relative to the size of the market"] },
+  { slug: "content-marketing-kansas-city", city: "Kansas City", state: "Missouri", abbr: "MO", region: "Midwest",
+    blurb: "A two-state metro where service areas, licensing and pricing genuinely differ across the line — and where almost nobody writes about that.",
+    notes: ["A metro split across two states, so licensing and service-area questions carry real volume", "Severe storm and hail exposure driving roofing and restoration demand", "A broad small-business base with thin organic publishing"] },
+  { slug: "content-marketing-st-louis", city: "St. Louis", state: "Missouri", abbr: "MO", region: "Midwest",
+    blurb: "Century-old brick housing, severe storms and a fragmented municipal map. Local specifics matter enormously here and are barely covered.",
+    notes: ["Historic brick construction creates tuckpointing, masonry and moisture questions unique to the market", "Dozens of separate municipalities mean permitting varies street to street", "Severe storm season drives predictable roofing and restoration spikes"] },
+  { slug: "content-marketing-milwaukee", city: "Milwaukee", state: "Wisconsin", abbr: "WI", region: "Midwest",
+    blurb: "Hard winters, older housing and a manufacturing base — a market with consistent demand and very little local organic competition.",
+    notes: ["Severe winters and lake-effect weather driving heating and exterior repair demand", "Older housing stock with a high share of pre-war construction", "A manufacturing and industrial base supporting commercial service demand"] },
+
+  /* -------------------------------------------------------- Mountain West */
+  { slug: "content-marketing-denver", city: "Denver", state: "Colorado", abbr: "CO", region: "Mountain West",
+    blurb: "Hail alone makes several categories urgent here every year, and continuous in-migration means a steady supply of buyers with no existing provider.",
+    notes: ["Severe hail seasons drive roofing, auto-glass and restoration demand on an annual cycle", "Altitude and dry air create HVAC, humidity and building-envelope questions specific to the region", "Sustained in-migration keeps new-resident service search continuously active"] },
+  { slug: "content-marketing-salt-lake-city", city: "Salt Lake City", state: "Utah", abbr: "UT", region: "Mountain West",
+    blurb: "One of the fastest-growing metros in the country with a technology corridor attached. Demand is expanding faster than the local content covering it.",
+    notes: ["A rapidly expanding technology corridor along the Wasatch Front", "Winter inversion and air quality drive distinct HVAC and filtration demand", "Hard water and mineral content create recurring plumbing and appliance questions"] },
+  { slug: "content-marketing-boise", city: "Boise", state: "Idaho", abbr: "ID", region: "Mountain West",
+    blurb: "A small metro absorbing outsized in-migration. Nearly every high-intent search here comes from someone who arrived recently and knows nobody.",
+    notes: ["Heavy in-migration means most searchers have no existing provider relationships", "Rapid new construction shifting demand toward finish-out, warranty and upgrade work", "A small local competitor set that publishes very little"] },
+
+  /* ---------------------------------------------------------- West Coast */
+  { slug: "content-marketing-los-angeles", city: "Los Angeles", state: "California", abbr: "CA", region: "West Coast",
+    blurb: "Not one market but dozens. The businesses that win here write for a specific side of the city, because that is how people actually search.",
+    notes: ["Dozens of distinct submarkets, so city-wide content reads as generic to every one of them", "Complex permitting and ADU rules that vary by jurisdiction and generate heavy search", "A large creative and entertainment economy with its own B2B service demand"] },
+  { slug: "content-marketing-san-diego", city: "San Diego", state: "California", abbr: "CA", region: "West Coast",
+    blurb: "Coastal conditions, a large military population and an ADU boom create a set of local questions that national content never touches.",
+    notes: ["Coastal salt air drives corrosion, roofing and exterior maintenance questions", "A large military and veteran population with distinct relocation and service needs", "Accessory dwelling unit activity generating sustained permitting and construction search"] },
+  { slug: "content-marketing-san-francisco", city: "San Francisco", state: "California", abbr: "CA", region: "West Coast",
+    blurb: "High-value work, heavy regulation and buyers who research exhaustively. Content that explains process and cost honestly outperforms anything promotional.",
+    notes: ["Dense permitting and rent-control regulation generating high-volume procedural search", "Victorian and pre-war housing stock with specific seismic and systems questions", "A technology buyer base that reads thoroughly and compares in detail"] },
+  { slug: "content-marketing-san-jose", city: "San Jose", state: "California", abbr: "CA", region: "West Coast",
+    blurb: "High household income, high-ticket projects and technically literate buyers. This market rewards depth and punishes vague marketing copy.",
+    notes: ["High-value residential projects with long, research-heavy decision cycles", "A technology workforce that evaluates providers analytically and in writing", "Seismic retrofit and permitting requirements creating specific local search demand"] },
+  { slug: "content-marketing-sacramento", city: "Sacramento", state: "California", abbr: "CA", region: "West Coast",
+    blurb: "State-government stability plus extreme summer heat and wildfire exposure. Demand is steady and the local organic competition is far lighter than the Bay Area's.",
+    notes: ["Extreme summer heat driving sustained cooling and energy-efficiency demand", "Wildfire and air-quality exposure creating a distinct seasonal search pattern", "A state-government employment base providing unusually stable service demand"] },
+
+  /* ------------------------------------------------------ Pacific Northwest */
+  { slug: "content-marketing-seattle", city: "Seattle", state: "Washington", abbr: "WA", region: "Pacific Northwest",
+    blurb: "Persistent moisture creates a maintenance calendar unlike anywhere else, and a technology buyer base that will read three thousand words before making a call.",
+    notes: ["Sustained rainfall driving moss, moisture, roofing and drainage demand year-round", "A technology workforce that researches exhaustively before contacting a provider", "Steep lots and dense infill construction creating specific permitting questions"] },
+  { slug: "content-marketing-portland", city: "Portland", state: "Oregon", abbr: "OR", region: "Pacific Northwest",
+    blurb: "Older housing, a wet climate and buyers who care visibly about how work gets done. Content that explains materials and methods converts here.",
+    notes: ["A wet climate driving moisture, roofing and drainage demand across most of the year", "Older housing stock with a high share of pre-war construction", "Buyers who weigh sustainability and material choices and read about them first"] },
 ];
+
+/* Merge in the per-metro queries + landscape sentence (scripts/cities.depth.mjs). */
+export const CITIES = CITY_BASE.map(c => ({ ...c, ...(CITY_DEPTH[c.slug] || {}) }));
+
 
 /* ============================================================= COMPARISONS */
 export const COMPARISONS = [

@@ -49,7 +49,7 @@ nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
   border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
   display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
 .wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
-.nav-links{display:flex;gap:26px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--pine)}
 .btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;text-decoration:none;
@@ -110,11 +110,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
 .capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
 .capture .eyebrow::before{background:var(--mint)}
-.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
-.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
-.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
-.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
-.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
 .capture form{display:grid;gap:12px}
 @media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
 .capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
@@ -192,6 +192,25 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
 .band{background:var(--pine);color:#fff;border-radius:var(--r-lg);padding:44px 40px;margin:40px 0 10px;text-align:center}
 .band h2{color:#fff;margin-bottom:10px;font-size:clamp(22px,3vw,30px)}
 .band p{color:#C4DDF2;max-width:54ch;margin:0 auto 24px;font-size:16px}
+.regionblk{margin-bottom:34px}
+.regionblk h2{font-size:20px;margin-bottom:4px}
+.regionblk .rc{color:var(--muted);font-size:13.5px;margin-bottom:14px}
+.citygrid{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:560px){.citygrid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.citygrid{grid-template-columns:1fr 1fr 1fr}}
+.citycard{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px 18px;
+  text-decoration:none;display:block;box-shadow:0 3px 12px rgba(11,34,64,.05);transition:transform .18s,border-color .18s}
+.citycard:hover{transform:translateY(-3px);border-color:var(--spring)}
+.citycard strong{display:block;font-family:var(--display);font-size:16.5px;color:var(--pine)}
+.citycard span{display:block;color:var(--muted);font-size:12.5px;margin-top:3px}
+.statelist{columns:2;column-gap:26px;color:#33445A;font-size:15.5px;margin-top:12px}
+@media(min-width:760px){.statelist{columns:4}}
+.statelist li{list-style:none;padding:4px 0;break-inside:avoid}
+.qlist{list-style:none;margin-top:16px;display:grid;gap:10px}
+.qlist li{background:#fff;border:1px solid var(--border);border-radius:12px;padding:13px 18px 13px 44px;
+  position:relative;font-size:15.5px;color:#33445A;box-shadow:0 2px 8px rgba(11,34,64,.04)}
+.qlist li::before{content:"";position:absolute;left:17px;top:50%;width:13px;height:13px;margin-top:-7px;
+  border:2px solid var(--spring);border-radius:50%;box-shadow:2px 3px 0 -1px var(--spring)}
 .citynotes{list-style:none;margin-top:14px}
 .citynotes li{position:relative;padding:11px 0 11px 28px;border-bottom:1px solid var(--border);font-size:16px;color:#33445A}
 .citynotes li:last-child{border-bottom:none}
@@ -217,6 +236,7 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
       <a href="/#why">Why visibility</a>
       <a href="/#method">Methodology</a>
       <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
       <a href="/#pricing">Pricing</a>
       <a class="btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
     </div>
@@ -322,10 +342,17 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
           <option>HVAC</option><option>Plumbing</option><option>Electrical</option><option>Roofing / Contracting</option><option>Pest control</option><option>Law firm</option><option>Dental practice</option><option>Real estate</option><option>Home services</option><option>B2B software</option><option>Professional services</option><option>Other</option>
         </select></div>
       <div><label for="cap-pillar-city">City / metro</label>
-        <input id="cap-pillar-city" name="city" type="text" required placeholder="Phoenix, AZ"></div>
+        <input id="cap-pillar-city" name="city" type="text" autocomplete="address-level2" required placeholder="Your city"></div>
     </div>
-    <div><label for="cap-pillar-site">Website (optional)</label>
-      <input id="cap-pillar-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    <div class="row2">
+      <div><label for="cap-pillar-state">State</label>
+        <select id="cap-pillar-state" name="state" required>
+          <option value="" selected disabled>Select a state…</option>
+          <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+        </select></div>
+      <div><label for="cap-pillar-site">Website (optional)</label>
+        <input id="cap-pillar-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    </div>
     <button type="submit">Send me the snapshot</button>
     <p class="fine">One email with your snapshot. No newsletter, no list rental, no automated sequence — unsubscribe is a reply.</p>
   </form>
@@ -342,7 +369,7 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
     <div class="foot-cols">
       <div class="foot-brand">
         <span class="foot-mark">ClearPath Content</span>
-        <p>Visibility infrastructure. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
         <a class="foot-btn" href="https://calendly.com/clearpathpediatrics/30min" target="_blank" rel="noopener">Request access</a>
       </div>
       <div class="foot-col">
@@ -369,12 +396,14 @@ details p{padding:0 24px 22px;color:var(--muted);font-size:15px;max-width:66ch}
         <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
         <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
         <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
         <a href="/content-marketing-phoenix">Phoenix</a>
-        <a href="/content-marketing-scottsdale">Scottsdale</a>
-        <a href="/content-marketing-mesa">Mesa</a>
-        <a href="/content-marketing-tempe">Tempe</a>
-        <a href="/content-marketing-chandler">Chandler</a>
-        <a href="/content-marketing-gilbert">Gilbert</a>
+        <a href="/locations">All locations →</a>
       </div>
       <div class="foot-col">
         <h3>Industries</h3>

@@ -17,6 +17,14 @@ import { INDUSTRIES, FAQ_HUB, CAPABILITIES, CAL } from "./pages.data.mjs";
 import { SITE, BRAND, esc, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
 import { PILLARS, CITIES } from "./hubs.data.mjs";
 
+/* the metros linked from industry pages; the full list lives on /locations */
+const FEATURED_METROS = [
+  "content-marketing-new-york", "content-marketing-los-angeles", "content-marketing-chicago",
+  "content-marketing-houston", "content-marketing-dallas", "content-marketing-atlanta",
+  "content-marketing-miami", "content-marketing-phoenix", "content-marketing-denver",
+  "content-marketing-seattle", "content-marketing-boston", "content-marketing-charlotte",
+];
+
 /* industry slug -> the matching option label in the capture form's dropdown */
 const CAPTURE_LABEL = {
   "content-marketing-for-hvac-companies": "HVAC",
@@ -187,7 +195,9 @@ ${crumbs(p.industry)}
   <p style="color:var(--muted);margin-bottom:16px">The strategy behind a deployment, written out in full.</p>
   <div class="related">${PILLARS.map(g => `<a href="/${g.slug}">${esc(g.eyebrow)} →</a>`).join("")}</div>
   <h2 style="margin-top:34px">Areas we serve</h2>
-  <div class="related">${CITIES.map(c => `<a href="/${c.slug}">${esc(c.city)} →</a>`).join("")}</div>
+  <p style="color:var(--muted);margin-bottom:16px">Deployments run nationwide. These are a few of the ${CITIES.length} metros with a dedicated page.</p>
+  <div class="related">${CITIES.filter(c => FEATURED_METROS.includes(c.slug))
+    .map(c => `<a href="/${c.slug}">${esc(c.city)}, ${esc(c.abbr)} →</a>`).join("")}<a href="/locations">All locations →</a></div>
 </div></section>
 
 <section class="blk"><div class="narrow">${captureBlock({
