@@ -1,7 +1,7 @@
 {
   "name": "clearpath-content-site",
   "version": "1.0.0",
-  "description": "ClearPath Content (CPC) — marketing site with an auto-published blog. Organic visibility infrastructure for businesses.",
+  "description": "ClearPath Content (CPC) \u2014 marketing site with an auto-published blog. Organic visibility infrastructure for businesses.",
   "private": true,
   "homepage": "https://clearpath-content.com",
   "author": "ClearPath Content",
@@ -10,10 +10,13 @@
     "start": "python3 -m http.server 8920",
     "serve": "python3 -m http.server 8920",
     "generate:blog": "node scripts/generate-posts.mjs",
-    "build:pages": "node scripts/build-pages.mjs"
+    "build:pages": "node scripts/build-pages.mjs",
+    "outreach": "node scripts/prospect-outreach.mjs",
+    "audit": "node -e \"import('./scripts/site-audit.mjs').then(async m=>console.log(await m.auditSite(process.argv[1])))\""
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.70.0"
+    "@anthropic-ai/sdk": "^0.70.0",
+    "@netlify/blobs": "^8.1.0"
   },
   "keywords": [
     "clearpath-content",

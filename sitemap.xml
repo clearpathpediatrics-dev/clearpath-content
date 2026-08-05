@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clearpath-content.com/about-our-audit</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://clearpath-content.com/blog/ai-search-optimization-guide</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
