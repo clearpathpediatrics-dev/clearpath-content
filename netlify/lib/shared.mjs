@@ -11,11 +11,25 @@
 import { getStore } from "@netlify/blobs";
 
 export const SITE = "https://clearpath-content.com";
-export const CAL = process.env.CPC_CALENDLY_URL || "https://calendly.com/clearpathpediatrics/30min";
+export const CAL = process.env.CPC_CALENDLY_URL || "https://calendly.com/admin-clearpath-content/30min";
 
 export const FROM = process.env.CPC_FROM_EMAIL || "ClearPath Content <admin@clearpath-content.com>";
 export const ALERT_TO = process.env.CPC_ALERT_EMAIL || "admin@clearpath-content.com";
 export const POSTAL = process.env.CPC_POSTAL_ADDRESS || "";
+
+/**
+ * Cold outbound sends from a SEPARATE domain, deliberately.
+ *
+ * Everything transactional — the snapshot someone asked for, the nurture
+ * sequence they opted into, alerts — is reputation you cannot afford to spend.
+ * Cold volume is reputation you are spending on purpose. Putting both on
+ * clearpath-content.com means one bad week of cold complaints starts landing
+ * requested snapshots in spam, and the half of the funnel that actually works
+ * dies quietly. Different domain, different reputation, blast radius contained.
+ *
+ * Unset means cold sending is off. That is the intended default.
+ */
+export const COLD_FROM = process.env.CPC_COLD_FROM_EMAIL || "";
 
 export const leadStore = () => getStore({ name: "cpc-leads", consistency: "strong" });
 export const suppressionStore = () => getStore({ name: "cpc-suppression", consistency: "strong" });
@@ -39,7 +53,7 @@ export const esc = (s = "") => String(s)
  * Send via Resend. Never throws — a delivery failure must not lose the lead.
  * Returns {sent:boolean, id?:string, error?:string}.
  */
-export async function sendEmail({ to, subject, html, text, replyTo, tag }) {
+export async function sendEmail({ to, subject, html, text, replyTo, tag, from, listUnsubUrl }) {
   const key = process.env.RESEND_API_KEY;
   if (!key) return { sent: false, error: "RESEND_API_KEY not set" };
   if (await isSuppressed(to)) return { sent: false, error: "recipient suppressed" };
@@ -49,9 +63,17 @@ export async function sendEmail({ to, subject, html, text, replyTo, tag }) {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from: FROM, to: [to], subject, html, text,
+        from: from || FROM, to: [to], subject, html, text,
         ...(replyTo ? { reply_to: replyTo } : {}),
         ...(tag ? { tags: [{ name: "flow", value: tag }] } : {}),
+        // One-click unsubscribe. Gmail and Yahoo require this header on bulk
+        // mail, and honouring it is cheaper than the complaint that replaces it.
+        ...(listUnsubUrl ? {
+          headers: {
+            "List-Unsubscribe": `<${listUnsubUrl}>`,
+            "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+          },
+        } : {}),
       }),
     });
     const body = await res.json().catch(() => ({}));

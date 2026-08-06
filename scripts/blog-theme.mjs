@@ -11,14 +11,13 @@ export const CONTACT = "admin@clearpath-content.com";
 /**
  * Canonical booking link. Every CTA on the site, in the funnel emails and in
  * the outbound drafts resolves to this one constant — changing it here and
- * rebuilding updates all of them. Still points at the pediatrics Calendly;
- * swap in a CPC-branded event when one exists.
+ * rebuilding updates all of them.
  *
  * To change it: set CPC_CALENDLY_URL (locally or in Netlify) and rebuild, or
  * edit the default here. index.html is hand-authored and not generated, so it
  * needs a find/replace of the old URL at the same time — it holds 8 copies.
  */
-export const CAL = process.env.CPC_CALENDLY_URL || "https://calendly.com/clearpathpediatrics/30min";
+export const CAL = process.env.CPC_CALENDLY_URL || "https://calendly.com/admin-clearpath-content/30min";
 
 export const esc = (s = "") => String(s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -225,7 +224,7 @@ export function captureBlock({
         <input id="${id}-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
     </div>
     <button type="submit">Send me the snapshot</button>
-    <p class="fine">One email with your snapshot. No newsletter, no list rental, no automated sequence — unsubscribe is a reply.</p>
+    <p class="fine">Your snapshot first, then at most three short follow-ups over the next two weeks. No newsletter, no list rental, and one click unsubscribes you from all of it.</p>
   </form>
 </div>`;
 }
@@ -314,7 +313,9 @@ export const FOOTER = `
     </div>
     <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
-</footer>`;
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/capture-nudge.js" defer></script>`;
 
 export function head({ title, description, url, keywords = [], jsonld = [], og = "article" }) {
   return `<!DOCTYPE html>

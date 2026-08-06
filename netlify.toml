@@ -16,9 +16,19 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 # ---- Reach-out funnel -------------------------------------------------------
-# submission-created-background fires on every market-snapshot submission:
-# audits the site, scores the lead, emails them, alerts Dean, queues follow-up.
-# nurture runs daily on a schedule. Both need RESEND_API_KEY.
+# Inbound (automatic, no approval needed):
+#   submission-created-background  fires on every market-snapshot submission —
+#                                  audits, scores, emails them, alerts Dean
+#   nurture                        daily 3-touch follow-up, stops on any signal
+#
+# Outbound (sourced automatically, contacted only after a human approves):
+#   prospect-import                receives runs from scripts/prospect-source.mjs
+#   dialer                         the call queue UI
+#   outbound                       cold sequence — gated on CPC_COLD_FROM_EMAIL
+#                                  and CPC_COLD_START_DATE, off unless both set
+#
+# Required env: RESEND_API_KEY, CPC_ADMIN_TOKEN, CPC_POSTAL_ADDRESS
+# Cold email env: CPC_COLD_FROM_EMAIL, CPC_COLD_START_DATE, CPC_COLD_DAILY_MAX
 [functions]
   node_bundler = "esbuild"
   # scripts/ holds the shared audit + scoring modules the functions import
@@ -28,3 +38,14 @@
   for = "/.netlify/functions/unsubscribe"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+# The pipeline surfaces are token-guarded, but keep them out of the index too.
+[[headers]]
+  for = "/.netlify/functions/dialer"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/.netlify/functions/leads"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

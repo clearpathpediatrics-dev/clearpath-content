@@ -180,6 +180,81 @@ export async function auditSite(website, ctx = {}) {
   };
 }
 
+/* ------------------------------------------------------------------ email */
+
+/** Addresses that are never a person you want to reach. */
+const EMAIL_JUNK = [
+  /@(?:example|domain|yoursite|yourdomain|email|sentry|wixpress|squarespace|godaddy|shopify)\./i,
+  /@(?:sentry|wix|weebly)\b/i,
+  /^(?:no-?reply|do-?not-?reply|postmaster|abuse|webmaster|privacy|dmca|unsubscribe)@/i,
+  /\.(?:png|jpe?g|gif|webp|svg|css|js)$/i,
+  /^[0-9a-f]{16,}@/i,             // hashed/tracking addresses
+];
+
+/** Ranked by how likely the address is to reach an actual decision maker. */
+const EMAIL_RANK = [
+  [/^(?:owner|founder|president|ceo)@/i, 100],
+  [/^(?:[a-z]+)\.(?:[a-z]+)@/i, 80],   // first.last@
+  [/^(?:sales|newbusiness|estimates?|quotes?)@/i, 70],
+  [/^(?:contact|hello|hi|team)@/i, 55],
+  [/^(?:info|admin|office|service)@/i, 45],
+  [/^(?:support|help|billing|accounts?)@/i, 25],
+];
+
+const CONTACT_PATHS = ["/contact", "/contact-us", "/about", "/about-us", "/get-a-quote", "/estimate"];
+
+function harvestEmails(html, host) {
+  const found = new Set();
+  for (const m of html.matchAll(/mailto:([^"'?>\s]+)/gi)) found.add(m[1]);
+  for (const m of html.matchAll(/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g)) found.add(m[0]);
+  // Lightly obfuscated: "name (at) domain.com"
+  for (const m of html.matchAll(/\b([A-Za-z0-9._%+-]+)\s*(?:\(at\)|\[at\]|&#64;)\s*([A-Za-z0-9.-]+\.[A-Za-z]{2,})\b/gi)) {
+    found.add(`${m[1]}@${m[2]}`);
+  }
+
+  const bare = host.replace(/^www\./, "");
+  return [...found]
+    .map(e => decodeURIComponent(e).trim().toLowerCase().replace(/[.,;:]+$/, ""))
+    .filter(e => /^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(e))
+    .filter(e => !EMAIL_JUNK.some(re => re.test(e)))
+    .map(e => {
+      // An address on their own domain is worth far more than a gmail in a footer.
+      const onDomain = e.endsWith("@" + bare) || e.endsWith("." + bare);
+      const rank = (EMAIL_RANK.find(([re]) => re.test(e)) || [, 35])[1] + (onDomain ? 50 : 0);
+      return { email: e, rank };
+    })
+    .sort((a, b) => b.rank - a.rank);
+}
+
+/**
+ * Find the best public contact address for a site. Reads the homepage and a
+ * couple of contact pages — the same pages a person would open to find it.
+ * Returns { email, all } or { email: null } when nothing publishable is listed.
+ *
+ * Only ever returns addresses the business has chosen to publish. Nothing here
+ * guesses at patterns or probes a mail server.
+ */
+export async function findContactEmail(website, opts = {}) {
+  const url = normUrl(website);
+  if (!url) return { email: null, all: [] };
+  const origin = url.origin;
+  const host = url.hostname;
+
+  const seen = [];
+  const pages = [origin, ...CONTACT_PATHS.map(p => origin + p)];
+
+  for (const page of pages.slice(0, opts.maxPages || 4)) {
+    const r = await get(page);
+    if (!r.ok || !r.body) continue;
+    seen.push(...harvestEmails(r.body, host));
+    // An on-domain, high-rank hit is as good as it gets — stop early.
+    if (seen.some(s => s.rank >= 100)) break;
+  }
+
+  const ranked = [...new Map(seen.map(s => [s.email, s])).values()].sort((a, b) => b.rank - a.rank);
+  return { email: ranked[0]?.email || null, all: ranked.slice(0, 5).map(s => s.email) };
+}
+
 /**
  * The two or three findings worth putting in an email. Ordered by how
  * uncomfortable they are to read, which is the same as how motivating.

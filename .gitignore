@@ -2,3 +2,9 @@
 .netlify/
 node_modules/
 .claude/
+
+# Sourced prospect data — business contact details and audit results.
+# Never commit this: it is a working file, not source, and it is the one thing
+# in the repo that would be genuinely bad to leak.
+data/
+outreach/

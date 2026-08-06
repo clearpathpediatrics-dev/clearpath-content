@@ -12,6 +12,11 @@
     "generate:blog": "node scripts/generate-posts.mjs",
     "build:pages": "node scripts/build-pages.mjs",
     "outreach": "node scripts/prospect-outreach.mjs",
+    "source": "node scripts/prospect-source.mjs",
+    "source:plan": "node scripts/prospect-source.mjs --dry-run",
+    "source:push": "node scripts/prospect-source.mjs --push",
+    "dialer:preview": "node scripts/dialer-preview.mjs --open",
+    "backfill:capture": "node scripts/backfill-capture.mjs",
     "audit": "node -e \"import('./scripts/site-audit.mjs').then(async m=>console.log(await m.auditSite(process.argv[1])))\""
   },
   "dependencies": {
