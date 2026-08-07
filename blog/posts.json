@@ -1,5 +1,41 @@
 [
   {
+    "slug": "format-content-so-chatgpt-can-quote-it",
+    "title": "How to Format Content So ChatGPT Can Quote It",
+    "excerpt": "AI answer engines pull short, self-contained passages out of your pages. Here is how to write those passages on purpose instead of hoping the model finds them.",
+    "metaDescription": "Learn how to structure content so ChatGPT and Perplexity can quote it, with a practical formatting checklist that helps AI answer engines cite your pages.",
+    "tags": [
+      "answer engine optimization",
+      "ChatGPT SEO",
+      "Perplexity citations",
+      "AI search",
+      "content structure"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "iso": "2026-08-07",
+    "prettyDate": "August 7, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "how-to-match-content-to-search-intent",
+    "title": "How to Match Content to Search Intent",
+    "excerpt": "The four search intent categories, how to tell them apart, and the exact page format each one needs to rank.",
+    "metaDescription": "Learn the four search intent categories and how to write for each one, so your pages match what people actually want and stop missing rankings.",
+    "tags": [
+      "search intent",
+      "content strategy",
+      "keyword research",
+      "organic visibility",
+      "on-page SEO"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-08-07",
+    "prettyDate": "August 7, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "target-nearby-cities-without-doorway-pages",
     "title": "How to Rank in Nearby Cities Without Doorway Pages",
     "excerpt": "Spinning up a near-identical page for every town you serve is the fastest way to get filtered or penalized. Here's how to earn visibility in nearby cities with pages Google actually wants to rank.",
