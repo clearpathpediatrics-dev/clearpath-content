@@ -2,13 +2,21 @@ name: Publish daily articles
 
 on:
   schedule:
-    # Three fallback times (UTC). The generator is idempotent per day — the
+    # Four fallback times (UTC). The generator is idempotent per day — the
     # first run that succeeds publishes; later ones see the quota is met and
     # exit cleanly. GitHub's scheduler drops runs fairly often, so redundancy
     # is deliberate.
+    #
+    # Scheduled runs are also delayed when hosted runners are busy, and the
+    # delay is not small: on 2026-08-06 the 14:00 slot waited 15 minutes for a
+    # runner, was cancelled without ever starting, and the day was only saved
+    # by the next slot executing at 01:51 UTC. A Phoenix day ends at 07:00 UTC,
+    # so a slot that drifts past that publishes against the *following* day and
+    # leaves a gap. The early slot exists to keep that margin wide.
     - cron: "0 14 * * *"   #  7am Phoenix
     - cron: "0 17 * * *"   # 10am Phoenix
     - cron: "0 20 * * *"   #  1pm Phoenix
+    - cron: "0 23 * * *"   #  4pm Phoenix
   workflow_dispatch:
 
 permissions:
@@ -31,6 +39,11 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
+      # Cheap, no API cost, and it guards the angle de-duplication that keeps
+      # the same topic from being published twice. Run before spending tokens.
+      - name: Test angle selection
+        run: npm test
+
       - name: Generate articles
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -46,5 +59,14 @@ jobs:
             exit 0
           fi
           git add -A
-          git commit -m "posts: $(date -u +%Y-%m-%d)"
+          # Stamp the Phoenix date the posts are actually filed under. `date -u`
+          # disagreed with it whenever a run landed after 17:00 Phoenix, which
+          # made the git log misleading when auditing what published when.
+          git commit -m "posts: $(TZ=America/Phoenix date +%Y-%m-%d)"
           git push
+
+      # Runs after publishing so a low catalog never blocks a post. Exits
+      # non-zero when the angle pool is nearly spent, which surfaces as a failed
+      # workflow — the only notification channel this repo has.
+      - name: Check angle runway
+        run: npm run angles:audit

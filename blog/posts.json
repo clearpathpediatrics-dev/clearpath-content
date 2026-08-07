@@ -627,7 +627,8 @@
     "clusterKey": "local-seo",
     "iso": "2026-08-06",
     "prettyDate": "August 6, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "targeting nearby cities without creating doorway pages"
   },
   {
     "slug": "long-tail-keyword-strategy-no-authority-2",
@@ -645,7 +646,8 @@
     "clusterKey": "organic-strategy",
     "iso": "2026-08-06",
     "prettyDate": "August 6, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "long-tail keyword strategy for businesses with no authority"
   },
   {
     "slug": "long-tail-keyword-strategy-no-authority",
@@ -681,7 +683,8 @@
     "clusterKey": "industry-playbooks",
     "iso": "2026-08-05",
     "prettyDate": "August 5, 2026",
-    "readMinutes": 8
+    "readMinutes": 8,
+    "angle": "SEO content for chiropractors and physical therapists"
   },
   {
     "slug": "how-ai-answer-engines-choose-sources-to-cite",
@@ -699,7 +702,8 @@
     "clusterKey": "aeo-geo",
     "iso": "2026-08-04",
     "prettyDate": "August 4, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "how AI answer engines choose which sources to cite"
   },
   {
     "slug": "landscaping-service-area-content-plan",
@@ -735,7 +739,8 @@
     "clusterKey": "organic-strategy",
     "iso": "2026-08-03",
     "prettyDate": "August 3, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "why most small business blogs fail within three months"
   },
   {
     "slug": "landscaping-seasonal-search-strategy",
@@ -789,7 +794,8 @@
     "clusterKey": "industry-playbooks",
     "iso": "2026-08-02",
     "prettyDate": "August 2, 2026",
-    "readMinutes": 8
+    "readMinutes": 8,
+    "angle": "organic strategy for landscaping companies"
   },
   {
     "slug": "rented-reach-vs-owned-reach",
@@ -807,7 +813,8 @@
     "clusterKey": "organic-strategy",
     "iso": "2026-08-01",
     "prettyDate": "August 1, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "the difference between rented reach and owned reach"
   },
   {
     "slug": "content-marketing-veterinary-practices",
@@ -825,7 +832,8 @@
     "clusterKey": "industry-playbooks",
     "iso": "2026-08-01",
     "prettyDate": "August 1, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "content marketing for veterinary practices"
   },
   {
     "slug": "what-hvac-content-to-write-first",
@@ -879,7 +887,8 @@
     "clusterKey": "industry-playbooks",
     "iso": "2026-07-30",
     "prettyDate": "July 30, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "content marketing for HVAC companies"
   },
   {
     "slug": "google-business-profile-optimisation-that-ranks",
@@ -897,7 +906,8 @@
     "clusterKey": "local-seo",
     "iso": "2026-07-30",
     "prettyDate": "July 30, 2026",
-    "readMinutes": 8
+    "readMinutes": 8,
+    "angle": "Google Business Profile optimisation that moves the needle"
   },
   {
     "slug": "red-flags-seo-content-marketing-proposals",
@@ -915,7 +925,8 @@
     "clusterKey": "buying-guides",
     "iso": "2026-07-29",
     "prettyDate": "July 29, 2026",
-    "readMinutes": 8
+    "readMinutes": 8,
+    "angle": "red flags in SEO and content marketing proposals"
   },
   {
     "slug": "why-some-topics-rank-and-others-never-do",
@@ -951,7 +962,8 @@
     "clusterKey": "organic-strategy",
     "iso": "2026-07-28",
     "prettyDate": "July 28, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "how topical authority actually accumulates on a domain"
   },
   {
     "slug": "blog-strategy-home-service-businesses",
@@ -969,7 +981,8 @@
     "clusterKey": "industry-playbooks",
     "iso": "2026-07-28",
     "prettyDate": "July 28, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "blog strategy for home service businesses"
   },
   {
     "slug": "how-to-vet-a-content-subscription-service",
@@ -987,7 +1000,8 @@
     "clusterKey": "buying-guides",
     "iso": "2026-07-27",
     "prettyDate": "July 27, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "what to look for in a content subscription service"
   },
   {
     "slug": "b2b-software-content-map-to-use-cases",
@@ -1005,7 +1019,8 @@
     "clusterKey": "industry-playbooks",
     "iso": "2026-07-27",
     "prettyDate": "July 27, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "content marketing for B2B software companies"
   },
   {
     "slug": "publishing-cadence-vs-article-quality",
@@ -1023,7 +1038,8 @@
     "clusterKey": "organic-strategy",
     "iso": "2026-07-26",
     "prettyDate": "July 26, 2026",
-    "readMinutes": 7
+    "readMinutes": 7,
+    "angle": "why publishing cadence beats individual article quality over time"
   },
   {
     "slug": "b2b-software-content-long-sales-cycle",

@@ -20,7 +20,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { pickAngles, CLUSTERS } from "./topics.data.mjs";
+import { pickAngles, remainingAngles, allAngles, CLUSTERS } from "./topics.data.mjs";
 import { INDUSTRIES, CAPABILITIES } from "./pages.data.mjs";
 import { SITE, BRAND, CAL, esc, slugify, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
 import { PILLARS } from "./hubs.data.mjs";
@@ -33,6 +33,9 @@ const POSTS_JSON = path.join(BLOG_DIR, "posts.json");
 const SITEMAP = path.join(ROOT, "sitemap.xml");
 const MODEL = process.env.CPC_BLOG_MODEL || "claude-opus-4-8";
 const POSTS_PER_RUN = Number(process.env.CPC_POSTS_PER_RUN || 2);
+// Roughly a fortnight of runway at the current cadence — enough warning to top
+// up the catalog before a run actually comes up short.
+const LOW_ANGLE_WARNING = POSTS_PER_RUN * 14;
 
 // ---------- date helpers (America/Phoenix, matching the other property) ----------
 function phoenixParts() {
@@ -341,13 +344,34 @@ async function main() {
     return;
   }
 
-  const recentTitles = posts.slice(0, 20).map(p => p.title);
   // In dry-run the body is a fixed sample, so pin it to the cluster it actually
   // belongs to rather than whatever the rotation happens to select.
   const picks = DRYRUN
     ? [{ cluster: CLUSTERS.find(c => c.key === "aeo-geo"), angle: "how AI answer engines choose which sources to cite" }]
-    : pickAngles(iso, need, recentTitles);
+    : pickAngles(iso, need, posts);
   console.log(`[cpc] ${prettyDate} — generating ${picks.length} post(s) (${todayCount} already today) — model: ${DRYRUN ? "DRY-RUN" : MODEL}`);
+
+  // The angle catalog is finite. Say so loudly while there is still time to add
+  // angles, rather than silently republishing a topic that is already covered.
+  if (!DRYRUN) {
+    const left = remainingAngles(posts).length;
+    console.log(`[cpc] angle catalog: ${left} unused of ${allAngles().length}`);
+    if (picks.length < need) {
+      console.error(
+        `[cpc] ⚠ ANGLE POOL EXHAUSTED — wanted ${need} post(s), only ${picks.length} unused angle(s) remain.\n` +
+        `[cpc]   Add angles to scripts/topics.data.mjs; run 'npm run angles:audit' to see what is left.`
+      );
+    } else if (left <= LOW_ANGLE_WARNING) {
+      console.error(`[cpc] ⚠ only ${left} unused angle(s) left — top up scripts/topics.data.mjs soon.`);
+    }
+    if (!picks.length) {
+      // Still rebuild the index/sitemap so a manual posts.json edit is picked up.
+      rehydratePosts(posts);
+      fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
+      fs.writeFileSync(SITEMAP, renderSitemap(posts));
+      return;
+    }
+  }
 
   let client = null;
   if (!DRYRUN) {
@@ -383,7 +407,18 @@ async function main() {
 
     let slug = slugify(data.slug || data.title || `post-${iso}`);
     if (!slug) slug = `post-${iso}`;
-    if (seen.has(slug)) { let n = 2; while (seen.has(`${slug}-${n}`)) n++; slug = `${slug}-${n}`; }
+    if (seen.has(slug)) {
+      // With angle de-duplication in place this should not happen. When it does
+      // it means two distinct angles produced near-identical titles, which is
+      // worth seeing in the run log rather than burying under a "-2" suffix.
+      const base = slug;
+      let n = 2; while (seen.has(`${slug}-${n}`)) n++;
+      slug = `${slug}-${n}`;
+      console.error(
+        `[cpc] ⚠ slug collision: "${base}" already exists — publishing as "${slug}".\n` +
+        `[cpc]   Angle was: "${pick.angle}". Check /blog/${base} for overlap.`
+      );
+    }
     seen.add(slug);
 
     const post = {
@@ -412,6 +447,9 @@ async function main() {
       slug: post.slug, title: post.title, excerpt: post.excerpt || post.metaDescription,
       metaDescription: post.metaDescription, tags: post.tags,
       cluster: post.cluster, clusterKey: post.clusterKey,
+      // Recorded so future runs can exclude this angle exactly, instead of
+      // inferring coverage from the title. Do not drop this field.
+      angle: pick.angle,
       iso: post.iso, prettyDate: post.prettyDate, readMinutes: post.readMinutes,
     };
     updated = [entry, ...updated];
