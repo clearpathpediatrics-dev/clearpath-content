@@ -1,5 +1,41 @@
 [
   {
+    "slug": "search-intent-types-how-to-write-each",
+    "title": "The 4 Search Intent Types and How to Write Each",
+    "excerpt": "Every query falls into one of four intent buckets. Match the page format to the bucket and you rank; ignore it and you write good content that never moves.",
+    "metaDescription": "Learn the 4 search intent categories and exactly how to write for informational, navigational, commercial, and transactional queries to rank and convert.",
+    "tags": [
+      "search intent",
+      "content strategy",
+      "keyword research",
+      "organic visibility",
+      "on-page SEO"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-08-08",
+    "prettyDate": "August 8, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-marketing-insurance-agencies",
+    "title": "Content Marketing for Insurance Agencies",
+    "excerpt": "Insurance buyers research heavily before they call anyone. Here's how an independent or captive agency builds content that answers their questions and pulls in quote requests.",
+    "metaDescription": "A practical content marketing plan for insurance agencies: what to write, how to structure it around policy questions, and how to turn readers into quote requests.",
+    "tags": [
+      "insurance marketing",
+      "content marketing",
+      "insurance agency SEO",
+      "lead generation",
+      "organic visibility"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-08",
+    "prettyDate": "August 8, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "format-content-so-chatgpt-can-quote-it",
     "title": "How to Format Content So ChatGPT Can Quote It",
     "excerpt": "AI answer engines pull short, self-contained passages out of your pages. Here is how to write those passages on purpose instead of hoping the model finds them.",
