@@ -1,5 +1,41 @@
 [
   {
+    "slug": "write-sentences-ai-will-quote",
+    "title": "How to Write a Sentence AI Will Quote Back",
+    "excerpt": "AI answer engines don't quote paragraphs. They quote sentences. Here's the sentence structure that gets your page pulled into ChatGPT and Perplexity answers.",
+    "metaDescription": "Learn how to structure content so ChatGPT and Perplexity can quote it directly, with a repeatable sentence pattern that makes your page the source AI cites.",
+    "tags": [
+      "answer engine optimization",
+      "ChatGPT SEO",
+      "Perplexity",
+      "AI search",
+      "content structure"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "iso": "2026-08-09",
+    "prettyDate": "August 9, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "update-vs-republish-content-refresh-strategy",
+    "title": "When to Update vs Republish an Old Blog Post",
+    "excerpt": "Updating and republishing are two different moves for two different problems. Here's how to tell which one a declining page actually needs — and when to do neither.",
+    "metaDescription": "A practical content refresh strategy for deciding when to update, republish, consolidate, or leave an old post alone — so you recover rankings without wasting hours.",
+    "tags": [
+      "content refresh",
+      "content strategy",
+      "organic visibility",
+      "content updates",
+      "on-page SEO"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "iso": "2026-08-09",
+    "prettyDate": "August 9, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "search-intent-types-how-to-write-each",
     "title": "The 4 Search Intent Types and How to Write Each",
     "excerpt": "Every query falls into one of four intent buckets. Match the page format to the bucket and you rank; ignore it and you write good content that never moves.",
