@@ -1,5 +1,41 @@
 [
   {
+    "slug": "content-strategy-roofing-contractors",
+    "title": "Content Strategy for Roofing Contractors",
+    "excerpt": "Most roofing websites have a homepage, a services page, and a contact form. That is not a content strategy. Here is what actually pulls in inspection requests.",
+    "metaDescription": "A practical content strategy for roofing contractors: which pages to build, what to write, and how to turn storm-season traffic into booked inspections.",
+    "tags": [
+      "roofing content strategy",
+      "roofing SEO",
+      "content marketing for contractors",
+      "roofing lead generation",
+      "service-area content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-10",
+    "prettyDate": "August 10, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "calculate-real-roi-organic-content",
+    "title": "How to Calculate the Real ROI of Content",
+    "excerpt": "Most content ROI math is wishful. Here's a formula that accounts for compounding traffic, lag time, and the pipeline value content actually produces.",
+    "metaDescription": "Learn how to calculate the real ROI of organic content using a repeatable formula, attribution windows, and a worked example you can copy today.",
+    "tags": [
+      "content ROI",
+      "content marketing measurement",
+      "organic content",
+      "marketing attribution",
+      "SEO analytics"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-10",
+    "prettyDate": "August 10, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "write-sentences-ai-will-quote",
     "title": "How to Write a Sentence AI Will Quote Back",
     "excerpt": "AI answer engines don't quote paragraphs. They quote sentences. Here's the sentence structure that gets your page pulled into ChatGPT and Perplexity answers.",
