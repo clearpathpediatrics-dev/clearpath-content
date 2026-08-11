@@ -1,5 +1,41 @@
 [
   {
+    "slug": "audit-website-ai-answer-engine-readiness",
+    "title": "How to Audit Your Site for AI Answer Engines",
+    "excerpt": "Most sites were built to rank blue links, not to get quoted by an AI answer. Here's a concrete audit to find the gaps and fix them.",
+    "metaDescription": "A practical audit for AI answer-engine readiness. Check whether ChatGPT, Perplexity, and Google AI can find, parse, and cite your site's content.",
+    "tags": [
+      "AI search optimization",
+      "answer engine optimization",
+      "content audit",
+      "technical SEO",
+      "AEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "iso": "2026-08-11",
+    "prettyDate": "August 11, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "content-metrics-that-predict-revenue",
+    "title": "Which Content Metrics Actually Predict Revenue",
+    "excerpt": "Pageviews and bounce rate feel like progress, but they rarely track to money. Here are the content metrics that actually predict revenue, and how to measure them.",
+    "metaDescription": "Most content metrics don't predict revenue. Learn which leading indicators track to sales and how to build a dashboard that shows what your content earns.",
+    "tags": [
+      "content ROI",
+      "content metrics",
+      "lead attribution",
+      "revenue tracking",
+      "content marketing measurement"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-11",
+    "prettyDate": "August 11, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "content-strategy-roofing-contractors",
     "title": "Content Strategy for Roofing Contractors",
     "excerpt": "Most roofing websites have a homepage, a services page, and a contact form. That is not a content strategy. Here is what actually pulls in inspection requests.",
