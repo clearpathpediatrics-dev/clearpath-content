@@ -1,5 +1,41 @@
 [
   {
+    "slug": "can-ai-read-your-website-audit",
+    "title": "How to Tell If AI Can Actually Read Your Site",
+    "excerpt": "Most AI-readiness audits stop at content quality. The real blockers are usually further upstream: whether the machine can fetch your page, parse it, and find a clean answer. Here's how to check each layer.",
+    "metaDescription": "A practical AI answer-engine readiness audit for business websites. Find the technical and content gaps that stop tools like ChatGPT and Google AI from citing you.",
+    "tags": [
+      "AI answer engine optimization",
+      "website audit",
+      "AEO",
+      "content strategy",
+      "technical SEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "iso": "2026-08-12",
+    "prettyDate": "August 12, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "organic-marketing-med-spas-aesthetics-clinics",
+    "title": "Organic Marketing for Med Spas That Books Consults",
+    "excerpt": "Med spa buyers research for weeks before they book. Here's how to build the treatment-level content that answers their questions and captures them before they call a competitor.",
+    "metaDescription": "A practical organic marketing plan for med spas and aesthetics clinics: the treatment content that ranks, gets cited by AI, and books consultations.",
+    "tags": [
+      "med spa marketing",
+      "aesthetics clinic seo",
+      "organic marketing",
+      "medical spa content",
+      "local seo"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-12",
+    "prettyDate": "August 12, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "audit-website-ai-answer-engine-readiness",
     "title": "How to Audit Your Site for AI Answer Engines",
     "excerpt": "Most sites were built to rank blue links, not to get quoted by an AI answer. Here's a concrete audit to find the gaps and fix them.",
