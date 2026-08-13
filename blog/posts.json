@@ -1,5 +1,41 @@
 [
   {
+    "slug": "entity-clarity-vs-keywords-ai-search",
+    "title": "Why AI Search Cares About Entities, Not Keywords",
+    "excerpt": "AI answer engines don't match strings the way old search did. They resolve entities. Here's what that means in practice and how to make your business unmistakable.",
+    "metaDescription": "Learn why entity clarity beats keyword matching for AI search, and get a practical checklist to make AI answer engines recognize and cite your business.",
+    "tags": [
+      "entity SEO",
+      "AI search",
+      "answer engine optimization",
+      "semantic search",
+      "knowledge graph"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "iso": "2026-08-13",
+    "prettyDate": "August 13, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "search-console-setup-business-questions",
+    "title": "Set Up Search Console to Answer Business Questions",
+    "excerpt": "Most people open Search Console, glance at the total clicks number, and close it. Here's how to set it up so it answers the questions you actually care about.",
+    "metaDescription": "Configure Google Search Console to answer real business questions with the right property, filters, and reports so you can spot what actually drives leads.",
+    "tags": [
+      "search console",
+      "measurement",
+      "content roi",
+      "seo analytics",
+      "organic traffic"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-13",
+    "prettyDate": "August 13, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "can-ai-read-your-website-audit",
     "title": "How to Tell If AI Can Actually Read Your Site",
     "excerpt": "Most AI-readiness audits stop at content quality. The real blockers are usually further upstream: whether the machine can fetch your page, parse it, and find a clean answer. Here's how to check each layer.",
