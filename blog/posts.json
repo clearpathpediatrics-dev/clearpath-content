@@ -1,5 +1,41 @@
 [
   {
+    "slug": "entity-clarity-vs-keywords-ai-search-2",
+    "title": "Why AI Search Needs to Know What You Are",
+    "excerpt": "Keywords tell a search engine what words appear on a page. Entities tell it what your business actually is. Here is how to make yours unambiguous so AI answer engines can name you.",
+    "metaDescription": "Entity clarity beats keyword stuffing for AI search. Learn how to define who you are, what you sell, and where you work so answer engines cite you.",
+    "tags": [
+      "entity SEO",
+      "AI search optimization",
+      "answer engine optimization",
+      "structured data",
+      "content strategy"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "iso": "2026-08-14",
+    "prettyDate": "August 14, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "search-console-reports-that-show-real-money",
+    "title": "Which Search Console Reports Show You Real Money",
+    "excerpt": "Most business owners open Search Console, see a squiggly line, and close the tab. Here is how to filter the reports so they answer questions you actually care about — which pages bring buyers, and which just bring browsers.",
+    "metaDescription": "Learn which Search Console reports connect organic search to revenue, how to filter them, and how to spot pages that earn leads instead of vanity clicks.",
+    "tags": [
+      "search console",
+      "content roi",
+      "organic marketing",
+      "search analytics",
+      "lead generation"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-14",
+    "prettyDate": "August 14, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "entity-clarity-vs-keywords-ai-search",
     "title": "Why AI Search Cares About Entities, Not Keywords",
     "excerpt": "AI answer engines don't match strings the way old search did. They resolve entities. Here's what that means in practice and how to make your business unmistakable.",
