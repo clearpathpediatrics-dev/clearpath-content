@@ -1,5 +1,41 @@
 [
   {
+    "slug": "seo-content-real-estate-agents",
+    "title": "SEO Content That Actually Wins Local Real Estate",
+    "excerpt": "Zillow and Realtor.com own the top of the funnel. Here's the content real estate agents can actually rank for, and how to build it.",
+    "metaDescription": "SEO content for real estate agents that ranks for local searches and captures buyers before they call. A practical playbook for neighborhood pages and guides.",
+    "tags": [
+      "real estate SEO",
+      "content marketing for realtors",
+      "local SEO",
+      "neighborhood guides",
+      "real estate lead generation"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-15",
+    "prettyDate": "August 15, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "attribute-content-long-sales-cycle",
+    "title": "How to Attribute Content in a Long Sales Cycle",
+    "excerpt": "When a deal takes four months to close, last-click attribution hides the content that actually started it. Here is how to track and credit organic content across a long buying cycle without pretending you have perfect data.",
+    "metaDescription": "Learn how to attribute organic content when your sales cycle runs months, using assisted conversions and simple tracking so you can prove content pays.",
+    "tags": [
+      "content attribution",
+      "long sales cycle",
+      "assisted conversions",
+      "content roi",
+      "b2b marketing measurement"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-15",
+    "prettyDate": "August 15, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "entity-clarity-vs-keywords-ai-search-2",
     "title": "Why AI Search Needs to Know What You Are",
     "excerpt": "Keywords tell a search engine what words appear on a page. Entities tell it what your business actually is. Here is how to make yours unambiguous so AI answer engines can name you.",
