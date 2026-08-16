@@ -1,5 +1,41 @@
 [
   {
+    "slug": "seo-content-that-works-for-realtors",
+    "title": "What Blog Content Actually Works for Realtors",
+    "excerpt": "Most agent blogs are full of market-update posts nobody searches for. Here is the content that actually pulls buyer and seller leads, and how to build it.",
+    "metaDescription": "SEO content for real estate agents that ranks and converts. Learn which pages earn buyer and seller leads, plus a neighborhood guide template you can copy.",
+    "tags": [
+      "real estate seo",
+      "realtor content marketing",
+      "neighborhood guides",
+      "local seo",
+      "lead generation"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-16",
+    "prettyDate": "August 16, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "track-content-that-closes-deals-months-later",
+    "title": "How to Track Content That Closes Deals Months Later",
+    "excerpt": "In a six-month sales cycle, last-click attribution buries your best content. Here's how to track which articles actually influence deals that close months after someone reads them.",
+    "metaDescription": "Learn how to attribute organic content in a long sales cycle using first-touch tracking, self-reported channels, and pipeline tags so you can prove which articles cl",
+    "tags": [
+      "content attribution",
+      "long sales cycle",
+      "content ROI",
+      "B2B marketing measurement",
+      "lead tracking"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-16",
+    "prettyDate": "August 16, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "seo-content-real-estate-agents",
     "title": "SEO Content That Actually Wins Local Real Estate",
     "excerpt": "Zillow and Realtor.com own the top of the funnel. Here's the content real estate agents can actually rank for, and how to build it.",
