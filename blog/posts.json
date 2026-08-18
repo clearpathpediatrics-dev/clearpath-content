@@ -1,5 +1,41 @@
 [
   {
+    "slug": "b2b-saas-content-marketing-pipeline",
+    "title": "B2B SaaS Content That Feeds Your Sales Pipeline",
+    "excerpt": "Most B2B software content chases keywords instead of buying decisions. Here is how to build a content program that answers the questions your buyers actually ask before they book a demo.",
+    "metaDescription": "A practical guide to content marketing for B2B software companies: how to map the buyer's questions, structure articles, and turn reads into demos.",
+    "tags": [
+      "b2b saas content marketing",
+      "software content strategy",
+      "b2b content pipeline",
+      "saas seo",
+      "bottom of funnel content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-18",
+    "prettyDate": "August 18, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "how-long-before-seo-content-pays-off-month-by-month",
+    "title": "How Long Before SEO Content Pays Off? Month by Month",
+    "excerpt": "A month-by-month breakdown of what organic growth from content actually looks like, so you can tell the difference between a slow start and a program that isn't working.",
+    "metaDescription": "See what a realistic organic growth curve looks like month by month, from month 0 to month 18, so you can judge whether your content program is on track.",
+    "tags": [
+      "organic growth curve",
+      "SEO timeline",
+      "content ROI",
+      "content marketing measurement",
+      "SEO expectations"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-18",
+    "prettyDate": "August 18, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "seo-content-real-estate-agents-neighborhood-pages",
     "title": "SEO Content for Real Estate Agents: Neighborhood Pages",
     "excerpt": "Most agent websites lose to Zillow because they publish nothing a searcher actually wants. Neighborhood guide pages are the exception. Here is how to build them so they rank and generate calls.",
