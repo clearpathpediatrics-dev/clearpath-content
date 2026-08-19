@@ -1,5 +1,41 @@
 [
   {
+    "slug": "b2b-software-content-category-ownership",
+    "title": "Content for B2B Software: The Category You Own",
+    "excerpt": "Most B2B software content chases the same feature keywords everyone else does. The companies that win pick a problem their product solves and build out every angle of it. Here's how to structure that.",
+    "metaDescription": "Content marketing for B2B software companies works when you own a problem category, not chase keywords. Here's the structure that pulls buyers in.",
+    "tags": [
+      "b2b software content marketing",
+      "saas content strategy",
+      "b2b seo content",
+      "content clusters",
+      "software marketing"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-19",
+    "prettyDate": "August 19, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "is-content-working-at-90-days",
+    "title": "Is Your Content Working at 90 Days? How to Tell",
+    "excerpt": "At 90 days most content programs have not produced much traffic yet — which is normal. Here are the leading indicators that tell you the program is on track before the traffic shows up.",
+    "metaDescription": "Learn how to tell whether your content investment is working at 90 days using leading indicators instead of traffic, so you can decide to keep going or cut.",
+    "tags": [
+      "content ROI",
+      "content measurement",
+      "SEO leading indicators",
+      "content marketing analytics",
+      "search console"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "iso": "2026-08-19",
+    "prettyDate": "August 19, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "b2b-saas-content-marketing-pipeline",
     "title": "B2B SaaS Content That Feeds Your Sales Pipeline",
     "excerpt": "Most B2B software content chases keywords instead of buying decisions. Here is how to build a content program that answers the questions your buyers actually ask before they book a demo.",
