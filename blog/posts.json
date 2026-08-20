@@ -1,5 +1,41 @@
 [
   {
+    "slug": "blog-strategy-staffing-recruiting-firms",
+    "title": "Blog Strategy for Staffing and Recruiting Firms",
+    "excerpt": "Staffing firms have to write for two audiences with opposite needs. Here is how to structure a blog that pulls in hiring managers and candidates without diluting either.",
+    "metaDescription": "A practical blog strategy for staffing and recruiting firms that pulls in both hiring managers and candidates so your content works for two audiences at once.",
+    "tags": [
+      "staffing firm marketing",
+      "recruiting content strategy",
+      "staffing agency SEO",
+      "recruiting firm blog",
+      "B2B content for staffing"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-20",
+    "prettyDate": "August 20, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "red-flags-seo-content-marketing-proposals-2",
+    "title": "9 Red Flags to Spot in an SEO Proposal",
+    "excerpt": "Most bad SEO engagements are visible in the proposal, before any money changes hands. Here are the specific things to look for and the questions that expose them.",
+    "metaDescription": "Learn the red flags in SEO and content marketing proposals so you can spot vague promises and bad contracts before you sign and waste months of budget.",
+    "tags": [
+      "seo proposal red flags",
+      "content marketing agency",
+      "how to hire an seo",
+      "seo contract review",
+      "marketing agency vetting"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "iso": "2026-08-20",
+    "prettyDate": "August 20, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "b2b-software-content-category-ownership",
     "title": "Content for B2B Software: The Category You Own",
     "excerpt": "Most B2B software content chases the same feature keywords everyone else does. The companies that win pick a problem their product solves and build out every angle of it. Here's how to structure that.",
