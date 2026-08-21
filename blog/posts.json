@@ -1,5 +1,41 @@
 [
   {
+    "slug": "how-local-search-ranking-works-service-businesses",
+    "title": "How Local Search Ranking Works for Service Firms",
+    "excerpt": "Local ranking runs on three levers: relevance, distance, and prominence. Here is how each one works for service businesses and what you can actually change.",
+    "metaDescription": "Learn how local search ranking actually works for service businesses, the three factors Google weighs, and a checklist to improve your map pack position.",
+    "tags": [
+      "local search ranking",
+      "local SEO",
+      "map pack",
+      "Google Business Profile",
+      "service business marketing"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "iso": "2026-08-21",
+    "prettyDate": "August 21, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "seo-proposal-guarantees-red-flags",
+    "title": "SEO Proposal Guarantees That Should Scare You",
+    "excerpt": "The promises that look reassuring in an SEO or content proposal are often the ones that should make you walk. Here is how to read the guarantees, deliverables, and pricing before you sign.",
+    "metaDescription": "Learn the guarantees and pricing tricks that signal a bad SEO or content marketing proposal, so you can spot the red flags before you sign a contract.",
+    "tags": [
+      "seo proposal red flags",
+      "content marketing proposals",
+      "hiring an seo agency",
+      "seo contracts",
+      "marketing agency vetting"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "iso": "2026-08-21",
+    "prettyDate": "August 21, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "blog-strategy-staffing-recruiting-firms",
     "title": "Blog Strategy for Staffing and Recruiting Firms",
     "excerpt": "Staffing firms have to write for two audiences with opposite needs. Here is how to structure a blog that pulls in hiring managers and candidates without diluting either.",
