@@ -1,5 +1,41 @@
 [
   {
+    "slug": "hvac-content-plan-that-books-service-calls",
+    "title": "The HVAC Content Plan That Books Service Calls",
+    "excerpt": "Most HVAC blogs read like nobody expected a customer to see them. Here is a content plan built around the questions people type when their system quits.",
+    "metaDescription": "Content marketing for HVAC companies that actually books jobs. A practical plan for service pages, seasonal articles, and the questions customers search.",
+    "tags": [
+      "HVAC content marketing",
+      "HVAC SEO",
+      "content for HVAC companies",
+      "local service marketing",
+      "HVAC blog strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "iso": "2026-08-22",
+    "prettyDate": "August 22, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "verify-seo-agency-published-results",
+    "title": "How to Verify an SEO Agency's Real Results",
+    "excerpt": "Most agencies show you a dashboard, not their work. Here is how to inspect the pages they actually published, trace the traffic, and confirm the results are real before you pay a retainer.",
+    "metaDescription": "Learn how to audit an SEO agency's actual published results before you sign. A step-by-step method to separate real client work from cherry-picked screenshots.",
+    "tags": [
+      "seo agency vetting",
+      "content agency audit",
+      "how to check seo results",
+      "agency due diligence",
+      "buying seo services"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "iso": "2026-08-22",
+    "prettyDate": "August 22, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "how-local-search-ranking-works-service-businesses",
     "title": "How Local Search Ranking Works for Service Firms",
     "excerpt": "Local ranking runs on three levers: relevance, distance, and prominence. Here is how each one works for service businesses and what you can actually change.",
