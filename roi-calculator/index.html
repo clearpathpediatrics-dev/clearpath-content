@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Marketing ROI Calculator | ClearPath Content</title>
+<meta name="description" content="Work out what content marketing has to produce to pay for itself in your business. Your numbers, your assumptions, no projected results. Free, instant.">
+<meta name="keywords" content="content marketing roi calculator, seo roi calculator, marketing break even calculator, content marketing cost, is content marketing worth it">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/roi-calculator">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="Content Marketing ROI Calculator | ClearPath Content">
+<meta property="og:description" content="Work out what content marketing has to produce to pay for itself in your business. Your numbers, your assumptions, no projected results. Free, instant.">
+<meta property="og:url" content="https://clearpath-content.com/roi-calculator">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Content Marketing ROI Calculator","url":"https://clearpath-content.com/roi-calculator","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Calculate the break-even point and modelled return of a content marketing subscription using your own customer value.","publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do these numbers come from?","acceptedAnswer":{"@type":"Answer","text":"Every figure is either one you typed or arithmetic on the figures you typed. We do not model a result for you, because we would be guessing at your market, your close rate and your capacity."}},{"@type":"Question","name":"Why does it lead with break-even instead of projected leads?","acceptedAnswer":{"@type":"Answer","text":"Because break-even is the only number we can state honestly. What it takes to cover the cost is arithmetic. What you will actually get depends on your market, your competition and your close rate — so that part is a slider you control, not a promise we make."}},{"@type":"Question","name":"How long before it breaks even in practice?","acceptedAnswer":{"@type":"Answer","text":"Published content compounds rather than switching on. Most of what we publish takes one to two quarters to rank and then keeps working. Plan on the first two quarters being investment and judge it from there."}},{"@type":"Question","name":"What if it never brings a single extra customer?","acceptedAnswer":{"@type":"Answer","text":"Then it was the wrong answer for your market and you should stop. It is month to month for that reason, and everything published stays on your domain and remains yours."}}]}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.hero{padding:56px 0 10px;text-align:center}
+.hero h1{font-size:clamp(30px,5vw,46px);margin:18px 0 14px;line-height:1.12}
+.hero p{color:var(--muted);font-size:18px;max-width:58ch;margin:0 auto}
+.calc{max-width:1140px;margin:0 auto;padding:0 24px}
+.grid{display:grid;gap:20px;margin:30px 0 10px}
+@media(min-width:900px){.grid{grid-template-columns:minmax(330px,380px) minmax(0,1fr);align-items:start}}
+/* A grid track's implicit min-width is auto, so a wide child (the three tier
+   cards) pushes the column past the container instead of shrinking. */
+.grid > *{min-width:0}
+.tiers > *{min-width:0}
+
+.panel{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:26px 24px;box-shadow:var(--shadow)}
+.panel h2{font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.f{margin-bottom:22px}
+.f:last-child{margin-bottom:4px}
+label{display:block;font-size:14.5px;font-weight:600;color:var(--pine);margin-bottom:8px}
+.hint{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+select,input[type=text]{width:100%;font-family:var(--body);font-size:16px;color:var(--ink);background:#fff;
+  border:1.5px solid var(--border);border-radius:12px;padding:12px 14px;-webkit-appearance:none}
+select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+input:focus,select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.2)}
+.money{position:relative}
+.money span{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px;pointer-events:none}
+.money input{padding-left:30px}
+.rangerow{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px}
+.rangeval{font-family:var(--mono);font-size:19px;font-weight:600;color:var(--pine)}
+input[type=range]{width:100%;-webkit-appearance:none;background:transparent;margin:6px 0 0}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:99px;background:#DCE7F5}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:-8px;
+  border-radius:50%;background:var(--spring);border:3px solid #fff;box-shadow:0 2px 8px rgba(11,34,64,.25);cursor:pointer}
+input[type=range]::-moz-range-track{height:6px;border-radius:99px;background:#DCE7F5}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--spring);
+  border:3px solid #fff;box-shadow:0 2px 8px rgba(11,34,64,.25);cursor:pointer}
+.ticks{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:6px;font-family:var(--mono)}
+
+/* the headline result */
+.verdict{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r);padding:30px 30px 26px;color:#fff;box-shadow:var(--shadow-lg)}
+.verdict .k{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#7FB0E0;font-weight:700}
+.verdict .big{font-family:var(--display);font-size:clamp(26px,3.6vw,34px);line-height:1.2;margin:12px 0 10px;color:#fff}
+.verdict .big b{color:#8FC4F5}
+.verdict p{color:#C4DDF2;font-size:15px;margin:0;max-width:56ch}
+
+/* tier cards */
+.tiers{display:grid;gap:14px;margin-top:18px}
+@media(min-width:640px){.tiers{grid-template-columns:1fr 1fr 1fr}}
+.tier{background:#fff;border:1px solid var(--border);border-radius:18px;padding:20px 20px 22px;position:relative}
+.tier.best{border-color:var(--spring);box-shadow:0 0 0 3px rgba(62,142,222,.14)}
+.tier .flag{position:absolute;top:-11px;left:20px;background:var(--spring);color:#fff;font-size:10.5px;
+  font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;border-radius:99px}
+.tier h3{font-size:16px;margin-bottom:2px}
+.tier .price{font-family:var(--mono);font-size:13px;color:var(--muted);margin-bottom:14px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:8px 0;border-bottom:1px solid #EEF3F9;font-size:14px}
+.row span{flex:0 0 auto}
+.row:last-child{border-bottom:none}
+.row span{color:var(--muted)}
+.row b{color:var(--pine);font-family:var(--mono);font-weight:600;text-align:right;
+  flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
+/* The break-even value is a sentence, not a figure — right-aligning it in a
+   narrow column overflowed the card. It gets its own stacked row. */
+.row.stack{padding-bottom:12px}
+.row.stack b{font-family:var(--body);font-size:15.5px;line-height:1.35;white-space:normal}
+.row b.good{color:#1D7A5F}
+.row b.bad{color:#B4451F}
+
+.note{background:var(--spring-soft);border-left:3px solid var(--spring);border-radius:0 12px 12px 0;
+  padding:15px 18px;font-size:14.5px;color:var(--pine);margin:22px 0 0}
+.honest{background:#fff;border:1px dashed var(--border);border-radius:16px;padding:20px 22px;margin:26px 0 0}
+.honest h3{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.honest p{font-size:14.5px;color:#33445A;margin:0 0 10px;line-height:1.65}
+.honest p:last-child{margin:0}
+
+.faq{max-width:760px;margin:0 auto;padding:46px 24px 0}
+.faq h2{font-size:clamp(22px,3vw,30px);margin-bottom:16px}
+details{background:#fff;border:1px solid var(--border);border-radius:16px;margin-top:12px;overflow:hidden;box-shadow:var(--shadow)}
+summary{cursor:pointer;list-style:none;padding:18px 22px;font-family:var(--display);font-weight:600;font-size:16px;
+  color:var(--pine);display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;color:var(--spring);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 22px 20px;color:var(--muted);font-size:15px;max-width:64ch}
+.band{background:var(--pine);color:#fff;border-radius:var(--r-lg);padding:42px 38px;margin:44px auto 10px;
+  max-width:760px;text-align:center}
+.band h2{color:#fff;margin-bottom:10px;font-size:clamp(22px,3vw,30px)}
+.band p{color:#C4DDF2;max-width:52ch;margin:0 auto 22px;font-size:16px}
+@media(max-width:600px){.panel,.verdict{padding:22px 18px}.band{padding:32px 22px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
+      <a href="/roi-calculator">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+
+<header class="hero"><div class="narrow">
+  <span class="eyebrow">Free · instant · no signup</span>
+  <h1>What would content marketing have to do to pay for itself?</h1>
+  <p>Put in what a customer is actually worth to you. We will show you the break-even point against each plan — and let you model the upside with your own assumptions, not ours.</p>
+</div></header>
+
+<div class="calc">
+  <div class="grid">
+    <!-- ------------------------------------------------ inputs -->
+    <div class="panel">
+      <h2>Your numbers</h2>
+
+      <div class="f">
+        <label for="ind">What do you do?</label>
+        <select id="ind"><option value="12000" selected>Roofing / contracting</option><option value="9000">HVAC</option><option value="1200">Plumbing</option><option value="2500">Electrical</option><option value="600">Pest control</option><option value="6000">Law firm</option><option value="3500">Dental practice</option><option value="9000">Real estate</option><option value="15000">Home services</option><option value="12000">B2B software</option><option value="6000">Professional services</option><option value="5000">Something else</option></select>
+        <p class="hint">Only pre-fills the next field. Change it to whatever is true for you.</p>
+      </div>
+
+      <div class="f">
+        <label for="val">What is one new customer worth?</label>
+        <div class="money"><span>$</span><input id="val" type="text" inputmode="numeric" value="12,000"></div>
+        <p class="hint">Revenue from one customer. If they come back, use what they are worth over the whole relationship, not the first job.</p>
+      </div>
+
+      <div class="f">
+        <div class="rangerow"><label for="cur" style="margin:0">New customers a month, today</label>
+          <span class="rangeval" id="curOut">6</span></div>
+        <input id="cur" type="range" min="1" max="60" value="6">
+        <div class="ticks"><span>1</span><span>60</span></div>
+      </div>
+
+      <div class="f">
+        <div class="rangerow"><label for="lift" style="margin:0">Extra customers a year, if it works</label>
+          <span class="rangeval" id="liftOut">4</span></div>
+        <input id="lift" type="range" min="0" max="120" step="1" value="4">
+        <div class="ticks"><span>0</span><span>120</span></div>
+        <p class="hint"><strong>Your assumption, not our forecast.</strong> Defaults to 5% more new business than you get today — deliberately conservative. Drag it down until the number feels like something you would actually bet on.</p>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------ results -->
+    <div>
+      <div class="verdict">
+        <span class="k">The only number we can promise</span>
+        <p class="big" id="verdict">—</p>
+        <p id="verdictSub">Break-even is arithmetic on the figure you entered. Everything below it is your assumption.</p>
+      </div>
+
+      <div class="tiers" id="tiers"></div>
+
+      <div class="note" id="context">—</div>
+
+      <div class="honest">
+        <h3>What this calculator will not do</h3>
+        <p>It will not tell you how many leads you will get. We have no way of knowing that, and any company that puts a number on it before seeing your market is guessing at best.</p>
+        <p>Published content compounds rather than switching on. Expect the first two quarters to be investment, then judge it on what is ranking. It is month to month precisely so you can stop if it is not working — and everything published stays yours either way.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="faq">
+  <h2>Common questions</h2>
+  <details><summary>Where do these numbers come from?</summary><p>Every figure is either one you typed or arithmetic on the figures you typed. We do not model a result for you, because we would be guessing at your market, your close rate and your capacity.</p></details><details><summary>Why does it lead with break-even instead of projected leads?</summary><p>Because break-even is the only number we can state honestly. What it takes to cover the cost is arithmetic. What you will actually get depends on your market, your competition and your close rate — so that part is a slider you control, not a promise we make.</p></details><details><summary>How long before it breaks even in practice?</summary><p>Published content compounds rather than switching on. Most of what we publish takes one to two quarters to rank and then keeps working. Plan on the first two quarters being investment and judge it from there.</p></details><details><summary>What if it never brings a single extra customer?</summary><p>Then it was the wrong answer for your market and you should stop. It is month to month for that reason, and everything published stays on your domain and remains yours.</p></details>
+</section>
+
+<div class="band">
+  <h2>Want the version built on your actual market?</h2>
+  <p>We will look at what your buyers are searching, what your site answers today, and who is capturing that traffic instead of you. Free, and yours to keep.</p>
+  <a class="btn" href="/#snapshot">Get my free market snapshot</a>
+  <p style="margin-top:16px;font-size:14px"><a href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener" style="color:#8FC4F5">Or book thirty minutes →</a></p>
+</div>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/roi-calculator">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/locations">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/capture-nudge.js" defer></script>
+<script>
+(function(){
+  var TIERS=[{n:"Starter",p:199},{n:"Growth",p:399},{n:"Authority",p:499}];
+  var $=function(i){return document.getElementById(i)};
+  var money=function(n){return "$"+Math.round(n).toLocaleString("en-US")};
+  var clean=function(s){return Math.max(0,parseFloat(String(s).replace(/[^0-9.]/g,""))||0)};
+
+  function plural(n,w){return n===1?w:w+"s"}
+
+  /** "one extra customer every N" — the line that does the persuading. */
+  function everyPhrase(perYear){
+    if(perYear<=0) return "—";
+    if(perYear>=12) return "about "+Math.round(perYear/12)+" extra "+plural(Math.round(perYear/12),"customer")+" a month";
+    if(perYear>=1.6) return "about "+(Math.round(perYear*10)/10)+" extra customers a year";
+    if(perYear>=0.92) return "one extra customer a year";
+    var months=12/perYear;
+    if(months<=23) return "one extra customer every "+Math.round(months)+" months";
+    var years=months/12;
+    return "one extra customer every "+(years<2.05?"2":Math.round(years))+" years";
+  }
+
+  function render(){
+    var v=clean($("val").value), cur=+$("cur").value, lift=+$("lift").value;
+    $("curOut").textContent=cur;
+    $("liftOut").textContent=lift;
+
+    if(!v){ $("verdict").textContent="Enter what a customer is worth."; $("tiers").innerHTML=""; return; }
+
+    // Break-even is stated against the lowest plan, because that is the honest
+    // floor: the smallest commitment that buys anything at all.
+    var beYear=(TIERS[0].p*12)/v;
+    $("verdict").innerHTML="This pays for itself at <b>"+everyPhrase(beYear)+"</b>.";
+    $("verdictSub").textContent="At "+money(v)+" a customer, the "+TIERS[0].n+" plan costs "+money(TIERS[0].p*12)+
+      " a year — so it covers itself the moment it produces that much. Everything past it is upside.";
+
+    var html="";
+    TIERS.forEach(function(t,i){
+      var annual=t.p*12;
+      var be=annual/v;
+      var gain=lift*v;
+      var net=gain-annual;
+      var roi=annual>0?(net/annual):0;
+      var payback=gain>0?(annual/(gain/12)):0; // months of modelled gain needed to cover the year
+      html+='<div class="tier'+(i===1?' best':'')+'">'+
+        (i===1?'<span class="flag">Most chosen</span>':'')+
+        '<h3>'+t.n+'</h3><div class="price">'+money(t.p)+'/mo · '+money(annual)+' a year</div>'+
+        '<div class="row stack"><span>Breaks even at</span><b>'+everyPhrase(be)+'</b></div>'+
+        '<div class="row"><span>Your assumption</span><b>+'+lift+'/yr</b></div>'+
+        '<div class="row"><span>Revenue added</span><b>'+money(gain)+'</b></div>'+
+        '<div class="row"><span>Net of cost</span><b class="'+(net>=0?'good':'bad')+'">'+
+          (net>=0?'+':'')+money(net)+'</b></div>'+
+        '<div class="row"><span>Return</span><b class="'+(net>=0?'good':'bad')+'">'+
+          (lift===0?'—':(roi>=0?(Math.round(roi*10)/10)+'×':'−'))+'</b></div>'+
+        (payback>0&&payback<=12?'<div class="row"><span>Cost covered by</span><b>month '+Math.max(1,Math.ceil(payback))+'</b></div>':'')+
+        '</div>';
+    });
+    $("tiers").innerHTML=html;
+
+    var growth=cur>0?((lift/(cur*12))*100):0;
+    // A modelled return this large is arithmetically right and rhetorically
+    // useless — it reads as a fantasy and takes the credible numbers with it.
+    // Better the tool says so than the prospect does.
+    var topRoi=lift>0?((lift*v)-(TIERS[0].p*12))/(TIERS[0].p*12):0;
+    var overclaim = topRoi>15
+      ? '<div class="note" style="background:#FDF3E7;border-left-color:#C88A3A;color:#7A5418;margin-top:12px">'+
+        '<strong>That return is doing a lot of work.</strong> The arithmetic is right, but a modelled figure that '+
+        'large almost always means the assumption above is optimistic. Drag it down until it is a number you would '+
+        'actually bet on — the break-even line is the one that does not move.</div>'
+      : "";
+    $("context").insertAdjacentHTML; // (kept: context node is replaced below)
+    $("context").innerHTML = lift===0
+      ? "Set the slider above to model what a result would be worth. At zero it only shows the break-even point — which is the honest floor."
+      : "You are modelling <strong>"+lift+" extra "+plural(lift,"customer")+" a year</strong> on top of the "+(cur*12)+
+        " you already win. That is a <strong>"+Math.round(growth)+"% increase</strong> in new business. Whether that is realistic depends entirely on your market — worth pressure-testing on a call before you believe it.";
+    var warn=document.getElementById("overclaim");
+    if(warn) warn.remove();
+    if(overclaim){ $("context").insertAdjacentHTML("afterend", overclaim.replace('class="note"','id="overclaim" class="note"')); }
+  }
+
+  $("ind").addEventListener("change",function(){
+    $("val").value=(+this.value).toLocaleString("en-US"); render();
+  });
+  $("val").addEventListener("input",render);
+  $("val").addEventListener("blur",function(){
+    var v=clean(this.value); this.value=v?v.toLocaleString("en-US"):"";
+  });
+  // Moving the volume slider re-suggests a 15% lift, so the assumption always
+  // stays proportionate to the business rather than stranded at a stale number.
+  var liftTouched=false;
+  $("lift").addEventListener("input",function(){ liftTouched=true; render(); });
+  $("cur").addEventListener("input",function(){
+    if(!liftTouched){ $("lift").value=Math.max(1,Math.round(+this.value*12*0.05)); }
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>

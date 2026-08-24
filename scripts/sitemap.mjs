@@ -35,6 +35,7 @@ export function sitemapUrls(posts) {
     { loc: `${SITE}/industries`, pri: "0.9", freq: "monthly", mod: today },
     { loc: `${SITE}/locations`, pri: "0.9", freq: "monthly", mod: today },
     { loc: `${SITE}/blog`, pri: "0.9", freq: "daily", mod: today },
+    { loc: `${SITE}/roi-calculator`, pri: "0.9", freq: "monthly", mod: today },
     { loc: `${SITE}/faq`, pri: "0.8", freq: "monthly", mod: today },
     { loc: `${SITE}/about-our-audit`, pri: "0.3", freq: "yearly", mod: today },
     ...PILLARS.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.9", freq: "weekly", mod: today })),

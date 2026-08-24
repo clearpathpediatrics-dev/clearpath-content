@@ -91,6 +91,10 @@ Metros with dedicated pages:
 - Pacific Northwest: Seattle, WA (https://clearpath-content.com/content-marketing-seattle); Portland, OR (https://clearpath-content.com/content-marketing-portland)
 Cities not listed above are still served — the metro page simply has not been written yet.
 
+## Free ROI calculator
+Works out what a content programme has to produce to pay for itself, using the visitor's own customer value. It states a break-even point rather than projecting a result — ClearPath publishes no performance claims because it has no client data to substantiate them.
+https://clearpath-content.com/roi-calculator
+
 ## Key pages
 - What a deployment delivers: https://clearpath-content.com/what-you-get
 - Frequently asked questions: https://clearpath-content.com/faq

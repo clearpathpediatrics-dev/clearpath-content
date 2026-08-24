@@ -248,6 +248,7 @@ export const NAV = `
       <a href="/#method">Methodology</a>
       <a href="/industries">Industries</a>
       <a href="/locations">Locations</a>
+      <a href="/roi-calculator">ROI calculator</a>
       <a href="/#pricing">Pricing</a>
       <a class="btn green" href="${CAL}" target="_blank" rel="noopener">Request access</a>
     </div>
@@ -269,6 +270,7 @@ export const FOOTER = `
         <a href="/">Home</a>
         <a href="/#method">Methodology</a>
         <a href="/what-you-get">What you get</a>
+        <a href="/roi-calculator">ROI calculator</a>
         <a href="/#pricing">Pricing</a>
         <a href="/faq">FAQ</a>
         <a href="/blog/">Field notes</a>
