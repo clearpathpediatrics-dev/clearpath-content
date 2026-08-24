@@ -103,8 +103,15 @@ nav{
 }
 .wordmark{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
 .nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
-.nav-links a{text-decoration:none;color:var(--muted);transition:color .2s}
+.nav-links a{text-decoration:none;color:var(--muted);transition:color .2s;white-space:nowrap}
 .nav-links a:hover{color:var(--pine)}
+/* A sixth item leaves only ~47px of slack at the 1040px hamburger threshold —
+   fine with Plus Jakarta loaded, not fine if a wider fallback paints first.
+   Tighten through the narrow desktop band rather than let the bar wrap. */
+@media (min-width:1041px) and (max-width:1180px){
+  .nav-links{gap:16px;font-size:14px}
+  .nav-pill .btn{padding:11px 18px}
+}
 .nav-links a.btn,.nav-links a.btn:hover{color:#fff}
 .nav-links a.btn,.nav-links a.btn:hover{color:#fff}
 .btn{
@@ -278,6 +285,25 @@ header.hero{padding:96px 0 120px;position:relative;overflow:hidden}
 .tier li b{color:var(--ink);font-weight:600}
 .tier .btn{text-align:center}
 
+/* Sits directly under the tiers: the moment a visitor is weighing $199 against
+   an unknown return is the moment the calculator is worth reaching for. */
+.roi-band{
+  margin-top:26px;display:flex;align-items:center;justify-content:space-between;
+  gap:26px;flex-wrap:wrap;
+  background:linear-gradient(135deg,#FFFFFF 0%,#F1F7FE 100%);
+  border:1.5px solid #C6DDF5;border-radius:26px;padding:28px 32px;box-shadow:var(--shadow);
+}
+.roi-copy{flex:1 1 420px;min-width:0}
+.roi-band h3{font-family:var(--display);font-size:20px;color:var(--pine);margin-bottom:8px}
+.roi-band p{font-size:14.5px;color:var(--muted);line-height:1.65;max-width:64ch}
+.roi-band p b{color:var(--pine-2);font-weight:600}
+.roi-band .btn{flex:0 0 auto;white-space:nowrap}
+.roi-band .btn.ghost{border-color:var(--spring)}
+@media(max-width:600px){
+  .roi-band{padding:24px 20px;border-radius:22px;gap:18px}
+  .roi-band .btn{width:100%;text-align:center}
+}
+
 /* ---------- faq ---------- */
 .faq{max-width:800px;margin:52px auto 0;display:flex;flex-direction:column;gap:14px}
 details{
@@ -432,6 +458,7 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
       <a href="/industries">Industries</a>
       <a href="/locations">Locations</a>
       <a href="#pricing">Pricing</a>
+      <a href="/roi-calculator">ROI calculator</a>
       <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
     </div>
   </div>
@@ -713,6 +740,14 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
         <a class="btn ghost" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Deploy Authority</a>
       </div>
     </div>
+
+    <div class="roi-band">
+      <div class="roi-copy">
+        <h3>Not sure a tier pays for itself?</h3>
+        <p>Enter what one customer is worth to you and the calculator returns your <b>break-even</b> — how many extra customers a year each tier has to earn before it has cost you nothing. Your numbers, no email, nothing stored.</p>
+      </div>
+      <a class="btn ghost" href="/roi-calculator">Run your numbers →</a>
+    </div>
   </div>
 </section>
 
@@ -824,6 +859,7 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
         <a href="/#method">Methodology</a>
         <a href="/what-you-get">What you get</a>
         <a href="/#pricing">Pricing</a>
+        <a href="/roi-calculator">ROI calculator</a>
         <a href="/faq">FAQ</a>
         <a href="/blog/">Field notes</a>
       </div>
