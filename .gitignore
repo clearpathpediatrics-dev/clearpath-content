@@ -8,3 +8,9 @@ node_modules/
 # in the repo that would be genuinely bad to leak.
 data/
 outreach/
+
+# API keys. prospect-source.mjs runs locally and reads GOOGLE_PLACES_API_KEY
+# from the shell, so a .env here would be a plaintext credential in the repo.
+.env
+.env.local
+.env.*.local
