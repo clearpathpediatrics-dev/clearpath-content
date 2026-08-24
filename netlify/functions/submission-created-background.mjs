@@ -14,6 +14,7 @@
 import { auditSite, headlineFindings } from "../../scripts/site-audit.mjs";
 import { scoreLead, playbook, industryPhrase, industrySentence, INDUSTRY_PRIORS } from "../../scripts/icp.mjs";
 import { CITIES } from "../../scripts/hubs.data.mjs";
+import { buildVisibilityReport } from "../lib/visibility-report.mjs";
 import {
   CAL, SITE, ALERT_TO, leadStore, emailKey, sendEmail, layout, statStrip, ctaBand,
   unsubUrlFor, toText, esc, isSuppressed,
@@ -148,10 +149,24 @@ ${queryBlock}
         `One deployment per niche, per metro. ${industrySentence(lead.industry)} in ${where} is open right now.`,
         CAL, "Book 30 minutes"),
     });
+    // The Visibility Report is the deliverable; the email is the covering note.
+    // Generation is never allowed to cost us the lead — on failure the email
+    // still goes with the findings inline.
+    let attachments;
+    try {
+      const pdf = await buildVisibilityReport(
+        { business: lead.name, website: lead.website, industry: lead.industry, city: lead.city, state: lead.state },
+        audit, scored,
+        { findings, dateLabel: new Intl.DateTimeFormat("en-US", { timeZone: "America/Phoenix",
+            day: "numeric", month: "long", year: "numeric" }).format(new Date()) });
+      attachments = [{ filename: `Visibility-Report-${(lead.city || "market").replace(/\W+/g, "-")}.pdf`,
+                       content: pdf.toString("base64") }];
+    } catch (e) { console.error("[report]", e); }
+
     const r = await sendEmail({
       to: lead.email,
       subject: findings.length ? `${first} — what I found on your site` : `Your ${where} snapshot`,
-      html, text: toText(html), replyTo: ALERT_TO, tag: "inbound-snapshot",
+      html, text: toText(html), replyTo: ALERT_TO, tag: "inbound-snapshot", attachments,
     });
     record.history.push({ at: new Date().toISOString(), event: r.sent ? "snapshot-sent" : `snapshot-failed:${r.error}` });
   }

@@ -1,7 +1,7 @@
 {
   "name": "clearpath-content-site",
   "version": "1.0.0",
-  "description": "ClearPath Content (CPC) \u2014 marketing site with an auto-published blog. Organic visibility infrastructure for businesses.",
+  "description": "ClearPath Content (CPC) — marketing site with an auto-published blog. Organic visibility infrastructure for businesses.",
   "private": true,
   "homepage": "https://clearpath-content.com",
   "author": "ClearPath Content",
@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.70.0",
-    "@netlify/blobs": "^8.1.0"
+    "@netlify/blobs": "^8.1.0",
+    "pdf-lib": "^1.17.1"
   },
   "keywords": [
     "clearpath-content",

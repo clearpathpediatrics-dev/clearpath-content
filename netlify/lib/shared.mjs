@@ -53,7 +53,7 @@ export const esc = (s = "") => String(s)
  * Send via Resend. Never throws — a delivery failure must not lose the lead.
  * Returns {sent:boolean, id?:string, error?:string}.
  */
-export async function sendEmail({ to, subject, html, text, replyTo, tag, from, listUnsubUrl }) {
+export async function sendEmail({ to, subject, html, text, replyTo, tag, from, listUnsubUrl, attachments }) {
   const key = process.env.RESEND_API_KEY;
   if (!key) return { sent: false, error: "RESEND_API_KEY not set" };
   if (await isSuppressed(to)) return { sent: false, error: "recipient suppressed" };
@@ -66,6 +66,7 @@ export async function sendEmail({ to, subject, html, text, replyTo, tag, from, l
         from: from || FROM, to: [to], subject, html, text,
         ...(replyTo ? { reply_to: replyTo } : {}),
         ...(tag ? { tags: [{ name: "flow", value: tag }] } : {}),
+        ...(attachments?.length ? { attachments } : {}),
         // One-click unsubscribe. Gmail and Yahoo require this header on bulk
         // mail, and honouring it is cheaper than the complaint that replaces it.
         ...(listUnsubUrl ? {

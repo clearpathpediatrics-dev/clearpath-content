@@ -24,6 +24,7 @@ import {
   allProspects, putProspect, STATUS, TERMINAL, meterGet, meterBump,
 } from "../lib/prospects.mjs";
 import { industryPhrase } from "../../scripts/icp.mjs";
+import { buildVisibilityReport } from "../lib/visibility-report.mjs";
 import {
   CAL, SITE, ALERT_TO, COLD_FROM, sendEmail, layout, ctaBand,
   unsubUrlFor, toText, esc, isSuppressed,
@@ -191,10 +192,29 @@ export default async function handler() {
         : "",
     });
 
+    // Touch 1 carries the Visibility Report. A cold email arriving with a real
+    // audit of the recipient's own site is a different object from a pitch, and
+    // it is the reason this sequence can earn a reply at all. Later touches stay
+    // light. Generation failure never blocks the send.
+    let attachments;
+    if (stage === 0) {
+      try {
+        const pdf = await buildVisibilityReport(
+          { business: p.business, website: p.website, industry: p.industry, city: p.city, state: p.state },
+          p.audit, { score: p.score, band: p.band },
+          { findings: p.findings || [],
+            dateLabel: new Intl.DateTimeFormat("en-US", { timeZone: "America/Phoenix",
+              day: "numeric", month: "long", year: "numeric" }).format(new Date()) });
+        attachments = [{
+          filename: `Visibility-Report-${String(p.business || p.website || "site").replace(/\W+/g, "-").slice(0, 40)}.pdf`,
+          content: pdf.toString("base64") }];
+      } catch (e) { console.error("[report]", p.website, e.message); }
+    }
+
     const r = await sendEmail({
       to: p.email, subject: touch.subject, html, text: toText(html),
       from: COLD_FROM, replyTo: ALERT_TO, tag: `cold-${stage + 1}`,
-      listUnsubUrl: unsub,
+      listUnsubUrl: unsub, attachments,
     });
 
     // Advance regardless of the send result. A transient Resend failure must
