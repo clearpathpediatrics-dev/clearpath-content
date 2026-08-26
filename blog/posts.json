@@ -1,5 +1,43 @@
 [
   {
+    "slug": "wrong-keyword-target-list",
+    "title": "Why Your Top 10 Keywords Are the Wrong Target List",
+    "excerpt": "The ten keywords everyone in your industry wants are the ten you'll spend the most to lose. Here's the target list that actually books work.",
+    "metaDescription": "Chasing ten obvious keywords wastes your content budget. Learn why a question-space beats a keyword list and how to build a target list that actually converts.",
+    "tags": [
+      "keyword strategy",
+      "organic visibility",
+      "content strategy",
+      "long-tail keywords",
+      "search intent"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "why ten obvious keywords is the wrong target list",
+    "iso": "2026-08-26",
+    "prettyDate": "August 26, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "law-firm-seo-content-strategy",
+    "title": "SEO Content Strategy for Law Firms That Gets Cases",
+    "excerpt": "Most law firm blogs read like law review articles nobody asked for. Here's the content structure that actually pulls in people with legal problems and turns them into consults.",
+    "metaDescription": "A practical SEO content strategy for law firms: which practice-area and question pages to build, how to structure them, and how to turn readers into signed clients.",
+    "tags": [
+      "law firm SEO",
+      "legal content marketing",
+      "practice area pages",
+      "attorney content strategy",
+      "law firm blog"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content strategy for law firms",
+    "iso": "2026-08-26",
+    "prettyDate": "August 26, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "google-business-profile-optimisation-that-works",
     "title": "Google Business Profile Fixes That Get You Calls",
     "excerpt": "Most Google Business Profile advice is busywork. Here is what actually influences the map pack, in order of impact, with a checklist you can run today.",
