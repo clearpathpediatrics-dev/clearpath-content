@@ -344,6 +344,11 @@ async function main() {
     return;
   }
 
+  // Angle selection now excludes anything already published by angle, but the
+  // prompt still gets recent titles so the model does not write a near-neighbour
+  // of last week's piece under a legitimately different angle.
+  const recentTitles = posts.slice(0, 20).map(p => p.title);
+
   // In dry-run the body is a fixed sample, so pin it to the cluster it actually
   // belongs to rather than whatever the rotation happens to select.
   const picks = DRYRUN
@@ -387,13 +392,23 @@ async function main() {
   const seen = new Set(posts.map(p => p.slug));
 
   for (const pick of picks) {
+    // Built on both paths, deliberately. A `recentTitles` reference left behind
+    // by a refactor lived only inside the API branch, so the dry run — the one
+    // check that costs nothing — sailed past it and the blog went dark for
+    // three days. Anything the live path evaluates, the dry run evaluates too.
+    const system = systemPrompt(
+      pick.cluster,
+      pick.angle,
+      [...recentTitles, ...updated.slice(0, 5).map(p => p.title)],
+    );
+
     let data;
     if (DRYRUN) {
       data = SAMPLE;
     } else {
       const resp = await client.messages.create({
         model: MODEL, max_tokens: 6000,
-        system: systemPrompt(pick.cluster, pick.angle, [...recentTitles, ...updated.slice(0, 5).map(p => p.title)]),
+        system,
         messages: [{ role: "user", content: `Write today's article on: "${pick.angle}". Return only the JSON object.` }],
       });
       const raw = resp.content.filter(b => b.type === "text").map(b => b.text).join("").trim();

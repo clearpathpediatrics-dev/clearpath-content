@@ -44,6 +44,22 @@ jobs:
       - name: Test angle selection
         run: npm test
 
+      # Runs the whole publish path with a canned article instead of an API
+      # call: angle selection, prompt assembly, rendering, index and sitemap.
+      # Costs nothing and fails loudly. A ReferenceError reachable only on the
+      # live path once killed publishing for three days while every local check
+      # stayed green — this is the step that would have caught it.
+      #
+      # The dry run writes a real post, so put the tree back before the paid
+      # run. Safe here and nowhere else: the checkout is fresh, so the only
+      # untracked thing under blog/ is what the dry run just made.
+      - name: Smoke-test the publish path
+        run: |
+          CPC_BLOG_DRYRUN=1 node scripts/generate-posts.mjs
+          git checkout -- .
+          git clean -fdq blog/
+          git status --porcelain
+
       - name: Generate articles
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
