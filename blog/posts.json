@@ -1,5 +1,43 @@
 [
   {
+    "slug": "keep-blog-going-no-owner",
+    "title": "How to Keep a Blog Going With No Owner",
+    "excerpt": "Most company blogs die not from bad writing but from unclear ownership. Here is a practical system for keeping publishing on schedule when it is nobody's real job.",
+    "metaDescription": "How to keep a company blog going when nobody owns it: a lightweight system of cadence, roles, and a content queue that survives busy weeks and turnover.",
+    "tags": [
+      "content operations",
+      "blog management",
+      "editorial calendar",
+      "content workflow",
+      "small business marketing"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "how to keep a blog going when nobody owns it",
+    "iso": "2026-08-28",
+    "prettyDate": "August 28, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "seo-vs-aeo-vs-geo-in-practice",
+    "title": "SEO vs AEO vs GEO: What Actually Changes",
+    "excerpt": "SEO, AEO and GEO get thrown around as if they're three separate strategies. In practice they're layers on the same content. Here's what each one actually asks you to do differently.",
+    "metaDescription": "A practical breakdown of SEO, AEO and GEO for business owners, with the concrete changes each one demands so your content gets found and cited.",
+    "tags": [
+      "AEO",
+      "GEO",
+      "answer engine optimization",
+      "AI search",
+      "content strategy"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "the difference between SEO, AEO and GEO in practice",
+    "iso": "2026-08-28",
+    "prettyDate": "August 28, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "why-organic-content-compounds-slowly-then-fast",
     "title": "Why Organic Content Compounds Slowly, Then Fast",
     "excerpt": "Organic content doesn't grow in a straight line. It stalls, then bends upward once enough pieces link, rank, and feed each other. Here's the real timeline and how to read it.",
