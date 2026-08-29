@@ -1,5 +1,43 @@
 [
   {
+    "slug": "dental-practice-blog-strategy",
+    "title": "What Should a Dental Practice Blog About?",
+    "excerpt": "Most dental blogs are full of posts nobody searches for. Here's how to pick topics that bring in patients, structure them around real decisions, and build a plan you can sustain.",
+    "metaDescription": "A practical blog strategy for dental practices: which topics actually bring in patients, how to structure them, and a 12-post starter plan you can use today.",
+    "tags": [
+      "dental blog strategy",
+      "dental practice marketing",
+      "content marketing for dentists",
+      "dental SEO",
+      "local search for dentists"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "blog strategy for dental practices",
+    "iso": "2026-08-29",
+    "prettyDate": "August 29, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "faq-sections-ai-overviews-pull-from",
+    "title": "How to Write FAQs That AI Overviews Quote",
+    "excerpt": "Most FAQ sections are written for nobody. Here is the exact structure that makes AI overviews lift your answer instead of a competitor's.",
+    "metaDescription": "Learn how to write FAQ sections that AI overviews and answer engines actually pull from, with a format checklist that gets your answers cited.",
+    "tags": [
+      "answer engine optimization",
+      "AI overviews",
+      "FAQ content",
+      "featured snippets",
+      "content structure"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "writing FAQ sections that AI overviews actually pull from",
+    "iso": "2026-08-29",
+    "prettyDate": "August 29, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "keep-blog-going-no-owner",
     "title": "How to Keep a Blog Going With No Owner",
     "excerpt": "Most company blogs die not from bad writing but from unclear ownership. Here is a practical system for keeping publishing on schedule when it is nobody's real job.",
