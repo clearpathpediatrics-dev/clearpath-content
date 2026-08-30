@@ -1,5 +1,43 @@
 [
   {
+    "slug": "content-marketing-plumbing-businesses",
+    "title": "Content Marketing for Plumbing Businesses That Works",
+    "excerpt": "Most plumbing blogs read like they were written for other plumbers. Here's how to build content that answers what homeowners actually search before they call, and turns that traffic into booked jobs.",
+    "metaDescription": "Content marketing for plumbing businesses done right: what to write, how to rank for local repair searches, and how to turn articles into booked jobs.",
+    "tags": [
+      "plumbing content marketing",
+      "plumber SEO",
+      "local service SEO",
+      "content strategy",
+      "home services marketing"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for plumbing businesses",
+    "iso": "2026-08-30",
+    "prettyDate": "August 30, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "check-if-ai-assistants-cite-your-business",
+    "title": "How to Tell If AI Assistants Cite Your Business",
+    "excerpt": "You can't improve what you don't measure. Here's a practical way to test whether AI assistants mention or link your business, without buying another dashboard.",
+    "metaDescription": "Learn how to check whether ChatGPT, Perplexity, and Google AI cite your business, with a repeatable testing method you can run in an afternoon.",
+    "tags": [
+      "AI search visibility",
+      "answer engine optimization",
+      "AI citations",
+      "generative engine optimization",
+      "content measurement"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "measuring whether your business is being cited by AI assistants",
+    "iso": "2026-08-30",
+    "prettyDate": "August 30, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "dental-practice-blog-strategy",
     "title": "What Should a Dental Practice Blog About?",
     "excerpt": "Most dental blogs are full of posts nobody searches for. Here's how to pick topics that bring in patients, structure them around real decisions, and build a plan you can sustain.",
