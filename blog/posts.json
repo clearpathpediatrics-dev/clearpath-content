@@ -1,5 +1,43 @@
 [
   {
+    "slug": "service-area-business-seo-no-storefront",
+    "title": "SEO for Service-Area Businesses With No Storefront",
+    "excerpt": "If you run a service-area business out of your home or a truck, the usual local SEO advice breaks down. Here is how to rank when you have no public address to point at.",
+    "metaDescription": "Learn how to rank a service-area business SEO strategy when you have no storefront, from hiding your address to building city pages that book jobs.",
+    "tags": [
+      "local SEO",
+      "service-area business",
+      "Google Business Profile",
+      "local rankings",
+      "service business marketing"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "service-area business SEO when you have no storefront",
+    "iso": "2026-08-31",
+    "prettyDate": "August 31, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "how-to-judge-content-quality-before-you-buy",
+    "title": "How to Judge Content Quality Before You Pay",
+    "excerpt": "Most content samples look fine at a glance. Here's how to read them the way a buyer should, so you know what you're actually paying for before you sign.",
+    "metaDescription": "Learn how to evaluate content quality before you buy from an agency. A practical checklist to review writing samples and avoid paying for filler.",
+    "tags": [
+      "content quality",
+      "evaluating content agencies",
+      "buying guide",
+      "content marketing",
+      "vetting writers"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "how to evaluate content quality before you buy",
+    "iso": "2026-08-31",
+    "prettyDate": "August 31, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "content-marketing-plumbing-businesses",
     "title": "Content Marketing for Plumbing Businesses That Works",
     "excerpt": "Most plumbing blogs read like they were written for other plumbers. Here's how to build content that answers what homeowners actually search before they call, and turns that traffic into booked jobs.",
