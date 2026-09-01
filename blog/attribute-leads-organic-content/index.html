@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Attribute Leads to Your Blog Content</title>
+<meta name="description" content="Learn practical multi-touch attribution models for organic content so you can tell which blog posts actually assist leads and stop guessing at ROI.">
+<meta name="keywords" content="multi-touch attribution, content ROI, organic content measurement, lead attribution, content marketing analytics">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/blog/attribute-leads-organic-content">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="How to Attribute Leads to Your Blog Content">
+<meta property="og:description" content="Learn practical multi-touch attribution models for organic content so you can tell which blog posts actually assist leads and stop guessing at ROI.">
+<meta property="og:url" content="https://clearpath-content.com/blog/attribute-leads-organic-content">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Attribute Leads to Your Blog Content","description":"Learn practical multi-touch attribution models for organic content so you can tell which blog posts actually assist leads and stop guessing at ROI.","datePublished":"2026-09-01","dateModified":"2026-09-01","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/attribute-leads-organic-content","keywords":"multi-touch attribution, content ROI, organic content measurement, lead attribution, content marketing analytics","articleSection":"Measurement & ROI"}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.article{padding:56px 0 10px}
+.article .eyebrow{margin-bottom:16px}
+.article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+.meta{color:var(--muted);font-size:13.5px;font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 34px}
+.tags span{font-size:12px;font-weight:600;color:var(--pine-2);background:var(--spring-soft);padding:6px 14px;border-radius:999px}
+.body{font-size:16.5px}
+.body h2{font-size:clamp(21px,3vw,27px);margin:38px 0 12px}
+.body h3{font-size:19px;margin:26px 0 8px}
+.body p{color:#33445A;margin-bottom:16px}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33445A}
+.body li{margin-bottom:9px}
+.body strong{color:var(--ink)}
+.body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
+.endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
+.endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
+.endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
+.backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
+      <a href="/roi-calculator">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+<main class="article">
+  <div class="narrow">
+    <span class="eyebrow">Measurement &amp; ROI</span>
+    <h1>How to Attribute Leads to Your Blog Content</h1>
+    <p class="meta">September 1, 2026 · 8 min read</p>
+    <div class="tags"><span>multi-touch attribution</span><span>content ROI</span><span>organic content measurement</span><span>lead attribution</span><span>content marketing analytics</span></div>
+    <div class="body">
+<p>Most businesses measure content the same way they measure a paid ad: did the person who read the post fill out the form on that same visit? For organic content, that question misses almost everything that matters. Someone reads your "how much does X cost" article in March, forgets about you, searches your brand name in May, and calls. Last-click gives all the credit to the May search. The March article — the thing that actually got you into the running — gets a zero.</p><p>Multi-touch attribution is the fix, at least in principle. In practice it's a mix of imperfect data, sensible assumptions, and a few models that are good enough to make budget decisions. This piece covers which models actually work for organic content, what data you need, and a worked example you can copy.</p><h2>Why last-click attribution punishes your best content</h2><p>Last-click attribution punishes your best content because informational articles almost never sit in the last position before a conversion. Think about how buying works for a service. A homeowner with a failing furnace reads three or four articles over a week — "why is my furnace short cycling," "repair vs replace furnace cost," "how to choose an HVAC contractor." Those articles do the persuasion. Then they search "HVAC company near me" or type your name directly, and that final visit gets the conversion credit.</p><p>Under last-click, your educational articles look worthless and your brand-name and "near me" searches look like heroes. So people cut the educational content. Then leads dry up three months later and nobody connects the two, because the damage showed up in a channel the report told them was working fine.</p><p>The whole point of multi-touch attribution is to spread credit across the touchpoints that participated, so the assist work becomes visible.</p><h2>The four models worth knowing</h2><p>You don't need a data science team. You need to understand four models and pick the one that matches how your buyers actually behave.</p><h3>First-touch</h3><p>All credit goes to the first interaction. Useful for answering one question: which content brings new people into your world? For organic programs this is often an informational article ranking for a problem-stage query. First-touch over-credits the top of the funnel and ignores everything that closed the deal, so use it as a discovery lens, not a budget lens.</p><h3>Last-touch (last non-direct)</h3><p>All credit goes to the final interaction before conversion, usually excluding direct traffic. This is the default in most analytics tools. It's fine for short, impulsive purchases and terrible for anything with a research phase. Know what it's biased toward before you trust it.</p><h3>Linear</h3><p>Every touchpoint in the path gets equal credit. If a lead touched five pages, each gets 20 percent. Linear is the honest starting point for organic content because it stops any single touch from hogging the credit. Its weakness: it treats a two-second bounce the same as a five-minute read of your pricing guide.</p><h3>Position-based (U-shaped)</h3><p>Typically 40 percent to the first touch, 40 percent to the last, 20 percent split among the middle. This matches a lot of service-business reality: the article that found you and the page that converted both matter a lot, and the middle assisted. For most content programs, position-based is the best single model to standardize on.</p><h2>What data you actually need — and what you can't get</h2><p>Here's the honest part. True multi-touch attribution requires stitching every visit from the same person into one path. On the web, that's hard and getting harder.</p><ul><li><strong>You can usually see:</strong> the landing page and source of individual sessions, which pages a converting session touched, and — if you have a CRM connected — which form or call came from which last session.</li><li><strong>You struggle to see:</strong> the same person across different devices, sessions separated by weeks after cookies expire, and anyone who researched on their phone then converted on a laptop.</li><li><strong>You cannot see, honestly:</strong> the reader who consumed your article inside an AI answer or a search summary and never clicked through, then came back later. That touch happened and left no trace in your analytics.</li></ul><p>So treat any attribution model as directional. It tells you which content tends to appear in successful paths, not a precise ledger. Anyone selling you exact-dollar content attribution is overselling what the data supports.</p><h2>A worked example you can copy</h2><p>Suppose a commercial roofing company wants to know whether its blog earns its keep. Over a quarter it closed 12 jobs it can trace to organic paths. It pulls the touchpoint sequence for each closed lead from its analytics and CRM.</p><p>Take one lead's path:</p><ol><li>Landed on "signs your commercial roof needs replacing" (organic search)</li><li>Later visited "TPO vs EPDM roofing cost" (organic search)</li><li>Visited the services page (direct)</li><li>Submitted a quote form on the contact page (direct)</li></ol><p>Under <strong>last-touch</strong>, the contact page gets 100 percent and the blog gets nothing. Under <strong>position-based</strong>, the first article gets 40 percent, the contact page gets 40 percent, and the two middle touches split 20 percent (10 percent each). Now the blog is credited with half the value of that lead.</p><p>Do this across all 12 leads and tally the credit by page. A simple version:</p><table><thead><tr><th>Page</th><th>Last-touch credit</th><th>Position-based credit</th></tr></thead><tbody><tr><td>Contact / quote page</td><td>9.0</td><td>4.4</td></tr><tr><td>Services page</td><td>2.0</td><td>2.1</td></tr><tr><td>"Signs your roof needs replacing"</td><td>0.0</td><td>2.3</td></tr><tr><td>"TPO vs EPDM cost"</td><td>1.0</td><td>2.0</td></tr><tr><td>Other blog posts</td><td>0.0</td><td>1.2</td></tr></tbody></table><p>Same 12 leads, same paths, completely different story. Last-touch says the blog contributed one lead. Position-based says the blog participated in roughly 5.5 leads' worth of credit. If a closed roofing job is worth $18,000, that's the difference between the blog looking like a rounding error and looking like your best marketing line item.</p><h2>How do I set this up without expensive software?</h2><p>You set this up with your existing analytics, a CRM or spreadsheet, and a consistent rule for splitting credit. Here's a step sequence that works for most service businesses:</p><ol><li>Define what a "conversion" is — a form submission, a tracked phone call, a booked consult. Pick one primary action.</li><li>Make sure conversions are tracked and, ideally, pushed into your CRM with the source session attached.</li><li>For each closed or qualified lead, pull the sequence of pages and sources that led up to it. Many analytics tools expose this as a conversion path or user-path report.</li><li>Choose one model — position-based is a good default — and apply the same credit split to every path.</li><li>Sum the fractional credit by page or by content cluster, not by individual keyword.</li><li>Review quarterly, not weekly. Organic paths are long; monthly noise will mislead you.</li></ol><p>The consistency matters more than the sophistication. A simple position-based model applied the same way every quarter tells you more than a fancy model you change every time the numbers look bad.</p><h2>Which attribution model is best for organic content?</h2><p>Position-based (U-shaped) attribution is the best default for organic content because it credits both the article that first found the customer and the page that converted them, while still acknowledging the middle. Most organic content lives in the research phase, so any model that ignores assist touches — like last-click — will systematically undervalue it and lead you to cut the exact content that fills your pipeline. Start with position-based, compare it against first-touch to see what's bringing new people in, and only add complexity if your sales cycle genuinely demands it.</p><h2>Reading the results without fooling yourself</h2><p>Two cautions. First, correlation isn't causation — a page appearing in many winning paths might be a symptom (everyone visits your pricing page) rather than a cause. Look for content that appears early in paths and pulls in queries you weren't previously visible for. That's persuasion, not just proximity.</p><p>Second, account for the invisible touches. Because AI answers and search summaries can influence a buyer without a click, your tracked paths undercount top-of-funnel content. If a cluster of articles shows steady brand-search or direct-traffic growth alongside its ranking, assume it's doing more than your model shows.</p><p>This is the kind of measurement discipline a good content program should build in from the start — at ClearPath Content we tie clusters to conversion paths so the reporting reflects assists, not just last clicks.</p><p><strong>Takeaway:</strong> Pick position-based attribution, apply it the same way every quarter, and judge content by the clusters that show up in successful paths — not by which page happened to be last. The blog post that never gets a last-click conversion may be the one quietly doing your selling.</p>
+    </div>
+    <a class="pillarlink" href="/blog/content-marketing-roi">
+      <span>Full guide</span>
+      <strong>Measuring Content Marketing ROI Without Fooling Yourself</strong>
+      <em>Traffic is a vanity metric. Which numbers actually predict revenue from content, what leading indicators to watch early, and how to attribute honestly.</em>
+    </a>
+    <div class="endcard">
+      <h3>This is what we do, every week, on autopilot.</h3>
+      <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
+      <a class="btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+    </div>
+    <a class="backlink" href="/blog/">← All field notes</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/roi-calculator">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/locations">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/capture-nudge.js" defer></script>
+</body>
+</html>

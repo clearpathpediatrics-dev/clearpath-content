@@ -1,5 +1,43 @@
 [
   {
+    "slug": "local-content-ideas-that-earn-local-links",
+    "title": "Local Content Ideas That Earn Real Local Links",
+    "excerpt": "Most local content earns zero links because it's written for search engines, not for the people and organizations who would actually link to it. Here's what does get linked.",
+    "metaDescription": "Local content ideas that attract genuinely local links, with worked examples and a link-worthiness checklist to help you earn links that move rankings.",
+    "tags": [
+      "local link building",
+      "local content strategy",
+      "local SEO",
+      "content marketing",
+      "small business SEO"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "local content ideas that attract genuinely local links",
+    "iso": "2026-09-01",
+    "prettyDate": "September 1, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "attribute-leads-organic-content",
+    "title": "How to Attribute Leads to Your Blog Content",
+    "excerpt": "Organic content rarely closes a deal on the first visit. Here's how to build an attribution model that credits the posts doing the real assist work — without pretending you have data you don't.",
+    "metaDescription": "Learn practical multi-touch attribution models for organic content so you can tell which blog posts actually assist leads and stop guessing at ROI.",
+    "tags": [
+      "multi-touch attribution",
+      "content ROI",
+      "organic content measurement",
+      "lead attribution",
+      "content marketing analytics"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "multi-touch attribution models for organic content",
+    "iso": "2026-09-01",
+    "prettyDate": "September 1, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "service-area-business-seo-no-storefront",
     "title": "SEO for Service-Area Businesses With No Storefront",
     "excerpt": "If you run a service-area business out of your home or a truck, the usual local SEO advice breaks down. Here is how to rank when you have no public address to point at.",
