@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Which Schema Markup Actually Helps AI Engines</title>
+<meta name="description" content="A practical guide to schema markup for AI search: the specific types that help AI engines understand your business, what to skip, and how to add it.">
+<meta name="keywords" content="schema markup, AI search, answer engine optimization, structured data, local business SEO">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/blog/schema-markup-for-ai-engines">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="Which Schema Markup Actually Helps AI Engines">
+<meta property="og:description" content="A practical guide to schema markup for AI search: the specific types that help AI engines understand your business, what to skip, and how to add it.">
+<meta property="og:url" content="https://clearpath-content.com/blog/schema-markup-for-ai-engines">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Which Schema Markup Actually Helps AI Engines","description":"A practical guide to schema markup for AI search: the specific types that help AI engines understand your business, what to skip, and how to add it.","datePublished":"2026-09-02","dateModified":"2026-09-02","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/schema-markup-for-ai-engines","keywords":"schema markup, AI search, answer engine optimization, structured data, local business SEO","articleSection":"AI Search & Answer Engine Optimization"}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.article{padding:56px 0 10px}
+.article .eyebrow{margin-bottom:16px}
+.article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+.meta{color:var(--muted);font-size:13.5px;font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 34px}
+.tags span{font-size:12px;font-weight:600;color:var(--pine-2);background:var(--spring-soft);padding:6px 14px;border-radius:999px}
+.body{font-size:16.5px}
+.body h2{font-size:clamp(21px,3vw,27px);margin:38px 0 12px}
+.body h3{font-size:19px;margin:26px 0 8px}
+.body p{color:#33445A;margin-bottom:16px}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33445A}
+.body li{margin-bottom:9px}
+.body strong{color:var(--ink)}
+.body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
+.endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
+.endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
+.endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
+.backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
+      <a href="/roi-calculator">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+<main class="article">
+  <div class="narrow">
+    <span class="eyebrow">AI Search &amp; Answer Engine Optimization</span>
+    <h1>Which Schema Markup Actually Helps AI Engines</h1>
+    <p class="meta">September 2, 2026 · 8 min read</p>
+    <div class="tags"><span>schema markup</span><span>AI search</span><span>answer engine optimization</span><span>structured data</span><span>local business SEO</span></div>
+    <div class="body">
+<p>Schema markup is a way of labeling the information on your web pages so machines can read it without guessing. Instead of an AI engine trying to infer that "Call us at 555-0142" is a phone number and "Open Mon-Fri 8-5" is your hours, schema hands it that information in a structured format it already knows how to parse.</p><p>This matters more now than it did five years ago. AI search tools and answer engines build a compressed model of what your business is, what it does, and where. Schema is one of the cleanest signals feeding that model. It doesn't guarantee you get cited or ranked, and anyone telling you otherwise is selling something. But it removes ambiguity, and removing ambiguity is most of the job.</p><p>The problem is that there are hundreds of schema types and most guides tell you to add all of them. That's a waste of time and it can backfire when the markup doesn't match what's actually on the page. Below is the short list that earns its keep for a normal service business, plus how to implement it without a developer if you have to.</p><h2>What schema markup actually does for AI engines</h2><p>Schema markup gives AI engines a labeled, machine-readable summary of the facts on a page so they don't have to infer them from prose. When an AI assistant answers a question like "who does emergency HVAC repair near me," it's pulling from an internal representation of businesses it has assembled. If your page states your service area, hours, services, and reviews in structured form, those facts enter that representation cleanly instead of being lost in a paragraph.</p><p>Two practical effects follow. First, your facts are less likely to be wrong when an engine repeats them, because you've stated them explicitly rather than letting the machine guess. Second, you become eligible for richer treatment in search results and answer boxes, since some formats are only triggered by valid structured data. Neither effect is a ranking boost by itself. Schema is a clarity tool, not a leverage point, and it works best on a page that's already useful.</p><h2>The four schema types that matter for most businesses</h2><p>You don't need the whole vocabulary. For a typical service business, four types cover almost everything worth marking up.</p><h3>1. LocalBusiness (or a specific subtype)</h3><p>This is the anchor. It tells engines your legal name, address, phone, hours, price range, and the geographic area you serve. Use the most specific subtype that fits: <em>Plumber</em>, <em>Dentist</em>, <em>Attorney</em>, <em>HVACBusiness</em>, <em>ProfessionalService</em>. A specific subtype is more informative than the generic <em>LocalBusiness</em>. Put this on your homepage and your contact page, and make sure every field matches your Google Business Profile exactly. Mismatched name, address, or phone numbers create the kind of ambiguity you're trying to eliminate.</p><h3>2. Service</h3><p>One <em>Service</em> entry per thing you actually do, ideally on the dedicated page for that service. If you have a page for "AC installation" and another for "duct cleaning," each should carry a Service schema naming the service, the provider (your business), and the area served. This is how an engine learns you do X in place Y, which is exactly the shape of the questions people ask AI assistants.</p><h3>3. FAQPage</h3><p>Mark up genuine question-and-answer content with FAQPage schema. The key word is genuine. The questions have to appear on the page and the answers have to be real. Don't stuff twenty invented questions onto every page. Three to six real ones, matching how customers actually phrase things, is the right density.</p><h3>4. Article or BlogPosting</h3><p>For your blog and guide content, BlogPosting schema names the author, publish date, and headline. This helps engines attribute the content and understand its recency, which matters for topics where freshness counts.</p><p>Two more are worth adding when they apply: <em>Review</em> or <em>AggregateRating</em> if you have real reviews on the page, and <em>BreadcrumbList</em> to clarify your site structure. Skip <em>Organization</em> as a separate thing if you're a single-location local business; LocalBusiness already covers it.</p><h2>A worked example for a plumbing company</h2><p>Suppose a plumbing company in Tucson wants to mark up its "Water Heater Repair" service page. Here's the sequence, no code required to plan it:</p><ol><li><strong>Confirm the facts on the page first.</strong> Business name, phone, the service described, and the area served all need to appear in the visible text. Schema describes the page; it shouldn't contradict it.</li><li><strong>Choose the type:</strong> <em>Service</em>, with the provider set to a <em>Plumber</em> LocalBusiness.</li><li><strong>Fill the core fields:</strong> service name ("Water Heater Repair"), provider name and phone, areaServed ("Tucson, AZ" and surrounding towns you actually cover), and a plain-language description that matches the page.</li><li><strong>Add real FAQs</strong> already on the page: "How much does water heater repair cost?", "Can you repair a gas water heater same day?" Answer them honestly in the visible content, then mirror them in FAQPage schema.</li><li><strong>Generate the JSON-LD.</strong> Use a schema generator or your CMS plugin. JSON-LD is the format Google prefers; it sits in the page head and doesn't touch your visible layout.</li><li><strong>Validate</strong> with Google's Rich Results Test and the Schema.org validator. Fix every error and every warning you understand. Warnings about missing optional fields are fine to ignore if the data doesn't exist.</li></ol><p>Repeat for each service page, changing the service name and FAQs. The LocalBusiness block stays consistent across the site.</p><h2>Do I need schema markup if I already have a Google Business Profile?</h2><p>Yes, because they do different jobs and feed different systems. Your Google Business Profile is a listing inside Google's ecosystem; schema markup lives on your own website and is readable by any engine that crawls the open web, including AI tools that aren't Google. A complete profile helps you in Google Maps and local packs. Schema helps every crawler, including answer engines, understand the pages you control. The two should agree on every fact, and when they reinforce each other you've removed a lot of ambiguity. Treat the profile as necessary but not sufficient.</p><h2>How do I add schema without a developer?</h2><p>Most business owners can add valid schema in an afternoon using their CMS or a generator, no developer needed. If you're on WordPress, plugins like Rank Math or Yoast handle LocalBusiness, Article, and FAQ schema through form fields; you fill in the facts and they output correct JSON-LD. On Squarespace, Wix, or Shopify, use a free JSON-LD generator, paste the output into a code block or the site's header injection area, and validate it. The one rule that keeps you out of trouble: only mark up what's genuinely on the page. Schema that describes content the visitor can't see is the fastest way to get your markup ignored or flagged. Start with the homepage and your top three service pages, validate each one, then move down the list.</p><h2>Common mistakes that make schema useless</h2><ul><li><strong>Marking up invisible content.</strong> FAQ schema for questions not on the page, or reviews you don't actually display.</li><li><strong>Inconsistent NAP.</strong> Name, address, and phone that differ between your schema, your profile, and your footer.</li><li><strong>Generic types when specific ones exist.</strong> Using LocalBusiness when Dentist or Attorney fits.</li><li><strong>Setting it and forgetting it.</strong> Hours change, services get added. Stale schema states false facts confidently, which is worse than no schema.</li><li><strong>Treating it as a ranking hack.</strong> Schema clarifies; it doesn't manufacture authority. A thin page with perfect markup is still a thin page.</li></ul><p>The practical takeaway: pick the four types above, mark up your homepage and your real service pages with facts that match your visible content and your Google Business Profile, validate everything, and put a recurring reminder to check it twice a year. That's the whole job. If you'd rather have it built into your content program so every new page ships with correct markup, that's part of what ClearPath Content handles. Either way, the goal is the same: state your facts plainly enough that a machine can't get them wrong.</p>
+    </div>
+    <a class="pillarlink" href="/blog/ai-search-optimization-guide">
+      <span>Full guide</span>
+      <strong>AI Search Optimization: How to Get Cited by ChatGPT, Perplexity and AI Overviews</strong>
+      <em>AI assistants cite a handful of sources per answer. A complete guide to how that selection works and how to structure content so yours is one of them.</em>
+    </a>
+    <div class="endcard">
+      <h3>This is what we do, every week, on autopilot.</h3>
+      <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
+      <a class="btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+    </div>
+    <a class="backlink" href="/blog/">← All field notes</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/roi-calculator">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/locations">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/capture-nudge.js" defer></script>
+</body>
+</html>

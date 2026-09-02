@@ -1,5 +1,43 @@
 [
   {
+    "slug": "schema-markup-for-ai-engines",
+    "title": "Which Schema Markup Actually Helps AI Engines",
+    "excerpt": "Most businesses either ignore schema markup or bolt on every type they can find. Here's the short list that actually helps AI engines read your business correctly.",
+    "metaDescription": "A practical guide to schema markup for AI search: the specific types that help AI engines understand your business, what to skip, and how to add it.",
+    "tags": [
+      "schema markup",
+      "AI search",
+      "answer engine optimization",
+      "structured data",
+      "local business SEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "schema markup that helps AI engines understand a business",
+    "iso": "2026-09-02",
+    "prettyDate": "September 2, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "what-content-marketing-costs-2026",
+    "title": "What Content Marketing Actually Costs in 2026",
+    "excerpt": "Real numbers for freelancers, agencies, and subscription content programs in 2026 — plus the hidden costs nobody quotes you up front.",
+    "metaDescription": "A breakdown of content marketing costs in 2026 across freelancers, agencies, and subscriptions, with real per-article math to help you budget without guessing.",
+    "tags": [
+      "content marketing cost",
+      "content pricing 2026",
+      "content marketing budget",
+      "cost per article",
+      "content agency pricing"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "what content marketing actually costs in 2026",
+    "iso": "2026-09-02",
+    "prettyDate": "September 2, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "local-content-ideas-that-earn-local-links",
     "title": "Local Content Ideas That Earn Real Local Links",
     "excerpt": "Most local content earns zero links because it's written for search engines, not for the people and organizations who would actually link to it. Here's what does get linked.",
