@@ -1,5 +1,43 @@
 [
   {
+    "slug": "signs-content-agency-underdelivering",
+    "title": "7 Signs Your Content Agency Is Underdelivering",
+    "excerpt": "Most underdelivering agencies don't fail loudly. They fail quietly, one thin article at a time. Here are the specific signals to watch for and how to test them.",
+    "metaDescription": "Learn the clear signs your content agency is underdelivering, from filler articles to no reporting, so you can fix the relationship or leave before wasting more budg",
+    "tags": [
+      "content agency",
+      "content marketing",
+      "agency evaluation",
+      "buying guide",
+      "content strategy"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "signs your content agency is underdelivering",
+    "iso": "2026-09-03",
+    "prettyDate": "September 3, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "audit-business-nap-consistency",
+    "title": "How to Audit Your Business NAP for Consistency",
+    "excerpt": "NAP consistency isn't glamorous, but mismatched name, address, and phone data quietly drags down local visibility. Here's how to audit yours in an afternoon.",
+    "metaDescription": "Learn why NAP consistency still matters for local search and follow a step-by-step audit process to find and fix mismatched listings that cost you visibility.",
+    "tags": [
+      "NAP consistency",
+      "local SEO",
+      "citation audit",
+      "local search visibility",
+      "business listings"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "why NAP consistency still matters and how to audit it",
+    "iso": "2026-09-03",
+    "prettyDate": "September 3, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "schema-markup-for-ai-engines",
     "title": "Which Schema Markup Actually Helps AI Engines",
     "excerpt": "Most businesses either ignore schema markup or bolt on every type they can find. Here's the short list that actually helps AI engines read your business correctly.",
