@@ -1,5 +1,43 @@
 [
   {
+    "slug": "seo-for-accounting-firms-cpas",
+    "title": "SEO for Accounting Firms: A Practical Guide",
+    "excerpt": "Most CPA firms compete for the same generic keywords and lose to directories. Here's how to build a site that ranks for the specific services and locations you actually serve.",
+    "metaDescription": "SEO for accounting firms explained: the service pages, seasonal content, and local signals that bring CPA clients to your site instead of a directory.",
+    "tags": [
+      "accounting firm SEO",
+      "CPA marketing",
+      "local SEO",
+      "tax season content",
+      "professional services SEO"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO for accounting firms and CPAs",
+    "iso": "2026-09-04",
+    "prettyDate": "September 4, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "format-content-so-ai-tools-can-quote-it",
+    "title": "How to Format Content So AI Tools Can Quote It",
+    "excerpt": "AI answer engines pull short, self-contained passages, not whole articles. Here is how to structure your pages so those passages are easy to lift and attribute.",
+    "metaDescription": "Learn how to structure content so ChatGPT and Perplexity can quote it, with a self-contained passage checklist that makes your pages easier for AI to cite.",
+    "tags": [
+      "answer engine optimization",
+      "AI search",
+      "content structure",
+      "ChatGPT citations",
+      "Perplexity SEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "structuring content so ChatGPT and Perplexity can quote it",
+    "iso": "2026-09-04",
+    "prettyDate": "September 4, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "signs-content-agency-underdelivering",
     "title": "7 Signs Your Content Agency Is Underdelivering",
     "excerpt": "Most underdelivering agencies don't fail loudly. They fail quietly, one thin article at a time. Here are the specific signals to watch for and how to test them.",
