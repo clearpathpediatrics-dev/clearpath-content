@@ -1,5 +1,43 @@
 [
   {
+    "slug": "leading-indicators-before-ranking-improvements",
+    "title": "Leading Indicators That Predict SEO Ranking Gains",
+    "excerpt": "Rankings are a lagging metric. Here are the earlier signals that tell you your content program is working before positions actually move.",
+    "metaDescription": "Learn the leading indicators that precede ranking improvements so you can tell if your SEO is working weeks before positions move and traffic follows.",
+    "tags": [
+      "seo measurement",
+      "leading indicators",
+      "content roi",
+      "keyword tracking",
+      "seo reporting"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "the leading indicators that precede ranking improvements",
+    "iso": "2026-09-05",
+    "prettyDate": "September 5, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "seo-content-for-financial-advisors",
+    "title": "SEO Content for Financial Advisors That Compliance Approves",
+    "excerpt": "Financial advisors face a problem most businesses don't: every published word may need compliance review. Here's how to build a content program that ranks without triggering a rewrite from your CCO.",
+    "metaDescription": "SEO content for financial advisors that ranks and clears compliance. Topic ideas, a keyword map, and a review workflow that keeps your blog publishing.",
+    "tags": [
+      "financial advisor SEO",
+      "content marketing for advisors",
+      "RIA marketing",
+      "compliance content",
+      "financial services SEO"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content for financial advisors",
+    "iso": "2026-09-05",
+    "prettyDate": "September 5, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "seo-for-accounting-firms-cpas",
     "title": "SEO for Accounting Firms: A Practical Guide",
     "excerpt": "Most CPA firms compete for the same generic keywords and lose to directories. Here's how to build a site that ranks for the specific services and locations you actually serve.",
