@@ -1,5 +1,43 @@
 [
   {
+    "slug": "traffic-vanity-metric-intent-segmentation",
+    "title": "Why Blog Traffic Means Nothing Without Intent",
+    "excerpt": "A big traffic number tells you almost nothing about whether your content is working. Here is how to segment visitors by intent so your reporting actually connects to leads and revenue.",
+    "metaDescription": "Learn why traffic is a vanity metric without intent segmentation, and how to split your visitors by buying intent so your content reporting predicts revenue.",
+    "tags": [
+      "intent segmentation",
+      "content ROI",
+      "vanity metrics",
+      "SEO measurement",
+      "search intent"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "why traffic is a vanity metric without intent segmentation",
+    "iso": "2026-09-06",
+    "prettyDate": "September 6, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "per-article-pricing-misaligns-incentives",
+    "title": "Why Paying Per Article Works Against You",
+    "excerpt": "Paying by the article seems fair and predictable. In practice it rewards the wrong behavior — volume over coverage, word count over usefulness. Here's the mechanics and what to buy instead.",
+    "metaDescription": "Per-article content pricing quietly misaligns incentives against your results. Here's how it distorts writer behavior and what to pay for instead.",
+    "tags": [
+      "per-article pricing",
+      "content pricing",
+      "content agency",
+      "seo content strategy",
+      "buying guides"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "why per-article pricing misaligns incentives",
+    "iso": "2026-09-06",
+    "prettyDate": "September 6, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "leading-indicators-before-ranking-improvements",
     "title": "Leading Indicators That Predict SEO Ranking Gains",
     "excerpt": "Rankings are a lagging metric. Here are the earlier signals that tell you your content program is working before positions actually move.",
