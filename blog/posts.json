@@ -1,5 +1,43 @@
 [
   {
+    "slug": "pillar-and-cluster-content-architecture",
+    "title": "How Pillar-and-Cluster Content Actually Works",
+    "excerpt": "A plain-language breakdown of pillar-and-cluster content: what a pillar page is, how clusters feed it, and a step-by-step way to build the structure without wasting articles.",
+    "metaDescription": "Pillar-and-cluster content architecture explained in plain terms, with a worked example and a build sequence you can use to organize your site content.",
+    "tags": [
+      "pillar content",
+      "content clusters",
+      "topic clusters",
+      "content architecture",
+      "internal linking"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "pillar-and-cluster content architecture explained simply",
+    "iso": "2026-09-07",
+    "prettyDate": "September 7, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "do-you-need-an-llms-txt-file",
+    "title": "Do You Need an llms.txt File? A Plain Answer",
+    "excerpt": "The llms.txt file is getting talked about as the next must-have for AI search. Here's what it actually does, what it doesn't, and whether it belongs on your site.",
+    "metaDescription": "What an llms.txt file is, how it differs from robots.txt, and whether your business actually needs one for AI search visibility. Practical guidance, no hype.",
+    "tags": [
+      "llms.txt",
+      "answer engine optimization",
+      "AI search",
+      "technical SEO",
+      "content strategy"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "what an llms.txt file is and whether a business needs one",
+    "iso": "2026-09-07",
+    "prettyDate": "September 7, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "traffic-vanity-metric-intent-segmentation",
     "title": "Why Blog Traffic Means Nothing Without Intent",
     "excerpt": "A big traffic number tells you almost nothing about whether your content is working. Here is how to segment visitors by intent so your reporting actually connects to leads and revenue.",
