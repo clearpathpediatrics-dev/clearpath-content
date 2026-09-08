@@ -1,5 +1,43 @@
 [
   {
+    "slug": "ai-overviews-click-through-economics",
+    "title": "AI Overviews and the New Math of Search Clicks",
+    "excerpt": "AI Overviews absorb the clicks that used to land on your site. Here's how the click economics actually shifted, which pages are exposed, and what to do about it.",
+    "metaDescription": "AI Overviews changed the click-through economics of search. Learn which queries lose clicks, which still convert, and how to protect revenue-driving traffic.",
+    "tags": [
+      "AI Overviews",
+      "answer engine optimization",
+      "click-through rate",
+      "organic search strategy",
+      "SEO for businesses"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how AI Overviews changed the click-through economics of search",
+    "iso": "2026-09-08",
+    "prettyDate": "September 8, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "brand-voice-guide-writers-actually-use",
+    "title": "How to Write a Brand Voice Guide Writers Actually Use",
+    "excerpt": "Most brand voice documents are abstract adjectives nobody can apply. Here is how to build a voice guide with concrete rules and before/after examples that shows up in every draft.",
+    "metaDescription": "Most brand voice guides get ignored. Learn how to write a brand voice guide with rules, examples, and swaps that writers actually apply to every draft.",
+    "tags": [
+      "brand voice",
+      "content operations",
+      "editorial style guide",
+      "content workflow",
+      "content quality"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "brand voice documentation that actually gets used",
+    "iso": "2026-09-08",
+    "prettyDate": "September 8, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "pillar-and-cluster-content-architecture",
     "title": "How Pillar-and-Cluster Content Actually Works",
     "excerpt": "A plain-language breakdown of pillar-and-cluster content: what a pillar page is, how clusters feed it, and a step-by-step way to build the structure without wasting articles.",
