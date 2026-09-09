@@ -1,5 +1,43 @@
 [
   {
+    "slug": "find-questions-buyers-are-typing",
+    "title": "How to Find the Questions Your Buyers Type",
+    "excerpt": "Most keyword research finds words, not questions. Here's how to pull the real phrasing your buyers use, from sources you already own, and turn it into content that matches demand.",
+    "metaDescription": "Learn how to find the questions your buyers are actually typing using support tickets, sales calls, and free tools, so your content answers real demand.",
+    "tags": [
+      "keyword research",
+      "buyer intent",
+      "question research",
+      "content strategy",
+      "organic visibility"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "how to find the questions your buyers are actually typing",
+    "iso": "2026-09-09",
+    "prettyDate": "September 9, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "why-ai-search-traffic-converts-differently",
+    "title": "Why AI Search Traffic Converts Differently",
+    "excerpt": "AI search sends fewer visitors, but they arrive further along in the buying process. Here's how the conversion mechanics differ and what to actually measure.",
+    "metaDescription": "AI search traffic converts differently than classic organic. Learn how buyer intent, pre-qualification, and lower volume change what you measure and expect.",
+    "tags": [
+      "AI search",
+      "answer engine optimization",
+      "conversion tracking",
+      "search intent",
+      "organic traffic"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "why AI search traffic converts differently than classic organic",
+    "iso": "2026-09-09",
+    "prettyDate": "September 9, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "ai-overviews-click-through-economics",
     "title": "AI Overviews and the New Math of Search Clicks",
     "excerpt": "AI Overviews absorb the clicks that used to land on your site. Here's how the click economics actually shifted, which pages are exposed, and what to do about it.",
