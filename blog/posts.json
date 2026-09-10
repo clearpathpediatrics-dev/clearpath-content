@@ -1,5 +1,43 @@
 [
   {
+    "slug": "publishing-workflow-no-marketing-team",
+    "title": "A Publishing Workflow When You Have No Marketing Team",
+    "excerpt": "Most owner-run businesses stall on content because there's no system, not because there's no time. Here's a workflow you can run in a few hours a month.",
+    "metaDescription": "A publishing workflow for a business with no marketing team: a repeatable system to plan, write, review, and post content without hiring anyone.",
+    "tags": [
+      "content operations",
+      "publishing workflow",
+      "small business SEO",
+      "content process",
+      "editorial calendar"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "publishing workflow for a business with no marketing team",
+    "iso": "2026-09-10",
+    "prettyDate": "September 10, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "build-topical-authority-ai-models-recognise",
+    "title": "How to Build Topical Authority AI Models Trust",
+    "excerpt": "Topical authority is what makes an AI model pick your site over a competitor's when it builds an answer. Here is how coverage, consistency, and internal structure actually create it.",
+    "metaDescription": "Learn how to build topical authority that AI search engines recognise, with a concrete coverage-map method that gets your content cited in answers.",
+    "tags": [
+      "topical authority",
+      "answer engine optimization",
+      "AI search",
+      "content strategy",
+      "internal linking"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "building topical authority that AI models recognise",
+    "iso": "2026-09-10",
+    "prettyDate": "September 10, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "find-questions-buyers-are-typing",
     "title": "How to Find the Questions Your Buyers Type",
     "excerpt": "Most keyword research finds words, not questions. Here's how to pull the real phrasing your buyers use, from sources you already own, and turn it into content that matches demand.",
