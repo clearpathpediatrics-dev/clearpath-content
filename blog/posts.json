@@ -1,5 +1,43 @@
 [
   {
+    "slug": "editorial-calendar-survives-busy-quarter",
+    "title": "An Editorial Calendar That Survives a Busy Quarter",
+    "excerpt": "Most editorial calendars die in month two when work gets busy. Here is how to build one that keeps publishing when everyone is slammed.",
+    "metaDescription": "Build an editorial calendar that survives a busy quarter with a buffer system, realistic cadence, and fallback rules that keep publishing on track.",
+    "tags": [
+      "editorial calendar",
+      "content operations",
+      "publishing cadence",
+      "content planning",
+      "content workflow"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "building an editorial calendar that survives a busy quarter",
+    "iso": "2026-09-11",
+    "prettyDate": "September 11, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "location-pages-that-rank-not-thin-duplicates",
+    "title": "How to Build Location Pages That Aren't Thin Copies",
+    "excerpt": "Most multi-location pages fail because they swap the city name and call it a day. Here is how to build pages that carry real local information and hold up under scrutiny.",
+    "metaDescription": "Learn how to build local location pages that rank without becoming thin duplicate content, with a checklist and worked example for multi-area businesses.",
+    "tags": [
+      "local SEO",
+      "location pages",
+      "thin content",
+      "multi-location SEO",
+      "on-page SEO"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "location pages that rank without being thin duplicates",
+    "iso": "2026-09-11",
+    "prettyDate": "September 11, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "publishing-workflow-no-marketing-team",
     "title": "A Publishing Workflow When You Have No Marketing Team",
     "excerpt": "Most owner-run businesses stall on content because there's no system, not because there's no time. Here's a workflow you can run in a few hours a month.",
