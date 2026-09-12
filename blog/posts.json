@@ -1,5 +1,43 @@
 [
   {
+    "slug": "how-reviews-affect-local-rankings-ai-answers",
+    "title": "How Reviews Affect Local Rankings and AI Answers",
+    "excerpt": "Reviews do more than build trust. They feed the ranking signals Google uses for the map pack and the reasoning AI assistants use when they recommend one business over another. Here's how it actually works.",
+    "metaDescription": "How reviews influence local search rankings and AI recommendations, plus a practical system to earn, answer, and use reviews to win more local business.",
+    "tags": [
+      "local SEO",
+      "online reviews",
+      "Google Business Profile",
+      "AI search",
+      "local rankings"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "how reviews influence local rankings and AI recommendations",
+    "iso": "2026-09-12",
+    "prettyDate": "September 12, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "questions-to-ask-before-hiring-a-content-agency",
+    "title": "12 Questions to Ask Before Hiring a Content Agency",
+    "excerpt": "A vetting script for hiring a content agency: the twelve questions that separate a team doing real work from one selling word counts, plus the answers to walk away from.",
+    "metaDescription": "The questions to ask before hiring a content agency, with the answers that signal real work versus filler, so you can vet vendors and avoid wasting a year.",
+    "tags": [
+      "hiring a content agency",
+      "content agency questions",
+      "content marketing vetting",
+      "buying guides",
+      "SEO agency evaluation"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "questions to ask before hiring a content agency",
+    "iso": "2026-09-12",
+    "prettyDate": "September 12, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "editorial-calendar-survives-busy-quarter",
     "title": "An Editorial Calendar That Survives a Busy Quarter",
     "excerpt": "Most editorial calendars die in month two when work gets busy. Here is how to build one that keeps publishing when everyone is slammed.",
