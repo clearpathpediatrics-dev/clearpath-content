@@ -1,5 +1,43 @@
 [
   {
+    "slug": "funnel-link-equity-to-money-pages",
+    "title": "How to Funnel Link Equity to Your Money Pages",
+    "excerpt": "Most sites spread their internal link equity evenly across pages that will never make money. Here is how to redirect that authority toward the pages that do.",
+    "metaDescription": "Learn how internal linking structures concentrate ranking power on the pages that earn revenue, with a step-by-step method for auditing and fixing link flow.",
+    "tags": [
+      "internal linking",
+      "link equity",
+      "site architecture",
+      "organic visibility",
+      "on-page SEO"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "internal linking structures that concentrate ranking power",
+    "iso": "2026-09-13",
+    "prettyDate": "September 13, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "in-house-content-vs-outsourcing-real-math",
+    "title": "In-House Content vs Outsourcing: The Real Math",
+    "excerpt": "Most in-house-versus-outsourcing comparisons skip the numbers that matter. Here is the full cost of a content hire, the true cost of outsourcing, and how to decide based on volume, not vibes.",
+    "metaDescription": "In-house content team versus outsourcing content: a line-by-line cost breakdown of both models so you can decide which one actually fits your budget and output goals",
+    "tags": [
+      "in-house vs outsourcing content",
+      "content team cost",
+      "content marketing budget",
+      "hiring a content writer",
+      "content agency pricing"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "in-house content team versus outsourcing: the real math",
+    "iso": "2026-09-13",
+    "prettyDate": "September 13, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "how-reviews-affect-local-rankings-ai-answers",
     "title": "How Reviews Affect Local Rankings and AI Answers",
     "excerpt": "Reviews do more than build trust. They feed the ranking signals Google uses for the map pack and the reasoning AI assistants use when they recommend one business over another. Here's how it actually works.",
