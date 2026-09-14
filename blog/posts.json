@@ -1,5 +1,43 @@
 [
   {
+    "slug": "content-brief-usable-first-draft",
+    "title": "What a Content Brief Needs to Get a Usable Draft",
+    "excerpt": "Most first drafts come back wrong because the brief was vague. Here is what to put in a brief so the writer hands you something you can actually edit.",
+    "metaDescription": "Learn how to write content briefs that produce usable first drafts, with a real template and checklist so you stop rewriting every article from scratch.",
+    "tags": [
+      "content briefs",
+      "content operations",
+      "editorial workflow",
+      "content production",
+      "writing process"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "content briefs that produce usable first drafts",
+    "iso": "2026-09-14",
+    "prettyDate": "September 14, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-agency-vs-freelancer-vs-ai-automation",
+    "title": "Content Agency vs Freelancer vs AI: Which to Pick",
+    "excerpt": "Three ways to get content produced, and none of them is right for everyone. Here's how the cost, quality, and management load actually break down.",
+    "metaDescription": "Compare a content agency, a freelance writer, and AI automation on cost, quality, and control so you can choose the right option and stop wasting budget.",
+    "tags": [
+      "content agency vs freelancer",
+      "AI content tools",
+      "content production",
+      "buying guide",
+      "content marketing"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "content agency versus freelance writer versus automation",
+    "iso": "2026-09-14",
+    "prettyDate": "September 14, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "funnel-link-equity-to-money-pages",
     "title": "How to Funnel Link Equity to Your Money Pages",
     "excerpt": "Most sites spread their internal link equity evenly across pages that will never make money. Here is how to redirect that authority toward the pages that do.",
