@@ -31,6 +31,18 @@ export const CLUSTERS = [
       "auditing a website for AI answer-engine readiness",
       "why entity clarity matters more than keywords for AI search",
       "building topical authority that AI models recognise",
+
+      // Added 2026-09-20 — catalog ran dry on 09-14 and publishing silently stalled.
+      "how to get a brand mentioned in ChatGPT product recommendations",
+      "why AI assistants disagree about which businesses to recommend",
+      "keeping AI answers about your business factually current",
+      "the role of third-party reviews in AI recommendation engines",
+      "how retrieval-augmented generation decides what context to pull",
+      "preparing a pricing page for AI answer engines",
+      "monitoring how competitors appear inside AI assistants",
+      "why AI engines favour original data over summarised takes",
+      "publishing original research that AI models cite",
+      "how conversational follow-up queries change content structure",
     ],
   },
   {
@@ -51,6 +63,18 @@ export const CLUSTERS = [
       "content refresh strategy: when to update versus republish",
       "how to find the questions your buyers are actually typing",
       "why ten obvious keywords is the wrong target list",
+
+      // Added 2026-09-20 — catalog ran dry on 09-14 and publishing silently stalled.
+      "deciding when a topic deserves a pillar page instead of a post",
+      "recovering organic traffic after a ranking drop",
+      "how seasonality should shape an annual content plan",
+      "consolidating cannibalising pages into one stronger asset",
+      "the first ninety days of content for a brand-new domain",
+      "why thin category pages quietly suppress a whole site",
+      "balancing commercial and informational content ratios",
+      "pruning underperforming posts without losing equity",
+      "building content moats competitors cannot copy quickly",
+      "briefing a subject-matter expert for original insight",
     ],
   },
   {
@@ -75,6 +99,24 @@ export const CLUSTERS = [
       "SEO content for chiropractors and physical therapists",
       "content marketing for insurance agencies",
       "blog strategy for staffing and recruiting firms",
+
+      // Added 2026-09-20 — catalog ran dry on 09-14 and publishing silently stalled.
+      "content marketing for pest control companies",
+      "SEO content for electricians",
+      "blog strategy for auto repair shops",
+      "content marketing for moving companies",
+      "SEO for orthodontic practices",
+      "content strategy for commercial cleaning companies",
+      "organic marketing for fitness studios and gyms",
+      "SEO content for wedding and event venues",
+      "content marketing for solar installers",
+      "blog strategy for private schools and tutoring centres",
+      "SEO content for home remodelling contractors",
+      "content marketing for IT managed service providers",
+      "organic strategy for pool service companies",
+      "SEO content for dermatology practices",
+      "content marketing for security and alarm companies",
+      "blog strategy for multi-location franchise brands",
     ],
   },
   {
@@ -91,6 +133,16 @@ export const CLUSTERS = [
       "targeting nearby cities without creating doorway pages",
       "local content ideas that attract genuinely local links",
       "service-area business SEO when you have no storefront",
+
+      // Added 2026-09-20 — catalog ran dry on 09-14 and publishing silently stalled.
+      "handling multiple locations without duplicate content",
+      "local landing pages for seasonal service demand",
+      "how proximity, prominence and relevance trade off",
+      "breaking into the map pack for competitive terms",
+      "responding to negative reviews in a way that helps ranking",
+      "local link building through community sponsorship",
+      "optimising for near-me voice queries",
+      "citation cleanup after a business move or rebrand",
     ],
   },
   {
@@ -110,6 +162,16 @@ export const CLUSTERS = [
       "how to tell whether your content investment is working at 90 days",
       "the leading indicators that precede ranking improvements",
       "why traffic is a vanity metric without intent segmentation",
+
+      // Added 2026-09-20 — catalog ran dry on 09-14 and publishing silently stalled.
+      "building a one-page content dashboard an owner will read",
+      "forecasting pipeline from organic traffic realistically",
+      "benchmarking your content against direct competitors",
+      "cost per acquired customer from organic versus paid",
+      "reading Search Console query data without fooling yourself",
+      "when to shut down a content programme that is not working",
+      "tracking assisted conversions from blog content",
+      "setting content goals a leadership team will approve",
     ],
   },
   {
@@ -128,6 +190,16 @@ export const CLUSTERS = [
       "what to look for in a content subscription service",
       "red flags in SEO and content marketing proposals",
       "how to audit an agency's actual published results",
+
+      // Added 2026-09-20 — catalog ran dry on 09-14 and publishing silently stalled.
+      "whether to hire a strategist or a writer first",
+      "AI content tools versus managed content services",
+      "what a good content retainer scope actually includes",
+      "running a paid pilot before signing a long contract",
+      "comparing content agencies on process rather than portfolio",
+      "when an SEO consultant beats a content agency",
+      "contract terms that protect you if results stall",
+      "what content ownership and licensing clauses should say",
     ],
   },
   {
@@ -142,6 +214,14 @@ export const CLUSTERS = [
       "an editing checklist for non-writers reviewing content",
       "publishing workflow for a business with no marketing team",
       "how to keep a blog going when nobody owns it",
+
+      // Added 2026-09-20 — catalog ran dry on 09-14 and publishing silently stalled.
+      "onboarding a new writer onto your brand voice fast",
+      "a lightweight approval process that does not stall publishing",
+      "repurposing one article into five distribution assets",
+      "documenting SOPs so content survives staff turnover",
+      "handling legal and compliance review in regulated industries",
+      "working through a content backlog without losing momentum",
     ],
   },
 ];

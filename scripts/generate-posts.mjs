@@ -374,6 +374,13 @@ async function main() {
       rehydratePosts(posts);
       fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
       fs.writeFileSync(SITEMAP, renderSitemap(posts));
+      // Exit non-zero so the scheduled run goes RED. Returning 0 here is what
+      // hid a six-day outage (2026-09-14 → 09-20): the catalog was empty, the
+      // job published nothing, but rendering the sitemap still dirtied the tree,
+      // so the commit step pushed a "posts: <date>" commit every day and both
+      // GitHub and Netlify reported success. An empty catalog is an outage —
+      // it has to be able to fail the build.
+      process.exitCode = 1;
       return;
     }
   }
