@@ -17,6 +17,14 @@ on:
     - cron: "0 17 * * *"   # 10am Phoenix
     - cron: "0 20 * * *"   #  1pm Phoenix
     - cron: "0 23 * * *"   #  4pm Phoenix
+  # Pushing a tag named backfill-* fills every recent day that is short on
+  # posts. It exists because triggering workflow_dispatch needs an actions:write
+  # token, while pushing a tag only needs contents:write — so a gap can be
+  # closed from a clone without going through the Actions UI.
+  push:
+    tags:
+      - "backfill-*"
+
   workflow_dispatch:
     inputs:
       backfill_dates:
@@ -39,7 +47,12 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      # Always work on main, never on a detached tag ref: a backfill-* tag push
+      # would otherwise check out the tag and leave the commit step unable to
+      # push, since HEAD would not be on a branch.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -70,7 +83,7 @@ jobs:
           git status --porcelain
 
       - name: Generate articles
-        if: github.event_name != 'workflow_dispatch' || inputs.backfill_dates == ''
+        if: github.event_name != 'push' && (github.event_name != 'workflow_dispatch' || inputs.backfill_dates == '')
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CPC_POSTS_PER_RUN: "2"
@@ -96,6 +109,27 @@ jobs:
             echo "::endgroup::"
           done
 
+      # Same generation path as the dispatch backfill, but the dates are worked
+      # out instead of typed. Re-running is a no-op: a day that already holds
+      # its full quota is not reported as missing in the first place.
+      - name: Backfill gaps (tag push)
+        if: github.event_name == 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CPC_POSTS_PER_RUN: "2"
+        run: |
+          DATES="$(node scripts/missing-days.mjs 14)"
+          if [ -z "$DATES" ]; then
+            echo "No gaps in the last 14 days — nothing to backfill."
+            exit 0
+          fi
+          echo "Filling: $DATES"
+          for d in $DATES; do
+            echo "::group::backfill $d"
+            CPC_BLOG_DATE="$d" node scripts/generate-posts.mjs
+            echo "::endgroup::"
+          done
+
       - name: Commit and push
         run: |
           git config user.name  "ClearPath Content Bot"
@@ -108,7 +142,9 @@ jobs:
           # Stamp the Phoenix date the posts are actually filed under. `date -u`
           # disagreed with it whenever a run landed after 17:00 Phoenix, which
           # made the git log misleading when auditing what published when.
-          if [ -n "${{ inputs.backfill_dates }}" ]; then
+          if [ "${{ github.event_name }}" = "push" ]; then
+            git commit -m "posts: backfill gaps (${GITHUB_REF_NAME})"
+          elif [ -n "${{ inputs.backfill_dates }}" ]; then
             git commit -m "posts: backfill ${{ inputs.backfill_dates }}"
           else
             git commit -m "posts: $(TZ=America/Phoenix date +%Y-%m-%d)"
