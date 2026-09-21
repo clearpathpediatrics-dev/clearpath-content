@@ -1,5 +1,43 @@
 [
   {
+    "slug": "interview-subject-matter-expert-original-content",
+    "title": "How to Interview Your Expert for Original Content",
+    "excerpt": "Generic content gets ignored by readers and answer engines alike. The fix is original insight, and the fastest source of it is the expert already on your payroll. Here's how to pull it out of them.",
+    "metaDescription": "Learn how to brief a subject-matter expert so an interview produces original insight, not generic filler. A repeatable process to get content that ranks.",
+    "tags": [
+      "subject matter expert interview",
+      "original content",
+      "content briefing",
+      "SME content",
+      "editorial process"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "briefing a subject-matter expert for original insight",
+    "iso": "2026-09-21",
+    "prettyDate": "September 21, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "onboard-new-writer-brand-voice-fast",
+    "title": "How to Get a New Writer to Match Your Voice Fast",
+    "excerpt": "Most voice problems come from onboarding, not talent. Here's a repeatable process to get a new writer producing on-voice drafts in the first week instead of the third month.",
+    "metaDescription": "A practical process for onboarding a new writer onto your brand voice fast, so your first drafts read like you instead of a generic content mill.",
+    "tags": [
+      "brand voice",
+      "content operations",
+      "writer onboarding",
+      "editorial process",
+      "content briefs"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "onboarding a new writer onto your brand voice fast",
+    "iso": "2026-09-21",
+    "prettyDate": "September 21, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "seo-content-strategy-pool-service-companies",
     "title": "SEO Content Strategy for Pool Service Companies",
     "excerpt": "Pool service search demand swings hard by season and by city. Here's how to build a content plan that captures the questions homeowners actually type, ranks in your service area, and turns readers into scheduled cleanings.",
