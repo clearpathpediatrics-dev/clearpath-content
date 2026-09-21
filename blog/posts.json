@@ -1,5 +1,233 @@
 [
   {
+    "slug": "seo-content-strategy-pool-service-companies",
+    "title": "SEO Content Strategy for Pool Service Companies",
+    "excerpt": "Pool service search demand swings hard by season and by city. Here's how to build a content plan that captures the questions homeowners actually type, ranks in your service area, and turns readers into scheduled cleanings.",
+    "metaDescription": "A practical SEO content strategy for pool service companies covering the seasonal question-space, service-area pages, and topics that book cleanings.",
+    "tags": [
+      "pool service SEO",
+      "pool cleaning content marketing",
+      "local SEO pool company",
+      "service area pages",
+      "seasonal content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "organic strategy for pool service companies",
+    "iso": "2026-09-20",
+    "prettyDate": "September 20, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "pricing-page-for-ai-answer-engines",
+    "title": "How to Make Your Pricing Page Readable to AI",
+    "excerpt": "Most pricing pages hide the numbers behind buttons, tabs, and PDFs. Here's how to structure one so AI answer engines can actually read it and quote you.",
+    "metaDescription": "Learn how to structure a pricing page AI answer engines can parse and cite, so your rates surface in AI answers instead of a competitor's.",
+    "tags": [
+      "answer engine optimization",
+      "pricing page SEO",
+      "AI search",
+      "content structure",
+      "conversion content"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "preparing a pricing page for AI answer engines",
+    "iso": "2026-09-20",
+    "prettyDate": "September 20, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "rank-for-near-me-voice-searches",
+    "title": "How to Rank for \"Near Me\" Voice Searches",
+    "excerpt": "Voice assistants read out one answer, not ten blue links. Here's how to structure your site, listings, and content so that answer is yours.",
+    "metaDescription": "A practical guide to optimising for near-me voice queries so your business gets picked as the spoken answer when someone asks their phone for help nearby.",
+    "tags": [
+      "near me voice search",
+      "local SEO",
+      "voice search optimisation",
+      "local search visibility",
+      "Google Business Profile"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "optimising for near-me voice queries",
+    "iso": "2026-09-19",
+    "prettyDate": "September 19, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-marketing-for-solar-installers",
+    "title": "Content Marketing for Solar Installers That Sells",
+    "excerpt": "Solar buyers spend weeks researching cost, incentives, and payback before they call anyone. Here is how to build the content that answers those questions and puts your company in front of them.",
+    "metaDescription": "A practical content marketing guide for solar installers: which pages win the incentive and cost questions, how to structure them, and how to turn traffic into booke",
+    "tags": [
+      "solar content marketing",
+      "solar installer SEO",
+      "solar lead generation",
+      "local SEO solar",
+      "content strategy contractors"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for solar installers",
+    "iso": "2026-09-19",
+    "prettyDate": "September 19, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "content-marketing-for-msps",
+    "title": "Content Marketing for MSPs That Actually Wins Deals",
+    "excerpt": "Most MSP blogs read like a vendor datasheet nobody asked for. Here's how to build content that answers the questions IT buyers actually search, and turns readers into booked assessments.",
+    "metaDescription": "A practical content marketing guide for IT managed service providers: what topics to write, how to match buyer intent, and how to turn articles into MSP leads.",
+    "tags": [
+      "MSP marketing",
+      "content marketing for MSPs",
+      "managed IT services",
+      "B2B content strategy",
+      "IT lead generation"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for IT managed service providers",
+    "iso": "2026-09-18",
+    "prettyDate": "September 18, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "one-article-into-five-distribution-assets",
+    "title": "Turn One Article Into 5 Distribution Assets",
+    "excerpt": "Writing an article is the expensive part. Publishing it once and moving on wastes most of what you paid for. Here's a repeatable way to pull five distribution assets out of a single piece.",
+    "metaDescription": "A step-by-step system for repurposing one article into five distribution assets so a single piece of writing earns visibility in more than one place.",
+    "tags": [
+      "content repurposing",
+      "content operations",
+      "content distribution",
+      "editorial workflow",
+      "content marketing"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "repurposing one article into five distribution assets",
+    "iso": "2026-09-18",
+    "prettyDate": "September 18, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-marketing-pest-control-companies",
+    "title": "Content Marketing for Pest Control Companies",
+    "excerpt": "Most pest control content chases the wrong keywords. Here is the pest-specific, seasonal, and local structure that turns searches into scheduled visits.",
+    "metaDescription": "A practical content marketing plan for pest control companies: the seasonal, pest-specific, and local pages that bring in booked jobs, not just traffic.",
+    "tags": [
+      "pest control marketing",
+      "content marketing",
+      "local SEO",
+      "service business content",
+      "pest control SEO"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for pest control companies",
+    "iso": "2026-09-17",
+    "prettyDate": "September 17, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "reply-to-bad-reviews-without-hurting-rank",
+    "title": "How to Reply to Bad Reviews Without Hurting Rank",
+    "excerpt": "A negative review isn't a ranking penalty. Your reply is a public document that search engines read and future customers weigh. Here's how to write one that helps both.",
+    "metaDescription": "Learn how to respond to negative reviews in a way that supports local rankings, protects your reputation, and turns complaints into visible proof you fix problems.",
+    "tags": [
+      "negative reviews",
+      "local search visibility",
+      "review response",
+      "google business profile",
+      "online reputation"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "responding to negative reviews in a way that helps ranking",
+    "iso": "2026-09-17",
+    "prettyDate": "September 17, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "how-rag-picks-passages-from-your-site",
+    "title": "How RAG Picks Which Passages to Pull From Your Site",
+    "excerpt": "RAG doesn't read your whole page. It grabs chunks, ranks them, and stuffs the top few into a prompt. Here's the mechanism and how to write for it.",
+    "metaDescription": "Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a competitor's.",
+    "tags": [
+      "retrieval-augmented generation",
+      "answer engine optimization",
+      "AI search",
+      "content chunking",
+      "semantic search"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how retrieval-augmented generation decides what context to pull",
+    "iso": "2026-09-16",
+    "prettyDate": "September 16, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-moats-competitors-cant-copy",
+    "title": "How to Build Content a Competitor Can't Copy Fast",
+    "excerpt": "Most content is trivial to replicate. Here are the specific structural moves that make a body of content expensive and slow for competitors to match.",
+    "metaDescription": "Learn how to build content moats around your topic so competitors can't copy your organic visibility quickly, and keep the rankings you earn.",
+    "tags": [
+      "content moats",
+      "organic visibility strategy",
+      "topical authority",
+      "content differentiation",
+      "defensible content"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "building content moats competitors cannot copy quickly",
+    "iso": "2026-09-16",
+    "prettyDate": "September 16, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "pillar-page-vs-post-when-to-choose",
+    "title": "When a Topic Deserves a Pillar Page, Not a Post",
+    "excerpt": "Most topics should be a 1,200-word post. A few deserve a 3,000-word pillar. Here is how to tell the difference before you write a single word.",
+    "metaDescription": "Learn how to decide when a topic deserves a pillar page instead of a blog post, with a simple scoring test that saves you wasted writing effort.",
+    "tags": [
+      "pillar pages",
+      "content strategy",
+      "topical authority",
+      "organic visibility",
+      "content planning"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "deciding when a topic deserves a pillar page instead of a post",
+    "iso": "2026-09-15",
+    "prettyDate": "September 15, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "benchmark-content-against-competitors",
+    "title": "How to Benchmark Your Content Against Competitors",
+    "excerpt": "Most content benchmarking stops at a traffic number that tells you nothing. Here's how to compare your content against the two or three competitors who actually take your customers.",
+    "metaDescription": "A practical guide to benchmarking your content against direct competitors so you can see the exact gaps to close and where to spend your next hour.",
+    "tags": [
+      "content benchmarking",
+      "competitor analysis",
+      "content ROI",
+      "content gap analysis",
+      "SEO measurement"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "benchmarking your content against direct competitors",
+    "iso": "2026-09-15",
+    "prettyDate": "September 15, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "content-brief-usable-first-draft",
     "title": "What a Content Brief Needs to Get a Usable Draft",
     "excerpt": "Most first drafts come back wrong because the brief was vague. Here is what to put in a brief so the writer hands you something you can actually edit.",
