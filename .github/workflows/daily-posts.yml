@@ -18,6 +18,15 @@ on:
     - cron: "0 20 * * *"   #  1pm Phoenix
     - cron: "0 23 * * *"   #  4pm Phoenix
   workflow_dispatch:
+    inputs:
+      backfill_dates:
+        description: "Phoenix dates to backfill, comma-separated (YYYY-MM-DD). Empty = normal run for today."
+        required: false
+        default: ""
+      posts_per_day:
+        description: "Posts to write for each backfilled date"
+        required: false
+        default: "2"
 
 permissions:
   contents: write
@@ -61,10 +70,31 @@ jobs:
           git status --porcelain
 
       - name: Generate articles
+        if: github.event_name != 'workflow_dispatch' || inputs.backfill_dates == ''
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CPC_POSTS_PER_RUN: "2"
         run: node scripts/generate-posts.mjs
+
+      # Fills days the scheduler missed. Each date is generated as its own run
+      # with CPC_BLOG_DATE set, so posts carry the date they should have had.
+      # Safe to re-run: the generator counts posts already filed under a date
+      # and skips one that is already full, so a repeat run is a no-op rather
+      # than a duplicate.
+      - name: Backfill missed days
+        if: github.event_name == 'workflow_dispatch' && inputs.backfill_dates != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CPC_POSTS_PER_RUN: ${{ inputs.posts_per_day }}
+        run: |
+          IFS=',' read -ra DATES <<< "${{ inputs.backfill_dates }}"
+          for d in "${DATES[@]}"; do
+            d="$(echo "$d" | tr -d '[:space:]')"
+            [ -z "$d" ] && continue
+            echo "::group::backfill $d"
+            CPC_BLOG_DATE="$d" node scripts/generate-posts.mjs
+            echo "::endgroup::"
+          done
 
       - name: Commit and push
         run: |
@@ -78,7 +108,11 @@ jobs:
           # Stamp the Phoenix date the posts are actually filed under. `date -u`
           # disagreed with it whenever a run landed after 17:00 Phoenix, which
           # made the git log misleading when auditing what published when.
-          git commit -m "posts: $(TZ=America/Phoenix date +%Y-%m-%d)"
+          if [ -n "${{ inputs.backfill_dates }}" ]; then
+            git commit -m "posts: backfill ${{ inputs.backfill_dates }}"
+          else
+            git commit -m "posts: $(TZ=America/Phoenix date +%Y-%m-%d)"
+          fi
           git push
 
       # Runs after publishing so a low catalog never blocks a post. Exits

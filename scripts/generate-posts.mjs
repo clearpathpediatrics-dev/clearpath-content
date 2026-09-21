@@ -39,13 +39,29 @@ const LOW_ANGLE_WARNING = POSTS_PER_RUN * 14;
 
 // ---------- date helpers (America/Phoenix, matching the other property) ----------
 function phoenixParts() {
+  // CPC_BLOG_DATE=YYYY-MM-DD backdates a run so a missed day can be filled in
+  // after the fact. Every date-derived value downstream — schema datePublished,
+  // index ordering, the slug fallback, and the per-day idempotency guard that
+  // makes re-running a backfill safe — reads from this function, so overriding
+  // here is enough. Noon at -07:00 because Phoenix does not observe DST, which
+  // keeps the calendar day stable regardless of the runner's own timezone.
+  const override = process.env.CPC_BLOG_DATE;
+  if (override && !/^\d{4}-\d{2}-\d{2}$/.test(override)) {
+    console.error(`ERROR: CPC_BLOG_DATE must be YYYY-MM-DD, got "${override}".`);
+    process.exit(1);
+  }
+  const when = override ? new Date(`${override}T12:00:00-07:00`) : new Date();
+  if (Number.isNaN(when.getTime())) {
+    console.error(`ERROR: CPC_BLOG_DATE "${override}" is not a real date.`);
+    process.exit(1);
+  }
   const fmt = new Intl.DateTimeFormat("en-US", {
     timeZone: "America/Phoenix", weekday: "long", year: "numeric", month: "long", day: "numeric",
   });
-  const p = Object.fromEntries(fmt.formatToParts(new Date()).map(x => [x.type, x.value]));
+  const p = Object.fromEntries(fmt.formatToParts(when).map(x => [x.type, x.value]));
   const iso = new Intl.DateTimeFormat("en-CA", {
     timeZone: "America/Phoenix", year: "numeric", month: "2-digit", day: "2-digit",
-  }).format(new Date());
+  }).format(when);
   return { weekday: p.weekday, prettyDate: `${p.month} ${p.day}, ${p.year}`, iso };
 }
 
