@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Thin Category Pages Drag Down a Whole Site</title>
+<meta name="description" content="Thin category pages quietly suppress organic visibility across your site. Learn how to spot them, why they hurt, and how to fix them to recover rankings.">
+<meta name="keywords" content="category page SEO, thin content, site architecture, organic visibility, internal linking">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/blog/thin-category-pages-suppress-whole-site">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="How Thin Category Pages Drag Down a Whole Site">
+<meta property="og:description" content="Thin category pages quietly suppress organic visibility across your site. Learn how to spot them, why they hurt, and how to fix them to recover rankings.">
+<meta property="og:url" content="https://clearpath-content.com/blog/thin-category-pages-suppress-whole-site">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How Thin Category Pages Drag Down a Whole Site","description":"Thin category pages quietly suppress organic visibility across your site. Learn how to spot them, why they hurt, and how to fix them to recover rankings.","datePublished":"2026-09-22","dateModified":"2026-09-22","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/thin-category-pages-suppress-whole-site","keywords":"category page SEO, thin content, site architecture, organic visibility, internal linking","articleSection":"Organic Visibility Strategy"}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.article{padding:56px 0 10px}
+.article .eyebrow{margin-bottom:16px}
+.article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+.meta{color:var(--muted);font-size:13.5px;font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 34px}
+.tags span{font-size:12px;font-weight:600;color:var(--pine-2);background:var(--spring-soft);padding:6px 14px;border-radius:999px}
+.body{font-size:16.5px}
+.body h2{font-size:clamp(21px,3vw,27px);margin:38px 0 12px}
+.body h3{font-size:19px;margin:26px 0 8px}
+.body p{color:#33445A;margin-bottom:16px}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33445A}
+.body li{margin-bottom:9px}
+.body strong{color:var(--ink)}
+.body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
+.endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
+.endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
+.endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
+.backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
+      <a href="/roi-calculator">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+<main class="article">
+  <div class="narrow">
+    <span class="eyebrow">Organic Visibility Strategy</span>
+    <h1>How Thin Category Pages Drag Down a Whole Site</h1>
+    <p class="meta">September 22, 2026 · 7 min read</p>
+    <div class="tags"><span>category page SEO</span><span>thin content</span><span>site architecture</span><span>organic visibility</span><span>internal linking</span></div>
+    <div class="body">
+<p>Most site problems announce themselves. A page loads slowly, a form breaks, a blog post never ranks. Thin category pages are quieter. They sit in the middle of your architecture looking harmless, and they drag down pages you never connected to them. You end up with strong individual articles that underperform for no obvious reason, and the culprit is a page nobody thinks about.</p><p>A category page is any hub that groups other pages: a services landing page that links to individual service pages, a blog category archive, a location index, a product collection. When that hub has almost no unique content on it, it becomes a weak point that everything downstream has to route through.</p><h2>What a thin category page actually is</h2><p>A thin category page is a hub that exists to group and link other pages but carries little or no unique, useful content of its own. The classic version is a services page that shows a grid of six service tiles, a headline, and one sentence. Or a blog category archive that's just a paginated list of post titles with zero framing. Or a location page that reads "We serve Tucson and surrounding areas" and nothing else.</p><p>These pages aren't broken. They render, they link correctly, they might even convert a visitor who already knows what they want. The problem is what a search engine sees: a URL that ranks for nothing, adds no context, and yet occupies a structurally important position in your site.</p><h3>Why they multiply</h3><p>Thin hubs breed because they get created automatically or as afterthoughts. Your CMS spins up a category archive the moment you tag two posts the same way. A designer builds a services overview to satisfy the nav menu. A developer adds location pages because a template made it cheap. Nobody sat down to write these pages, so nobody wrote content for them.</p><h2>How a thin hub suppresses the pages beneath it</h2><p>Internal links pass authority and context through your site. When an important, well-linked page sits at the top of a section and connects down to individual pages, it helps those pages by consolidating relevance and passing signal. That's the whole point of a hub. A thin hub can't do this job well for three reasons.</p><p><strong>It passes weak context.</strong> Search engines read the hub to understand what the section is about, then use that understanding to interpret the pages linked from it. A hub with one sentence gives almost nothing to work with. The pages beneath it lose the topical reinforcement they should be getting from their parent.</p><p><strong>It absorbs authority without amplifying it.</strong> Your homepage and navigation almost always link to the top-level category page. That page collects internal authority, then fails to earn any external links or rankings of its own, so it holds the signal in place instead of passing meaningful relevance downward. The individual pages get the leftover routing, not a boost.</p><p><strong>It teaches the crawler that the section is low-value.</strong> This is the quiet part. When a crawler repeatedly hits thin, near-duplicate hub pages, it forms an impression about the quality density of that part of the site. A section full of empty archives signals "not much here," and that impression bleeds into how often and how deeply those URLs get crawled and re-evaluated. You can have a genuinely good service page sitting under a hub that's telling the crawler to expect nothing.</p><p>The net effect is a section that ranks below its actual quality. The individual pages are fine. The wrapper around them is the drag.</p><h2>Does fixing a category page really help pages I've already published?</h2><p>Yes, because those existing pages depend on the hub for context and internal authority, and improving the hub changes what flows to them. When you turn a one-sentence services page into a substantial, well-organized hub, you're not just fixing one URL. You're strengthening the parent that every child page links back to and gets interpreted through. The improvement propagates.</p><p>The realistic expectation: pages that were already close to ranking tend to move first, because they needed a small push in relevance or authority, not a rewrite. Pages that are weak on their own won't be rescued by a better parent. Fixing the hub raises the ceiling for the section; it doesn't manufacture quality that isn't in the individual pages. Timelines vary and depend on how often the section gets crawled, so treat this as a structural fix that compounds, not an overnight switch.</p><h2>How to spot which category pages are the problem</h2><p>Run this checklist against every hub page on your site — every services overview, every blog category, every location index, every product collection.</p><ul><li><strong>Word count of unique body copy:</strong> under roughly 150 words of original text (not counting the link grid) is a red flag.</li><li><strong>Does it rank for anything?</strong> Check whether the URL appears for any query in your search analytics. Zero impressions on a top-level hub is a signal it's carrying no weight.</li><li><strong>Would it help a stranger?</strong> If someone landed on it cold, would the copy help them understand what's here and choose where to go? Or is it just a menu?</li><li><strong>Duplicate framing:</strong> do your location or category pages share the same boilerplate with a town name swapped in? Near-duplicates are worse than thin.</li><li><strong>Orphaned or over-linked:</strong> is the hub linked from the nav but linking down to pages that never link back up? Broken reciprocity weakens the whole cluster.</li></ul><p>Any hub that fails two or more of these is actively costing you.</p><h2>A worked example: a plumbing company's services page</h2><p>Suppose a plumbing company in Tucson has a services page. It currently reads: a headline, one sentence ("We handle all your plumbing needs, big and small"), and eight tiles linking to individual service pages — water heaters, drain cleaning, repiping, leak detection, and so on. Each individual service page is decent, 700 words, written by someone who knows the trade. But the section as a whole ranks poorly, and even the good service pages sit on page two.</p><p>Here's the fix sequence:</p><ol><li><strong>Write 400 to 600 words of genuinely useful hub copy.</strong> Explain how to tell which service you need, what to expect on a first visit, how the company approaches diagnosis, and when a problem is an emergency versus a maintenance item. This is content a homeowner actually reads while deciding.</li><li><strong>Introduce each linked service in context.</strong> Instead of a bare tile, give each service a two-sentence description that names the symptoms it solves. This gives the crawler real context for every child page and helps the visitor self-select.</li><li><strong>Fix reciprocal linking.</strong> Make sure every individual service page links back to the hub and, where relevant, to sibling services (leak detection links to repiping, water heater links to maintenance plans).</li><li><strong>Add the questions people actually ask.</strong> Two or three short answers to real questions ("how fast can you come out for a burst pipe?") make the hub useful and give it a shot at ranking on its own.</li><li><strong>Consolidate any near-duplicate location pages</strong> that were competing with this hub for the same terms, or differentiate them with genuinely local detail.</li></ol><p>The point isn't to hit a word count. It's to make the hub carry weight so it can pass weight. A hub that ranks for its own head term also becomes a better parent for everything beneath it.</p><h2>The order of operations that matters</h2><p>Fix hubs before you publish more leaf content under them. Adding ten new articles beneath a thin category page just gives that weak hub more children to fail to support. Strengthen the parent first, then expand the cluster. If you're mapping a content program, this is the difference between building on a foundation and stacking boxes on sand. It's the kind of architecture work we build into programs at ClearPath Content, because the hubs decide how much the leaf pages can ever return.</p><p><strong>Practical takeaway:</strong> pull a list of every hub page on your site this week. For each one, ask whether it would help a stranger and whether it ranks for anything. Any hub that fails both is quietly holding down the pages beneath it. Fix the three or four worst offenders with real, useful content before you write another article — you'll get more from work you've already done than from work you haven't started.</p>
+    </div>
+    <a class="pillarlink" href="/blog/organic-visibility-guide">
+      <span>Full guide</span>
+      <strong>Organic Visibility: Why Cadence and Structure Beat Individual Articles</strong>
+      <em>Most business blogs fail for structural reasons, not quality ones. How topical authority actually accumulates, and why publishing cadence outperforms brilliance.</em>
+    </a>
+    <div class="endcard">
+      <h3>This is what we do, every week, on autopilot.</h3>
+      <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
+      <a class="btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+    </div>
+    <a class="backlink" href="/blog/">← All field notes</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/roi-calculator">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/locations">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/capture-nudge.js" defer></script>
+</body>
+</html>

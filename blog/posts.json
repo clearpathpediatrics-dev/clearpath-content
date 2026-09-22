@@ -1,5 +1,43 @@
 [
   {
+    "slug": "structuring-content-for-follow-up-questions",
+    "title": "Structuring Content for Follow-Up Questions",
+    "excerpt": "People no longer ask one question and stop. They ask a first question, then three or four more that build on the answer. Here's how to structure a page so it survives the whole chain.",
+    "metaDescription": "Learn how to structure content for conversational follow-up queries so AI answer engines pull and reuse your pages across a full chain of questions.",
+    "tags": [
+      "answer engine optimization",
+      "conversational search",
+      "content structure",
+      "AI search",
+      "follow-up queries"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how conversational follow-up queries change content structure",
+    "iso": "2026-09-22",
+    "prettyDate": "September 22, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "thin-category-pages-suppress-whole-site",
+    "title": "How Thin Category Pages Drag Down a Whole Site",
+    "excerpt": "Empty category and service-hub pages don't just fail to rank themselves. They pull down the pages linked beneath them. Here's the mechanism and the fix.",
+    "metaDescription": "Thin category pages quietly suppress organic visibility across your site. Learn how to spot them, why they hurt, and how to fix them to recover rankings.",
+    "tags": [
+      "category page SEO",
+      "thin content",
+      "site architecture",
+      "organic visibility",
+      "internal linking"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "why thin category pages quietly suppress a whole site",
+    "iso": "2026-09-22",
+    "prettyDate": "September 22, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "interview-subject-matter-expert-original-content",
     "title": "How to Interview Your Expert for Original Content",
     "excerpt": "Generic content gets ignored by readers and answer engines alike. The fix is original insight, and the fastest source of it is the expert already on your payroll. Here's how to pull it out of them.",
