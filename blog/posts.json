@@ -1,5 +1,43 @@
 [
   {
+    "slug": "why-ai-engines-favour-original-data",
+    "title": "Why AI Engines Cite Original Data Over Summaries",
+    "excerpt": "AI answer engines skip the rehash and pull from pages with numbers, prices, and observations nobody else has. Here's why, and how to be the source instead of the summary.",
+    "metaDescription": "AI search engines favour original data over summarised takes. Learn what counts as original, why it gets cited, and how to produce it so your pages get pulled.",
+    "tags": [
+      "AI search optimization",
+      "answer engine optimization",
+      "original data content",
+      "content strategy",
+      "generative search"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "why AI engines favour original data over summarised takes",
+    "iso": "2026-09-23",
+    "prettyDate": "September 23, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "blog-strategy-private-schools-tutoring-centres",
+    "title": "Blog Strategy for Private Schools and Tutoring Centres",
+    "excerpt": "Parents research schools and tutors for months before they call. Here is how to build a blog that shows up during that research and earns the tour or trial session.",
+    "metaDescription": "A practical blog strategy for private schools and tutoring centres built around the enrollment decision, with a topic map and worked example.",
+    "tags": [
+      "private school marketing",
+      "tutoring center SEO",
+      "education content strategy",
+      "enrollment marketing",
+      "blog strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "blog strategy for private schools and tutoring centres",
+    "iso": "2026-09-23",
+    "prettyDate": "September 23, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "structuring-content-for-follow-up-questions",
     "title": "Structuring Content for Follow-Up Questions",
     "excerpt": "People no longer ask one question and stop. They ask a first question, then three or four more that build on the answer. Here's how to structure a page so it survives the whole chain.",
