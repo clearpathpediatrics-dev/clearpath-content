@@ -1,5 +1,43 @@
 [
   {
+    "slug": "fix-outdated-ai-answers-about-your-business",
+    "title": "How to Fix Outdated AI Answers About Your Business",
+    "excerpt": "When an AI engine tells a customer you close at 5pm but you now close at 7pm, that error lives inside a model or a stale index. Here is how to track down where wrong facts come from and get them corrected.",
+    "metaDescription": "AI answers about your business go stale fast. Learn how to update hours, pricing, and service areas so ChatGPT and Google AI cite current facts.",
+    "tags": [
+      "answer engine optimization",
+      "AI search",
+      "local business SEO",
+      "structured data",
+      "content freshness"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "keeping AI answers about your business factually current",
+    "iso": "2026-09-24",
+    "prettyDate": "September 24, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "cost-per-acquired-customer-organic-vs-paid",
+    "title": "Cost Per Customer: Organic vs Paid, Honestly",
+    "excerpt": "Most businesses compare organic and paid on the wrong basis. Here is how to calculate cost per acquired customer for each channel so the numbers actually mean something.",
+    "metaDescription": "Compare cost per acquired customer from organic versus paid search with a real formula, worked example, and the accounting mistakes that skew both numbers.",
+    "tags": [
+      "cost per acquisition",
+      "organic vs paid",
+      "content marketing ROI",
+      "SEO measurement",
+      "customer acquisition cost"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "cost per acquired customer from organic versus paid",
+    "iso": "2026-09-24",
+    "prettyDate": "September 24, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "why-ai-engines-favour-original-data",
     "title": "Why AI Engines Cite Original Data Over Summaries",
     "excerpt": "AI answer engines skip the rehash and pull from pages with numbers, prices, and observations nobody else has. Here's why, and how to be the source instead of the summary.",
