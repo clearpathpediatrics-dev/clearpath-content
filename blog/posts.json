@@ -1,5 +1,44 @@
 [
   {
+    "slug": "content-strategy-commercial-cleaning-companies",
+    "title": "Content Strategy for Commercial Cleaning Firms",
+    "excerpt": "Most commercial cleaning websites read like a brochure and rank for nothing. Here is the content that actually pulls facility managers and property managers into a bid.",
+    "metaDescription": "A practical content strategy for commercial cleaning companies: the pages and articles that win facility manager searches and turn into signed contracts.",
+    "tags": [
+      "commercial cleaning marketing",
+      "janitorial SEO",
+      "content strategy",
+      "B2B content",
+      "facility services marketing"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content strategy for commercial cleaning companies",
+    "iso": "2026-09-25",
+    "prettyDate": "September 25, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "citation-cleanup-after-move-or-rebrand",
+    "title": "Fixing Your Business Citations After a Move",
+    "excerpt": "When you move offices or change your name, dozens of old listings keep broadcasting the wrong details. Here is how to find them, fix them in the right order, and stop them from splitting your local visibility.",
+    "metaDescription": "A practical guide to citation cleanup after a business move or rebrand, with a step-by-step checklist to stop conflicting NAP data from tanking local search.",
+    "tags": [
+      "citation cleanup",
+      "local search",
+      "NAP consistency",
+      "business move",
+      "rebrand",
+      "Google Business Profile"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "citation cleanup after a business move or rebrand",
+    "iso": "2026-09-25",
+    "prettyDate": "September 25, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "fix-outdated-ai-answers-about-your-business",
     "title": "How to Fix Outdated AI Answers About Your Business",
     "excerpt": "When an AI engine tells a customer you close at 5pm but you now close at 7pm, that error lives inside a model or a stale index. Here is how to track down where wrong facts come from and get them corrected.",
