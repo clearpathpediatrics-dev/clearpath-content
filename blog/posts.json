@@ -1,5 +1,43 @@
 [
   {
+    "slug": "sponsorship-links-local-seo",
+    "title": "Do Sponsorship Links Actually Help Local SEO?",
+    "excerpt": "Community sponsorships can earn genuine local links, but most businesses do them wrong. Here is how to pick sponsorships that produce a real, indexed link and measurable local visibility.",
+    "metaDescription": "How to build local links through community sponsorship the right way, which sponsorships earn real links, and how to vet them so your local SEO improves.",
+    "tags": [
+      "local link building",
+      "community sponsorship",
+      "local SEO",
+      "backlinks",
+      "small business marketing"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "local link building through community sponsorship",
+    "iso": "2026-09-26",
+    "prettyDate": "September 26, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "commercial-vs-informational-content-ratio",
+    "title": "How Many Money Pages vs Blog Posts Do You Need?",
+    "excerpt": "Most sites tilt too far one way. Here's how to set a commercial-to-informational ratio that fits your business, with a worked example you can copy.",
+    "metaDescription": "Learn the right ratio of commercial to informational content for organic visibility, with a worked example and a checklist to plan your next 20 pages.",
+    "tags": [
+      "content strategy",
+      "commercial content",
+      "informational content",
+      "organic visibility",
+      "content ratio"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "balancing commercial and informational content ratios",
+    "iso": "2026-09-26",
+    "prettyDate": "September 26, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "content-strategy-commercial-cleaning-companies",
     "title": "Content Strategy for Commercial Cleaning Firms",
     "excerpt": "Most commercial cleaning websites read like a brochure and rank for nothing. Here is the content that actually pulls facility managers and property managers into a bid.",
