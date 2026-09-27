@@ -1,5 +1,43 @@
 [
   {
+    "slug": "read-search-console-data-honestly",
+    "title": "How to Read Search Console Data Without Lying to Yourself",
+    "excerpt": "Search Console is the least biased data most businesses have, and also the easiest to misread. Here is how to pull real decisions out of it without fooling yourself.",
+    "metaDescription": "Learn how to read Search Console query data honestly, avoid the impression and average-position traps, and pull decisions you can actually trust.",
+    "tags": [
+      "search console",
+      "seo measurement",
+      "query data",
+      "content roi",
+      "organic reporting"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "reading Search Console query data without fooling yourself",
+    "iso": "2026-09-27",
+    "prettyDate": "September 27, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "why-ai-assistants-recommend-different-businesses",
+    "title": "Why AI Assistants Recommend Different Businesses",
+    "excerpt": "Ask three AI assistants for the best plumber in your city and you'll often get three different lists. The reasons are mechanical, not random, and once you understand them you can improve your odds of showing up across all of them.",
+    "metaDescription": "Ask ChatGPT, Gemini and Perplexity the same question and get different business recommendations. Here's why AI assistants disagree, and how to show up in more of the",
+    "tags": [
+      "answer engine optimization",
+      "AI search",
+      "local visibility",
+      "generative search",
+      "business recommendations"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "why AI assistants disagree about which businesses to recommend",
+    "iso": "2026-09-27",
+    "prettyDate": "September 27, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "sponsorship-links-local-seo",
     "title": "Do Sponsorship Links Actually Help Local SEO?",
     "excerpt": "Community sponsorships can earn genuine local links, but most businesses do them wrong. Here is how to pick sponsorships that produce a real, indexed link and measurable local visibility.",
