@@ -1,5 +1,43 @@
 [
   {
+    "slug": "clear-content-backlog-without-burnout",
+    "title": "How to Clear a Content Backlog Without Burning Out",
+    "excerpt": "A backlog of half-finished drafts and unwritten briefs kills momentum faster than anything. Here's a triage-and-batch system to work through it without stalling.",
+    "metaDescription": "Learn how to clear a content backlog with a triage system, realistic cadence, and batching so you publish steadily instead of stalling out.",
+    "tags": [
+      "content operations",
+      "content backlog",
+      "editorial workflow",
+      "content production",
+      "publishing cadence"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "working through a content backlog without losing momentum",
+    "iso": "2026-09-29",
+    "prettyDate": "September 29, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "get-brand-recommended-by-chatgpt",
+    "title": "How to Get Your Brand Recommended by ChatGPT",
+    "excerpt": "ChatGPT recommends brands it can find described clearly across the open web. Here is how the mechanism works and what you can actually control.",
+    "metaDescription": "Learn how to get your brand mentioned in ChatGPT product recommendations, with a concrete checklist and worked example you can start using this week.",
+    "tags": [
+      "answer engine optimization",
+      "ChatGPT recommendations",
+      "AI search",
+      "brand visibility",
+      "content strategy"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how to get a brand mentioned in ChatGPT product recommendations",
+    "iso": "2026-09-29",
+    "prettyDate": "September 29, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "verify-seo-agency-published-results-2",
     "title": "How to Verify an SEO Agency's Real Results",
     "excerpt": "Agencies show you their best slide. Here is how to check what they actually published, whether it ranks, and whether it was any good — using tools you already have.",
