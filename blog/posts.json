@@ -1,5 +1,43 @@
 [
   {
+    "slug": "ai-content-tools-vs-managed-content-services",
+    "title": "AI Content Tools vs Managed Services: Real Costs",
+    "excerpt": "A practical breakdown of what an AI writing subscription actually costs you in time versus a managed content service, with a worked example and a decision checklist.",
+    "metaDescription": "AI content tools versus managed content services compared on cost, time, and results, so you can pick the model that actually fits how you work.",
+    "tags": [
+      "AI content tools",
+      "managed content services",
+      "content marketing",
+      "buying guide",
+      "SEO content"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "AI content tools versus managed content services",
+    "iso": "2026-09-30",
+    "prettyDate": "September 30, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "blog-strategy-auto-repair-shops",
+    "title": "Blog Strategy for Auto Repair Shops That Works",
+    "excerpt": "Most auto repair blogs write about the wrong things. Here is what actually pulls in local customers, with a topic map, a posting cadence, and a worked example.",
+    "metaDescription": "A practical blog strategy for auto repair shops: which topics bring in local customers, how often to post, and what to skip. Built to win nearby searches.",
+    "tags": [
+      "auto repair marketing",
+      "auto shop blog strategy",
+      "local SEO for mechanics",
+      "content strategy",
+      "automotive content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "blog strategy for auto repair shops",
+    "iso": "2026-09-30",
+    "prettyDate": "September 30, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "clear-content-backlog-without-burnout",
     "title": "How to Clear a Content Backlog Without Burning Out",
     "excerpt": "A backlog of half-finished drafts and unwritten briefs kills momentum faster than anything. Here's a triage-and-batch system to work through it without stalling.",
