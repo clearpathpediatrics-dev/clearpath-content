@@ -1,5 +1,43 @@
 [
   {
+    "slug": "content-goals-leadership-team-will-approve",
+    "title": "Content Goals Your Leadership Team Will Approve",
+    "excerpt": "Most content goals die in the approval meeting because they measure the wrong things. Here's how to frame targets a CFO and CEO will actually sign off on.",
+    "metaDescription": "Learn how to set content marketing goals a leadership team will approve, with a framework that ties targets to revenue instead of vanity metrics.",
+    "tags": [
+      "content marketing goals",
+      "content ROI",
+      "marketing measurement",
+      "content strategy",
+      "leadership buy-in"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "setting content goals a leadership team will approve",
+    "iso": "2026-10-01",
+    "prettyDate": "October 1, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-marketing-security-alarm-companies",
+    "title": "Content Marketing for Alarm Companies That Sells",
+    "excerpt": "Security buyers research before they call. Here is the question-space, the page structure, and a 90-day plan for alarm companies that want content to actually produce leads.",
+    "metaDescription": "A practical content marketing plan for security and alarm companies: the questions buyers search, pages that convert, and how to publish without wasting money.",
+    "tags": [
+      "alarm company marketing",
+      "security company SEO",
+      "content marketing",
+      "local SEO",
+      "lead generation"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for security and alarm companies",
+    "iso": "2026-10-01",
+    "prettyDate": "October 1, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "ai-content-tools-vs-managed-content-services",
     "title": "AI Content Tools vs Managed Services: Real Costs",
     "excerpt": "A practical breakdown of what an AI writing subscription actually costs you in time versus a managed content service, with a worked example and a decision checklist.",
