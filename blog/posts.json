@@ -1,5 +1,43 @@
 [
   {
+    "slug": "third-party-reviews-ai-recommendations",
+    "title": "Do Reviews Affect Which Business AI Recommends?",
+    "excerpt": "AI assistants pull from reviews on Google, Yelp, G2, and industry directories when they decide which business to name. Here's how that works and what to fix.",
+    "metaDescription": "Learn how third-party reviews shape AI recommendation engines like ChatGPT and Google's AI answers, and what to fix first to get your business named.",
+    "tags": [
+      "AI search",
+      "answer engine optimization",
+      "online reviews",
+      "local SEO",
+      "reputation management"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "the role of third-party reviews in AI recommendation engines",
+    "iso": "2026-10-02",
+    "prettyDate": "October 2, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "legal-compliance-content-review-workflow",
+    "title": "How to Run Legal Review on Content Without Stalling",
+    "excerpt": "If every article dies in legal's inbox for three weeks, the problem is your process, not your lawyer. Here's a review workflow that keeps regulated content accurate and moving.",
+    "metaDescription": "A practical workflow for legal and compliance review in regulated industries so content stays accurate, defensible, and published on schedule.",
+    "tags": [
+      "content operations",
+      "compliance review",
+      "regulated industries",
+      "legal review workflow",
+      "content governance"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "handling legal and compliance review in regulated industries",
+    "iso": "2026-10-02",
+    "prettyDate": "October 2, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "content-goals-leadership-team-will-approve",
     "title": "Content Goals Your Leadership Team Will Approve",
     "excerpt": "Most content goals die in the approval meeting because they measure the wrong things. Here's how to frame targets a CFO and CEO will actually sign off on.",
