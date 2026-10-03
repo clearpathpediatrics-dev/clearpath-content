@@ -1,5 +1,43 @@
 [
   {
+    "slug": "multi-location-pages-without-duplicate-content",
+    "title": "Multi-Location Pages Without Duplicate Content",
+    "excerpt": "Most multi-location sites are built from one template with the city name swapped in. Here is how to make each location page carry enough unique substance to rank — without writing 40 novels.",
+    "metaDescription": "How to build multi-location pages for local search without duplicate content. Practical rules, a worked example, and a checklist to make each page rank on its own.",
+    "tags": [
+      "multi-location SEO",
+      "duplicate content",
+      "local search",
+      "location pages",
+      "local SEO"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "handling multiple locations without duplicate content",
+    "iso": "2026-10-03",
+    "prettyDate": "October 3, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "seo-for-orthodontic-practices",
+    "title": "SEO for Orthodontic Practices That Books Cases",
+    "excerpt": "Orthodontic SEO is its own animal: long decision cycles, high case values, and a few competitors fighting over the same ZIP codes. Here is how to build search visibility that actually fills chairs.",
+    "metaDescription": "A practical guide to SEO for orthodontic practices: keyword mapping, local pages, and content that turns searches into consults and started cases.",
+    "tags": [
+      "orthodontic SEO",
+      "dental marketing",
+      "local SEO",
+      "content strategy",
+      "practice growth"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO for orthodontic practices",
+    "iso": "2026-10-03",
+    "prettyDate": "October 3, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "third-party-reviews-ai-recommendations",
     "title": "Do Reviews Affect Which Business AI Recommends?",
     "excerpt": "AI assistants pull from reviews on Google, Yelp, G2, and industry directories when they decide which business to name. Here's how that works and what to fix.",
