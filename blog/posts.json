@@ -1,5 +1,43 @@
 [
   {
+    "slug": "track-competitors-inside-ai-assistants",
+    "title": "How to Track Competitors Inside AI Assistants",
+    "excerpt": "AI assistants recommend businesses by name. Here is a practical, repeatable way to see which competitors show up for your category, why, and what to do about it.",
+    "metaDescription": "Learn how to monitor how competitors appear inside AI assistants like ChatGPT and Perplexity, with a repeatable prompt-and-log process you can run monthly.",
+    "tags": [
+      "AI search",
+      "answer engine optimization",
+      "competitor monitoring",
+      "ChatGPT recommendations",
+      "AEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "monitoring how competitors appear inside AI assistants",
+    "iso": "2026-10-04",
+    "prettyDate": "October 4, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "first-90-days-content-new-domain",
+    "title": "What to Publish in Your First 90 Days on a New Domain",
+    "excerpt": "A brand-new domain has no history, no links, and no trust. Here is how to sequence your first 90 days of content so pages start earning visibility instead of sitting in a sandbox.",
+    "metaDescription": "A practical 90-day content plan for a brand-new domain, including what to publish first and how to sequence it so pages start ranking faster.",
+    "tags": [
+      "new domain seo",
+      "content strategy",
+      "organic visibility",
+      "content planning",
+      "site launch"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "the first ninety days of content for a brand-new domain",
+    "iso": "2026-10-04",
+    "prettyDate": "October 4, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "multi-location-pages-without-duplicate-content",
     "title": "Multi-Location Pages Without Duplicate Content",
     "excerpt": "Most multi-location sites are built from one template with the city name swapped in. Here is how to make each location page carry enough unique substance to rank — without writing 40 novels.",
