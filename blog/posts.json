@@ -1,5 +1,43 @@
 [
   {
+    "slug": "publish-original-research-ai-models-cite",
+    "title": "How to Publish Research That AI Models Cite",
+    "excerpt": "AI assistants cite sources that supply numbers nobody else has. Here's how to run a small original study and format it so models name your business.",
+    "metaDescription": "Learn how to publish original research that AI models cite, including data collection, formatting, and distribution steps that get your brand named in answers.",
+    "tags": [
+      "answer engine optimization",
+      "original research",
+      "AI citations",
+      "content strategy",
+      "data-driven content"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "publishing original research that AI models cite",
+    "iso": "2026-10-05",
+    "prettyDate": "October 5, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "recover-organic-traffic-after-ranking-drop",
+    "title": "How to Recover Organic Traffic After a Ranking Drop",
+    "excerpt": "A ranking drop usually has one cause, not ten. Here's how to find it, confirm it, and fix the pages that actually matter before you waste a month guessing.",
+    "metaDescription": "A practical guide to recovering organic traffic after a ranking drop: how to diagnose the cause, fix the right pages, and get rankings back faster.",
+    "tags": [
+      "organic traffic recovery",
+      "ranking drop",
+      "traffic decline",
+      "technical seo",
+      "google algorithm update"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "recovering organic traffic after a ranking drop",
+    "iso": "2026-10-05",
+    "prettyDate": "October 5, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "track-competitors-inside-ai-assistants",
     "title": "How to Track Competitors Inside AI Assistants",
     "excerpt": "AI assistants recommend businesses by name. Here is a practical, repeatable way to see which competitors show up for your category, why, and what to do about it.",
