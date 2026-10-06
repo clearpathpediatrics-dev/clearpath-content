@@ -1,5 +1,43 @@
 [
   {
+    "slug": "track-assisted-conversions-from-blog-content",
+    "title": "How to Track Assisted Conversions From Blog Posts",
+    "excerpt": "Blog posts rarely close the deal on the first visit. Here's how to measure the conversions your content assists, so you stop judging articles by last-click revenue alone.",
+    "metaDescription": "Learn how to track assisted conversions from blog content using GA4, attribution models, and first-touch data so you can prove which articles drive revenue.",
+    "tags": [
+      "assisted conversions",
+      "content marketing ROI",
+      "GA4 attribution",
+      "blog measurement",
+      "content analytics"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "tracking assisted conversions from blog content",
+    "iso": "2026-10-06",
+    "prettyDate": "October 6, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "compare-content-agencies-by-process",
+    "title": "How to Compare Content Agencies by Process",
+    "excerpt": "A portfolio shows you one good month. Process tells you whether an agency can repeat it for twelve. Here's how to compare agencies on the mechanics that matter.",
+    "metaDescription": "Learn how to compare content agencies by their process, not their portfolio. A practical checklist of questions that reveals who can actually deliver.",
+    "tags": [
+      "content agency comparison",
+      "how to choose a content agency",
+      "content marketing process",
+      "agency vetting",
+      "buying guide"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "comparing content agencies on process rather than portfolio",
+    "iso": "2026-10-06",
+    "prettyDate": "October 6, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "publish-original-research-ai-models-cite",
     "title": "How to Publish Research That AI Models Cite",
     "excerpt": "AI assistants cite sources that supply numbers nobody else has. Here's how to run a small original study and format it so models name your business.",
