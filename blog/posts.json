@@ -1,5 +1,43 @@
 [
   {
+    "slug": "content-ownership-licensing-clauses",
+    "title": "Who Owns the Content Your Agency Writes?",
+    "excerpt": "Most content contracts are vague about who owns what. Here is the exact language to look for, the trap of license-only deals, and a clause checklist to run before you sign.",
+    "metaDescription": "What content ownership and licensing clauses should say in your agency contract, with exact language to request so you keep your articles if you leave.",
+    "tags": [
+      "content ownership",
+      "content licensing",
+      "agency contracts",
+      "work for hire",
+      "content marketing contracts"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "what content ownership and licensing clauses should say",
+    "iso": "2026-10-07",
+    "prettyDate": "October 7, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "one-page-content-dashboard-owners-read",
+    "title": "The One-Page Content Dashboard Owners Will Read",
+    "excerpt": "Most content reports get skimmed once and ignored. Here is how to build a one-page dashboard that an owner reads in two minutes and trusts.",
+    "metaDescription": "Learn how to build a one-page content dashboard that busy owners actually read, with the five metrics that matter and a layout you can copy today.",
+    "tags": [
+      "content ROI",
+      "content dashboard",
+      "marketing reporting",
+      "content measurement",
+      "SEO reporting"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "building a one-page content dashboard an owner will read",
+    "iso": "2026-10-07",
+    "prettyDate": "October 7, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "track-assisted-conversions-from-blog-content",
     "title": "How to Track Assisted Conversions From Blog Posts",
     "excerpt": "Blog posts rarely close the deal on the first visit. Here's how to measure the conversions your content assists, so you stop judging articles by last-click revenue alone.",

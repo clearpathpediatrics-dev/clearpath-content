@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The One-Page Content Dashboard Owners Will Read</title>
+<meta name="description" content="Learn how to build a one-page content dashboard that busy owners actually read, with the five metrics that matter and a layout you can copy today.">
+<meta name="keywords" content="content ROI, content dashboard, marketing reporting, content measurement, SEO reporting">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/blog/one-page-content-dashboard-owners-read">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="The One-Page Content Dashboard Owners Will Read">
+<meta property="og:description" content="Learn how to build a one-page content dashboard that busy owners actually read, with the five metrics that matter and a layout you can copy today.">
+<meta property="og:url" content="https://clearpath-content.com/blog/one-page-content-dashboard-owners-read">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"The One-Page Content Dashboard Owners Will Read","description":"Learn how to build a one-page content dashboard that busy owners actually read, with the five metrics that matter and a layout you can copy today.","datePublished":"2026-10-07","dateModified":"2026-10-07","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/one-page-content-dashboard-owners-read","keywords":"content ROI, content dashboard, marketing reporting, content measurement, SEO reporting","articleSection":"Measurement & ROI"}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.article{padding:56px 0 10px}
+.article .eyebrow{margin-bottom:16px}
+.article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+.meta{color:var(--muted);font-size:13.5px;font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 34px}
+.tags span{font-size:12px;font-weight:600;color:var(--pine-2);background:var(--spring-soft);padding:6px 14px;border-radius:999px}
+.body{font-size:16.5px}
+.body h2{font-size:clamp(21px,3vw,27px);margin:38px 0 12px}
+.body h3{font-size:19px;margin:26px 0 8px}
+.body p{color:#33445A;margin-bottom:16px}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33445A}
+.body li{margin-bottom:9px}
+.body strong{color:var(--ink)}
+.body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
+.endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
+.endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
+.endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
+.backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
+      <a href="/roi-calculator">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+<main class="article">
+  <div class="narrow">
+    <span class="eyebrow">Measurement &amp; ROI</span>
+    <h1>The One-Page Content Dashboard Owners Will Read</h1>
+    <p class="meta">October 7, 2026 · 7 min read</p>
+    <div class="tags"><span>content ROI</span><span>content dashboard</span><span>marketing reporting</span><span>content measurement</span><span>SEO reporting</span></div>
+    <div class="body">
+<p>Most content reports die in an inbox. Twelve tabs, forty rows, a wall of charts, and a cover note that says "let me know if you have questions." The owner opens it, sees nothing that answers "is this working," and closes it. Three months later they cancel.</p><p>A dashboard an owner actually reads has a different job than a dashboard an analyst reads. The analyst wants detail to diagnose problems. The owner wants to answer one question in under two minutes: <strong>is the money I'm spending turning into something I care about?</strong> If your report can't answer that at a glance, the detail underneath doesn't matter.</p><p>This is how to build the one page that answers it.</p><h2>Start with the decision the owner is making</h2><p>An owner reads a report to decide one of three things: keep spending, change something, or stop. Everything on the page should feed that decision. If a number doesn't help them choose, cut it.</p><p>That means bounce rate, average session duration, and keyword position histograms don't belong on page one. They're diagnostic metrics — useful to you, noise to them. The owner cares about what the content produced, not how the machinery ran.</p><p>So the page is organized around outcomes, with the machinery available on request. Think of it as: here's what you got, here's what it cost, here's what we're doing next. Three bands, top to bottom.</p><h2>The five numbers that belong on the page</h2><p>You want five outcome metrics, no more. Five is enough to tell the story and few enough to scan. Here's the set that works for most service and B2B businesses.</p><ul><li><strong>Organic sessions to published content</strong> — traffic to the articles you produced, not sitewide traffic. Sitewide numbers include brand searches and paid campaigns that have nothing to do with your work, and they let a program look successful when it isn't.</li><li><strong>Conversions from that content</strong> — form fills, calls, demo requests, or whatever counts as a lead in this business. First-touch and assisted, labeled separately so you're not claiming credit you can't defend.</li><li><strong>Content-sourced pipeline or revenue</strong> — if the business can tie leads to closed work, put a dollar figure here. If it can't yet, put the lead count and the business's own average lead value, labeled as an estimate.</li><li><strong>Cost for the period</strong> — the subscription or retainer, flat. No hiding it. The owner knows what they pay; showing it signals you're comfortable being measured against it.</li><li><strong>Published and indexed</strong> — how many pieces went live and how many are actually in the index working. A piece that isn't indexed is doing nothing, and this number catches technical problems early.</li></ul><p>Each number gets a comparison: this period versus last period, and versus the same period a year ago if you have the history. A number with no comparison is a number with no meaning.</p><h2>A layout you can copy</h2><p>Here is the structure, top to bottom, on a single page. Suppose a hypothetical commercial plumbing company on a $399/month plan, six months in.</p><p><strong>Band 1 — the headline (one sentence).</strong> A plain-language summary you write fresh each month. For example: "Organic traffic to your service pages grew 22% this month; two of the three leads your sales team logged as 'found us on Google' landed on articles we published in the spring." This is the only thing some owners read. Make it true and make it specific.</p><p><strong>Band 2 — the five numbers.</strong> A simple table.</p><table><thead><tr><th>Metric</th><th>This month</th><th>Last month</th><th>Year ago</th></tr></thead><tbody><tr><td>Organic sessions to our content</td><td>3,180</td><td>2,610</td><td>890</td></tr><tr><td>Conversions (first-touch)</td><td>14</td><td>11</td><td>3</td></tr><tr><td>Conversions (assisted)</td><td>9</td><td>7</td><td>2</td></tr><tr><td>Content-sourced leads x avg value ($650)</td><td>$9,100 (est.)</td><td>$7,150 (est.)</td><td>$1,950</td></tr><tr><td>Published / indexed</td><td>4 / 4</td><td>4 / 3</td><td>4 / 4</td></tr></tbody></table><p>Note the cost — $399 — sits beside the estimated value so the ratio is obvious without a calculator. Note also the estimate is labeled. Never present a modeled number as a measured one.</p><p><strong>Band 3 — what we did and what's next.</strong> Three to five bullets of plain text. "Published two pieces on backflow testing; both now rank on page one for local variations. Next month: a cluster on commercial drain maintenance, where you've told us margins are highest." This shows the work is deliberate, not a content treadmill.</p><p>That's the whole page. White space is a feature, not wasted room.</p><h2>How do I report ROI when content leads take months to close?</h2><p>Report the leading indicators monthly and the closed revenue quarterly, and label each clearly so you're never confusing the two. Content for most service businesses has a lag — a piece published in March may not produce a closed deal until June or later, because the reader researches, shortlists, and buys on their own timeline. If you only report closed revenue, early months look like failure and the owner panics. If you only report traffic, late months look like success even when nothing sells.</p><p>So run two clocks. Monthly, show traffic and conversions — the signals that the content is being found and acted on. Quarterly, show closed revenue traced back to content touches, using whatever attribution the business can actually support. On the monthly page, the revenue line is explicitly an estimate built from lead count times the business's own stated lead value. When the quarterly closed numbers come in, reconcile them against those estimates openly. An owner who sees you correct your own estimate trusts the next one more.</p><h2>What's the biggest mistake in content dashboards for business owners?</h2><p>The biggest mistake is reporting activity instead of outcomes — showing how many articles you wrote, how many keywords you track, how many words you produced, as if effort were the point. Owners don't buy words. They buy customers, or the reasonable prospect of them. A report that leads with "we published 12,000 words this quarter" tells the owner you're measuring your own labor, not their result, and it invites exactly the question you don't want: "so what?"</p><p>Replace every activity metric with the outcome it was supposed to produce. Instead of "4 articles published," show "4 articles published, now driving 3,180 sessions and 14 leads." The activity is still there — it's just subordinate to the result. This single reframe is what separates a report that gets renewed from one that gets cancelled.</p><h2>Building it in whatever tool you already have</h2><p>You don't need special software. A one-page dashboard works in a spreadsheet, a slide, or a shared doc. The format matters less than the discipline. Here's a build sequence that takes about an hour the first time and fifteen minutes a month after.</p><ol><li>Pull organic sessions filtered to the URLs you've published or optimized. Not sitewide.</li><li>Pull conversions attributed to those URLs, split into first-touch and assisted.</li><li>Multiply content-sourced leads by the business's stated average lead value. Label it an estimate.</li><li>Write the one-sentence headline last, after you've seen the numbers, so it reflects reality.</li><li>List the three to five next actions, tied to things the owner has said matter to them.</li><li>Put the cost on the page. Every time.</li></ol><p>Send the same format every period. Consistency is what lets an owner read it in two minutes — they learn where to look and stop re-reading the structure. Change the layout monthly and you force them to relearn it, and they'll stop opening it.</p><p>At ClearPath Content we send a version of exactly this page, because a program the client can't see the value of is a program they're right to cancel, and the one-pager is the cheapest insurance against that.</p><h2>The takeaway</h2><p>Build the page around the one decision the owner is making, show five outcome numbers with comparisons, separate measured results from honest estimates, and keep the format identical every period. If your current report can't be read in two minutes and doesn't show what the spend produced against what it cost, it isn't a dashboard — it's a document nobody reads. Cut it down this week and send the shorter version. You'll get more questions, which means someone finally read it.</p>
+    </div>
+    <a class="pillarlink" href="/blog/content-marketing-roi">
+      <span>Full guide</span>
+      <strong>Measuring Content Marketing ROI Without Fooling Yourself</strong>
+      <em>Traffic is a vanity metric. Which numbers actually predict revenue from content, what leading indicators to watch early, and how to attribute honestly.</em>
+    </a>
+    <div class="endcard">
+      <h3>This is what we do, every week, on autopilot.</h3>
+      <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
+      <a class="btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+    </div>
+    <a class="backlink" href="/blog/">← All field notes</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/roi-calculator">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/locations">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/capture-nudge.js" defer></script>
+</body>
+</html>
