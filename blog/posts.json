@@ -1,5 +1,43 @@
 [
   {
+    "slug": "prune-blog-posts-without-losing-seo-equity",
+    "title": "How to Prune Old Blog Posts Without Losing SEO",
+    "excerpt": "Pruning old content can help or hurt, depending on what you do with the links and rankings each post already holds. Here's the decision process that keeps equity intact.",
+    "metaDescription": "Learn how to prune underperforming blog posts without losing SEO equity. A step-by-step process for deciding what to keep, merge, redirect, or delete.",
+    "tags": [
+      "content pruning",
+      "SEO equity",
+      "content audit",
+      "301 redirects",
+      "content consolidation"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "pruning underperforming posts without losing equity",
+    "iso": "2026-10-11",
+    "prettyDate": "October 11, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "seo-content-dermatology-practices",
+    "title": "SEO Content for Dermatology Practices That Books Patients",
+    "excerpt": "Dermatology sits on a fault line between medical and cosmetic search intent. Here's how to build content that ranks for both and turns readers into booked appointments.",
+    "metaDescription": "A practical guide to SEO content for dermatology practices: which pages to build, how to handle cosmetic vs. medical intent, and what actually books patients.",
+    "tags": [
+      "dermatology SEO",
+      "medical content marketing",
+      "cosmetic practice marketing",
+      "local SEO",
+      "healthcare content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content for dermatology practices",
+    "iso": "2026-10-11",
+    "prettyDate": "October 11, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "strategist-or-writer-first",
     "title": "Hire a Content Strategist or Writer First?",
     "excerpt": "Most owners hire the wrong role first and waste a quarter finding out. Here is how to tell whether you need a strategist, a writer, or neither yet.",
