@@ -1,5 +1,43 @@
 [
   {
+    "slug": "merge-cannibalising-pages-into-one-asset",
+    "title": "How to Merge Two Pages That Compete for the Same Term",
+    "excerpt": "When two pages target the same query, they split your authority and neither ranks well. Here is how to find them, decide which one survives, and merge them cleanly.",
+    "metaDescription": "Learn how to consolidate cannibalising pages into one stronger asset: find the overlap, pick the winner, merge content, redirect, and recover lost rankings.",
+    "tags": [
+      "keyword cannibalisation",
+      "content consolidation",
+      "page merging",
+      "organic visibility",
+      "on-page SEO"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "consolidating cannibalising pages into one stronger asset",
+    "iso": "2026-10-14",
+    "prettyDate": "October 14, 2026",
+    "readMinutes": 8
+  },
+  {
+    "slug": "blog-strategy-multi-location-franchise-brands",
+    "title": "Blog Strategy for Multi-Location Franchise Brands",
+    "excerpt": "Franchise brands break content in a specific way: corporate wants consistency, local owners want leads. Here is how to run a blog program that serves both without creating duplicate-content problems.",
+    "metaDescription": "A practical blog strategy for multi-location franchise brands: how to split corporate and local content, avoid duplicate pages, and rank each unit.",
+    "tags": [
+      "franchise content strategy",
+      "multi-location SEO",
+      "local blog strategy",
+      "franchise marketing",
+      "content governance"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "blog strategy for multi-location franchise brands",
+    "iso": "2026-10-14",
+    "prettyDate": "October 14, 2026",
+    "readMinutes": 8
+  },
+  {
     "slug": "break-into-map-pack-competitive-terms",
     "title": "How to Break Into the Map Pack for Hard Terms",
     "excerpt": "The three-result map pack is the most valuable real estate in local search, and the hardest to crack for competitive terms. Here is what actually moves the needle.",
