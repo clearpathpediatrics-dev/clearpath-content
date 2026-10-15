@@ -1,5 +1,43 @@
 [
   {
+    "slug": "seasonal-content-calendar-annual-plan",
+    "title": "How to Build a Seasonal Content Calendar",
+    "excerpt": "Most businesses publish seasonal content the month they need it, which is months too late. Here's how to map demand peaks and work backward so pages rank on time.",
+    "metaDescription": "Learn how to build a seasonal content calendar that publishes months ahead of demand, so your pages rank before your busy season starts.",
+    "tags": [
+      "seasonal content strategy",
+      "annual content calendar",
+      "content planning",
+      "organic visibility",
+      "editorial calendar"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "how seasonality should shape an annual content plan",
+    "iso": "2026-10-15",
+    "prettyDate": "October 15, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "content-marketing-for-moving-companies",
+    "title": "Content Marketing for Moving Companies That Books Jobs",
+    "excerpt": "Moving is a high-intent, local, seasonal business. Here's how to build content that catches people when they're comparing movers and ready to call.",
+    "metaDescription": "A practical content marketing plan for moving companies: the route pages, cost guides, and seasonal timing that pull in movers ready to book.",
+    "tags": [
+      "moving company marketing",
+      "content marketing for movers",
+      "local SEO",
+      "moving company SEO",
+      "service area content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for moving companies",
+    "iso": "2026-10-15",
+    "prettyDate": "October 15, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "merge-cannibalising-pages-into-one-asset",
     "title": "How to Merge Two Pages That Compete for the Same Term",
     "excerpt": "When two pages target the same query, they split your authority and neither ranks well. Here is how to find them, decide which one survives, and merge them cleanly.",
