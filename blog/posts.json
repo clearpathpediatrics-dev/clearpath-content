@@ -1,5 +1,43 @@
 [
   {
+    "slug": "seo-content-home-remodeling-contractors",
+    "title": "SEO Content That Wins Remodeling Jobs",
+    "excerpt": "Most remodeling blogs rank for nothing and book no jobs. Here is the content structure that actually pulls in homeowners planning a kitchen, bath, or addition.",
+    "metaDescription": "A practical guide to SEO content for home remodeling contractors: the pages that rank, how to write them, and how to turn reads into booked estimates.",
+    "tags": [
+      "remodeling SEO",
+      "contractor content marketing",
+      "home improvement SEO",
+      "service page content",
+      "local SEO"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content for home remodelling contractors",
+    "iso": "2026-10-16",
+    "prettyDate": "October 16, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "proximity-prominence-relevance-tradeoffs",
+    "title": "Why You Rank in One Neighborhood But Not the Next",
+    "excerpt": "Proximity, prominence and relevance are the three levers behind every local ranking. They pull against each other. Here's how to read the tradeoff and decide where to push.",
+    "metaDescription": "Local search ranking factors like proximity, prominence and relevance trade off constantly. Learn how to read the tradeoffs and win more map pack real estate.",
+    "tags": [
+      "local search ranking factors",
+      "map pack",
+      "proximity vs relevance",
+      "local SEO",
+      "Google Business Profile"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "how proximity, prominence and relevance trade off",
+    "iso": "2026-10-16",
+    "prettyDate": "October 16, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "seasonal-content-calendar-annual-plan",
     "title": "How to Build a Seasonal Content Calendar",
     "excerpt": "Most businesses publish seasonal content the month they need it, which is months too late. Here's how to map demand peaks and work backward so pages rank on time.",
