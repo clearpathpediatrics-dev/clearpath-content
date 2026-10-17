@@ -1,5 +1,43 @@
 [
   {
+    "slug": "content-sops-survive-staff-turnover",
+    "title": "Content SOPs That Survive When Your Writer Quits",
+    "excerpt": "When the person who runs your content leaves, half the program leaves with them. Here is how to document SOPs so publishing, quality, and voice survive turnover.",
+    "metaDescription": "Learn how to document content SOPs so your blog program keeps running after staff turnover. Practical templates, a checklist, and what to write down first.",
+    "tags": [
+      "content operations",
+      "content SOPs",
+      "content process documentation",
+      "editorial workflow",
+      "staff turnover"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "documenting SOPs so content survives staff turnover",
+    "iso": "2026-10-17",
+    "prettyDate": "October 17, 2026",
+    "readMinutes": 7
+  },
+  {
+    "slug": "seo-content-for-electricians",
+    "title": "What Pages Rank for Electrician Searches",
+    "excerpt": "Most electrician websites publish blog posts nobody searches for while the pages that actually book jobs sit empty. Here's what to build instead, in what order.",
+    "metaDescription": "SEO content for electricians that books calls: which pages to build, how to structure service and location pages, and the questions homeowners search before hiring.",
+    "tags": [
+      "electrician seo",
+      "content marketing for electricians",
+      "local seo",
+      "service page content",
+      "home services marketing"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content for electricians",
+    "iso": "2026-10-17",
+    "prettyDate": "October 17, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "seo-content-home-remodeling-contractors",
     "title": "SEO Content That Wins Remodeling Jobs",
     "excerpt": "Most remodeling blogs rank for nothing and book no jobs. Here is the content structure that actually pulls in homeowners planning a kitchen, bath, or addition.",
