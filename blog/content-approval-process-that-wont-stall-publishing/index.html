@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Content Approval Process That Won&#39;t Stall Publishing</title>
+<meta name="description" content="Build a lightweight content approval process that keeps articles moving. Clear roles, deadlines, and defaults so publishing never stalls on one person&#39;s inbox.">
+<meta name="keywords" content="content approval process, content operations, editorial workflow, content publishing cadence, content review">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/blog/content-approval-process-that-wont-stall-publishing">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="A Content Approval Process That Won&#39;t Stall Publishing">
+<meta property="og:description" content="Build a lightweight content approval process that keeps articles moving. Clear roles, deadlines, and defaults so publishing never stalls on one person&#39;s inbox.">
+<meta property="og:url" content="https://clearpath-content.com/blog/content-approval-process-that-wont-stall-publishing">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"A Content Approval Process That Won't Stall Publishing","description":"Build a lightweight content approval process that keeps articles moving. Clear roles, deadlines, and defaults so publishing never stalls on one person's inbox.","datePublished":"2026-10-18","dateModified":"2026-10-18","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/content-approval-process-that-wont-stall-publishing","keywords":"content approval process, content operations, editorial workflow, content publishing cadence, content review","articleSection":"Content Operations"}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.article{padding:56px 0 10px}
+.article .eyebrow{margin-bottom:16px}
+.article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+.meta{color:var(--muted);font-size:13.5px;font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 34px}
+.tags span{font-size:12px;font-weight:600;color:var(--pine-2);background:var(--spring-soft);padding:6px 14px;border-radius:999px}
+.body{font-size:16.5px}
+.body h2{font-size:clamp(21px,3vw,27px);margin:38px 0 12px}
+.body h3{font-size:19px;margin:26px 0 8px}
+.body p{color:#33445A;margin-bottom:16px}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33445A}
+.body li{margin-bottom:9px}
+.body strong{color:var(--ink)}
+.body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
+.endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
+.endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
+.endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
+.backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries">Industries</a>
+      <a href="/locations">Locations</a>
+      <a href="/roi-calculator">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+<main class="article">
+  <div class="narrow">
+    <span class="eyebrow">Content Operations</span>
+    <h1>A Content Approval Process That Won&#39;t Stall Publishing</h1>
+    <p class="meta">October 18, 2026 · 7 min read</p>
+    <div class="tags"><span>content approval process</span><span>content operations</span><span>editorial workflow</span><span>content publishing cadence</span><span>content review</span></div>
+    <div class="body">
+<p>Most content programs do not die because the writing is bad. They die because an article sits in someone's inbox for three weeks waiting on a review that takes ten minutes. The draft is done, the publish date passes, and the whole calendar slides. Do this a few times and the program loses momentum, the writer loses confidence, and someone starts wondering whether content works at all.</p><p>The fix is not more discipline from the busy owner who keeps forgetting to reply. The fix is a process that assumes people are busy and keeps moving anyway. Here is how to build one that protects quality without turning publishing into a bottleneck.</p><h2>Why approval becomes the bottleneck</h2><p>Approval stalls for predictable reasons, and none of them are about effort. The reviewer is usually the owner or a senior person who is also running the business. Review has no deadline, so it competes with everything that does. The scope is undefined, so the reviewer feels they have to read every word and fact-check every claim, which makes the task feel large enough to postpone. And there is no default — if nobody responds, nothing happens.</p><p>You solve each of those with a specific rule. Give review a deadline. Define exactly what the reviewer is checking. Shrink the task to something that fits in a coffee break. And set a default action for when the deadline passes. The goal is a process where the slowest acceptable outcome is still publishing on time.</p><h2>The three-role model that keeps things moving</h2><p>Keep the number of people who can touch a draft small. Every extra approver adds days, not value. Three roles cover almost every business under 50 employees, and one person can hold more than one role.</p><h3>Writer</h3><p>Produces the draft and self-checks against a brief before handoff. The writer owns spelling, structure, links, and matching the brief. Nothing should reach a reviewer with obvious errors, because that trains reviewers to read line by line, which is what kills speed.</p><h3>Reviewer</h3><p>Checks the two things only they can check: factual accuracy about the business, and whether anything is off-brand or legally risky. The reviewer is usually the owner or a subject expert. Their job is explicitly <em>not</em> copyediting. If they find themselves fixing commas, the writer failed and that is a separate conversation.</p><h3>Publisher</h3><p>Formats, schedules, and hits publish. Often the same person as the writer. The publisher owns that the approved version is the version that goes live, with correct metadata and internal links.</p><p>Notice what is missing: a committee, a legal review on every post, a second opinion. Add those only when a specific post needs them, not as a standing rule.</p><h2>What does a lightweight approval process actually look like?</h2><p>A lightweight approval process gives the reviewer a fixed, short window to flag factual or brand problems, defines exactly what they are checking, and publishes on schedule whether or not they respond. Here is a version you can adopt this week.</p><ol><li><strong>Writer submits with a one-line summary.</strong> The handoff message says what the article is, who it is for, and the single question the reviewer should answer: "Is anything here factually wrong about us or off-brand?" Nothing else.</li><li><strong>The review window is 48 business hours.</strong> Measured from when the draft lands, not from when the reviewer notices it. Put the deadline in the message: "Please flag issues by Thursday 5pm."</li><li><strong>The reviewer responds in one of three ways:</strong> approve, approve with specific fixes listed, or hold with a reason. "Looks fine" counts as approve. Silence is handled by the default.</li><li><strong>The default is publish.</strong> If the 48-hour window passes with no response, the article publishes as drafted. This is the rule that makes the whole system work, and it only works if the owner agrees to it in advance, in writing.</li><li><strong>Fixes go back to the writer, not the reviewer.</strong> The reviewer flags; the writer fixes. The reviewer does not edit the document directly, because that creates version confusion and pulls them into line editing.</li></ol><p>The default-to-publish rule makes people nervous, so be precise about it. It does not mean anything goes. It means the writer is trusted to produce publishable work, and the reviewer's role is to catch the rare factual or brand problem. If you cannot trust a draft to publish without line-by-line sign-off, your problem is the writer or the brief, not the approval process.</p><h2>Set up a fast lane and a slow lane</h2><p>Not every post needs the same scrutiny. Sorting content into two lanes removes most of the friction, because the majority of articles are low-risk and can move quickly.</p><p><strong>Fast lane</strong> — educational and informational posts. "How long does a roof replacement take," "what to expect at your first consultation," seasonal maintenance tips. These make no legal claims and describe general practice. Fast lane gets the 48-hour default-publish window, and frankly many businesses let these skip reviewer sign-off entirely after the first few months once trust is established.</p><p><strong>Slow lane</strong> — anything with a specific claim, a price, a guarantee, a medical or legal statement, or a comparison to a named competitor. These get a real read and do not default to publish. They wait for explicit approval, because the downside of a wrong claim is bigger than the downside of a slipped date.</p><p>Suppose a dental practice publishes eight posts a month. Six are fast-lane explainers about procedures and aftercare. Two touch on pricing or clinical specifics. The six move on the default; the two wait for the dentist's explicit yes. The practice owner now reviews two posts instead of eight, and the calendar does not depend on their inbox.</p><h2>A worked example: the Tuesday handoff</h2><p>Here is the process running for a hypothetical HVAC company that publishes two articles a week.</p><table><thead><tr><th>Day</th><th>What happens</th></tr></thead><tbody><tr><td>Monday</td><td>Writer finishes two drafts, self-checks against the brief, submits both with one-line summaries. Deadline set: Wednesday 5pm.</td></tr><tr><td>Tuesday</td><td>Owner reads both over coffee. One fast-lane post on furnace filter schedules: approved in a reply. One post mentions a financing offer: flagged, "rate is 7.9% not 6.9%."</td></tr><tr><td>Wednesday</td><td>Writer corrects the financing figure, confirms the fix. Both posts formatted and scheduled.</td></tr><tr><td>Thursday &amp; Monday</td><td>Posts publish on the regular cadence.</td></tr></tbody></table><p>Now suppose the owner gets slammed and never replies. The filter post is fast lane, so it publishes Thursday as drafted. The financing post is slow lane — it waits. The writer pings once, and if still no answer, that single post slips while the other seven that week ship on time. One post waiting is a manageable problem. Eight posts waiting is a dead program.</p><h2>How do you keep quality from slipping when you speed up approval?</h2><p>You move the quality control upstream, into the brief and the writer, so the draft is already right before it reaches the reviewer. Approval speed is only risky when you are relying on the reviewer to catch everything. Invest in a tight brief — audience, key points, claims to avoid, required internal links, word count — and the draft arrives close to final. Build a short do-not-say list of claims the business cannot legally or truthfully make, and the writer avoids them before the reviewer ever sees the post. Keep a running list of corrections the reviewer has flagged before, so the same mistakes stop recurring. After a month or two, the reviewer's flag rate drops toward zero, which is the sign the system is working and the owner can safely step further back.</p><h2>Put it in writing before you need it</h2><p>The one meeting worth having is the one where everyone agrees to the rules in advance: the 48-hour window, the default-to-publish rule for fast-lane content, who holds each role, and what belongs in the slow lane. Write it on one page. The reason to do this before you are mid-program is that the default-publish rule feels uncomfortable in the abstract and impossible in the moment a deadline is passing. Agree to it when nobody is stressed.</p><p>If you are running a content program through a provider, this is worth settling in the onboarding. At ClearPath Content we build the review window and the fast/slow lane split into the setup, so the publishing cadence does not depend on any single person being free on a given afternoon.</p><p>The practical takeaway: your approval process should have a deadline, a defined scope, and a default. Decide what happens when nobody responds before that situation arrives, sort your posts into fast and slow lanes, and keep the reviewer's job to the two things only they can judge. Do that and publishing stops waiting on an inbox.</p>
+    </div>
+    <a class="pillarlink" href="/blog/content-operations-guide">
+      <span>Full guide</span>
+      <strong>Content Operations: Why Publishing Stops and How to Make It Not</strong>
+      <em>Most content programs die from operations, not ideas. What actually causes publishing to stop, and the minimum system that keeps it running.</em>
+    </a>
+    <div class="endcard">
+      <h3>This is what we do, every week, on autopilot.</h3>
+      <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
+      <a class="btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+    </div>
+    <a class="backlink" href="/blog/">← All field notes</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get">What you get</a>
+        <a href="/roi-calculator">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide">Local SEO</a>
+        <a href="/blog/content-marketing-roi">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
+        <a href="/blog/content-operations-guide">Content operations</a>
+        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york">New York</a>
+        <a href="/content-marketing-los-angeles">Los Angeles</a>
+        <a href="/content-marketing-chicago">Chicago</a>
+        <a href="/content-marketing-houston">Houston</a>
+        <a href="/content-marketing-dallas">Dallas</a>
+        <a href="/content-marketing-atlanta">Atlanta</a>
+        <a href="/content-marketing-phoenix">Phoenix</a>
+        <a href="/locations">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies">HVAC</a>
+        <a href="/content-marketing-for-plumbers">Plumbers</a>
+        <a href="/content-marketing-for-electricians">Electricians</a>
+        <a href="/content-marketing-for-contractors">Contractors</a>
+        <a href="/content-marketing-for-pest-control">Pest control</a>
+        <a href="/content-marketing-for-home-services">Home services</a>
+        <a href="/content-marketing-for-law-firms">Law firms</a>
+        <a href="/content-marketing-for-dental-practices">Dental</a>
+        <a href="/content-marketing-for-real-estate">Real estate</a>
+        <a href="/industries">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/capture-nudge.js" defer></script>
+</body>
+</html>

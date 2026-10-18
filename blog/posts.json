@@ -1,5 +1,24 @@
 [
   {
+    "slug": "content-approval-process-that-wont-stall-publishing",
+    "title": "A Content Approval Process That Won't Stall Publishing",
+    "excerpt": "Most publishing delays are not writing problems. They are approval problems. Here is a practical review process with clear roles, deadlines, and defaults so your content ships on schedule.",
+    "metaDescription": "Build a lightweight content approval process that keeps articles moving. Clear roles, deadlines, and defaults so publishing never stalls on one person's inbox.",
+    "tags": [
+      "content approval process",
+      "content operations",
+      "editorial workflow",
+      "content publishing cadence",
+      "content review"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "a lightweight approval process that does not stall publishing",
+    "iso": "2026-10-18",
+    "prettyDate": "October 18, 2026",
+    "readMinutes": 7
+  },
+  {
     "slug": "content-sops-survive-staff-turnover",
     "title": "Content SOPs That Survive When Your Writer Quits",
     "excerpt": "When the person who runs your content leaves, half the program leaves with them. Here is how to document SOPs so publishing, quality, and voice survive turnover.",
