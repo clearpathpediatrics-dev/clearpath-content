@@ -43,6 +43,23 @@ export const CLUSTERS = [
       "why AI engines favour original data over summarised takes",
       "publishing original research that AI models cite",
       "how conversational follow-up queries change content structure",
+
+      // Added 2026-10-20: the catalog ran out on 10-18 and every run since
+      // published nothing (correctly; it will not repeat a topic).
+      "what Google's AI Mode means for local service businesses",
+      "how to tell if an AI Overview is quoting your page",
+      "writing comparison pages AI assistants trust",
+      "why AI engines skip content hidden behind tabs and accordions",
+      "how often AI assistants refresh what they know about a business",
+      "making service-area information unambiguous for AI answers",
+      "the business directories AI assistants lean on most",
+      "how author credentials affect whether AI cites a page",
+      "turning the questions customers ask on calls into answer-ready pages",
+      "why vague 'we serve the area' copy loses AI recommendations",
+      "answer density versus article length for AI citation",
+      "testing your visibility across ChatGPT, Gemini and Perplexity in an afternoon",
+      "correcting wrong facts about a company inside AI answers",
+      "structured data for services, prices and service areas",
     ],
   },
   {
@@ -75,6 +92,19 @@ export const CLUSTERS = [
       "pruning underperforming posts without losing equity",
       "building content moats competitors cannot copy quickly",
       "briefing a subject-matter expert for original insight",
+
+      // Added 2026-10-20: the catalog ran out on 10-18 and every run since
+      // published nothing (correctly; it will not repeat a topic).
+      "choosing between one long guide and several short answers",
+      "why your homepage cannot rank for everything you do",
+      "writing for the buyer two steps before they need you",
+      "a content gap analysis a small business can do in an hour",
+      "how many articles a local business actually needs to rank",
+      "turning sales objections into search traffic",
+      "why publishing in bursts underperforms a steady schedule",
+      "matching article format to what already ranks",
+      "when to target a keyword with no reported search volume",
+      "linking blog posts to service pages without sounding salesy",
     ],
   },
   {
@@ -117,6 +147,25 @@ export const CLUSTERS = [
       "SEO content for dermatology practices",
       "content marketing for security and alarm companies",
       "blog strategy for multi-location franchise brands",
+
+      // Added 2026-10-20: the catalog ran out on 10-18 and every run since
+      // published nothing (correctly; it will not repeat a topic).
+      "timing heating and cooling articles to the HVAC season",
+      "answering emergency plumbing questions before the customer calls",
+      "intake FAQ pages that pre-qualify legal clients",
+      "explaining dental implant costs with content patients trust",
+      "content for roofing companies after hail and storm events",
+      "writing electrical cost guides without underselling the work",
+      "content marketing for property management companies",
+      "SEO content for mortgage brokers",
+      "content strategy for tree service companies",
+      "garage door repair questions worth answering online",
+      "content marketing for funeral homes",
+      "SEO content for senior care and home health agencies",
+      "window and door replacement guides homeowners search for",
+      "blog strategy for flooring companies",
+      "seasonal infestation guides that bring in pest calls",
+      "multilingual legal guides that attract immigration clients",
     ],
   },
   {
@@ -143,6 +192,19 @@ export const CLUSTERS = [
       "local link building through community sponsorship",
       "optimising for near-me voice queries",
       "citation cleanup after a business move or rebrand",
+
+      // Added 2026-10-20: the catalog ran out on 10-18 and every run since
+      // published nothing (correctly; it will not repeat a topic).
+      "writing a service page for every city without duplicating it",
+      "how Google decides which city a business belongs to",
+      "getting found in a city where you have no office",
+      "local SEO for businesses that work from job sites",
+      "Google Business Profile photos and posts that drive calls",
+      "why a competitor two miles away outranks you",
+      "local schema for businesses offering several services",
+      "earning local press coverage that helps rankings",
+      "tracking local rankings across a whole service area",
+      "recovering from a suspended Google Business Profile",
     ],
   },
   {
@@ -172,6 +234,19 @@ export const CLUSTERS = [
       "when to shut down a content programme that is not working",
       "tracking assisted conversions from blog content",
       "setting content goals a leadership team will approve",
+
+      // Added 2026-10-20: the catalog ran out on 10-18 and every run since
+      // published nothing (correctly; it will not repeat a topic).
+      "turning Google Analytics into a monthly report an owner will read",
+      "tracking phone calls that come from content",
+      "measuring which articles lead to booked jobs",
+      "the content metrics to ignore in the first six months",
+      "why rankings move daily and when to actually worry",
+      "setting up conversion tracking on a service business website",
+      "reading engagement time without misreading it",
+      "comparing organic leads and Google Ads leads fairly",
+      "what a good click-through rate looks like in search results",
+      "attributing revenue to content when customers call instead of filling in forms",
     ],
   },
   {
@@ -200,6 +275,19 @@ export const CLUSTERS = [
       "when an SEO consultant beats a content agency",
       "contract terms that protect you if results stall",
       "what content ownership and licensing clauses should say",
+
+      // Added 2026-10-20: the catalog ran out on 10-18 and every run since
+      // published nothing (correctly; it will not repeat a topic).
+      "briefing a content provider so the first month is useful",
+      "what to expect in the first 30 days of a content engagement",
+      "a monthly content subscription versus project-based content",
+      "who actually writes the articles a content service delivers",
+      "spotting AI-written content that had no human oversight",
+      "the monthly reporting a content provider should send",
+      "switching content providers without losing rankings",
+      "budgeting for content as a share of marketing spend",
+      "the true cost of a cheap content package",
+      "what 'done for you' should include in a content service",
     ],
   },
   {
@@ -222,6 +310,17 @@ export const CLUSTERS = [
       "documenting SOPs so content survives staff turnover",
       "handling legal and compliance review in regulated industries",
       "working through a content backlog without losing momentum",
+
+      // Added 2026-10-20: the catalog ran out on 10-18 and every run since
+      // published nothing (correctly; it will not repeat a topic).
+      "a monthly content review that takes thirty minutes",
+      "getting subject-matter input from busy technicians and staff",
+      "building a swipe file of real customer questions",
+      "managing website copy changes without a CMS team",
+      "keeping published content accurate as prices and services change",
+      "coordinating content with seasonal promotions",
+      "writing guidelines for regulated claims and disclaimers",
+      "setting up a content inbox the whole team can feed",
     ],
   },
 ];

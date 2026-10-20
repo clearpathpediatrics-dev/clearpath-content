@@ -81,14 +81,21 @@
     card.setAttribute("role", "complementary");
     card.innerHTML =
       '<button class="cpc-nudge-x" aria-label="Dismiss">&times;</button>' +
-      '<strong>Before you go</strong>' +
-      '<p>We will send you a short snapshot of what your market is actually searching for, and who is answering it today. Free, and one click unsubscribes.</p>' +
+      // Shown on scroll depth and dwell as well as on leaving, so the heading
+      // cannot assume the reader is on their way out.
+      '<strong>Free: what your market is searching</strong>' +
+      '<p>Your email and website, and we send a short snapshot of the questions buyers in your area are typing and who is answering them today. One click unsubscribes.</p>' +
       '<a class="cpc-nudge-go" href="#">See my market snapshot</a>';
 
-    card.querySelector(".cpc-nudge-x").addEventListener("click", function () { dismiss(60); });
+    function track(name) { try { if (window.cpTrack) window.cpTrack(name, { surface: "nudge" }); } catch (e) {} }
+    function esc(e) { if (e.key === "Escape") { dismiss(60); track("capture_dismissed"); document.removeEventListener("keydown", esc); } }
+    document.addEventListener("keydown", esc);
+    track("capture_shown");
+    card.querySelector(".cpc-nudge-x").addEventListener("click", function () { dismiss(60); track("capture_dismissed"); document.removeEventListener("keydown", esc); });
     card.querySelector(".cpc-nudge-go").addEventListener("click", function (e) {
       e.preventDefault();
       dismiss(60);
+      document.removeEventListener("keydown", esc);
       form.scrollIntoView({ behavior: "smooth", block: "center" });
       var email = form.querySelector('input[type="email"]');
       if (email) setTimeout(function () { email.focus({ preventScroll: true }); }, 550);

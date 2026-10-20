@@ -19,6 +19,20 @@ export const CONTACT = "admin@clearpath-content.com";
  */
 export const CAL = process.env.CPC_CALENDLY_URL || "https://calendly.com/admin-clearpath-content/30min";
 
+/**
+ * Where every "Request access" / "book a call" button on the site goes: a page
+ * that says what the call is, with the calendar embedded. CAL above stays the
+ * raw Calendly link for emails and outbound drafts, which cannot embed it.
+ */
+export const BOOK = "/book/";
+
+/**
+ * Cache-busting version for /assets/*.js. /assets/* used to be served
+ * "immutable" for a year, so a browser holding an old copy never asked again.
+ * Bump this whenever analytics.js, snapshot.js or capture-nudge.js changes.
+ */
+export const ASSET_V = "20261020c";
+
 export const esc = (s = "") => String(s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
   .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -173,6 +187,51 @@ const CAPTURE_INDUSTRIES = [
 ];
 
 /**
+ * The snapshot form fields, shared by the full capture block and the homepage
+ * hero so the two can never drift apart. Netlify registers the form from these
+ * fields at deploy time; a field that exists in one copy and not the other
+ * would be dropped from submissions.
+ */
+export function snapshotForm({ id = "capture", preselect = "", city = "", state = "", button = "Send me the snapshot" } = {}) {
+  return `  <form name="market-snapshot" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/snapshot-requested/">
+    <input type="hidden" name="form-name" value="market-snapshot">
+    <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
+    <!-- Two steps when JavaScript runs (assets/snapshot.js): email and website
+         first, the rest after. Without it, every field shows and it submits as
+         one form. All fields stay in the static HTML so Netlify detects them. -->
+    <div class="row2 cap-step1">
+      <div><label for="${id}-email">Work email</label>
+        <input id="${id}-email" name="email" type="email" autocomplete="email" required placeholder="jane@yourcompany.com"></div>
+      <div><label for="${id}-site">Your website</label>
+        <input id="${id}-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    </div>
+    <div class="cap-step2">
+      <div class="row2">
+        <div><label for="${id}-name">Your name</label>
+          <input id="${id}-name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"></div>
+        <div><label for="${id}-industry">Industry</label>
+          <select id="${id}-industry" name="industry" required>
+            <option value="" ${preselect ? "" : "selected"} disabled>Select one…</option>
+            ${CAPTURE_INDUSTRIES.map(i => `<option${i === preselect ? " selected" : ""}>${esc(i)}</option>`).join("")}
+          </select></div>
+      </div>
+      <div class="row2">
+        <div><label for="${id}-city">City / metro</label>
+          <input id="${id}-city" name="city" type="text" autocomplete="address-level2" required placeholder="Your city"${city ? ` value="${esc(city)}"` : ""}></div>
+        <div><label for="${id}-state">State</label>
+          <select id="${id}-state" name="state" required>
+            <option value="" ${state ? "" : "selected"} disabled>Select a state…</option>
+            ${US_STATES.map(([ab, nm]) => `<option value="${ab}"${ab === state ? " selected" : ""}>${esc(nm)}</option>`).join("")}
+          </select></div>
+      </div>
+    </div>
+    <button type="submit">${esc(button)}</button>
+    <p class="fine">Your snapshot first, then at most three short follow-ups over the next two weeks. No newsletter, no list rental, and one click unsubscribes you from all of it.</p>
+  </form>
+`;
+}
+
+/**
  * Lead capture block — posts to Netlify Forms (no API keys, no third party).
  * Netlify detects the form at deploy time by parsing the static HTML, so the
  * markup must stay server-rendered: do not move these fields into JS.
@@ -185,9 +244,10 @@ export function captureBlock({
   city = "",
   state = "",
   id = "capture",
+  placement = "",
 } = {}) {
   return `
-<div class="capture" id="${id}">
+<div class="capture" id="${id}" data-placement="${esc(placement || id)}">
   <span class="eyebrow">Free market snapshot</span>
   <h2>${esc(heading)}</h2>
   <p>${esc(sub)}</p>
@@ -196,36 +256,7 @@ export function captureBlock({
     <li>Which of those questions your site answers today — and which it does not</li>
     <li>Who is capturing that traffic in your market right now</li>
   </ul>
-  <form name="market-snapshot" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/snapshot-requested/">
-    <input type="hidden" name="form-name" value="market-snapshot">
-    <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
-    <div class="row2">
-      <div><label for="${id}-name">Your name</label>
-        <input id="${id}-name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"></div>
-      <div><label for="${id}-email">Work email</label>
-        <input id="${id}-email" name="email" type="email" autocomplete="email" required placeholder="jane@yourcompany.com"></div>
-    </div>
-    <div class="row2">
-      <div><label for="${id}-industry">Industry</label>
-        <select id="${id}-industry" name="industry" required>
-          <option value="" ${preselect ? "" : "selected"} disabled>Select one…</option>
-          ${CAPTURE_INDUSTRIES.map(i => `<option${i === preselect ? " selected" : ""}>${esc(i)}</option>`).join("")}
-        </select></div>
-      <div><label for="${id}-city">City / metro</label>
-        <input id="${id}-city" name="city" type="text" autocomplete="address-level2" required placeholder="Your city"${city ? ` value="${esc(city)}"` : ""}></div>
-    </div>
-    <div class="row2">
-      <div><label for="${id}-state">State</label>
-        <select id="${id}-state" name="state" required>
-          <option value="" ${state ? "" : "selected"} disabled>Select a state…</option>
-          ${US_STATES.map(([ab, nm]) => `<option value="${ab}"${ab === state ? " selected" : ""}>${esc(nm)}</option>`).join("")}
-        </select></div>
-      <div><label for="${id}-site">Website (optional)</label>
-        <input id="${id}-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
-    </div>
-    <button type="submit">Send me the snapshot</button>
-    <p class="fine">Your snapshot first, then at most three short follow-ups over the next two weeks. No newsletter, no list rental, and one click unsubscribes you from all of it.</p>
-  </form>
+${snapshotForm({ id, preselect, city, state })}
 </div>`;
 }
 
@@ -250,11 +281,11 @@ export const NAV = `
       <a href="/locations">Locations</a>
       <a href="/roi-calculator">ROI calculator</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn green" href="${CAL}" target="_blank" rel="noopener">Request access</a>
+      <a class="btn green" href="${BOOK}" data-cta="nav">Request access</a>
     </div>
   </div>
 </nav>
-<a class="mobile-cta" href="${CAL}" target="_blank" rel="noopener">Request access</a>`;
+<a class="mobile-cta" href="${BOOK}" data-cta="mobile-bar">Request access</a>`;
 
 export const FOOTER = `
 <footer>
@@ -263,7 +294,7 @@ export const FOOTER = `
       <div class="foot-brand">
         <span class="foot-mark">ClearPath Content</span>
         <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
-        <a class="foot-btn" href="${CAL}" target="_blank" rel="noopener">Request access</a>
+        <a class="foot-btn" href="${BOOK}" data-cta="footer">Request access</a>
       </div>
       <div class="foot-col">
         <h3>Company</h3>
@@ -317,9 +348,25 @@ export const FOOTER = `
   </div>
 </footer>
 <!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
-<script src="/assets/capture-nudge.js" defer></script>`;
+<script src="/assets/snapshot.js?v=${ASSET_V}" defer></script>
+<script src="/assets/capture-nudge.js?v=${ASSET_V}" defer></script>`;
+
+/**
+ * Search results cut descriptions off around 160 characters. 33 pages ran
+ * longer, mostly model-written post descriptions. End at a sentence if one
+ * finishes late enough, otherwise at a word, so the snippet never stops mid-word.
+ */
+export function clampDescription(d = "") {
+  d = String(d).trim();
+  if (d.length <= 160) return d;
+  const cut = d.slice(0, 159);
+  const stop = cut.lastIndexOf(". ");
+  if (stop >= 110) return cut.slice(0, stop + 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\s-]+$/, "") + "…";
+}
 
 export function head({ title, description, url, keywords = [], jsonld = [], og = "article" }) {
+  description = clampDescription(description);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -340,7 +387,8 @@ ${keywords.length ? `<meta name="keywords" content="${esc(keywords.join(", "))}"
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="/assets/analytics.js?v=${ASSET_V}" defer></script>
 ${jsonld.map(o => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n")}
 `;
 }

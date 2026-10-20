@@ -20,6 +20,8 @@
  *
  * Run: node scripts/build-calculator.mjs
  */
+import { BOOK } from "./blog-theme.mjs";
+import { writePage } from "./site-links.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -116,7 +118,7 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
 @media(min-width:640px){.tiers{grid-template-columns:1fr 1fr 1fr}}
 .tier{background:#fff;border:1px solid var(--border);border-radius:18px;padding:20px 20px 22px;position:relative}
 .tier.best{border-color:var(--spring);box-shadow:0 0 0 3px rgba(62,142,222,.14)}
-.tier .flag{position:absolute;top:-11px;left:20px;background:var(--spring);color:#fff;font-size:10.5px;
+.tier .flag{position:absolute;top:-11px;left:20px;background:#1F5FA8;color:#fff;font-size:10.5px;
   font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;border-radius:99px}
 .tier h3{font-size:16px;margin-bottom:2px}
 .tier .price{font-family:var(--mono);font-size:13px;color:var(--muted);margin-bottom:14px}
@@ -230,7 +232,7 @@ ${NAV}
   <h2>Want the version built on your actual market?</h2>
   <p>We will look at what your buyers are searching, what your site answers today, and who is capturing that traffic instead of you. Free, and yours to keep.</p>
   <a class="btn" href="/#snapshot">Get my free market snapshot</a>
-  <p style="margin-top:16px;font-size:14px"><a href="${CAL}" target="_blank" rel="noopener" style="color:#8FC4F5">Or book thirty minutes →</a></p>
+  <p style="margin-top:16px;font-size:14px"><a href="${BOOK}" data-cta="page" style="color:#8FC4F5">Or book thirty minutes →</a></p>
 </div>
 
 ${FOOTER}
@@ -335,6 +337,6 @@ ${FOOTER}
 </html>`;
 
 fs.mkdirSync(path.join(ROOT, SLUG), { recursive: true });
-fs.writeFileSync(path.join(ROOT, SLUG, "index.html"), page());
+writePage(path.join(ROOT, SLUG, "index.html"), page());
 console.log(`  ✓ /${SLUG}`);
 console.log("[calculator] built 1 page.");

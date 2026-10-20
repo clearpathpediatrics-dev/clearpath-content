@@ -5,6 +5,8 @@
  *
  * Run: node scripts/build-misc.mjs
  */
+import { BOOK } from "./blog-theme.mjs";
+import { writePage } from "./site-links.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -41,17 +43,17 @@ ${NAV}
 <main class="ty">
   <div class="tick">✓</div>
   <h1>Your snapshot is on the way</h1>
-  <p>Thanks — we have your request. Snapshots are put together by hand, so give it a business day or two.</p>
+  <p>Thanks, we have your request. Check your inbox: it usually arrives within a few minutes.</p>
   <div class="next">
     <h2>What happens next</h2>
     <ol>
       <li>We look at what people in your market are actually searching in your category.</li>
-      <li>We check which of those questions your site currently answers, and who is answering the rest.</li>
-      <li>You get one email with the findings. No sequence, no drip, no sales cadence.</li>
+      <li>If you gave us your website, we check which of those questions it answers today, and who answers the rest.</li>
+      <li>You get the findings by email. After that, at most three short follow-ups over two weeks, and one click unsubscribes you from all of it.</li>
     </ol>
   </div>
-  <p>If you would rather not wait, the calendar below is the fastest path — thirty minutes, and you will know whether your niche in your metro is still open.</p>
-  <p><a class="btn" href="${CAL}" target="_blank" rel="noopener" style="margin-top:8px">Book a 30-minute call</a></p>
+  <p>Want to talk it through? Thirty minutes, and you will know whether your niche in your metro is still open.</p>
+  <p><a class="btn" href="${BOOK}" data-cta="snapshot-thanks" style="margin-top:8px">Book a 30-minute call</a></p>
   <div class="links">
     <a href="/what-you-get">What you get →</a>
     <a href="/industries">Industries →</a>
@@ -63,7 +65,7 @@ ${FOOTER}
 </html>`;
 
 fs.mkdirSync(path.join(ROOT, "snapshot-requested"), { recursive: true });
-fs.writeFileSync(path.join(ROOT, "snapshot-requested", "index.html"), page);
+writePage(path.join(ROOT, "snapshot-requested", "index.html"), page);
 console.log("  ✓ /snapshot-requested");
 
 /* ---- /about-our-audit — what ClearPathContentBot does, referenced in its UA */
@@ -128,5 +130,5 @@ ${FOOTER}
 </html>`;
 
 fs.mkdirSync(path.join(ROOT, "about-our-audit"), { recursive: true });
-fs.writeFileSync(path.join(ROOT, "about-our-audit", "index.html"), auditPage);
+writePage(path.join(ROOT, "about-our-audit", "index.html"), auditPage);
 console.log("  ✓ /about-our-audit");

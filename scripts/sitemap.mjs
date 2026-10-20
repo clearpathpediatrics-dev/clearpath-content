@@ -31,18 +31,19 @@ export function sitemapUrls(posts) {
   const all = posts || loadPosts();
   return [
     { loc: `${SITE}/`, pri: "1.0", freq: "weekly", mod: today },
-    { loc: `${SITE}/${CAPABILITIES.slug}`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/industries`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/locations`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/blog`, pri: "0.9", freq: "daily", mod: today },
-    { loc: `${SITE}/roi-calculator`, pri: "0.9", freq: "monthly", mod: today },
-    { loc: `${SITE}/faq`, pri: "0.8", freq: "monthly", mod: today },
-    { loc: `${SITE}/about-our-audit`, pri: "0.3", freq: "yearly", mod: today },
-    ...PILLARS.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.9", freq: "weekly", mod: today })),
-    ...INDUSTRIES.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.8", freq: "monthly", mod: today })),
-    ...COMPARISONS.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.8", freq: "monthly", mod: today })),
-    ...CITIES.map(p => ({ loc: `${SITE}/${p.slug}`, pri: "0.7", freq: "monthly", mod: today })),
-    ...all.map(p => ({ loc: `${SITE}/blog/${p.slug}`, pri: "0.7", freq: "monthly", mod: p.iso })),
+    { loc: `${SITE}/${CAPABILITIES.slug}/`, pri: "0.9", freq: "monthly", mod: today },
+    { loc: `${SITE}/industries/`, pri: "0.9", freq: "monthly", mod: today },
+    { loc: `${SITE}/locations/`, pri: "0.9", freq: "monthly", mod: today },
+    { loc: `${SITE}/blog/`, pri: "0.9", freq: "daily", mod: today },
+    { loc: `${SITE}/roi-calculator/`, pri: "0.9", freq: "monthly", mod: today },
+    { loc: `${SITE}/book/`, pri: "0.9", freq: "monthly", mod: today },
+    { loc: `${SITE}/faq/`, pri: "0.8", freq: "monthly", mod: today },
+    { loc: `${SITE}/about-our-audit/`, pri: "0.3", freq: "yearly", mod: today },
+    ...PILLARS.map(p => ({ loc: `${SITE}/${p.slug}/`, pri: "0.9", freq: "weekly", mod: today })),
+    ...INDUSTRIES.map(p => ({ loc: `${SITE}/${p.slug}/`, pri: "0.8", freq: "monthly", mod: today })),
+    ...COMPARISONS.map(p => ({ loc: `${SITE}/${p.slug}/`, pri: "0.8", freq: "monthly", mod: today })),
+    ...CITIES.map(p => ({ loc: `${SITE}/${p.slug}/`, pri: "0.7", freq: "monthly", mod: today })),
+    ...all.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, pri: "0.7", freq: "monthly", mod: p.iso })),
   ];
 }
 

@@ -4,22 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How RAG Picks Which Passages to Pull From Your Site</title>
-<meta name="description" content="Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a competitor&#39;s.">
+<meta name="description" content="Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a…">
 <meta name="keywords" content="retrieval-augmented generation, answer engine optimization, AI search, content chunking, semantic search">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://clearpath-content.com/blog/how-rag-picks-passages-from-your-site">
+<link rel="canonical" href="https://clearpath-content.com/blog/how-rag-picks-passages-from-your-site/">
 <link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="ClearPath Content">
 <meta property="og:title" content="How RAG Picks Which Passages to Pull From Your Site">
-<meta property="og:description" content="Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a competitor&#39;s.">
-<meta property="og:url" content="https://clearpath-content.com/blog/how-rag-picks-passages-from-your-site">
+<meta property="og:description" content="Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a…">
+<meta property="og:url" content="https://clearpath-content.com/blog/how-rag-picks-passages-from-your-site/">
 <meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How RAG Picks Which Passages to Pull From Your Site","description":"Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a competitor's.","datePublished":"2026-09-16","dateModified":"2026-09-16","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/how-rag-picks-passages-from-your-site","keywords":"retrieval-augmented generation, answer engine optimization, AI search, content chunking, semantic search","articleSection":"AI Search & Answer Engine Optimization"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="/assets/analytics.js?v=20261020c" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How RAG Picks Which Passages to Pull From Your Site","description":"Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a competitor's.","datePublished":"2026-09-16","dateModified":"2026-09-16","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/how-rag-picks-passages-from-your-site/","keywords":"retrieval-augmented generation, answer engine optimization, AI search, content chunking, semantic search","articleSection":"AI Search & Answer Engine Optimization"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does RAG decide which passages are relevant?","acceptedAnswer":{"@type":"Answer","text":"RAG ranks passages by semantic closeness to the question, then usually re-ranks the top candidates with a second, more precise model before feeding a handful into the prompt. The first pass is fast and approximate: it compares the question vector against millions of chunk vectors and returns maybe the top 50 or 100. Because vectors capture meaning, a chunk that says \"most systems fail because the condensate line clogs\" can match a question about \"why is water leaking from my AC\" even with no shared keywords."}},{"@type":"Question","name":"Does formatting content this way hurt readers?","acceptedAnswer":{"@type":"Answer","text":"No — writing self-contained sections improves the page for human readers as much as for retrieval systems, because people skim and jump the same way machines chunk. Someone landing on your roofing page from a search rarely reads top to bottom. They scan headings, stop at the one matching their question, and read that block. If that block only makes sense after reading the previous three, you have already lost them. The discipline that makes a passage retrievable — clear heading, answer first, subject named, claim before elaboration — is the same discipline that makes a page usable when someone is standing in a mechanical room on their phone."}}]}</script>
 <style>
 :root{
   --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
@@ -168,6 +170,11 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
 .pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
 .pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
 .pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+.related{margin:38px 0 0;padding-top:26px;border-top:1px solid var(--border)}
+.related h2{font-size:22px;margin-bottom:10px}
+.related ul{list-style:none}
+.related li a{display:block;padding:12px 0;border-bottom:1px solid var(--border);color:var(--pine);font-weight:600;text-decoration:none;line-height:1.4}
+.related li a:hover{color:var(--pine-2);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -188,15 +195,15 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="nav-links">
       <a href="/#why">Why visibility</a>
       <a href="/#method">Methodology</a>
-      <a href="/industries">Industries</a>
-      <a href="/locations">Locations</a>
-      <a href="/roi-calculator">ROI calculator</a>
+      <a href="/industries/">Industries</a>
+      <a href="/locations/">Locations</a>
+      <a href="/roi-calculator/">ROI calculator</a>
       <a href="/#pricing">Pricing</a>
-      <a class="btn green" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+      <a class="btn green" href="/book/" data-cta="nav">Request access</a>
     </div>
   </div>
 </nav>
-<a class="mobile-cta" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+<a class="mobile-cta" href="/book/" data-cta="mobile-bar">Request access</a>
 <main class="article">
   <div class="narrow">
     <span class="eyebrow">AI Search &amp; Answer Engine Optimization</span>
@@ -204,9 +211,62 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <p class="meta">September 16, 2026 · 7 min read</p>
     <div class="tags"><span>retrieval-augmented generation</span><span>answer engine optimization</span><span>AI search</span><span>content chunking</span><span>semantic search</span></div>
     <div class="body">
-<p>When an AI answer engine responds to a question with a cited source, most of the work happened before the model wrote a single word. A retrieval step decided which passages were relevant, ranked them, and handed the top few to the model as context. The model mostly summarizes what it was given. If your page never made it into that context window, you were never in the running, no matter how good the writing was.</p><p>This is retrieval-augmented generation, or RAG. Understanding how the retrieval half works tells you more about getting cited than any amount of prompt speculation. Below is the actual mechanism, in plain terms, and what it means for how you structure a page.</p><h2>What retrieval-augmented generation actually does</h2><p>RAG is a two-stage process: retrieve, then generate. Instead of relying only on what a language model memorized during training, the system first searches a knowledge source — a web index, a vector database, a set of documents — for passages relevant to the query. It pulls the best-matching chunks, inserts them into the prompt alongside the user's question, and asks the model to answer using that material.</p><p>The important word is <strong>chunks</strong>. RAG systems do not store or retrieve whole articles. During indexing, your page gets split into smaller segments, often a few hundred words each, sometimes a single paragraph or a couple of sentences. Each chunk is converted into a vector — a long list of numbers representing its meaning — and stored. When a question comes in, the question is also converted to a vector, and the system finds the chunks whose vectors sit closest to it. That closeness is semantic similarity, not keyword matching.</p><p>So the unit of competition is not your article. It is the individual passage. A 2,000-word guide might contribute exactly one 120-word chunk to an answer, and the rest of the page is irrelevant to that query.</p><h2>How does RAG decide which passages are relevant?</h2><p>RAG ranks passages by semantic closeness to the question, then usually re-ranks the top candidates with a second, more precise model before feeding a handful into the prompt. The first pass is fast and approximate: it compares the question vector against millions of chunk vectors and returns maybe the top 50 or 100. Because vectors capture meaning, a chunk that says "most systems fail because the condensate line clogs" can match a question about "why is water leaking from my AC" even with no shared keywords.</p><p>The second pass is a re-ranker. It takes the question and each candidate chunk together and scores how well the chunk actually answers that specific question, not just how topically similar it is. This step filters out chunks that are on-topic but off-target. After re-ranking, the system keeps the top few — often three to eight — and those become the context window. Everything below the cut does not exist as far as the answer is concerned.</p><p>Three factors decide whether your chunk survives:</p><ul><li><strong>Semantic match</strong> — does the passage genuinely address the meaning of the question, not just mention the subject.</li><li><strong>Self-containment</strong> — can the chunk be understood on its own, without the paragraph before it or a heading three sections up.</li><li><strong>Answer density</strong> — does it state a claim or answer directly, rather than winding up to one.</li></ul><h2>Why chunking is where most pages lose</h2><p>Here is the failure that plays out constantly. A page has the right answer, but the answer is spread across three paragraphs with the key fact in the middle one, and the surrounding sentences depend on context established earlier under a different heading. When that middle paragraph gets isolated as a chunk, it reads like a fragment. It references "this method" or "the second option" without saying what those are. The re-ranker sees a chunk that gestures at an answer without delivering one, and scores it low.</p><p>Compare two ways of writing the same information.</p><h3>Weak for retrieval</h3><p><em>"As mentioned above, this is usually the culprit. Left unchecked, it leads to the problems we discussed, which is why the earlier step matters so much."</em> Pulled out of the page, this chunk answers nothing. It is a connective passage, not a standalone one.</p><h3>Strong for retrieval</h3><p><em>"A clogged condensate drain line is the most common cause of water leaking from a central AC unit. The line backs up, the drain pan overflows, and water ends up on the floor near the indoor air handler."</em> This chunk names the subject, states the answer, and explains the mechanism in three sentences. It survives isolation.</p><p>The second version does not require you to write worse or more repetitively across a whole page. It requires that each section be able to stand up if someone quoted only that section.</p><h2>A worked example: making a page RAG-ready</h2><p>Suppose a commercial roofing company in Kansas City has a page targeting "how long does a TPO roof last." Here is a sequence to make it retrievable.</p><ol><li><strong>Put the direct answer in its own paragraph, high up.</strong> "A commercial TPO roof lasts 15 to 20 years with proper installation and regular inspection." One sentence, self-contained, no pronoun that points elsewhere.</li><li><strong>Give each sub-question its own heading and its own answerable chunk.</strong> "What shortens TPO roof lifespan?" followed by a paragraph that opens with the answer, then lists causes. The heading helps indexing systems segment cleanly on a natural boundary.</li><li><strong>Repeat the subject noun instead of using "it."</strong> Within a chunk, write "a TPO membrane" rather than "it" the third time, so the chunk names its subject even when detached from the heading.</li><li><strong>Keep factual chunks tight.</strong> Aim for the core answer inside the first two sentences of any paragraph meant to be pulled. Supporting detail after that is fine; just do not bury the claim.</li><li><strong>Use a table for structured comparisons.</strong> Lifespan by membrane type, for instance, gives retrieval a compact, high-density block that answers comparison questions cleanly.</li></ol><table><thead><tr><th>Roof type</th><th>Typical lifespan</th><th>Main failure point</th></tr><tbody><tr><td>TPO</td><td>15–20 years</td><td>Seam separation</td></tr><tr><td>EPDM</td><td>20–25 years</td><td>Shrinkage, punctures</td></tr><tr><td>Built-up (BUR)</td><td>15–30 years</td><td>Blistering, cracking</td></tr></tbody></table><p>Notice the table cells are self-describing. "15–20 years" sitting next to "TPO" in a labeled column carries its own meaning; a retrieval system can lift the row and it still makes sense.</p><h2>Does formatting content this way hurt readers?</h2><p>No — writing self-contained sections improves the page for human readers as much as for retrieval systems, because people skim and jump the same way machines chunk. Someone landing on your roofing page from a search rarely reads top to bottom. They scan headings, stop at the one matching their question, and read that block. If that block only makes sense after reading the previous three, you have already lost them. The discipline that makes a passage retrievable — clear heading, answer first, subject named, claim before elaboration — is the same discipline that makes a page usable when someone is standing in a mechanical room on their phone.</p><p>The one place to be careful is repetition. Naming the subject in every chunk can feel redundant if you read the whole page straight through. That is a real tradeoff, but a mild one, and you resolve it by varying phrasing rather than by leaning on pronouns that break when a chunk is isolated.</p><h2>What this changes about how you plan content</h2><p>Plan at the level of the answerable question, not just the article. Before writing, list the specific questions a section should be able to answer on its own, and make sure each gets a heading and a self-contained response. Audit existing pages by copying a single paragraph out of context and reading it cold — if you cannot tell what it is about, retrieval systems can't either. This is the core of how we structure client pages at ClearPath Content: map the question-space first, then write each section so it survives being quoted alone.</p><p>The practical takeaway: RAG competes at the passage level, so write passages that stand on their own. Answer first, name the subject, keep factual chunks tight, and give every distinct question its own heading. A page built that way gets pulled into more answers and reads better for the person who actually landed on it.</p>
+<p>When an AI answer engine responds to a question with a cited source, most of the work happened before the model wrote a single word. A retrieval step decided which passages were relevant, ranked them, and handed the top few to the model as context. The model mostly summarizes what it was given. If your page never made it into that context window, you were never in the running, no matter how good the writing was.</p><p>This is retrieval-augmented generation, or RAG. Understanding how the retrieval half works tells you more about getting cited than any amount of prompt speculation. Below is the actual mechanism, in plain terms, and what it means for how you structure a page.</p><h2>What retrieval-augmented generation actually does</h2><p>RAG is a two-stage process: retrieve, then generate. Instead of relying only on what a language model memorized during training, the system first searches a knowledge source — a web index, a vector database, a set of documents — for passages relevant to the query. It pulls the best-matching chunks, inserts them into the prompt alongside the user's question, and asks the model to answer using that material.</p><p>The important word is <strong>chunks</strong>. RAG systems do not store or retrieve whole articles. During indexing, your page gets split into smaller segments, often a few hundred words each, sometimes a single paragraph or a couple of sentences. Each chunk is converted into a vector — a long list of numbers representing its meaning — and stored. When a question comes in, the question is also converted to a vector, and the system finds the chunks whose vectors sit closest to it. That closeness is semantic similarity, not keyword matching.</p><p>So the unit of competition is not your article. It is the individual passage. A 2,000-word guide might contribute exactly one 120-word chunk to an answer, and the rest of the page is irrelevant to that query.</p><h2>How does RAG decide which passages are relevant?</h2><p>RAG ranks passages by semantic closeness to the question, then usually re-ranks the top candidates with a second, more precise model before feeding a handful into the prompt. The first pass is fast and approximate: it compares the question vector against millions of chunk vectors and returns maybe the top 50 or 100. Because vectors capture meaning, a chunk that says "most systems fail because the condensate line clogs" can match a question about "why is water leaking from my AC" even with no shared keywords.</p><p>The second pass is a re-ranker. It takes the question and each candidate chunk together and scores how well the chunk actually answers that specific question, not just how topically similar it is. This step filters out chunks that are on-topic but off-target. After re-ranking, the system keeps the top few — often three to eight — and those become the context window. Everything below the cut does not exist as far as the answer is concerned.</p><p>Three factors decide whether your chunk survives:</p><ul><li><strong>Semantic match</strong> — does the passage genuinely address the meaning of the question, not just mention the subject.</li><li><strong>Self-containment</strong> — can the chunk be understood on its own, without the paragraph before it or a heading three sections up.</li><li><strong>Answer density</strong> — does it state a claim or answer directly, rather than winding up to one.</li></ul><h2>Why chunking is where most pages lose</h2><p>Here is the failure that plays out constantly. A page has the right answer, but the answer is spread across three paragraphs with the key fact in the middle one, and the surrounding sentences depend on context established earlier under a different heading. When that middle paragraph gets isolated as a chunk, it reads like a fragment. It references "this method" or "the second option" without saying what those are. The re-ranker sees a chunk that gestures at an answer without delivering one, and scores it low.</p><p>Compare two ways of writing the same information.</p>
+<!-- in-article snapshot form -->
+<div class="capture" id="cap-post" data-placement="article">
+  <span class="eyebrow">Free market snapshot</span>
+  <h2>Is AI recommending you, or a competitor?</h2>
+  <p>Send your email and website. We check how your business shows up for the questions buyers in your market ask, and send back a short snapshot.</p>
+  <ul>
+    <li>The real questions your buyers search before they call anyone</li>
+    <li>Which of those questions your site answers today — and which it does not</li>
+    <li>Who is capturing that traffic in your market right now</li>
+  </ul>
+  <form name="market-snapshot" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/snapshot-requested/">
+    <input type="hidden" name="form-name" value="market-snapshot">
+    <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
+    <!-- Two steps when JavaScript runs (assets/snapshot.js): email and website
+         first, the rest after. Without it, every field shows and it submits as
+         one form. All fields stay in the static HTML so Netlify detects them. -->
+    <div class="row2 cap-step1">
+      <div><label for="cap-post-email">Work email</label>
+        <input id="cap-post-email" name="email" type="email" autocomplete="email" required placeholder="jane@yourcompany.com"></div>
+      <div><label for="cap-post-site">Your website</label>
+        <input id="cap-post-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
     </div>
-    <a class="pillarlink" href="/blog/ai-search-optimization-guide">
+    <div class="cap-step2">
+      <div class="row2">
+        <div><label for="cap-post-name">Your name</label>
+          <input id="cap-post-name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"></div>
+        <div><label for="cap-post-industry">Industry</label>
+          <select id="cap-post-industry" name="industry" required>
+            <option value="" selected disabled>Select one…</option>
+            <option>HVAC</option><option>Plumbing</option><option>Electrical</option><option>Roofing / Contracting</option><option>Pest control</option><option>Law firm</option><option>Dental practice</option><option>Real estate</option><option>Home services</option><option>B2B software</option><option>Professional services</option><option>Other</option>
+          </select></div>
+      </div>
+      <div class="row2">
+        <div><label for="cap-post-city">City / metro</label>
+          <input id="cap-post-city" name="city" type="text" autocomplete="address-level2" required placeholder="Your city"></div>
+        <div><label for="cap-post-state">State</label>
+          <select id="cap-post-state" name="state" required>
+            <option value="" selected disabled>Select a state…</option>
+            <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+          </select></div>
+      </div>
+    </div>
+    <button type="submit">Send me the snapshot</button>
+    <p class="fine">Your snapshot first, then at most three short follow-ups over the next two weeks. No newsletter, no list rental, and one click unsubscribes you from all of it.</p>
+  </form>
+
+</div>
+<!-- /in-article snapshot form -->
+<h3>Weak for retrieval</h3><p><em>"As mentioned above, this is usually the culprit. Left unchecked, it leads to the problems we discussed, which is why the earlier step matters so much."</em> Pulled out of the page, this chunk answers nothing. It is a connective passage, not a standalone one.</p><h3>Strong for retrieval</h3><p><em>"A clogged condensate drain line is the most common cause of water leaking from a central AC unit. The line backs up, the drain pan overflows, and water ends up on the floor near the indoor air handler."</em> This chunk names the subject, states the answer, and explains the mechanism in three sentences. It survives isolation.</p><p>The second version does not require you to write worse or more repetitively across a whole page. It requires that each section be able to stand up if someone quoted only that section.</p><h2>A worked example: making a page RAG-ready</h2><p>Suppose a commercial roofing company in Kansas City has a page targeting "how long does a TPO roof last." Here is a sequence to make it retrievable.</p><ol><li><strong>Put the direct answer in its own paragraph, high up.</strong> "A commercial TPO roof lasts 15 to 20 years with proper installation and regular inspection." One sentence, self-contained, no pronoun that points elsewhere.</li><li><strong>Give each sub-question its own heading and its own answerable chunk.</strong> "What shortens TPO roof lifespan?" followed by a paragraph that opens with the answer, then lists causes. The heading helps indexing systems segment cleanly on a natural boundary.</li><li><strong>Repeat the subject noun instead of using "it."</strong> Within a chunk, write "a TPO membrane" rather than "it" the third time, so the chunk names its subject even when detached from the heading.</li><li><strong>Keep factual chunks tight.</strong> Aim for the core answer inside the first two sentences of any paragraph meant to be pulled. Supporting detail after that is fine; just do not bury the claim.</li><li><strong>Use a table for structured comparisons.</strong> Lifespan by membrane type, for instance, gives retrieval a compact, high-density block that answers comparison questions cleanly.</li></ol><table><thead><tr><th>Roof type</th><th>Typical lifespan</th><th>Main failure point</th></tr><tbody><tr><td>TPO</td><td>15–20 years</td><td>Seam separation</td></tr><tr><td>EPDM</td><td>20–25 years</td><td>Shrinkage, punctures</td></tr><tr><td>Built-up (BUR)</td><td>15–30 years</td><td>Blistering, cracking</td></tr></tbody></table><p>Notice the table cells are self-describing. "15–20 years" sitting next to "TPO" in a labeled column carries its own meaning; a retrieval system can lift the row and it still makes sense.</p><h2>Does formatting content this way hurt readers?</h2><p>No — writing self-contained sections improves the page for human readers as much as for retrieval systems, because people skim and jump the same way machines chunk. Someone landing on your roofing page from a search rarely reads top to bottom. They scan headings, stop at the one matching their question, and read that block. If that block only makes sense after reading the previous three, you have already lost them. The discipline that makes a passage retrievable — clear heading, answer first, subject named, claim before elaboration — is the same discipline that makes a page usable when someone is standing in a mechanical room on their phone.</p><p>The one place to be careful is repetition. Naming the subject in every chunk can feel redundant if you read the whole page straight through. That is a real tradeoff, but a mild one, and you resolve it by varying phrasing rather than by leaning on pronouns that break when a chunk is isolated.</p><h2>What this changes about how you plan content</h2><p>Plan at the level of the answerable question, not just the article. Before writing, list the specific questions a section should be able to answer on its own, and make sure each gets a heading and a self-contained response. Audit existing pages by copying a single paragraph out of context and reading it cold — if you cannot tell what it is about, retrieval systems can't either. This is the core of how we structure client pages at ClearPath Content: map the question-space first, then write each section so it survives being quoted alone.</p><p>The practical takeaway: RAG competes at the passage level, so write passages that stand on their own. Answer first, name the subject, keep factual chunks tight, and give every distinct question its own heading. A page built that way gets pulled into more answers and reads better for the person who actually landed on it.</p>
+    </div>
+    <section class="related" aria-labelledby="rel-h">
+      <h2 id="rel-h">Keep reading</h2>
+      <ul><li><a href="/blog/can-ai-read-your-website-audit/">How to Tell If AI Can Actually Read Your Site</a></li><li><a href="/blog/audit-website-ai-answer-engine-readiness/">How to Audit Your Site for AI Answer Engines</a></li><li><a href="/blog/third-party-reviews-ai-recommendations/">Do Reviews Affect Which Business AI Recommends?</a></li><li><a href="/blog/schema-markup-for-ai-engines/">Which Schema Markup Actually Helps AI Engines</a></li></ul>
+    </section>
+    <a class="pillarlink" href="/blog/ai-search-optimization-guide/">
       <span>Full guide</span>
       <strong>AI Search Optimization: How to Get Cited by ChatGPT, Perplexity and AI Overviews</strong>
       <em>AI assistants cite a handful of sources per answer. A complete guide to how that selection works and how to structure content so yours is one of them.</em>
@@ -214,7 +274,7 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
-      <a class="btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+      <a class="btn" href="/book/" data-cta="article-end">Book a 30-minute call</a>
     </div>
     <a class="backlink" href="/blog/">← All field notes</a>
   </div>
@@ -226,60 +286,61 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
       <div class="foot-brand">
         <span class="foot-mark">ClearPath Content</span>
         <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
-        <a class="foot-btn" href="https://calendly.com/admin-clearpath-content/30min" target="_blank" rel="noopener">Request access</a>
+        <a class="foot-btn" href="/book/" data-cta="footer">Request access</a>
       </div>
       <div class="foot-col">
         <h3>Company</h3>
         <a href="/">Home</a>
         <a href="/#method">Methodology</a>
-        <a href="/what-you-get">What you get</a>
-        <a href="/roi-calculator">ROI calculator</a>
+        <a href="/what-you-get/">What you get</a>
+        <a href="/roi-calculator/">ROI calculator</a>
         <a href="/#pricing">Pricing</a>
-        <a href="/faq">FAQ</a>
+        <a href="/faq/">FAQ</a>
         <a href="/blog/">Field notes</a>
       </div>
       <div class="foot-col">
         <h3>Guides</h3>
-        <a href="/blog/organic-visibility-guide">Organic visibility</a>
-        <a href="/blog/ai-search-optimization-guide">AI search (AEO/GEO)</a>
-        <a href="/blog/local-seo-guide">Local SEO</a>
-        <a href="/blog/content-marketing-roi">Measuring ROI</a>
-        <a href="/blog/content-marketing-buying-guide">Buyer's guide</a>
-        <a href="/blog/content-operations-guide">Content operations</a>
-        <a href="/blog/industry-content-playbooks">Industry playbooks</a>
+        <a href="/blog/organic-visibility-guide/">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide/">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide/">Local SEO</a>
+        <a href="/blog/content-marketing-roi/">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide/">Buyer's guide</a>
+        <a href="/blog/content-operations-guide/">Content operations</a>
+        <a href="/blog/industry-content-playbooks/">Industry playbooks</a>
       </div>
       <div class="foot-col">
         <h3>Compare</h3>
-        <a href="/content-agency-vs-subscription">Agency vs. subscription</a>
-        <a href="/diy-content-vs-outsourcing">In-house vs. outsourcing</a>
+        <a href="/content-agency-vs-subscription/">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing/">In-house vs. outsourcing</a>
         <h3 style="margin-top:22px">Areas served</h3>
-        <a href="/content-marketing-new-york">New York</a>
-        <a href="/content-marketing-los-angeles">Los Angeles</a>
-        <a href="/content-marketing-chicago">Chicago</a>
-        <a href="/content-marketing-houston">Houston</a>
-        <a href="/content-marketing-dallas">Dallas</a>
-        <a href="/content-marketing-atlanta">Atlanta</a>
-        <a href="/content-marketing-phoenix">Phoenix</a>
-        <a href="/locations">All locations →</a>
+        <a href="/content-marketing-new-york/">New York</a>
+        <a href="/content-marketing-los-angeles/">Los Angeles</a>
+        <a href="/content-marketing-chicago/">Chicago</a>
+        <a href="/content-marketing-houston/">Houston</a>
+        <a href="/content-marketing-dallas/">Dallas</a>
+        <a href="/content-marketing-atlanta/">Atlanta</a>
+        <a href="/content-marketing-phoenix/">Phoenix</a>
+        <a href="/locations/">All locations →</a>
       </div>
       <div class="foot-col">
         <h3>Industries</h3>
-        <a href="/content-marketing-for-hvac-companies">HVAC</a>
-        <a href="/content-marketing-for-plumbers">Plumbers</a>
-        <a href="/content-marketing-for-electricians">Electricians</a>
-        <a href="/content-marketing-for-contractors">Contractors</a>
-        <a href="/content-marketing-for-pest-control">Pest control</a>
-        <a href="/content-marketing-for-home-services">Home services</a>
-        <a href="/content-marketing-for-law-firms">Law firms</a>
-        <a href="/content-marketing-for-dental-practices">Dental</a>
-        <a href="/content-marketing-for-real-estate">Real estate</a>
-        <a href="/industries">All industries →</a>
+        <a href="/content-marketing-for-hvac-companies/">HVAC</a>
+        <a href="/content-marketing-for-plumbers/">Plumbers</a>
+        <a href="/content-marketing-for-electricians/">Electricians</a>
+        <a href="/content-marketing-for-contractors/">Contractors</a>
+        <a href="/content-marketing-for-pest-control/">Pest control</a>
+        <a href="/content-marketing-for-home-services/">Home services</a>
+        <a href="/content-marketing-for-law-firms/">Law firms</a>
+        <a href="/content-marketing-for-dental-practices/">Dental</a>
+        <a href="/content-marketing-for-real-estate/">Real estate</a>
+        <a href="/industries/">All industries →</a>
       </div>
     </div>
     <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
   </div>
 </footer>
 <!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
-<script src="/assets/capture-nudge.js" defer></script>
+<script src="/assets/snapshot.js?v=20261020c" defer></script>
+<script src="/assets/capture-nudge.js?v=20261020c" defer></script>
 </body>
 </html>

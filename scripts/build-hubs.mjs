@@ -12,6 +12,8 @@
  *
  * Run: node scripts/build-hubs.mjs
  */
+import { BOOK } from "./blog-theme.mjs";
+import { writePage } from "./site-links.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -116,7 +118,7 @@ const faqBlock = (f) => f.map(x => `\n  <details><summary>${esc(x.q)}</summary><
 const band = (h, p, label = "Book a 30-minute call") => `
 <div class="narrow"><div class="band">
   <h2>${esc(h)}</h2><p>${esc(p)}</p>
-  <a class="btn" href="${CAL}" target="_blank" rel="noopener">${esc(label)}</a>
+  <a class="btn" href="${BOOK}" data-cta="page">${esc(label)}</a>
 </div></div>`;
 
 function readPosts() {
@@ -167,7 +169,7 @@ ${NAV}
   <h1>${esc(p.h1)}</h1>
   ${p.intro.map(t => `<p>${esc(t)}</p>`).join("\n  ")}
   <div class="cta-row">
-    <a class="btn" href="${CAL}" target="_blank" rel="noopener">Book a 30-minute call</a>
+    <a class="btn" href="${BOOK}" data-cta="page">Book a 30-minute call</a>
     <a class="btn ghost" href="/what-you-get">See what you get</a>
   </div>
 </div></header>
@@ -179,8 +181,10 @@ ${NAV}
 ${body}
 
 <section class="sec"><div class="narrow">
-  <h2>${p.linkIndustries ? "Industry playbooks" : "Articles in this cluster"}</h2>
-  ${p.linkIndustries ? industryLinks : articles}
+  ${p.linkIndustries ? `<h2>Industry playbooks</h2>
+  ${industryLinks}
+  <h2 style="margin-top:34px">Every industry article</h2>` : `<h2>Articles in this cluster</h2>`}
+  ${articles}
 </div></section>
 
 <section class="sec"><div class="narrow">
@@ -228,7 +232,7 @@ ${NAV}
   <p>${esc(c.blurb)}</p>
   <p>We run organic visibility programs for ${esc(c.city)} businesses — published to your own domain, on a fixed cadence, targeting the questions your local buyers actually type. One business per niche, per metro, so the coverage we build in ${esc(c.city)} is not sold to the competitor down the road.</p>
   <div class="cta-row">
-    <a class="btn" href="${CAL}" target="_blank" rel="noopener">Check if your ${esc(c.city)} niche is open</a>
+    <a class="btn" href="${BOOK}" data-cta="page">Check if your ${esc(c.city)} niche is open</a>
     <a class="btn ghost" href="/industries">See industries</a>
   </div>
 </div></header>
@@ -333,7 +337,7 @@ ${NAV}
   <p>ClearPath Content runs organic visibility programs for businesses across the United States. Every deployment publishes to your own domain, targets the questions your buyers actually type, and stays yours permanently.</p>
   <p>Availability is scoped by market: <strong>one business per niche, per metro</strong>. An HVAC deployment in Denver has no bearing on one in Dallas — it only closes HVAC in Denver.</p>
   <div class="cta-row">
-    <a class="btn" href="${CAL}" target="_blank" rel="noopener">Check if your market is open</a>
+    <a class="btn" href="${BOOK}" data-cta="page">Check if your market is open</a>
     <a class="btn ghost" href="/industries">See industries</a>
   </div>
 </div></header>
@@ -401,7 +405,7 @@ ${NAV}
   <span class="eyebrow">${esc(c.eyebrow)}</span>
   <h1>${esc(c.h1)}</h1>
   ${c.intro.map(t => `<p>${esc(t)}</p>`).join("\n  ")}
-  <div class="cta-row"><a class="btn" href="${CAL}" target="_blank" rel="noopener">Talk it through — 30 minutes</a></div>
+  <div class="cta-row"><a class="btn" href="${BOOK}" data-cta="page">Talk it through — 30 minutes</a></div>
 </div></header>
 
 <section class="sec"><div class="narrow">
@@ -440,23 +444,23 @@ let n = 0;
 for (const p of PILLARS) {
   const dir = path.join(ROOT, p.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), renderPillar(p, posts));
+  writePage(path.join(dir, "index.html"), renderPillar(p, posts));
   console.log(`  ✓ /${p.slug}`); n++;
 }
 for (const c of CITIES) {
   const dir = path.join(ROOT, c.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), renderCity(c));
+  writePage(path.join(dir, "index.html"), renderCity(c));
   console.log(`  ✓ /${c.slug}`); n++;
 }
 fs.mkdirSync(path.join(ROOT, "locations"), { recursive: true });
-fs.writeFileSync(path.join(ROOT, "locations", "index.html"), renderLocations());
+writePage(path.join(ROOT, "locations", "index.html"), renderLocations());
 console.log("  ✓ /locations"); n++;
 
 for (const c of COMPARISONS) {
   const dir = path.join(ROOT, c.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), renderComparison(c));
+  writePage(path.join(dir, "index.html"), renderComparison(c));
   console.log(`  ✓ /${c.slug}`); n++;
 }
 console.log(`[hubs] built ${n} pages.`);

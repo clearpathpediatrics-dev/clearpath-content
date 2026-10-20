@@ -10,6 +10,8 @@
  *
  * Run: node scripts/build-pages.mjs
  */
+import { BOOK } from "./blog-theme.mjs";
+import { writePage } from "./site-links.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -110,7 +112,7 @@ const ctaBand = (heading, sub) => `
 <div class="narrow"><div class="band">
   <h2>${esc(heading)}</h2>
   <p>${esc(sub)}</p>
-  <a class="btn" href="${CAL}" target="_blank" rel="noopener">Book a 30-minute call</a>
+  <a class="btn" href="${BOOK}" data-cta="page">Book a 30-minute call</a>
 </div></div>`;
 
 const faqBlock = (pairs) => pairs.map(f => `
@@ -141,7 +143,7 @@ ${NAV}
   <h1>${esc(p.h1)}</h1>
   ${p.intro.map(t => `<p>${esc(t)}</p>`).join("\n  ")}
   <div class="cta-row">
-    <a class="btn" href="${CAL}" target="_blank" rel="noopener">Book a 30-minute call</a>
+    <a class="btn" href="${BOOK}" data-cta="page">Book a 30-minute call</a>
     <a class="btn ghost" href="/what-you-get">See what you get</a>
   </div>
 </div></header>
@@ -212,7 +214,7 @@ ${NAV}
   <span class="eyebrow">Deliverables</span>
   <h1>${esc(c.h1)}</h1>
   ${c.intro.map(t => `<p>${esc(t)}</p>`).join("\n  ")}
-  <div class="cta-row"><a class="btn" href="${CAL}" target="_blank" rel="noopener">Book a 30-minute call</a></div>
+  <div class="cta-row"><a class="btn" href="${BOOK}" data-cta="page">Book a 30-minute call</a></div>
 </div></header>
 
 <section class="blk"><div class="narrow">
@@ -259,7 +261,7 @@ ${NAV}
   <span class="eyebrow">Straight answers</span>
   <h1>Frequently asked questions</h1>
   <p>What the program is, what it costs, how fast it works, what you own, and what it requires from you. If something isn't answered here, ask on a call.</p>
-  <div class="cta-row"><a class="btn" href="${CAL}" target="_blank" rel="noopener">Book a 30-minute call</a></div>
+  <div class="cta-row"><a class="btn" href="${BOOK}" data-cta="page">Book a 30-minute call</a></div>
 </div></header>
 
 <main>
@@ -312,7 +314,7 @@ ${NAV}
   <h1>Who we deploy for</h1>
   <p>The program works best where buyers research before they contact anyone — which is most considered purchases. Below is where we currently run deployments, with a page for each covering what that market searches for and what a deployment delivers.</p>
   <p><strong>One business per niche, per metro.</strong> The entire value is that you own the answers in your market, and that does not survive selling the same coverage to your competitor.</p>
-  <div class="cta-row"><a class="btn" href="${CAL}" target="_blank" rel="noopener">Check if your market is open</a></div>
+  <div class="cta-row"><a class="btn" href="${BOOK}" data-cta="page">Check if your market is open</a></div>
 </div></header>
 
 <section class="blk"><div class="narrow">
@@ -344,19 +346,19 @@ let n = 0;
 for (const p of INDUSTRIES) {
   const dir = path.join(ROOT, p.slug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), renderIndustry(p));
+  writePage(path.join(dir, "index.html"), renderIndustry(p));
   console.log(`  ✓ /${p.slug}`); n++;
 }
 fs.mkdirSync(path.join(ROOT, CAPABILITIES.slug), { recursive: true });
-fs.writeFileSync(path.join(ROOT, CAPABILITIES.slug, "index.html"), renderCapabilities());
+writePage(path.join(ROOT, CAPABILITIES.slug, "index.html"), renderCapabilities());
 console.log(`  ✓ /${CAPABILITIES.slug}`); n++;
 
 fs.mkdirSync(path.join(ROOT, "industries"), { recursive: true });
-fs.writeFileSync(path.join(ROOT, "industries", "index.html"), renderIndustriesHub());
+writePage(path.join(ROOT, "industries", "index.html"), renderIndustriesHub());
 console.log("  ✓ /industries"); n++;
 
 fs.mkdirSync(path.join(ROOT, "faq"), { recursive: true });
-fs.writeFileSync(path.join(ROOT, "faq", "index.html"), renderFaqHub());
+writePage(path.join(ROOT, "faq", "index.html"), renderFaqHub());
 console.log("  ✓ /faq"); n++;
 
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), renderSitemap());

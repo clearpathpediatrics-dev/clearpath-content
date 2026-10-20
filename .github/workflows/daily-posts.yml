@@ -130,6 +130,13 @@ jobs:
             echo "::endgroup::"
           done
 
+      # The seven pillar guides list every post in their cluster, but they were
+      # only rebuilt when someone ran this by hand. The bot never did, so 128 of
+      # 166 posts were missing from their guide and linked from nowhere but the
+      # blog index. Cheap, no API cost, and deterministic.
+      - name: Rebuild pillar guides
+        run: node scripts/build-hubs.mjs
+
       - name: Commit and push
         run: |
           git config user.name  "ClearPath Content Bot"

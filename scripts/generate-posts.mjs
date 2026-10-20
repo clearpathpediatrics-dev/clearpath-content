@@ -22,7 +22,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { pickAngles, remainingAngles, allAngles, CLUSTERS } from "./topics.data.mjs";
 import { INDUSTRIES, CAPABILITIES } from "./pages.data.mjs";
-import { SITE, BRAND, CAL, esc, slugify, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
+import { SITE, BRAND, BOOK, esc, slugify, CSS, NAV, FOOTER, head, captureBlock } from "./blog-theme.mjs";
+import { writePage } from "./site-links.mjs";
 import { PILLARS } from "./hubs.data.mjs";
 import { renderSitemap } from "./sitemap.mjs";
 
@@ -157,10 +158,89 @@ const SAMPLE = {
   ],
 };
 
+
+// ---------- in-article offer + related reading ----------
+//
+// Articles are where search traffic lands, and 166 of 173 had no way to leave
+// an email: the only ask was a cold calendar link. Each now carries the
+// snapshot form about 55% of the way down, worded for its topic. Rendered into
+// the page, not injected, so Netlify detects the form and nothing shifts.
+const CAPTURE_COPY = {
+  "aeo-geo": ["Is AI recommending you, or a competitor?", "Send your email and website. We check how your business shows up for the questions buyers in your market ask, and send back a short snapshot."],
+  "organic-strategy": ["See what your market is already searching", "Send your email and website. We send back the questions buyers in your market type before they call anyone, and who answers them today."],
+  "industry-playbooks": ["See what buyers in your industry search before they call", "Send your email and website. We send back the real questions in your market and which of them your site answers today."],
+  "local-seo": ["See who wins the local searches in your area", "Send your email and website. We send back the searches buyers in your area make and who is showing up for them."],
+  "measurement": ["Get a baseline before you spend more on content", "Send your email and website. We send back where you stand today on the searches that matter in your market."],
+  "buying-guides": ["Before you hire anyone, see what your market searches", "Send your email and website. A short, free snapshot of the demand in your market, so you can judge any proposal against it."],
+  "operations": ["See which questions your content should answer first", "Send your email and website. We send back the searches in your market worth answering first."],
+};
+
+// Industry posts preselect the matching industry in the form.
+const INDUSTRY_HINTS = [
+  [/hvac|heating|cooling/i, "HVAC"], [/plumb/i, "Plumbing"], [/electric/i, "Electrical"],
+  [/roof|contractor|remodel/i, "Roofing / Contracting"], [/pest|infestation/i, "Pest control"],
+  [/law firm|legal|attorney|immigration/i, "Law firm"], [/dental|dentist|orthodont/i, "Dental practice"],
+  [/real estate|realtor|mortgage|property management/i, "Real estate"],
+  [/software|saas|managed service/i, "B2B software"],
+  [/accounting|cpa|financial advis|insurance|staffing|recruit/i, "Professional services"],
+  [/home service|landscap|pool|cleaning|moving|garage|flooring|window|tree|solar|security|alarm/i, "Home services"],
+];
+const industryFor = (post) => post.clusterKey !== "industry-playbooks" ? ""
+  : (INDUSTRY_HINTS.find(([re]) => re.test(post.title)) || [null, ""])[1];
+
+function captureFor(post) {
+  const [heading, sub] = CAPTURE_COPY[post.clusterKey] || CAPTURE_COPY["organic-strategy"];
+  return `\n<!-- in-article snapshot form -->` + captureBlock({ id: "cap-post", heading, sub, preselect: industryFor(post), placement: "article" }) + `\n<!-- /in-article snapshot form -->\n`;
+}
+
+function injectCapture(html, post) {
+  const parts = html.split("</p>");
+  const n = parts.length - 1;
+  if (n < 4) return html + captureFor(post);
+  const at = Math.max(3, Math.round(n * 0.55));
+  return parts.slice(0, at).join("</p>") + "</p>" + captureFor(post) + parts.slice(at).join("</p>");
+}
+
+/** Anything a previous render injected into the body, removed so re-renders never stack. */
+const stripInjected = (body) => body.replace(/\n?<!-- in-article snapshot form -->[\s\S]*?<!-- \/in-article snapshot form -->\n?/g, "");
+
+const STOP = new Set("a an the to of for and or in on your you how what when why is are with do does it its that this from at by be as can vs versus".split(" "));
+const toks = (s) => new Set(String(s).toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(w => w.length > 2 && !STOP.has(w)));
+const jac = (a, b) => { let n = 0; a.forEach(w => b.has(w) && n++); return n / (a.size + b.size - n || 1); };
+
+/**
+ * Four posts from the same cluster, closest by title, newest on ties. Until
+ * now no article linked to any other, and 128 of 166 were reachable only from
+ * the blog index and the sitemap.
+ */
+function relatedFor(post, posts) {
+  const mine = toks(post.title), seen = [];
+  return posts
+    .filter(p => p.slug !== post.slug && p.clusterKey === post.clusterKey)
+    .map(p => ({ p, k: toks(p.title) }))
+    .map(x => ({ ...x, s: jac(mine, x.k) }))
+    .filter(x => x.s < 0.7)
+    .sort((a, b) => b.s - a.s || (a.p.iso < b.p.iso ? 1 : -1))
+    .filter(x => { if (seen.some(k => jac(k, x.k) >= 0.7)) return false; seen.push(x.k); return true; })
+    .slice(0, 4).map(x => x.p);
+}
+
+/** FAQ entries from a rendered page's FAQPage JSON-LD. */
+function faqFromHtml(html) {
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      const o = JSON.parse(m[1]);
+      if (o["@type"] === "FAQPage") return (o.mainEntity || []).map(q => ({ q: q.name, a: q.acceptedAnswer && q.acceptedAnswer.text })).filter(f => f.q && f.a);
+    } catch {}
+  }
+  return [];
+}
+
 // ---------- renderers ----------
-function renderPost(post) {
+function renderPost(post, posts = []) {
   const pillar = PILLARS.find(g => g.clusterKey === post.clusterKey);
-  const url = `${SITE}/blog/${post.slug}`;
+  const url = `${SITE}/blog/${post.slug}/`;
+  const related = relatedFor(post, posts);
   const articleLd = {
     "@context": "https://schema.org", "@type": "BlogPosting",
     headline: post.title, description: post.metaDescription,
@@ -206,6 +286,11 @@ function renderPost(post) {
 .pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
 .pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
 .pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+.related{margin:38px 0 0;padding-top:26px;border-top:1px solid var(--border)}
+.related h2{font-size:22px;margin-bottom:10px}
+.related ul{list-style:none}
+.related li a{display:block;padding:12px 0;border-bottom:1px solid var(--border);color:var(--pine);font-weight:600;text-decoration:none;line-height:1.4}
+.related li a:hover{color:var(--pine-2);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -217,8 +302,12 @@ ${NAV}
     <p class="meta">${esc(post.prettyDate)}${post.readMinutes ? ` · ${post.readMinutes} min read` : ""}</p>
     <div class="tags">${(post.tags || []).map(t => `<span>${esc(t)}</span>`).join("")}</div>
     <div class="body">
-${post.html}
+${injectCapture(stripInjected(post.html), post)}
     </div>
+    ${related.length ? `<section class="related" aria-labelledby="rel-h">
+      <h2 id="rel-h">Keep reading</h2>
+      <ul>${related.map(r => `<li><a href="/blog/${r.slug}/">${esc(r.title)}</a></li>`).join("")}</ul>
+    </section>` : ""}
     ${pillar ? `<a class="pillarlink" href="/${pillar.slug}">
       <span>Full guide</span>
       <strong>${esc(pillar.h1)}</strong>
@@ -227,7 +316,7 @@ ${post.html}
     <div class="endcard">
       <h3>This is what we do, every week, on autopilot.</h3>
       <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
-      <a class="btn" href="${CAL}" target="_blank" rel="noopener">Book a 30-minute call</a>
+      <a class="btn" href="${BOOK}" data-cta="article-end">Book a 30-minute call</a>
     </div>
     <a class="backlink" href="/blog/">← All field notes</a>
   </div>
@@ -323,21 +412,32 @@ ${FOOTER}
  * the file is left untouched rather than rewritten with an empty body.
  */
 function rehydratePosts(posts) {
-  let n = 0;
+  let n = 0, faqKept = 0;
   for (const post of posts) {
     const file = path.join(BLOG_DIR, post.slug, "index.html");
-    let html = post.html;
+    let html = post.html, existing = null;
+    try { existing = fs.readFileSync(file, "utf8"); } catch {}
     if (!html) {
-      let existing;
-      try { existing = fs.readFileSync(file, "utf8"); } catch { continue; }
-      const m = existing.match(/<div class="body">\n([\s\S]*?)\n    <\/div>/);
+      if (!existing) continue;
+      // Remove the injected form before looking for the body: its markup has a
+      // "</div>" at the same indent the body match stops at, so matching first
+      // cut the body off mid-form and every re-render doubled it up.
+      const m = stripInjected(existing).match(/<div class="body">\n([\s\S]*?)\n    <\/div>/);
       if (!m) continue;
       html = m[1];
     }
-    fs.writeFileSync(file, renderPost({ ...post, html }));
+    // posts.json never stored FAQs, so every re-render dropped the FAQ
+    // structured data, and this runs on every bot run: by October no article
+    // had any. Carry it into posts.json before it is lost again.
+    if (!(post.faq && post.faq.length) && existing) {
+      const faq = faqFromHtml(existing);
+      if (faq.length) { post.faq = faq; faqKept++; }
+    }
+    writePage(file, renderPost({ ...post, html: stripInjected(html) }, posts));
     n++;
   }
-  if (n) console.log(`[cpc] rehydrated ${n} article page${n === 1 ? "" : "s"} with current chrome`);
+  if (faqKept) fs.writeFileSync(POSTS_JSON, JSON.stringify(posts, null, 2) + "\n");
+  if (n) console.log(`[cpc] rehydrated ${n} article page${n === 1 ? "" : "s"} with current chrome${faqKept ? ` (${faqKept} FAQ sets moved into posts.json)` : ""}`);
 }
 
 // ---------- main ----------
@@ -355,7 +455,7 @@ async function main() {
   if (!DRYRUN && (need === 0 || REBUILD_ONLY)) {
     console.log(`[cpc] ${iso} has ${todayCount}/${POSTS_PER_RUN} posts — rebuilding index + sitemap only.`);
     rehydratePosts(posts);
-    fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
+    writePage(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
     fs.writeFileSync(SITEMAP, renderSitemap(posts));
     return;
   }
@@ -388,7 +488,7 @@ async function main() {
     if (!picks.length) {
       // Still rebuild the index/sitemap so a manual posts.json edit is picked up.
       rehydratePosts(posts);
-      fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
+      writePage(path.join(BLOG_DIR, "index.html"), renderIndex(posts));
       fs.writeFileSync(SITEMAP, renderSitemap(posts));
       // Exit non-zero so the scheduled run goes RED. Returning 0 here is what
       // hid a six-day outage (2026-09-14 → 09-20): the catalog was empty, the
@@ -477,9 +577,7 @@ async function main() {
       continue;
     }
 
-    const dir = path.join(BLOG_DIR, post.slug);
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, "index.html"), renderPost(post));
+    writePage(path.join(BLOG_DIR, post.slug, "index.html"), renderPost(post, updated));
 
     const entry = {
       slug: post.slug, title: post.title, excerpt: post.excerpt || post.metaDescription,
@@ -489,6 +587,9 @@ async function main() {
       // inferring coverage from the title. Do not drop this field.
       angle: pick.angle,
       iso: post.iso, prettyDate: post.prettyDate, readMinutes: post.readMinutes,
+      // Kept so a re-render can rebuild the FAQ structured data instead of
+      // dropping it. Every run re-renders every post.
+      faq: post.faq,
     };
     updated = [entry, ...updated];
     console.log(`[cpc]   ✓ /blog/${post.slug}  ("${post.title}")`);
@@ -496,7 +597,7 @@ async function main() {
 
   fs.mkdirSync(BLOG_DIR, { recursive: true });
   fs.writeFileSync(POSTS_JSON, JSON.stringify(updated, null, 2) + "\n");
-  fs.writeFileSync(path.join(BLOG_DIR, "index.html"), renderIndex(updated));
+  writePage(path.join(BLOG_DIR, "index.html"), renderIndex(updated));
   rehydratePosts(updated);
   fs.writeFileSync(SITEMAP, renderSitemap(updated));
   console.log(`[cpc] ${updated.length} total posts · index + sitemap rebuilt`);

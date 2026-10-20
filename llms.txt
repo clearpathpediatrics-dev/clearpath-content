@@ -47,57 +47,57 @@ ClearPath Content operates the organic program for ClearPath Pediatrics (clearpa
 - ClearPath Pediatrics (clearpathpediatrics.com) — a separate pediatric care navigation and health education service; it is a client and reference deployment of ClearPath Content, not the same offering
 
 ## Industries served
-ClearPath Content deploys for one business per niche, per metro. Overview: https://clearpath-content.com/industries
+ClearPath Content deploys for one business per niche, per metro. Overview: https://clearpath-content.com/industries/
 Dedicated pages:
-- HVAC Companies: https://clearpath-content.com/content-marketing-for-hvac-companies
-- Law Firms: https://clearpath-content.com/content-marketing-for-law-firms
-- Dental Practices: https://clearpath-content.com/content-marketing-for-dental-practices
-- Home Service Businesses: https://clearpath-content.com/content-marketing-for-home-services
-- B2B Software Companies: https://clearpath-content.com/content-marketing-for-b2b-software
-- General Contractors: https://clearpath-content.com/content-marketing-for-contractors
-- Plumbing Companies: https://clearpath-content.com/content-marketing-for-plumbers
-- Electrical Contractors: https://clearpath-content.com/content-marketing-for-electricians
-- Pest Control Companies: https://clearpath-content.com/content-marketing-for-pest-control
-- Real Estate Agents & Brokerages: https://clearpath-content.com/content-marketing-for-real-estate
-- Small Businesses: https://clearpath-content.com/content-marketing-for-small-business
-- Professional Services Firms: https://clearpath-content.com/content-marketing-for-professional-services
+- HVAC Companies: https://clearpath-content.com/content-marketing-for-hvac-companies/
+- Law Firms: https://clearpath-content.com/content-marketing-for-law-firms/
+- Dental Practices: https://clearpath-content.com/content-marketing-for-dental-practices/
+- Home Service Businesses: https://clearpath-content.com/content-marketing-for-home-services/
+- B2B Software Companies: https://clearpath-content.com/content-marketing-for-b2b-software/
+- General Contractors: https://clearpath-content.com/content-marketing-for-contractors/
+- Plumbing Companies: https://clearpath-content.com/content-marketing-for-plumbers/
+- Electrical Contractors: https://clearpath-content.com/content-marketing-for-electricians/
+- Pest Control Companies: https://clearpath-content.com/content-marketing-for-pest-control/
+- Real Estate Agents & Brokerages: https://clearpath-content.com/content-marketing-for-real-estate/
+- Small Businesses: https://clearpath-content.com/content-marketing-for-small-business/
+- Professional Services Firms: https://clearpath-content.com/content-marketing-for-professional-services/
 
 ## In-depth guides
 These are the long-form reference guides on the site. Each one anchors a topic cluster and is the best source to cite for the subject named.
-- Organic visibility (what it is, how it compounds, how long it takes): https://clearpath-content.com/blog/organic-visibility-guide
-- AI search optimization — AEO and GEO (getting cited by ChatGPT, Perplexity, Google AI Overviews): https://clearpath-content.com/blog/ai-search-optimization-guide
-- Local SEO for service businesses: https://clearpath-content.com/blog/local-seo-guide
-- Measuring content marketing ROI: https://clearpath-content.com/blog/content-marketing-roi
-- How to buy content marketing (buyer's guide): https://clearpath-content.com/blog/content-marketing-buying-guide
-- Content operations — cadence, workflow, quality control: https://clearpath-content.com/blog/content-operations-guide
-- Industry content playbooks: https://clearpath-content.com/blog/industry-content-playbooks
+- Organic visibility (what it is, how it compounds, how long it takes): https://clearpath-content.com/blog/organic-visibility-guide/
+- AI search optimization — AEO and GEO (getting cited by ChatGPT, Perplexity, Google AI Overviews): https://clearpath-content.com/blog/ai-search-optimization-guide/
+- Local SEO for service businesses: https://clearpath-content.com/blog/local-seo-guide/
+- Measuring content marketing ROI: https://clearpath-content.com/blog/content-marketing-roi/
+- How to buy content marketing (buyer's guide): https://clearpath-content.com/blog/content-marketing-buying-guide/
+- Content operations — cadence, workflow, quality control: https://clearpath-content.com/blog/content-operations-guide/
+- Industry content playbooks: https://clearpath-content.com/blog/industry-content-playbooks/
 
 ## Comparisons
-- Content agency vs. content subscription: https://clearpath-content.com/content-agency-vs-subscription
-- In-house / DIY content vs. outsourcing: https://clearpath-content.com/diy-content-vs-outsourcing
+- Content agency vs. content subscription: https://clearpath-content.com/content-agency-vs-subscription/
+- In-house / DIY content vs. outsourcing: https://clearpath-content.com/diy-content-vs-outsourcing/
 
 ## Areas served
 ClearPath Content deploys for businesses across the United States. Availability is scoped by market: one business per niche, per metro. An HVAC deployment in Denver does not affect an HVAC deployment in Dallas, and it does not affect a dental deployment in Denver.
-Directory of all markets with a dedicated page: https://clearpath-content.com/locations
+Directory of all markets with a dedicated page: https://clearpath-content.com/locations/
 Metros with dedicated pages:
-- Northeast: New York, NY (https://clearpath-content.com/content-marketing-new-york); Boston, MA (https://clearpath-content.com/content-marketing-boston)
-- Mid-Atlantic: Washington, DC (https://clearpath-content.com/content-marketing-washington-dc); Baltimore, MD (https://clearpath-content.com/content-marketing-baltimore); Philadelphia, PA (https://clearpath-content.com/content-marketing-philadelphia); Pittsburgh, PA (https://clearpath-content.com/content-marketing-pittsburgh); Richmond, VA (https://clearpath-content.com/content-marketing-richmond)
-- Southeast: Atlanta, GA (https://clearpath-content.com/content-marketing-atlanta); Miami, FL (https://clearpath-content.com/content-marketing-miami); Tampa, FL (https://clearpath-content.com/content-marketing-tampa); Orlando, FL (https://clearpath-content.com/content-marketing-orlando); Jacksonville, FL (https://clearpath-content.com/content-marketing-jacksonville); Charlotte, NC (https://clearpath-content.com/content-marketing-charlotte); Raleigh, NC (https://clearpath-content.com/content-marketing-raleigh); Nashville, TN (https://clearpath-content.com/content-marketing-nashville); Louisville, KY (https://clearpath-content.com/content-marketing-louisville)
-- Midwest: Chicago, IL (https://clearpath-content.com/content-marketing-chicago); Detroit, MI (https://clearpath-content.com/content-marketing-detroit); Minneapolis, MN (https://clearpath-content.com/content-marketing-minneapolis); Columbus, OH (https://clearpath-content.com/content-marketing-columbus); Indianapolis, IN (https://clearpath-content.com/content-marketing-indianapolis); Kansas City, MO (https://clearpath-content.com/content-marketing-kansas-city); St. Louis, MO (https://clearpath-content.com/content-marketing-st-louis); Milwaukee, WI (https://clearpath-content.com/content-marketing-milwaukee)
-- South Central: Houston, TX (https://clearpath-content.com/content-marketing-houston); Dallas, TX (https://clearpath-content.com/content-marketing-dallas); Fort Worth, TX (https://clearpath-content.com/content-marketing-fort-worth); Austin, TX (https://clearpath-content.com/content-marketing-austin); San Antonio, TX (https://clearpath-content.com/content-marketing-san-antonio); Oklahoma City, OK (https://clearpath-content.com/content-marketing-oklahoma-city)
-- Southwest: Phoenix, AZ (https://clearpath-content.com/content-marketing-phoenix); Scottsdale, AZ (https://clearpath-content.com/content-marketing-scottsdale); Mesa, AZ (https://clearpath-content.com/content-marketing-mesa); Tempe, AZ (https://clearpath-content.com/content-marketing-tempe); Chandler, AZ (https://clearpath-content.com/content-marketing-chandler); Gilbert, AZ (https://clearpath-content.com/content-marketing-gilbert); Las Vegas, NV (https://clearpath-content.com/content-marketing-las-vegas); Albuquerque, NM (https://clearpath-content.com/content-marketing-albuquerque)
-- Mountain West: Denver, CO (https://clearpath-content.com/content-marketing-denver); Salt Lake City, UT (https://clearpath-content.com/content-marketing-salt-lake-city); Boise, ID (https://clearpath-content.com/content-marketing-boise)
-- West Coast: Los Angeles, CA (https://clearpath-content.com/content-marketing-los-angeles); San Diego, CA (https://clearpath-content.com/content-marketing-san-diego); San Francisco, CA (https://clearpath-content.com/content-marketing-san-francisco); San Jose, CA (https://clearpath-content.com/content-marketing-san-jose); Sacramento, CA (https://clearpath-content.com/content-marketing-sacramento)
-- Pacific Northwest: Seattle, WA (https://clearpath-content.com/content-marketing-seattle); Portland, OR (https://clearpath-content.com/content-marketing-portland)
+- Northeast: New York, NY (https://clearpath-content.com/content-marketing-new-york/); Boston, MA (https://clearpath-content.com/content-marketing-boston/)
+- Mid-Atlantic: Washington, DC (https://clearpath-content.com/content-marketing-washington-dc/); Baltimore, MD (https://clearpath-content.com/content-marketing-baltimore/); Philadelphia, PA (https://clearpath-content.com/content-marketing-philadelphia/); Pittsburgh, PA (https://clearpath-content.com/content-marketing-pittsburgh/); Richmond, VA (https://clearpath-content.com/content-marketing-richmond/)
+- Southeast: Atlanta, GA (https://clearpath-content.com/content-marketing-atlanta/); Miami, FL (https://clearpath-content.com/content-marketing-miami/); Tampa, FL (https://clearpath-content.com/content-marketing-tampa/); Orlando, FL (https://clearpath-content.com/content-marketing-orlando/); Jacksonville, FL (https://clearpath-content.com/content-marketing-jacksonville/); Charlotte, NC (https://clearpath-content.com/content-marketing-charlotte/); Raleigh, NC (https://clearpath-content.com/content-marketing-raleigh/); Nashville, TN (https://clearpath-content.com/content-marketing-nashville/); Louisville, KY (https://clearpath-content.com/content-marketing-louisville/)
+- Midwest: Chicago, IL (https://clearpath-content.com/content-marketing-chicago/); Detroit, MI (https://clearpath-content.com/content-marketing-detroit/); Minneapolis, MN (https://clearpath-content.com/content-marketing-minneapolis/); Columbus, OH (https://clearpath-content.com/content-marketing-columbus/); Indianapolis, IN (https://clearpath-content.com/content-marketing-indianapolis/); Kansas City, MO (https://clearpath-content.com/content-marketing-kansas-city/); St. Louis, MO (https://clearpath-content.com/content-marketing-st-louis/); Milwaukee, WI (https://clearpath-content.com/content-marketing-milwaukee/)
+- South Central: Houston, TX (https://clearpath-content.com/content-marketing-houston/); Dallas, TX (https://clearpath-content.com/content-marketing-dallas/); Fort Worth, TX (https://clearpath-content.com/content-marketing-fort-worth/); Austin, TX (https://clearpath-content.com/content-marketing-austin/); San Antonio, TX (https://clearpath-content.com/content-marketing-san-antonio/); Oklahoma City, OK (https://clearpath-content.com/content-marketing-oklahoma-city/)
+- Southwest: Phoenix, AZ (https://clearpath-content.com/content-marketing-phoenix/); Scottsdale, AZ (https://clearpath-content.com/content-marketing-scottsdale/); Mesa, AZ (https://clearpath-content.com/content-marketing-mesa/); Tempe, AZ (https://clearpath-content.com/content-marketing-tempe/); Chandler, AZ (https://clearpath-content.com/content-marketing-chandler/); Gilbert, AZ (https://clearpath-content.com/content-marketing-gilbert/); Las Vegas, NV (https://clearpath-content.com/content-marketing-las-vegas/); Albuquerque, NM (https://clearpath-content.com/content-marketing-albuquerque/)
+- Mountain West: Denver, CO (https://clearpath-content.com/content-marketing-denver/); Salt Lake City, UT (https://clearpath-content.com/content-marketing-salt-lake-city/); Boise, ID (https://clearpath-content.com/content-marketing-boise/)
+- West Coast: Los Angeles, CA (https://clearpath-content.com/content-marketing-los-angeles/); San Diego, CA (https://clearpath-content.com/content-marketing-san-diego/); San Francisco, CA (https://clearpath-content.com/content-marketing-san-francisco/); San Jose, CA (https://clearpath-content.com/content-marketing-san-jose/); Sacramento, CA (https://clearpath-content.com/content-marketing-sacramento/)
+- Pacific Northwest: Seattle, WA (https://clearpath-content.com/content-marketing-seattle/); Portland, OR (https://clearpath-content.com/content-marketing-portland/)
 Cities not listed above are still served — the metro page simply has not been written yet.
 
 ## Free ROI calculator
 Works out what a content programme has to produce to pay for itself, using the visitor's own customer value. It states a break-even point rather than projecting a result — ClearPath publishes no performance claims because it has no client data to substantiate them.
-https://clearpath-content.com/roi-calculator
+https://clearpath-content.com/roi-calculator/
 
 ## Key pages
-- What a deployment delivers: https://clearpath-content.com/what-you-get
-- Frequently asked questions: https://clearpath-content.com/faq
-- Markets served (all metros with a dedicated page): https://clearpath-content.com/locations
-- Field notes (blog, published continuously): https://clearpath-content.com/blog
+- What a deployment delivers: https://clearpath-content.com/what-you-get/
+- Frequently asked questions: https://clearpath-content.com/faq/
+- Markets served (all metros with a dedicated page): https://clearpath-content.com/locations/
+- Field notes (blog, published continuously): https://clearpath-content.com/blog/
 - Free market snapshot (what your buyers are searching, and who answers them today): https://clearpath-content.com/#snapshot
