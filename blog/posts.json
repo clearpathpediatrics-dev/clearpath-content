@@ -1,5 +1,150 @@
 [
   {
+    "slug": "how-many-articles-local-business-needs-to-rank",
+    "title": "How Many Articles Does a Local Business Need to Rank?",
+    "excerpt": "There's no magic number of blog posts. But there is a way to estimate what your specific market needs based on who you're trying to outrank and for what terms.",
+    "metaDescription": "How many articles does a local business need to rank? A practical breakdown by competition level, plus a method to size your content plan before you spend.",
+    "tags": [
+      "local SEO",
+      "content strategy",
+      "organic visibility",
+      "blog strategy",
+      "keyword research"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "how many articles a local business actually needs to rank",
+    "iso": "2026-10-20",
+    "prettyDate": "October 20, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How many articles does a local business need to rank?",
+        "a": "Most single-location local businesses need 25 to 50 well-built pages to become competitive across their core terms, with the exact number driven by competition. Low-competition markets can work with 15 to 25; saturated markets like legal or cosmetic dental in a major metro often need 60 to 100-plus built over 12 to 24 months. These counts include service and location pages, not just blog posts, and assume substantial content rather than thin filler."
+      },
+      {
+        "q": "Does publishing more articles always help?",
+        "a": "No. Past the point of covering your question-space well, raw volume stops helping and can hurt by creating overlapping pages that compete with each other, dilute internal linking, and add maintenance work. A site with 40 focused pages that each answer a real query usually outperforms one with 200 thin posts. After reaching coverage, the work shifts to keeping pages accurate, consolidating competing ones, and strengthening pages close to ranking."
+      }
+    ]
+  },
+  {
+    "slug": "roofing-content-after-hail-storm-events",
+    "title": "Roofing Content That Captures Post-Storm Demand",
+    "excerpt": "A storm pushes a week of roofing demand into 48 hours. Here's how to structure content that's already ranking when that demand hits, instead of scrambling after.",
+    "metaDescription": "Build roofing content for hail and storm events so you capture post-storm search demand fast. Page structure, timing, and a storm-response checklist inside.",
+    "tags": [
+      "roofing content marketing",
+      "storm damage SEO",
+      "hail damage roofing",
+      "local SEO for roofers",
+      "seasonal content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content for roofing companies after hail and storm events",
+    "iso": "2026-10-20",
+    "prettyDate": "October 20, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How fast do I need to publish after a storm hits?",
+        "a": "Publish your storm-specific page within 24 to 72 hours of the event, because the search spike is short and front-loaded. The homeowners who search in the first week have open claim windows and the most urgency, and they're the ones who book. This is only realistic if you've already built evergreen hail inspection and insurance pages months ahead, so the new event page links into an established structure and ranks faster."
+      },
+      {
+        "q": "What pages does a storm-market roofer actually need?",
+        "a": "Three: a hail damage inspection page explaining what damage looks like on different materials, a storm damage insurance claim page walking through the process honestly, and a storm-specific or neighborhood page published quickly after a named event. The first two are evergreen and built in advance; the third captures the spike and borrows ranking strength from the other two through internal links."
+      }
+    ]
+  },
+  {
+    "slug": "keep-blog-posts-accurate-after-price-changes",
+    "title": "How to Keep Old Blog Posts Accurate After Price Changes",
+    "excerpt": "Outdated prices and discontinued services on old pages quietly cost you trust and leads. Here's a repeatable system to find and fix stale content before a customer does.",
+    "metaDescription": "Learn how to keep published content accurate when prices and services change, with a practical audit system that stops outdated pages from costing you leads.",
+    "tags": [
+      "content operations",
+      "content maintenance",
+      "content accuracy",
+      "editorial process",
+      "content audit"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "keeping published content accurate as prices and services change",
+    "iso": "2026-10-19",
+    "prettyDate": "October 19, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How often should you audit content for accuracy?",
+        "a": "Review volatile pages (those with prices, fees, and promotions) every 90 days, semi-stable pages once or twice a year, and evergreen pages annually — but also trigger an immediate check any time a price, service, or partnership actually changes. The calendar cadence catches slow drift, and the event trigger catches sharp changes the same day they happen."
+      },
+      {
+        "q": "What should I actually check on each page?",
+        "a": "Check every number, list, dated reference, and current-fact claim: prices and fees against today's price list, active promotions and their expiration dates, services and products still offered, partners and credentials, dated language like 'this year,' contact and logistics details, and internal links. A page passes only when every line checks out, then you mark it reviewed."
+      }
+    ]
+  },
+  {
+    "slug": "first-30-days-content-engagement",
+    "title": "What Happens in the First 30 Days of Content Work",
+    "excerpt": "Most of month one is research, setup, and the first few drafts — not published articles climbing the rankings. Here is what good looks like at day 30.",
+    "metaDescription": "A week-by-week breakdown of the first 30 days of a content engagement so you know what should ship, what to review, and what counts as real progress.",
+    "tags": [
+      "content marketing onboarding",
+      "content engagement timeline",
+      "content strategy first 30 days",
+      "content agency expectations",
+      "SEO content process"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "what to expect in the first 30 days of a content engagement",
+    "iso": "2026-10-19",
+    "prettyDate": "October 19, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How much should I expect to be published in the first 30 days of a content engagement?",
+        "a": "Expect one to four published articles in the first 30 days on most monthly plans, and sometimes zero if the engagement began with heavy research. Published count is the weakest signal in month one. What matters more is whether the foundation is built: an approved topic map, a locked style guide, a working publishing pipeline, and a filling draft queue. Volume accelerates in months two and three once voice and process are settled."
+      },
+      {
+        "q": "How much of my time will the first month of content work actually take?",
+        "a": "Plan for three to five hours across the first 30 days, concentrated in weeks one and two. The kickoff call and intake questionnaire are the biggest asks — about an hour each — because thin answers produce generic articles. After that your time is mostly review: approving the topic map, checking the style guide and outlines, and reviewing the first drafts for roughly 15-20 minutes each."
+      }
+    ]
+  },
+  {
+    "slug": "author-credentials-ai-citations",
+    "title": "Do Author Credentials Affect AI Citations?",
+    "excerpt": "AI answer engines favor pages they can trust. Here's how author credentials, bylines, and verifiable signals change whether your content gets cited or ignored.",
+    "metaDescription": "Learn how author credentials affect whether AI tools cite your page, and the practical bylines, bios, and signals that make your content quotable.",
+    "tags": [
+      "answer engine optimization",
+      "author credentials",
+      "AI citations",
+      "E-E-A-T",
+      "content authority"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how author credentials affect whether AI cites a page",
+    "iso": "2026-10-18",
+    "prettyDate": "October 18, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Does the author need to be famous for AI to cite the page?",
+        "a": "No. The author needs to be identifiable, consistent, and plausibly qualified for the specific topic, not famous. Answer engines rely on verifiability: a named person with a bio, an author page, matching external profiles, and schema linking them together. A well-known name helps but isn't the mechanism; a confirmable trail is."
+      },
+      {
+        "q": "What can an AI system actually see about my authors?",
+        "a": "It can see the byline, the author bio, your author page, structured data like Person and Article schema, and corroborating mentions of the same person elsewhere such as LinkedIn, licensing boards, or trade publications. Credentials confirmed in several independent places count far more than claims that appear only on your own site."
+      }
+    ]
+  },
+  {
     "slug": "content-approval-process-that-wont-stall-publishing",
     "title": "A Content Approval Process That Won't Stall Publishing",
     "excerpt": "Most publishing delays are not writing problems. They are approval problems. Here is a practical review process with clear roles, deadlines, and defaults so your content ships on schedule.",
