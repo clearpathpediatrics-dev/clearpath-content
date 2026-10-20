@@ -14,7 +14,7 @@
      capture_shown / capture_dismissed   the corner nudge
    ===================================================================== */
 (function () {
-  var GA4_MEASUREMENT_ID = "G-XXXXXXXXXX";   // <-- ClearPath Content GA4 web stream ID
+  var GA4_MEASUREMENT_ID = "G-CK3G195QL2";   // ClearPath Content web stream
 
   // A placeholder is a run of X's; a real ID never is.
   var hasGA4 = !!GA4_MEASUREMENT_ID && !/X{6,}/.test(GA4_MEASUREMENT_ID);

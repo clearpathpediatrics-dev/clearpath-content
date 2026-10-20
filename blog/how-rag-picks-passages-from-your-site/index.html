@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="/assets/analytics.js?v=20261020c" defer></script>
+<script src="/assets/analytics.js?v=20261020d" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How RAG Picks Which Passages to Pull From Your Site","description":"Learn how retrieval-augmented generation chooses context to answer questions, and how to structure content so RAG systems pull your pages instead of a competitor's.","datePublished":"2026-09-16","dateModified":"2026-09-16","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/how-rag-picks-passages-from-your-site/","keywords":"retrieval-augmented generation, answer engine optimization, AI search, content chunking, semantic search","articleSection":"AI Search & Answer Engine Optimization"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does RAG decide which passages are relevant?","acceptedAnswer":{"@type":"Answer","text":"RAG ranks passages by semantic closeness to the question, then usually re-ranks the top candidates with a second, more precise model before feeding a handful into the prompt. The first pass is fast and approximate: it compares the question vector against millions of chunk vectors and returns maybe the top 50 or 100. Because vectors capture meaning, a chunk that says \"most systems fail because the condensate line clogs\" can match a question about \"why is water leaking from my AC\" even with no shared keywords."}},{"@type":"Question","name":"Does formatting content this way hurt readers?","acceptedAnswer":{"@type":"Answer","text":"No — writing self-contained sections improves the page for human readers as much as for retrieval systems, because people skim and jump the same way machines chunk. Someone landing on your roofing page from a search rarely reads top to bottom. They scan headings, stop at the one matching their question, and read that block. If that block only makes sense after reading the previous three, you have already lost them. The discipline that makes a passage retrievable — clear heading, answer first, subject named, claim before elaboration — is the same discipline that makes a page usable when someone is standing in a mechanical room on their phone."}}]}</script>
 <style>
@@ -340,7 +340,7 @@ footer a:hover{color:var(--pine-2);text-decoration:underline}
   </div>
 </footer>
 <!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
-<script src="/assets/snapshot.js?v=20261020c" defer></script>
-<script src="/assets/capture-nudge.js?v=20261020c" defer></script>
+<script src="/assets/snapshot.js?v=20261020d" defer></script>
+<script src="/assets/capture-nudge.js?v=20261020d" defer></script>
 </body>
 </html>

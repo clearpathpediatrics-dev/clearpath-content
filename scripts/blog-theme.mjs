@@ -31,7 +31,7 @@ export const BOOK = "/book/";
  * "immutable" for a year, so a browser holding an old copy never asked again.
  * Bump this whenever analytics.js, snapshot.js or capture-nudge.js changes.
  */
-export const ASSET_V = "20261020c";
+export const ASSET_V = "20261020d";
 
 export const esc = (s = "") => String(s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
