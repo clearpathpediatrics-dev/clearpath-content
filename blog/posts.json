@@ -1,5 +1,63 @@
 [
   {
+    "slug": "content-subscription-vs-project-based-content",
+    "title": "Content Subscription vs Project-Based: Which to Pick",
+    "excerpt": "A subscription and a one-time content project buy two different things. Here's how the costs, cadence, and ownership actually compare, and which fits your situation.",
+    "metaDescription": "Content subscription vs project-based content: compare cost, cadence, and ownership so you pick the model that actually builds organic traffic.",
+    "tags": [
+      "content subscription",
+      "project-based content",
+      "content marketing pricing",
+      "SEO content strategy",
+      "content buying guide"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "a monthly content subscription versus project-based content",
+    "iso": "2026-10-21",
+    "prettyDate": "October 21, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Is a content subscription worth it for a small business?",
+        "a": "A content subscription is worth it for a small business when you need consistent publishing over many months but don't have the internal time or discipline to produce it yourself. The value is the cadence and continuity — ongoing publishing, interlinking, and refreshing older pages — which is what compounds organic visibility. It's not worth it when you have a single, bounded problem that a one-time project could fix."
+      },
+      {
+        "q": "Can you switch from a content subscription to project-based later?",
+        "a": "Yes, and many businesses should plan to move between the two as their needs change. A common path is starting with a project to fix foundational pages, then moving to a subscription for steady growth — or running a subscription until coverage is solid, then dropping to occasional projects. Before switching, confirm you own everything already produced and that there's no costly lock-in."
+      }
+    ]
+  },
+  {
+    "slug": "seasonal-pest-guides-that-bring-in-calls",
+    "title": "Seasonal Pest Guides That Bring In Calls",
+    "excerpt": "Pest problems arrive on a schedule. Your content should too. Here's how to build seasonal infestation guides that catch people the week they start searching.",
+    "metaDescription": "Learn how seasonal infestation guides for pest control bring in calls year-round, with a worked content calendar and page structure that converts searchers.",
+    "tags": [
+      "pest control content",
+      "seasonal SEO",
+      "local service marketing",
+      "pest control leads",
+      "content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "seasonal infestation guides that bring in pest calls",
+    "iso": "2026-10-21",
+    "prettyDate": "October 21, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How many seasonal guides does a pest control company need?",
+        "a": "Most pest control companies need 10 to 15 well-built seasonal guides to cover their real demand, not 50. Start with the pests that actually drive your phone calls, build those high-volume guides first, publish them ahead of season, and add secondary ones in slower months. A focused set that each target a specific search beats a large library of thin pages."
+      },
+      {
+        "q": "How far ahead should you publish a seasonal pest guide?",
+        "a": "Publish a seasonal guide four to six weeks before the pest season begins in your area, because new pages need time to get indexed and build ranking signals before search volume peaks. Publishing the week the season starts means you miss early searchers and compete from a cold start. These pages don't expire — they keep working every year and usually rank better over time."
+      }
+    ]
+  },
+  {
     "slug": "how-many-articles-local-business-needs-to-rank",
     "title": "How Many Articles Does a Local Business Need to Rank?",
     "excerpt": "There's no magic number of blog posts. But there is a way to estimate what your specific market needs based on who you're trying to outrank and for what terms.",
