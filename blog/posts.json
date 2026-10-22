@@ -1,5 +1,63 @@
 [
   {
+    "slug": "content-share-of-marketing-budget",
+    "title": "How Much of Your Marketing Budget Goes to Content?",
+    "excerpt": "A practical way to decide what share of your marketing budget should go to content, with a worked example and a formula you can run in ten minutes.",
+    "metaDescription": "Learn how much of your marketing budget to spend on content, with benchmarks by business type and a simple formula to set your number this quarter.",
+    "tags": [
+      "content budget",
+      "marketing budget allocation",
+      "content marketing cost",
+      "small business marketing",
+      "buying guide"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "budgeting for content as a share of marketing spend",
+    "iso": "2026-10-22",
+    "prettyDate": "October 22, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What share of your marketing budget should go to content?",
+        "a": "A reasonable starting range is 15% to 30% of your total marketing budget, with most established local service businesses around 20%. Go lower if you're new and need leads immediately, since content builds slowly, and higher if your ad costs are rising and you plan to be in business for years, because owned content compounds while ad spend resets every month you stop paying."
+      },
+      {
+        "q": "How do you decide what to cut to pay for content?",
+        "a": "Cut from the channel with the highest cost per acquired customer and the least durability, usually a lead-gen directory or broad-match ads on terms you could rank for organically. Score each line on cost per customer won, whether it keeps working if you stop paying, and whether it's defensible against competitors, then fund your content increase by trimming the worst line that also stops producing the moment you stop paying."
+      }
+    ]
+  },
+  {
+    "slug": "directories-ai-assistants-trust-most",
+    "title": "Which Directories Do AI Assistants Trust Most?",
+    "excerpt": "AI assistants don't read every directory. They lean on a short list of sources they trust. Here's which ones matter and how to clean up your listings so your business shows up in the answer.",
+    "metaDescription": "Learn which business directories AI assistants pull from when answering questions, and how to fix your listings so your business gets named in the response.",
+    "tags": [
+      "AI search optimization",
+      "business directories",
+      "answer engine optimization",
+      "local SEO",
+      "citation management"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "the business directories AI assistants lean on most",
+    "iso": "2026-10-22",
+    "prettyDate": "October 22, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Which directories do AI assistants lean on most?",
+        "a": "AI assistants lean most heavily on large, data-rich platforms that also feed the broader search ecosystem: Google Business Profile, Bing Places, Apple Business Connect, and Yelp, plus core data aggregators like Data Axle, Localeze, and Foursquare that syndicate to hundreds of smaller sites. Industry-specific authority directories — Avvo for lawyers, Healthgrades for medical, Angi for home services, Clutch for B2B — carry extra weight within their niche."
+      },
+      {
+        "q": "How many directories do you actually need?",
+        "a": "Most local businesses get the bulk of the benefit from roughly 15 to 25 well-chosen listings, not hundreds. Nail the four Tier 1 platforms, correct your records with the main data aggregators so they propagate to smaller sites, and claim the two or three authority directories relevant to your industry. Beyond that, returns drop off quickly, and consistency across your core listings matters far more than raw listing count."
+      }
+    ]
+  },
+  {
     "slug": "content-subscription-vs-project-based-content",
     "title": "Content Subscription vs Project-Based: Which to Pick",
     "excerpt": "A subscription and a one-time content project buy two different things. Here's how the costs, cadence, and ownership actually compare, and which fits your situation.",
