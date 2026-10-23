@@ -1,5 +1,63 @@
 [
   {
+    "slug": "long-guide-or-short-answers",
+    "title": "One Long Guide or Several Short Answers?",
+    "excerpt": "The choice between a single comprehensive guide and a cluster of short, focused answers isn't about length. It's about how people search and what you want the page to do.",
+    "metaDescription": "Deciding between one long guide and several short answers for your content? Here's how to pick the format that actually ranks and brings in work.",
+    "tags": [
+      "organic visibility strategy",
+      "content format",
+      "topic clusters",
+      "pillar pages",
+      "content planning"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "choosing between one long guide and several short answers",
+    "iso": "2026-10-23",
+    "prettyDate": "October 23, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Is a long guide better for ranking than short posts?",
+        "a": "Neither is inherently better — they rank for different queries. A long guide tends to win broad, competitive head terms because it concentrates authority on one URL. Short focused pages win specific long-tail questions because the whole page matches one intent. For most businesses the strongest approach is both: one guide as the anchor and several short answers around it, all interlinked as a topic cluster, so the pages compete for the head term and long-tail at once without fighting each other."
+      },
+      {
+        "q": "When someone asks a question in an AI assistant, which content format gets cited?",
+        "a": "Short, focused pages are generally easier for AI answer engines to cite because the model can match a specific question to a page that answers exactly that and lift a clean, self-contained response. A sprawling guide makes the model extract the relevant passage from thousands of words, which is less reliable. Whichever format you use, write answer-first — state the direct answer in the first sentence — which helps with both AI citation and featured snippets."
+      }
+    ]
+  },
+  {
+    "slug": "reading-average-engagement-time-correctly",
+    "title": "What Average Engagement Time Actually Tells You",
+    "excerpt": "Average engagement time is one of the most misread numbers in GA4. Here's how to tell when a low number means a problem and when it means nothing at all.",
+    "metaDescription": "Learn how to read average engagement time in GA4 without misreading it, which numbers lie, and how to turn the metric into decisions for your content.",
+    "tags": [
+      "engagement time",
+      "GA4 metrics",
+      "content ROI",
+      "content measurement",
+      "analytics"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "reading engagement time without misreading it",
+    "iso": "2026-10-23",
+    "prettyDate": "October 23, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Is a low average engagement time always bad?",
+        "a": "No. A low average engagement time is only a problem when the page's purpose requires sustained reading and the number suggests people aren't getting it. A short FAQ page that answers a pricing question in 25 seconds is working fine; a 1,800-word guide that shows 35 seconds has a problem. Judge the number against what the page is supposed to do and whether visitors took the next action you wanted."
+      },
+      {
+        "q": "How do I know if engagement time means people are actually reading?",
+        "a": "You can't confirm reading from engagement time alone, so pair it with scroll depth and next-click behavior. High time plus deep scroll suggests real reading; high time plus shallow scroll usually means a distracted visitor left the tab open. Adding the next action — an internal click, form start, or call — tells you where the attention actually went."
+      }
+    ]
+  },
+  {
     "slug": "content-share-of-marketing-budget",
     "title": "How Much of Your Marketing Budget Goes to Content?",
     "excerpt": "A practical way to decide what share of your marketing budget should go to content, with a worked example and a formula you can run in ten minutes.",
