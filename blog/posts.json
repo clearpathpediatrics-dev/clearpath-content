@@ -1,5 +1,63 @@
 [
   {
+    "slug": "how-google-decides-which-city-business-belongs-to",
+    "title": "How Google Decides Which City Your Business Is In",
+    "excerpt": "Google doesn't pick your city off a map at random. It reads a stack of signals — your verified address, searcher location, citations, and content — to decide which town you compete in. Here's how that works and what you can actually change.",
+    "metaDescription": "Learn how Google assigns a local business to a city using address, proximity, and signals so you can rank in the right town and win more calls.",
+    "tags": [
+      "local search visibility",
+      "google business profile",
+      "local seo",
+      "service area business",
+      "map pack ranking"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "how Google decides which city a business belongs to",
+    "iso": "2026-10-24",
+    "prettyDate": "October 24, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why am I ranking in my city but not the next town over?",
+        "a": "Proximity to your verified address does most of the work in local ranking, and businesses physically closer to the next town usually outrank you there. Google centers each search on the searcher's location or the city named in the query, then favors nearby, well-documented businesses. You can narrow the gap with dedicated location content, reviews mentioning that area, and consistent citations, but you generally can't fully overcome a competitor's proximity advantage without a real presence closer to that market."
+      },
+      {
+        "q": "How do I rank in a city where I don't have an office?",
+        "a": "Build a genuinely useful, detailed location page for that city, earn reviews from customers there, and support the claim with service-area settings and local citations — but expect to rank best in the organic blue-link results rather than the map pack. The map pack strongly favors physical proximity, so a business with no nearby location faces an uphill fight for those slots. The organic results below the map can be won with specific, high-quality content about your work in that city even without a local address."
+      }
+    ]
+  },
+  {
+    "slug": "good-click-through-rate-search-results",
+    "title": "What's a Good Click-Through Rate in Search?",
+    "excerpt": "There is no single \"good\" CTR. It depends on your position, the intent behind the query, and how much of the result page you actually get to show up on. Here is how to judge your own numbers.",
+    "metaDescription": "Learn what a good organic click-through rate looks like by search position and intent, how to read your CTR in Search Console, and where to fix it.",
+    "tags": [
+      "click-through rate",
+      "organic CTR",
+      "search console",
+      "content measurement",
+      "seo roi"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "what a good click-through rate looks like in search results",
+    "iso": "2026-10-24",
+    "prettyDate": "October 24, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What is a good organic click-through rate by position?",
+        "a": "A good organic CTR depends almost entirely on position and should be read as a declining range rather than one target. As a rough general pattern, the top spot often pulls high twenties to low thirties percent on clean commercial queries, the next couple of spots land in the teens, mid-page results sit in low single digits, and bottom-of-page results scrape 1 to 2 percent. Compare each query's CTR to what its specific position normally earns and only worry when you are clearly below it."
+      },
+      {
+        "q": "Why is my CTR low even though I rank well?",
+        "a": "A low CTR at a strong position usually comes down to one of four things: something above you on the page (ads, a featured answer box, a map pack) pushes your result below the fold, your title and description read as generic or off-topic, your snippet answers the question so fully that people do not need to click, or a competitor's listing simply looks more relevant. Check those four in order, because each has a different fix."
+      }
+    ]
+  },
+  {
     "slug": "long-guide-or-short-answers",
     "title": "One Long Guide or Several Short Answers?",
     "excerpt": "The choice between a single comprehensive guide and a cluster of short, focused answers isn't about length. It's about how people search and what you want the page to do.",
