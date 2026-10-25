@@ -1,5 +1,63 @@
 [
   {
+    "slug": "tracking-local-rankings-across-service-area",
+    "title": "Why Your Local Rankings Differ Across Your Service Area",
+    "excerpt": "A single rank check tells you almost nothing about a service area. Here's how to track rankings across a grid, read the map, and act on what you find.",
+    "metaDescription": "Learn how to track local rankings across a whole service area using grid tracking, not single-point checks, so you know where you actually need work.",
+    "tags": [
+      "local rankings",
+      "service area tracking",
+      "local SEO",
+      "rank tracking",
+      "Google Business Profile"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "tracking local rankings across a whole service area",
+    "iso": "2026-10-25",
+    "prettyDate": "October 25, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How often should I check my local rankings across a service area?",
+        "a": "Check a full grid monthly for most local businesses, with a shorter weekly spot-check on your two or three most important keywords. Local rankings bounce day to day, so a monthly cadence shows a real trend without overreacting to noise. Re-scan two to three weeks after any meaningful change, and keep the grid settings identical every time so the maps are comparable."
+      },
+      {
+        "q": "Does ranking well in the map pack matter more than organic?",
+        "a": "For most local service searches the map pack matters more, because it sits above organic results and carries the phone number, reviews, and directions a ready-to-call customer wants. Map-pack placement depends on your Google Business Profile, proximity, reviews, and category accuracy, while organic depends on your website's content and authority. Track both separately so you know which lever to pull in each neighborhood."
+      }
+    ]
+  },
+  {
+    "slug": "seo-content-mortgage-brokers",
+    "title": "SEO Content for Mortgage Brokers: What to Write",
+    "excerpt": "Mortgage borrowers ask hundreds of specific questions before they call anyone. Here's how to map that question-space, deal with rate volatility, and build a content library that still works when the market shifts.",
+    "metaDescription": "A practical guide to SEO content for mortgage brokers: the question-space that drives calls, how to handle rate volatility, and a 10-article starter plan.",
+    "tags": [
+      "mortgage broker SEO",
+      "mortgage content marketing",
+      "SEO for lenders",
+      "mortgage broker marketing",
+      "financial services content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content for mortgage brokers",
+    "iso": "2026-10-25",
+    "prettyDate": "October 25, 2026",
+    "readMinutes": 8,
+    "faq": [
+      {
+        "q": "Should mortgage brokers put current rates in their content?",
+        "a": "No, not as the core of a written article, because rate numbers go stale immediately and a page built around them becomes a liability the moment the market moves. Use a live widget for rates and keep your written guides focused on the mechanics that don't change: how rate locks work, what drives your rate, and how points affect the number."
+      },
+      {
+        "q": "How many articles does a mortgage broker actually need?",
+        "a": "Enough to cover each borrower situation end to end, which in practice means about 25 to 40 well-built pages for a single-market broker, not a few hundred. Depth beats volume; one thorough guide that fully resolves a question outperforms ten thin posts that skim the surface."
+      }
+    ]
+  },
+  {
     "slug": "how-google-decides-which-city-business-belongs-to",
     "title": "How Google Decides Which City Your Business Is In",
     "excerpt": "Google doesn't pick your city off a map at random. It reads a stack of signals — your verified address, searcher location, citations, and content — to decide which town you compete in. Here's how that works and what you can actually change.",
