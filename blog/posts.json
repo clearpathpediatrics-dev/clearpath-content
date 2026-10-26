@@ -1,5 +1,67 @@
 [
   {
+    "slug": "link-blog-posts-to-service-pages-naturally",
+    "title": "How to Link Blog Posts to Service Pages Naturally",
+    "excerpt": "Internal links from blog posts to service pages pass ranking signals and move readers toward a call. The trick is placing them where they genuinely help, not where they interrupt. Here is the mechanics.",
+    "metaDescription": "Learn how to link blog posts to service pages without sounding salesy, so readers click because the link helps them and your rankings improve.",
+    "tags": [
+      "internal linking",
+      "content strategy",
+      "service pages",
+      "organic visibility",
+      "on-page SEO"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "linking blog posts to service pages without sounding salesy",
+    "iso": "2026-10-26",
+    "prettyDate": "October 26, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I write anchor text that doesn't sound like an ad?",
+        "a": "Describe the destination page in the plainest words the reader would use, and let it sit inside a normal sentence. Anchor text should name the service or topic, not issue an instruction — \"our drain cleaning service\" works, while \"click here\" wastes the signal and \"call now for the best drain cleaning in town\" reads like a billboard. Test it by reading the sentence with the link removed; if it still belongs in the article, the link is placed well."
+      },
+      {
+        "q": "Should every blog post link to a service page?",
+        "a": "No. Some posts shouldn't link to any service page, and forcing a link in hurts more than it helps. Informational posts that touch a problem you fix should link to the relevant service page, but purely educational posts with no overlap should link sideways to related articles instead. This keeps your linking honest — a service link appears because the content earned it, not because a rule demanded one."
+      }
+    ]
+  },
+  {
+    "slug": "is-ai-overview-quoting-your-page",
+    "title": "How to Tell If an AI Overview Is Quoting Your Page",
+    "excerpt": "AI Overviews rarely announce where their sentences came from. Here's a practical way to confirm whether Google is pulling from your page, phrase by phrase.",
+    "metaDescription": "Learn how to tell if an AI Overview is quoting your page using text matching, cited links, and GSC data so you can see what content actually gets pulled.",
+    "tags": [
+      "AI Overviews",
+      "answer engine optimization",
+      "AI search",
+      "Google Search Console",
+      "content attribution"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how to tell if an AI Overview is quoting your page",
+    "iso": "2026-10-26",
+    "prettyDate": "October 26, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Is my page being quoted in an AI Overview?",
+        "a": "The fastest way to tell if your page is being quoted is to copy a distinctive sentence from the AI Overview and search for it as an exact phrase against your site using site:yourdomain.com. If it matches a line you wrote, or a close paraphrase of it, your page is almost certainly a source. Compare wording, fact order, and any unique framing to confirm."
+      },
+      {
+        "q": "Does being quoted in an AI Overview still send me traffic?",
+        "a": "Being quoted sends less direct traffic than a top organic ranking used to, but it isn't zero. The clicks you get tend to come from people who want more than the summary provided, so pages built with a quotable answer at the top and depth below still earn visits from readers who click the citation for the rest."
+      },
+      {
+        "q": "Can I see AI Overview quotes in Google Search Console?",
+        "a": "AI Overview impressions are folded into your normal Performance report rather than broken out separately. You can filter to the exact query and look for high impressions paired with a depressed click-through rate, which, combined with a text match, is consistent with your page being quoted."
+      }
+    ]
+  },
+  {
     "slug": "tracking-local-rankings-across-service-area",
     "title": "Why Your Local Rankings Differ Across Your Service Area",
     "excerpt": "A single rank check tells you almost nothing about a service area. Here's how to track rankings across a grid, read the map, and act on what you find.",
