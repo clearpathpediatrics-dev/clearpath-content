@@ -1,5 +1,63 @@
 [
   {
+    "slug": "tabs-accordions-hidden-content-ai-search",
+    "title": "Do Tabs and Accordions Hide Content from AI?",
+    "excerpt": "Content tucked behind tabs, accordions, and \"read more\" toggles can be invisible to the engines deciding what to quote. Here's why that happens and how to fix it without breaking your page design.",
+    "metaDescription": "AI search engines often skip content hidden behind tabs and accordions. Learn why it happens and how to restructure your pages so your answers get read.",
+    "tags": [
+      "answer engine optimization",
+      "AI search",
+      "page structure",
+      "accordions SEO",
+      "content visibility"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "why AI engines skip content hidden behind tabs and accordions",
+    "iso": "2026-10-27",
+    "prettyDate": "October 27, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Does Google read text hidden in accordions?",
+        "a": "Google can read text hidden in accordions and tabs in most cases, because the text sits in the HTML and its renderer expands the page before indexing. But being readable isn't the same as being favored — content shown by default is treated as more important, and AI extraction systems prefer passages that stand alone in the main content flow. If a specific answer is your reason for ranking, don't make it depend on a click."
+      },
+      {
+        "q": "Why do AI answer engines skip content behind tabs?",
+        "a": "AI answer engines extract a self-contained passage and decide it answers a question, rather than just indexing the page. That extraction step favors text visible by default, in the normal reading order, under a matching heading. Content hidden inside collapsed accordions is harder to isolate and is deprioritized, so even indexed hidden answers often lose to competitors who show the same answer in plain visible text."
+      }
+    ]
+  },
+  {
+    "slug": "comparing-organic-leads-vs-google-ads-leads-fairly",
+    "title": "Comparing Organic Leads vs Google Ads Leads Fairly",
+    "excerpt": "Organic and Google Ads leads get compared on cost per lead, which usually flatters the wrong channel. Here is how to run the comparison so the numbers mean something.",
+    "metaDescription": "A practical method for comparing organic leads and Google Ads leads fairly, so you can judge cost per lead and channel value without fooling yourself.",
+    "tags": [
+      "lead measurement",
+      "organic vs paid",
+      "cost per lead",
+      "marketing ROI",
+      "attribution"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "comparing organic leads and Google Ads leads fairly",
+    "iso": "2026-10-27",
+    "prettyDate": "October 27, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you calculate the true cost per organic lead?",
+        "a": "Add up your total content and SEO investment over a trailing 12-month window, then divide by the organic leads produced in that same window — not by a single month's spend. Organic leads compound and persist, so a one-month snapshot makes a maturing program look far more expensive than it really is. Include writing, editing, tooling, any subscription or agency fees, and a fair estimate of your own hours, then apply the same calculation to Google Ads for an apples-to-apples figure."
+      },
+      {
+        "q": "Is it worth running both organic and Google Ads at once?",
+        "a": "Yes, for most businesses, because the two channels do different jobs and a fair comparison usually ends in a split rather than a winner. Paid search buys immediate, controllable volume for slow seasons or launches, while organic builds a compounding asset that lowers your blended cost per lead over time and keeps working when you pause ads. Running both also gives cleaner data, letting you shift ad spend off terms where your organic pages have started to rank."
+      }
+    ]
+  },
+  {
     "slug": "link-blog-posts-to-service-pages-naturally",
     "title": "How to Link Blog Posts to Service Pages Naturally",
     "excerpt": "Internal links from blog posts to service pages pass ranking signals and move readers toward a call. The trick is placing them where they genuinely help, not where they interrupt. Here is the mechanics.",

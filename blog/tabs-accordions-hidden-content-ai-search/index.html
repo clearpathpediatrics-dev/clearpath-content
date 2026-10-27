@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Tabs and Accordions Hide Content from AI?</title>
+<meta name="description" content="AI search engines often skip content hidden behind tabs and accordions. Learn why it happens and how to restructure your pages so your answers get read.">
+<meta name="keywords" content="answer engine optimization, AI search, page structure, accordions SEO, content visibility">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/blog/tabs-accordions-hidden-content-ai-search/">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="Do Tabs and Accordions Hide Content from AI?">
+<meta property="og:description" content="AI search engines often skip content hidden behind tabs and accordions. Learn why it happens and how to restructure your pages so your answers get read.">
+<meta property="og:url" content="https://clearpath-content.com/blog/tabs-accordions-hidden-content-ai-search/">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="/assets/analytics.js?v=20261020d" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Do Tabs and Accordions Hide Content from AI?","description":"AI search engines often skip content hidden behind tabs and accordions. Learn why it happens and how to restructure your pages so your answers get read.","datePublished":"2026-10-27","dateModified":"2026-10-27","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/tabs-accordions-hidden-content-ai-search/","keywords":"answer engine optimization, AI search, page structure, accordions SEO, content visibility","articleSection":"AI Search & Answer Engine Optimization"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Google read text hidden in accordions?","acceptedAnswer":{"@type":"Answer","text":"Google can read text hidden in accordions and tabs in most cases, because the text sits in the HTML and its renderer expands the page before indexing. But being readable isn't the same as being favored — content shown by default is treated as more important, and AI extraction systems prefer passages that stand alone in the main content flow. If a specific answer is your reason for ranking, don't make it depend on a click."}},{"@type":"Question","name":"Why do AI answer engines skip content behind tabs?","acceptedAnswer":{"@type":"Answer","text":"AI answer engines extract a self-contained passage and decide it answers a question, rather than just indexing the page. That extraction step favors text visible by default, in the normal reading order, under a matching heading. Content hidden inside collapsed accordions is harder to isolate and is deprioritized, so even indexed hidden answers often lose to competitors who show the same answer in plain visible text."}}]}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.article{padding:56px 0 10px}
+.article .eyebrow{margin-bottom:16px}
+.article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+.meta{color:var(--muted);font-size:13.5px;font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 34px}
+.tags span{font-size:12px;font-weight:600;color:var(--pine-2);background:var(--spring-soft);padding:6px 14px;border-radius:999px}
+.body{font-size:16.5px}
+.body h2{font-size:clamp(21px,3vw,27px);margin:38px 0 12px}
+.body h3{font-size:19px;margin:26px 0 8px}
+.body p{color:#33445A;margin-bottom:16px}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33445A}
+.body li{margin-bottom:9px}
+.body strong{color:var(--ink)}
+.body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
+.endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
+.endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
+.endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
+.backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+.related{margin:38px 0 0;padding-top:26px;border-top:1px solid var(--border)}
+.related h2{font-size:22px;margin-bottom:10px}
+.related ul{list-style:none}
+.related li a{display:block;padding:12px 0;border-bottom:1px solid var(--border);color:var(--pine);font-weight:600;text-decoration:none;line-height:1.4}
+.related li a:hover{color:var(--pine-2);text-decoration:underline}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries/">Industries</a>
+      <a href="/locations/">Locations</a>
+      <a href="/roi-calculator/">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="/book/" data-cta="nav">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="/book/" data-cta="mobile-bar">Request access</a>
+<main class="article">
+  <div class="narrow">
+    <span class="eyebrow">AI Search &amp; Answer Engine Optimization</span>
+    <h1>Do Tabs and Accordions Hide Content from AI?</h1>
+    <p class="meta">October 27, 2026 · 7 min read</p>
+    <div class="tags"><span>answer engine optimization</span><span>AI search</span><span>page structure</span><span>accordions SEO</span><span>content visibility</span></div>
+    <div class="body">
+<p>You spent money on a page. The answers are all there — the pricing, the process, the FAQ, the details a buyer actually wants. But they're folded into accordions that expand on click, or split across tabs labeled "Overview," "Details," and "FAQ." It looks clean. It also means the parts an AI engine needs most are the parts it's least likely to read.</p><p>This isn't a design opinion. It's about how crawlers and language models ingest a page versus how a human sees it. The gap between those two experiences is where good content quietly disappears.</p><h2>What actually happens when content is behind a tab</h2><p>When you build a tabbed section or an accordion, the content usually exists in the page's HTML either way — but it's hidden with CSS until someone clicks. Google's crawler can generally render JavaScript and see hidden text, so for traditional indexing the content is often still picked up. The problem shows up at two later stages.</p><p>First, visibility is a ranking and prominence signal. Content a user has to click to reveal has historically been treated as less prominent than content shown by default. It still gets indexed, but it carries less weight for what the page is "about."</p><p>Second — and this is the newer issue — AI answer engines and the systems that build AI Overviews don't just index your page. They extract a passage, decide it answers a question, and quote or paraphrase it. That extraction step favors text that reads as a clear, self-contained block in the main flow of the document. A one-sentence answer buried as the third item inside a collapsed accordion, several nested elements deep, is harder for those systems to isolate and trust as a direct response.</p><p>Some AI engines render pages fully. Some work from a lighter version of the HTML or from cached text. You don't control which pipeline hits your page, and the lighter pipelines are the ones most likely to miss or deprioritize collapsed content. When your visibility depends on being the clean, obvious answer, you don't want to bet on the generous end of that range.</p><h2>Does Google read text hidden in accordions?</h2><p>Google can read text hidden in accordions and tabs in most cases, because the text sits in the HTML and its renderer expands the page before indexing. The catch is that being readable is not the same as being favored. Content shown by default tends to be treated as more important than content a user must click to reveal, and AI extraction systems lean toward passages that stand alone in the main content flow. So your accordion FAQ may be indexed, yet still lose to a competitor who put the same answer in plain visible text under a clear heading. If a specific answer is your reason for ranking — a price range, a process step, a direct yes/no — don't make it depend on a click.</p><h2>Why answer engines are pickier than traditional search</h2><p>Classic search returns a link. The user clicks, lands on your page, and can click the accordion themselves. The hidden content still gets its chance.</p><p>Answer engines remove that second click. The model reads, decides, and composes a response. If it never cleanly extracts your answer, your page simply isn't part of the answer — there's no link for the user to pursue in the way there used to be. The cost of being hard to extract went up.</p><p>Three things make a passage easy for these systems to use:</p><ul><li><strong>It's in the main content, not a hidden layer.</strong> Visible by default, in the normal reading order.</li><li><strong>It's self-contained.</strong> The answer makes sense without the question being re-read or without surrounding context the model has to stitch together.</li><li><strong>It's near a matching heading.</strong> A heading phrased like the question, with the answer directly beneath it.</li></ul><p>Accordions tend to fail the first point and often the third, because the visible part of an accordion is usually just the question label — the answer is the hidden part.</p><h2>A worked example: an HVAC service page</h2><p>Suppose a heating and cooling company in Omaha has a page targeting "how often should I replace my furnace filter." They built it with an accordion of twelve common questions. Each row shows a question; the answer expands on click.</p>
+<!-- in-article snapshot form -->
+<div class="capture" id="cap-post" data-placement="article">
+  <span class="eyebrow">Free market snapshot</span>
+  <h2>Is AI recommending you, or a competitor?</h2>
+  <p>Send your email and website. We check how your business shows up for the questions buyers in your market ask, and send back a short snapshot.</p>
+  <ul>
+    <li>The real questions your buyers search before they call anyone</li>
+    <li>Which of those questions your site answers today — and which it does not</li>
+    <li>Who is capturing that traffic in your market right now</li>
+  </ul>
+  <form name="market-snapshot" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/snapshot-requested/">
+    <input type="hidden" name="form-name" value="market-snapshot">
+    <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
+    <!-- Two steps when JavaScript runs (assets/snapshot.js): email and website
+         first, the rest after. Without it, every field shows and it submits as
+         one form. All fields stay in the static HTML so Netlify detects them. -->
+    <div class="row2 cap-step1">
+      <div><label for="cap-post-email">Work email</label>
+        <input id="cap-post-email" name="email" type="email" autocomplete="email" required placeholder="jane@yourcompany.com"></div>
+      <div><label for="cap-post-site">Your website</label>
+        <input id="cap-post-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    </div>
+    <div class="cap-step2">
+      <div class="row2">
+        <div><label for="cap-post-name">Your name</label>
+          <input id="cap-post-name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"></div>
+        <div><label for="cap-post-industry">Industry</label>
+          <select id="cap-post-industry" name="industry" required>
+            <option value="" selected disabled>Select one…</option>
+            <option>HVAC</option><option>Plumbing</option><option>Electrical</option><option>Roofing / Contracting</option><option>Pest control</option><option>Law firm</option><option>Dental practice</option><option>Real estate</option><option>Home services</option><option>B2B software</option><option>Professional services</option><option>Other</option>
+          </select></div>
+      </div>
+      <div class="row2">
+        <div><label for="cap-post-city">City / metro</label>
+          <input id="cap-post-city" name="city" type="text" autocomplete="address-level2" required placeholder="Your city"></div>
+        <div><label for="cap-post-state">State</label>
+          <select id="cap-post-state" name="state" required>
+            <option value="" selected disabled>Select a state…</option>
+            <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+          </select></div>
+      </div>
+    </div>
+    <button type="submit">Send me the snapshot</button>
+    <p class="fine">Your snapshot first, then at most three short follow-ups over the next two weeks. No newsletter, no list rental, and one click unsubscribes you from all of it.</p>
+  </form>
+
+</div>
+<!-- /in-article snapshot form -->
+<p>The answer they want quoted — "Replace a standard 1-inch furnace filter every 90 days, or every 30 to 60 days if you have pets or allergies" — lives inside collapsed row seven. Here's the problem laid out:</p><table><thead><tr><th>Element</th><th>What the engine sees by default</th></tr></thead><tbody><tr><td>Accordion row label</td><td>"How often should I replace my furnace filter?"</td></tr><tr><td>Accordion body (collapsed)</td><td>Present in HTML, hidden, deprioritized</td></tr><tr><td>Position on page</td><td>Seventh of twelve, nested two levels deep</td></tr></tbody></table><p>The fix doesn't require throwing out the accordion design. It requires promoting the one or two answers that matter most into visible, structured content:</p><ol><li><strong>Pull the primary question out of the accordion.</strong> Make it an <strong>H2</strong> phrased exactly as people search it: "How often should I replace my furnace filter?"</li><li><strong>Put the direct answer as the first sentence</strong> of the paragraph below that heading. State the number up front, then add the nuance.</li><li><strong>Keep the long tail in the accordion.</strong> The twelve edge-case questions can stay collapsed. You're only promoting the handful worth ranking for.</li><li><strong>Don't duplicate verbatim.</strong> If the same text appears visible and in the accordion, drop it from the accordion or reword it slightly so you're not stacking identical blocks.</li></ol><p>Now the answer is visible, high in the reading order, and sitting under a question-shaped heading. That's the shape extraction systems reward.</p><h2>How to audit your own pages</h2><p>You don't need special tools for a first pass. Walk through this checklist on any page you care about:</p><ul><li><strong>Load the page and don't touch anything.</strong> Read only what's visible. Can you find your key answer without clicking? If not, it's buried.</li><li><strong>View the source or use "inspect."</strong> Confirm the hidden text is actually in the HTML. If it loads only after a click via JavaScript, that's a second, worse problem — some engines may never see it at all.</li><li><strong>Check your headings.</strong> Are your most important questions real headings (H2/H3) in the visible flow, or just styled text or accordion labels?</li><li><strong>Count the depth.</strong> If your answer is nested three or four elements deep inside tabs within accordions, flatten it.</li><li><strong>Pick your top three answers.</strong> You can't promote everything. Decide which three questions you most want to be the quoted source for, and make those visible and structured.</li></ul><p>For FAQ-heavy pages, a hybrid works well: show the top three to five answers as visible headed sections, and keep the remaining long tail in a collapsed list. You get the clean look and the extractable content.</p><h2>When tabs and accordions are fine</h2><p>They're fine when the hidden content isn't the content you're trying to rank for. Product spec sheets, shipping policies, terms, secondary details a buyer skims — collapsing those keeps the page usable and costs you nothing in answer visibility, because you were never going to be quoted for them anyway.</p><p>The rule is simple: hide the reference material, show the answers. If a passage is the reason the page should win a query, it belongs in the open.</p><p>This is the kind of structural cleanup we do before writing a single new word for a client at ClearPath Content — fixing where the good answers already live is usually faster than producing more of them.</p><p><strong>Takeaway:</strong> You probably don't have a content problem. You have a packaging problem. Find the two or three answers on each page that matter most, lift them out of the tabs and accordions, give them a question-shaped heading, and put the direct answer in the first sentence beneath it. Leave the rest collapsed. That one change makes your existing content readable by the systems now deciding who gets quoted.</p>
+    </div>
+    <section class="related" aria-labelledby="rel-h">
+      <h2 id="rel-h">Keep reading</h2>
+      <ul><li><a href="/blog/structuring-content-for-follow-up-questions/">Structuring Content for Follow-Up Questions</a></li><li><a href="/blog/format-content-so-ai-tools-can-quote-it/">How to Format Content So AI Tools Can Quote It</a></li><li><a href="/blog/format-content-so-chatgpt-can-quote-it/">How to Format Content So ChatGPT Can Quote It</a></li><li><a href="/blog/is-ai-overview-quoting-your-page/">How to Tell If an AI Overview Is Quoting Your Page</a></li></ul>
+    </section>
+    <a class="pillarlink" href="/blog/ai-search-optimization-guide/">
+      <span>Full guide</span>
+      <strong>AI Search Optimization: How to Get Cited by ChatGPT, Perplexity and AI Overviews</strong>
+      <em>AI assistants cite a handful of sources per answer. A complete guide to how that selection works and how to structure content so yours is one of them.</em>
+    </a>
+    <div class="endcard">
+      <h3>This is what we do, every week, on autopilot.</h3>
+      <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
+      <a class="btn" href="/book/" data-cta="article-end">Book a 30-minute call</a>
+    </div>
+    <a class="backlink" href="/blog/">← All field notes</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="/book/" data-cta="footer">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get/">What you get</a>
+        <a href="/roi-calculator/">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide/">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide/">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide/">Local SEO</a>
+        <a href="/blog/content-marketing-roi/">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide/">Buyer's guide</a>
+        <a href="/blog/content-operations-guide/">Content operations</a>
+        <a href="/blog/industry-content-playbooks/">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription/">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing/">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york/">New York</a>
+        <a href="/content-marketing-los-angeles/">Los Angeles</a>
+        <a href="/content-marketing-chicago/">Chicago</a>
+        <a href="/content-marketing-houston/">Houston</a>
+        <a href="/content-marketing-dallas/">Dallas</a>
+        <a href="/content-marketing-atlanta/">Atlanta</a>
+        <a href="/content-marketing-phoenix/">Phoenix</a>
+        <a href="/locations/">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies/">HVAC</a>
+        <a href="/content-marketing-for-plumbers/">Plumbers</a>
+        <a href="/content-marketing-for-electricians/">Electricians</a>
+        <a href="/content-marketing-for-contractors/">Contractors</a>
+        <a href="/content-marketing-for-pest-control/">Pest control</a>
+        <a href="/content-marketing-for-home-services/">Home services</a>
+        <a href="/content-marketing-for-law-firms/">Law firms</a>
+        <a href="/content-marketing-for-dental-practices/">Dental</a>
+        <a href="/content-marketing-for-real-estate/">Real estate</a>
+        <a href="/industries/">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/snapshot.js?v=20261020d" defer></script>
+<script src="/assets/capture-nudge.js?v=20261020d" defer></script>
+</body>
+</html>
