@@ -1,5 +1,63 @@
 [
   {
+    "slug": "why-competitor-two-miles-away-outranks-you",
+    "title": "Why a Competitor 2 Miles Away Outranks You Locally",
+    "excerpt": "The business beating you in the map pack isn't always bigger or better. Here's what Google is actually measuring, why distance works against you, and how to fix it.",
+    "metaDescription": "Why a competitor two miles away outranks you in local search, the real ranking factors behind it, and a step-by-step checklist to close the gap.",
+    "tags": [
+      "local search",
+      "map pack ranking",
+      "google business profile",
+      "local seo",
+      "proximity"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "why a competitor two miles away outranks you",
+    "iso": "2026-10-28",
+    "prettyDate": "October 28, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why does a closer business rank higher even when I'm better?",
+        "a": "A closer business ranks higher because distance is a genuine local ranking factor that carries real weight, especially when the searcher doesn't name a location and Google uses their actual position. But distance is only a tiebreaker. The nearby competitor beating you is usually also ahead on prominence or relevance — more reviews, a deeper website, or a more precise category — and you can outrank a closer business by closing those gaps."
+      },
+      {
+        "q": "Can I outrank a competitor who is physically closer than me?",
+        "a": "Yes, in many searches. Google trades distance off against relevance and prominence, so a business that's farther away but has a more accurate category, stronger and fresher reviews, complete service listings, and a deeper website can outrank a closer competitor. You'll likely still lose to them for searchers standing right beside their office, but you can win the city-named and wider service-area searches."
+      }
+    ]
+  },
+  {
+    "slug": "schema-services-prices-service-areas",
+    "title": "Schema for Services, Prices and Service Areas",
+    "excerpt": "A practical guide to marking up what you do, what it costs, and where you do it — with worked JSON examples and a checklist you can hand to a developer.",
+    "metaDescription": "Learn how to mark up services, prices and service areas with schema so AI search and Google can read your offerings and send you qualified calls.",
+    "tags": [
+      "structured data",
+      "service schema",
+      "local SEO",
+      "answer engine optimization",
+      "schema markup"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "structured data for services, prices and service areas",
+    "iso": "2026-10-28",
+    "prettyDate": "October 28, 2026",
+    "readMinutes": 8,
+    "faq": [
+      {
+        "q": "How do I handle prices when every job is custom?",
+        "a": "If you can't publish a fixed price, use a price range or omit the price field entirely rather than guessing. Publish a genuine range with AggregateOffer (lowPrice and highPrice), a starting price with an Offer labeled \"starting at,\" or skip price markup and keep the rest of the Service schema. Never encode a placeholder like \"$0\" — that misrepresents the data and is worse than no price field at all."
+      },
+      {
+        "q": "Does schema markup guarantee rich results or AI citations?",
+        "a": "No. Valid markup makes you eligible for rich results and easier for machines to parse, but it doesn't force Google or any AI engine to display or cite you. What it reliably does is remove ambiguity, so systems read your price as a price and your service area as a place instead of guessing from prose. Treat it as making your facts legible, not as a ranking lever."
+      }
+    ]
+  },
+  {
     "slug": "tabs-accordions-hidden-content-ai-search",
     "title": "Do Tabs and Accordions Hide Content from AI?",
     "excerpt": "Content tucked behind tabs, accordions, and \"read more\" toggles can be invisible to the engines deciding what to quote. Here's why that happens and how to fix it without breaking your page design.",
