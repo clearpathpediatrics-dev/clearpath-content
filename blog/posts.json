@@ -1,5 +1,63 @@
 [
   {
+    "slug": "why-rankings-move-daily-when-to-worry",
+    "title": "Why Your Rankings Move Every Day (And When to Worry)",
+    "excerpt": "Rankings jump a few spots every day for reasons that have nothing to do with your site. Here's how to separate normal noise from a problem that needs action.",
+    "metaDescription": "Learn why daily ranking changes are normal, how to tell noise from a real drop, and a simple checklist to decide when to actually investigate.",
+    "tags": [
+      "rank tracking",
+      "seo measurement",
+      "ranking fluctuations",
+      "organic roi",
+      "google algorithm"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "why rankings move daily and when to actually worry",
+    "iso": "2026-10-29",
+    "prettyDate": "October 29, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why does the same keyword show different positions every day?",
+        "a": "A ranking isn't a fixed property of your page; it's the output of a query Google runs fresh every time, factoring in location, personalization, device, constant re-crawling, competitor changes, injected results like AI Overviews, and rolling algorithm tests. Your page can stay exactly the same while the field around it shifts, which moves your position without anything being wrong on your side."
+      },
+      {
+        "q": "When should I actually worry about a ranking drop?",
+        "a": "Worry when a drop is large, lasts more than a week or two, affects multiple related keywords at once, and lines up with something you can explain, such as a site change or a known algorithm update. A single keyword wobbling a few spots for a few days is noise. Always confirm the drop shows up as a real decline in Search Console clicks before you act."
+      }
+    ]
+  },
+  {
+    "slug": "what-done-for-you-content-service-includes",
+    "title": "What 'Done For You' Should Mean in Content",
+    "excerpt": "The phrase 'done for you' hides a lot. Here is the full list of work a content service should handle end to end, plus the gaps that quietly become your job.",
+    "metaDescription": "A practical checklist for what 'done for you' content services should include, so you can compare providers and avoid paying for half a job.",
+    "tags": [
+      "done for you content",
+      "content service comparison",
+      "content subscription",
+      "buying guide",
+      "content marketing"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "what 'done for you' should include in a content service",
+    "iso": "2026-10-29",
+    "prettyDate": "October 29, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What does 'done for you' actually mean in a content service?",
+        "a": "It means the provider handles every step from topic selection to a published, optimised page on your live website, with no production task left for you except approval. If you find yourself formatting, uploading, writing meta descriptions, or coordinating with your developer, the service is only partially done for you and should be described that way. The honest test: after you approve a piece, how many actions must you personally take before it is live? The answer should be zero or close to it."
+      },
+      {
+        "q": "How do I check what's included before I sign?",
+        "a": "Ask the provider to walk you through exactly what happens from the moment a topic is chosen to the moment the post is live, step by step. A complete service can answer without hesitation. Then ask three specific questions: who logs into my site to publish, who writes the title tag and meta description, and who adds links from my existing pages to the new one. Any answer of 'you do' tells you the real scope."
+      }
+    ]
+  },
+  {
     "slug": "why-competitor-two-miles-away-outranks-you",
     "title": "Why a Competitor 2 Miles Away Outranks You Locally",
     "excerpt": "The business beating you in the map pack isn't always bigger or better. Here's what Google is actually measuring, why distance works against you, and how to fix it.",
