@@ -1,5 +1,63 @@
 [
   {
+    "slug": "window-door-replacement-guides-homeowners-search",
+    "title": "Window & Door Replacement Guides That Rank",
+    "excerpt": "Homeowners replacing windows and doors run a predictable research path. Here are the specific guides they search for, how to structure them, and which ones bring calls.",
+    "metaDescription": "The window and door replacement guides homeowners actually search for, mapped by buying stage, so your content captures leads before they call three competitors.",
+    "tags": [
+      "window replacement content",
+      "door replacement SEO",
+      "home improvement content marketing",
+      "local service SEO",
+      "contractor content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "window and door replacement guides homeowners search for",
+    "iso": "2026-10-30",
+    "prettyDate": "October 30, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How much does window replacement cost, and should I publish prices?",
+        "a": "Yes, publish ranges, because the homeowner will find a number somewhere and you want it to be yours with your context around it. A buyer who sees a realistic range self-qualifies before they call, which saves you estimate hours on unqualified leads and builds trust with serious buyers. Give a range rather than a single figure and explain the variables: window count, material, frame type, glass package, and any structural work."
+      },
+      {
+        "q": "What makes a window replacement guide rank and convert?",
+        "a": "A good guide does two jobs: it matches the search query directly for ranking and it offers a next step that fits the reader's buying stage for conversion. To rank, answer the question completely in the first two sentences instead of burying it. To convert, match the call to action to intent, sending early-stage readers to related guides and ready-to-buy readers to an estimate form."
+      }
+    ]
+  },
+  {
+    "slug": "rank-in-a-city-with-no-office",
+    "title": "How to Rank in a City Where You Have No Office",
+    "excerpt": "You can rank in cities you serve but don't have an address in. Here's what actually works, what wastes money, and the line you shouldn't cross.",
+    "metaDescription": "Learn how to get found in a city where you have no office using service-area pages, content, and proximity-free signals that actually move local rankings.",
+    "tags": [
+      "local SEO",
+      "service area business",
+      "local rankings",
+      "service area pages",
+      "multi-city SEO"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "getting found in a city where you have no office",
+    "iso": "2026-10-30",
+    "prettyDate": "October 30, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Can you rank in a city where you don't have an address?",
+        "a": "Yes — you can rank in the organic results for a city where you have no office, but ranking in that city's map pack is very difficult without a verified physical address there. Build a strong service-area page targeting the city and service, earn relevance and authority for it, and you can appear for '[service] [city]' searches even from an office miles away. You generally cannot break into the three-pack of map listings, because that system weights physical proximity heavily and polices fake addresses."
+      },
+      {
+        "q": "What about Google Business Profile service areas?",
+        "a": "A Google Business Profile lets you set service areas without publishing your address, but it does not let you rank in the map pack of a city where you have no physical proximity. The service-area setting accurately communicates your coverage, but the underlying ranking still leans on where your business is actually located and verified. Treat it as honest information for your legitimate profile, not a lever to appear in distant cities' map results."
+      }
+    ]
+  },
+  {
     "slug": "why-rankings-move-daily-when-to-worry",
     "title": "Why Your Rankings Move Every Day (And When to Worry)",
     "excerpt": "Rankings jump a few spots every day for reasons that have nothing to do with your site. Here's how to separate normal noise from a problem that needs action.",
