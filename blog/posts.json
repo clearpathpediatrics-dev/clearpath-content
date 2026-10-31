@@ -1,5 +1,63 @@
 [
   {
+    "slug": "sales-call-questions-into-answer-pages",
+    "title": "Turn Sales Call Questions Into Pages That Rank",
+    "excerpt": "Your phone is a free keyword research tool. Here's how to capture the questions customers actually ask and turn them into pages that rank and get quoted.",
+    "metaDescription": "Learn how to turn the questions customers ask on sales calls into answer-ready pages that rank in search and get quoted by AI answer engines.",
+    "tags": [
+      "answer engine optimization",
+      "content strategy",
+      "local SEO",
+      "lead generation",
+      "AI search"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "turning the questions customers ask on calls into answer-ready pages",
+    "iso": "2026-10-31",
+    "prettyDate": "October 31, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I capture customer questions without slowing down my team?",
+        "a": "Keep it to one shared document and one rule: if a prospect asks something you've heard before, write the question down in their words before you forget it. You don't need call recording or a CRM — a shared doc or a notebook by the phone works. Capture the exact phrasing, not a summary, plus how often you hear it and the short answer your team gives."
+      },
+      {
+        "q": "Will question pages compete with my main service pages?",
+        "a": "No, they feed your service pages rather than competing, as long as each targets the question instead of the service. A service page targets a hiring-ready search like \"EV charger installation Columbus,\" while a question page targets \"can my panel handle an EV charger\" — an earlier, deciding searcher. The question page answers the thing holding them back and links them to the service page when they're ready."
+      }
+    ]
+  },
+  {
+    "slug": "dental-implant-cost-pages-patients-trust",
+    "title": "How to Write Dental Implant Cost Pages Patients Trust",
+    "excerpt": "Most implant cost pages either hide the number or quote a single figure that falls apart on the phone. Here's how to explain the real range in a way that earns trust and books consults.",
+    "metaDescription": "Learn how to explain dental implant costs in content patients actually trust, with price ranges, worked examples, and a checklist that turns readers into booked cons",
+    "tags": [
+      "dental implant content",
+      "dental SEO",
+      "implant cost page",
+      "dental practice marketing",
+      "treatment cost content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "explaining dental implant costs with content patients trust",
+    "iso": "2026-10-31",
+    "prettyDate": "October 31, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How much does a dental implant actually cost?",
+        "a": "A single dental implant in the United States commonly runs between roughly $3,000 and $6,000 including the post, abutment, and crown, though full-arch cases run $20,000-$35,000 per arch. The range depends on whether you need extractions, bone grafting, sedation, or premium materials."
+      },
+      {
+        "q": "Is it a good idea to publish implant prices on your website?",
+        "a": "Yes, publishing honest price ranges is almost always a net gain because it qualifies callers before they phone and filters out people who could never afford treatment. Frame every number as a range tied to an exam rather than a fixed quote, which protects you clinically while still giving readers what they came for."
+      }
+    ]
+  },
+  {
     "slug": "window-door-replacement-guides-homeowners-search",
     "title": "Window & Door Replacement Guides That Rank",
     "excerpt": "Homeowners replacing windows and doors run a predictable research path. Here are the specific guides they search for, how to structure them, and which ones bring calls.",
