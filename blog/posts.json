@@ -1,5 +1,63 @@
 [
   {
+    "slug": "emergency-plumbing-pages-answer-before-they-call",
+    "title": "Emergency Plumbing Pages That Answer Before They Call",
+    "excerpt": "A homeowner with water on the floor searches before they dial. Here's how to build the pages that answer the panic-stage question and win the call.",
+    "metaDescription": "Learn how to write emergency plumbing content that answers panic-stage questions, captures the search, and turns a stressed homeowner into a booked call.",
+    "tags": [
+      "emergency plumbing content",
+      "plumber SEO",
+      "plumbing website content",
+      "local service content",
+      "content marketing for plumbers"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "answering emergency plumbing questions before the customer calls",
+    "iso": "2026-11-01",
+    "prettyDate": "November 1, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you write a page that answers an emergency plumbing question?",
+        "a": "Start with the immediate action in the first two sentences — usually a shutoff step a frightened person can follow without tools — then explain the likely causes, tell them what makes it worse, be honest about what can wait, and only then frame the call as the next step. Write one page per specific emergency rather than a single combined services page, and keep the phone number tappable and visible on mobile."
+      },
+      {
+        "q": "Should every emergency get its own page?",
+        "a": "Yes — build a dedicated page for each distinct emergency someone would search as a full sentence, because each has its own first step and set of causes. Start with the five or six that actually drive after-hours calls, such as burst pipe, no hot water, overflowing toilet, main-line backup, gas smell and frozen pipe. Group truly minor issues like a slow drip onto calmer repair pages instead."
+      }
+    ]
+  },
+  {
+    "slug": "comparison-pages-ai-assistants-cite",
+    "title": "How to Write Comparison Pages AI Assistants Cite",
+    "excerpt": "Comparison pages are some of the most-quoted sources in AI answers, but only when they're built to be verified. Here's the structure that earns that trust.",
+    "metaDescription": "Learn how to write comparison pages AI assistants trust, with a structure, a worked example and a checklist that helps your page get quoted and chosen.",
+    "tags": [
+      "comparison pages",
+      "answer engine optimization",
+      "AI search",
+      "content strategy",
+      "SEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "writing comparison pages AI assistants trust",
+    "iso": "2026-11-01",
+    "prettyDate": "November 1, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Should you compare yourself against a competitor by name?",
+        "a": "Yes, naming a competitor directly is fine and often helps, as long as you represent their offering accurately and update the page when their details change. People search for brand-versus-competitor comparisons and assistants field those questions constantly, so a fair page captures that intent. Only publish competitor claims you can verify from their own public materials, date the page, and leave out any detail you can't confirm."
+      },
+      {
+        "q": "How do I keep a comparison page from reading like an ad?",
+        "a": "Lead with the scenario where the other option wins, and the whole page shifts from pitch to guide. The fastest tell of a biased comparison is that one column has no downsides, so give the competing option a genuine win in the table and explain it without hedging. Then let your option win on the dimensions where it honestly does."
+      }
+    ]
+  },
+  {
     "slug": "sales-call-questions-into-answer-pages",
     "title": "Turn Sales Call Questions Into Pages That Rank",
     "excerpt": "Your phone is a free keyword research tool. Here's how to capture the questions customers actually ask and turn them into pages that rank and get quoted.",
