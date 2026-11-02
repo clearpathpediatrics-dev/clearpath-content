@@ -1,5 +1,63 @@
 [
   {
+    "slug": "google-ai-mode-local-service-businesses",
+    "title": "What Google AI Mode Means for Local Service Firms",
+    "excerpt": "Google's AI Mode answers service questions directly instead of just listing links. Here's what it pulls from, why it skips some businesses, and what to do about it.",
+    "metaDescription": "Google AI Mode changes how local service businesses get found. Learn what it pulls from, why some pages get cited, and how to stay visible in AI answers.",
+    "tags": [
+      "google ai mode",
+      "ai search local business",
+      "answer engine optimization",
+      "local seo",
+      "ai overviews"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "what Google's AI Mode means for local service businesses",
+    "iso": "2026-11-02",
+    "prettyDate": "November 2, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why does AI Mode cite some businesses and skip others?",
+        "a": "AI Mode cites the pages that answer a specific question completely and early, in plain language, from a source it can tell is a real local operator. The page must directly address the exact question, state the answer in the first sentence or two rather than bury it, and come from a business with consistent location and service signals across the site and its Google Business Profile. Specificity, genuine local detail, and clear structure matter more than word count or keywords."
+      },
+      {
+        "q": "Will Google AI Mode reduce clicks to my website?",
+        "a": "For purely informational searches, some people will read the answer and never click, which was already happening with featured snippets. But local service searches carry intent to hire someone, and a paragraph doesn't satisfy that intent. A person who learns a rough cost still needs a quote and an appointment. The high-value click from a ready-to-hire customer is the one most likely to survive, and being cited in the answer puts you in a stronger starting position than being a blue link beneath it."
+      }
+    ]
+  },
+  {
+    "slug": "city-pages-without-duplicate-content",
+    "title": "How to Write City Pages Without Duplicate Content",
+    "excerpt": "Spinning the same service page across 40 cities gets you thin, near-duplicate pages that rank for nothing. Here's how to build a city page that's actually about that city.",
+    "metaDescription": "Learn how to write a service page for every city without duplicate content. A practical framework for building local pages that rank and read as genuinely unique.",
+    "tags": [
+      "local SEO",
+      "city service pages",
+      "duplicate content",
+      "local search visibility",
+      "service area pages"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "writing a service page for every city without duplicating it",
+    "iso": "2026-11-02",
+    "prettyDate": "November 2, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I write 30 city pages without it taking months?",
+        "a": "Build a structured intake once, then fill it per city, because the bottleneck is information-gathering, not writing. Create a short form covering service area specifics, local conditions, local proof, logistics, and local questions, then fill one row per city — much of it from a 30-minute talk with your dispatcher plus your own job records. Write the shared spine once, then assemble each page from that fixed structure plus the city-specific facts, batching similar sections across cities to move faster."
+      },
+      {
+        "q": "Does Google penalise similar city pages?",
+        "a": "There's no specific penalty for similar city pages, but near-duplicate pages get filtered so only one appears in results, wasting the effort spent on the rest. It's not a manual action — the engine consolidates ranking to one URL and ignores the copies. Avoid it by giving each page real information the others lack, such as local conditions, neighbourhoods, and job proof, rather than padding or reordering the same content."
+      }
+    ]
+  },
+  {
     "slug": "emergency-plumbing-pages-answer-before-they-call",
     "title": "Emergency Plumbing Pages That Answer Before They Call",
     "excerpt": "A homeowner with water on the floor searches before they dial. Here's how to build the pages that answer the panic-stage question and win the call.",
