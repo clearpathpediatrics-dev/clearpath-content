@@ -1,5 +1,63 @@
 [
   {
+    "slug": "track-phone-calls-from-content",
+    "title": "How to Track Phone Calls From Your Content",
+    "excerpt": "Content drives phone calls, but most businesses can't see which articles produced them. Here's how to connect a ringing phone back to the page that earned it.",
+    "metaDescription": "Learn how to track phone calls that come from your content with call tracking numbers, DNI, and UTM attribution so you know which articles drive leads.",
+    "tags": [
+      "call tracking",
+      "content ROI",
+      "attribution",
+      "dynamic number insertion",
+      "lead measurement"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "tracking phone calls that come from content",
+    "iso": "2026-11-03",
+    "prettyDate": "November 3, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you track which page a phone call came from?",
+        "a": "You use dynamic number insertion (DNI), which swaps the phone number shown on your site based on how the visitor arrived and what they viewed. A call tracking platform assigns a pool of numbers, shows different numbers to different visitors, and stamps each call with the landing page, source, and campaign so you can attribute it to specific content."
+      },
+      {
+        "q": "How many call tracking numbers do you actually need?",
+        "a": "You need enough numbers that two visitors from the same source rarely see the same number at the same time, which for most small service sites means 5 to 15 numbers. Pool size is based on concurrent sessions, not total monthly visits, so a site with light simultaneous traffic needs fewer numbers than one with large traffic bursts."
+      }
+    ]
+  },
+  {
+    "slug": "blog-strategy-flooring-companies",
+    "title": "Blog Strategy for Flooring Companies That Works",
+    "excerpt": "Most flooring company blogs are a graveyard of generic posts nobody searches for. Here's how to build one that pulls in buyers who are weeks from spending money.",
+    "metaDescription": "A practical blog strategy for flooring companies covering which posts actually earn leads, how to structure them, and the mistakes that waste months.",
+    "tags": [
+      "flooring marketing",
+      "blog strategy",
+      "flooring company SEO",
+      "content marketing",
+      "home services content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "blog strategy for flooring companies",
+    "iso": "2026-11-03",
+    "prettyDate": "November 3, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What makes a flooring blog post rank and get cited?",
+        "a": "A flooring blog post ranks and gets cited when it gives a direct, specific answer in the first sentence and backs it with real installation detail a generalist writer wouldn't know. Answer the title question flat out, then earn the ranking with specifics like moisture thresholds, expansion gaps, cure times, and the actual job sequence. Concrete, verifiable detail separates a citable page from thin content on the same keyword."
+      },
+      {
+        "q": "How often should a flooring company publish blog posts?",
+        "a": "A flooring company should publish one to four well-researched posts a month and sustain it for at least six to twelve months before judging results. Consistency and quality matter far more than volume. Organic content is slow at first and then compounds, so most companies quit at week eight when the real returns arrive at month six or nine. Treat it as a twelve-month build, not an eight-week campaign."
+      }
+    ]
+  },
+  {
     "slug": "google-ai-mode-local-service-businesses",
     "title": "What Google AI Mode Means for Local Service Firms",
     "excerpt": "Google's AI Mode answers service questions directly instead of just listing links. Here's what it pulls from, why it skips some businesses, and what to do about it.",
