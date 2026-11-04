@@ -1,5 +1,63 @@
 [
   {
+    "slug": "writing-regulated-claims-disclaimers-content",
+    "title": "Writing Content for Regulated Claims Without Legal Risk",
+    "excerpt": "If your business operates under rules from the FTC, a state bar, a dental board, or a financial regulator, your content writers need guardrails. Here is how to build them.",
+    "metaDescription": "A practical guide to writing regulated claims and disclaimers in your content, with examples for medical, legal, and financial copy that stays compliant.",
+    "tags": [
+      "content operations",
+      "regulated claims",
+      "disclaimers",
+      "compliance copywriting",
+      "editorial guidelines"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "writing guidelines for regulated claims and disclaimers",
+    "iso": "2026-11-04",
+    "prettyDate": "November 4, 2026",
+    "readMinutes": 8,
+    "faq": [
+      {
+        "q": "How do I write a disclaimer that actually works?",
+        "a": "A disclaimer works when it is specific, placed near the claim it qualifies, and readable rather than buried in small gray footer text. Match the disclaimer to the exact claim, put it in the same section or paragraph, use body-size font and plain language, and keep a small library of approved blocks for outcome claims, pricing, and testimonials so writers drop in the right one instead of improvising."
+      },
+      {
+        "q": "Can I use patient or client testimonials in my content?",
+        "a": "You can use testimonials in most regulated fields, but the rules are stricter than general advertising and some professions limit them heavily. Use real, unpaid testimonials or disclose any compensation clearly and nearby, add a 'results vary' note when the outcome is not typical, get written consent where your profession requires it, and check your specific board or bar rules, since some mandate a disclaimer that past results do not guarantee future outcomes."
+      }
+    ]
+  },
+  {
+    "slug": "gbp-photos-posts-that-drive-calls",
+    "title": "GBP Photos and Posts That Actually Get You Calls",
+    "excerpt": "Most Google Business Profile photos sit there looking nice and doing nothing. Here's which photos and posts actually move people to call, and how to produce them without hiring a photographer.",
+    "metaDescription": "Learn which Google Business Profile photos and posts drive phone calls, with a posting cadence and photo checklist you can start using this week.",
+    "tags": [
+      "google business profile",
+      "local seo",
+      "gbp photos",
+      "google posts",
+      "local search visibility"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "Google Business Profile photos and posts that drive calls",
+    "iso": "2026-11-04",
+    "prettyDate": "November 4, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How many photos should I have on my Google Business Profile?",
+        "a": "Aim for 15 to 25 strong photos and add three to five new ones each month rather than chasing a big number. Quality and recency matter more than volume — Google surfaces the photos that are clear, relevant, and getting engagement. Keep your own photos current so they stand out against customer-uploaded ones, which you can't delete."
+      },
+      {
+        "q": "How often should I post to my Google Business Profile?",
+        "a": "Posting once a week is enough for most local businesses, and consistency matters more than frequency. Standard posts fade after about seven days, so a weekly cadence keeps something fresh on your profile at all times. Batch-write four to six posts in advance so you never go silent for weeks at a stretch."
+      }
+    ]
+  },
+  {
     "slug": "track-phone-calls-from-content",
     "title": "How to Track Phone Calls From Your Content",
     "excerpt": "Content drives phone calls, but most businesses can't see which articles produced them. Here's how to connect a ringing phone back to the page that earned it.",
