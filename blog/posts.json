@@ -1,5 +1,63 @@
 [
   {
+    "slug": "brief-content-provider-first-month-useful",
+    "title": "How to Brief a Content Provider So Month One Pays Off",
+    "excerpt": "The first month with a content provider usually disappoints because the brief was thin. Here's what to hand over so the work comes back usable.",
+    "metaDescription": "Learn how to brief a content provider so the first month of articles is useful, not generic. A practical checklist for busy business owners.",
+    "tags": [
+      "content briefing",
+      "content marketing",
+      "hiring a content agency",
+      "content strategy",
+      "onboarding a writer"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "briefing a content provider so the first month is useful",
+    "iso": "2026-11-05",
+    "prettyDate": "November 5, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What should I send a content provider before they start writing?",
+        "a": "Send your top customer questions in the exact words people use, your ideal-job profile, named competitors, a proof list (certifications, warranties, service area, brands), and a genuine voice sample. Prioritize the customer questions — they prevent the generic first draft that wastes the first month."
+      },
+      {
+        "q": "How do I know if the first month's content is any good?",
+        "a": "Read one article as a customer and ask whether it answers your next question and names specifics only your business would know — your service area, the brands you carry, the real objections you hear. Generic content could be lifted onto a competitor's site with find-and-replace. Also check that each piece links to the page you want people to call from."
+      }
+    ]
+  },
+  {
+    "slug": "which-articles-lead-to-booked-jobs",
+    "title": "Which Blog Articles Actually Get You Booked Jobs",
+    "excerpt": "Traffic and rankings don't pay the bills. Here's a practical way to connect individual articles to booked jobs, including the assisted-conversion problem most dashboards ignore.",
+    "metaDescription": "Learn how to measure which blog articles lead to booked jobs using attribution, call tracking, and a simple assisted-conversion method that shows real revenue.",
+    "tags": [
+      "content attribution",
+      "booked jobs tracking",
+      "content ROI",
+      "assisted conversions",
+      "lead tracking"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "measuring which articles lead to booked jobs",
+    "iso": "2026-11-05",
+    "prettyDate": "November 5, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I know which blog post led to a booked job?",
+        "a": "Trace the booked job back to the session's landing page, not the page where the form was submitted. In your CRM, pull closed jobs from the last 90 days, find each matching lead record and its stored landing page, then group jobs by that page. Articles that appear repeatedly are your earners. If your form doesn't store the landing page, add a hidden field and begin tagging now; for phone bookings, use tracked numbers and an intake question about how they found you."
+      },
+      {
+        "q": "How long before content attribution numbers are trustworthy?",
+        "a": "Expect a usable pattern in about one sales cycle plus 30 days, which for most service businesses is two to three months. Attribution needs enough closed jobs per article to separate signal from noise, so wait for five or six bookings traced to the same landing page before acting. Businesses with longer sales cycles should wait a full cycle, and avoid cutting articles that have only a handful of attributed jobs."
+      }
+    ]
+  },
+  {
     "slug": "writing-regulated-claims-disclaimers-content",
     "title": "Writing Content for Regulated Claims Without Legal Risk",
     "excerpt": "If your business operates under rules from the FTC, a state bar, a dental board, or a financial regulator, your content writers need guardrails. Here is how to build them.",

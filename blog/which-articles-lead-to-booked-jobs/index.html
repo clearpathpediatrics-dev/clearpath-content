@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Which Blog Articles Actually Get You Booked Jobs</title>
+<meta name="description" content="Learn how to measure which blog articles lead to booked jobs using attribution, call tracking, and a simple assisted-conversion method that shows real revenue.">
+<meta name="keywords" content="content attribution, booked jobs tracking, content ROI, assisted conversions, lead tracking">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://clearpath-content.com/blog/which-articles-lead-to-booked-jobs/">
+<link rel="icon" type="image/svg+xml" href="/assets/cpc-mark.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ClearPath Content">
+<meta property="og:title" content="Which Blog Articles Actually Get You Booked Jobs">
+<meta property="og:description" content="Learn how to measure which blog articles lead to booked jobs using attribution, call tracking, and a simple assisted-conversion method that shows real revenue.">
+<meta property="og:url" content="https://clearpath-content.com/blog/which-articles-lead-to-booked-jobs/">
+<meta property="og:image" content="https://clearpath-content.com/assets/cpc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="/assets/analytics.js?v=20261020d" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Which Blog Articles Actually Get You Booked Jobs","description":"Learn how to measure which blog articles lead to booked jobs using attribution, call tracking, and a simple assisted-conversion method that shows real revenue.","datePublished":"2026-11-05","dateModified":"2026-11-05","author":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"publisher":{"@type":"Organization","name":"ClearPath Content","url":"https://clearpath-content.com"},"mainEntityOfPage":"https://clearpath-content.com/blog/which-articles-lead-to-booked-jobs/","keywords":"content attribution, booked jobs tracking, content ROI, assisted conversions, lead tracking","articleSection":"Measurement & ROI"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I know which blog post led to a booked job?","acceptedAnswer":{"@type":"Answer","text":"Trace the booked job back to the session's landing page, not the page where the form was submitted. In your CRM, pull closed jobs from the last 90 days, find each matching lead record and its stored landing page, then group jobs by that page. Articles that appear repeatedly are your earners. If your form doesn't store the landing page, add a hidden field and begin tagging now; for phone bookings, use tracked numbers and an intake question about how they found you."}},{"@type":"Question","name":"How long before content attribution numbers are trustworthy?","acceptedAnswer":{"@type":"Answer","text":"Expect a usable pattern in about one sales cycle plus 30 days, which for most service businesses is two to three months. Attribution needs enough closed jobs per article to separate signal from noise, so wait for five or six bookings traced to the same landing page before acting. Businesses with longer sales cycles should wait a full cycle, and avoid cutting articles that have only a handful of attributed jobs."}}]}</script>
+<style>
+:root{
+  --bg:#F5F7FB;--surface:#fff;--ink:#0E1B2E;--muted:#5B6B80;
+  --pine:#0B2240;--pine-2:#153E6B;--spring:#3E8EDE;--spring-soft:#E4EFFA;
+  --mint:#9CC9F0;--border:#E2E8F1;
+  --shadow:0 6px 30px rgba(11,34,64,.08);--shadow-lg:0 24px 70px rgba(11,34,64,.13);
+  --r:22px;--r-lg:32px;
+  --display:'Outfit',sans-serif;--body:'Plus Jakarta Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--pine-2)}
+::selection{background:var(--spring);color:#fff}
+:focus-visible{outline:3px solid var(--spring);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.narrow{max-width:760px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--pine)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.04em;
+  color:var(--pine-2);background:var(--spring-soft);padding:8px 18px;border-radius:999px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--spring)}
+
+nav{position:sticky;top:16px;z-index:50;padding:16px 24px 0}
+.nav-pill{max-width:1140px;margin:0 auto;height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 26px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--pine)}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--pine)}
+/* .nav-links a is (0,1,1) and would otherwise repaint the CTA muted grey */
+.nav-links a.btn,.nav-links a.btn:hover{color:#fff}
+/* Canonical button system. Mirrors the homepage exactly — if this changes,
+   change index.html's .btn / .btn.green to match, or the CTA renders with
+   different weight on subpages than on the homepage. */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:999px;text-decoration:none;
+  background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;
+  box-shadow:0 8px 24px rgba(31,95,168,.4);
+  transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(31,95,168,.32)}
+.btn.green{background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;font-weight:700}
+.btn.ghost{background:#fff;color:var(--pine);border:1.5px solid var(--border);box-shadow:none;font-weight:600}
+.btn.ghost:hover{border-color:var(--spring);color:var(--pine-2);box-shadow:0 8px 24px rgba(62,142,222,.15)}
+.nav-pill .btn{padding:11px 22px;font-size:14px}
+
+footer{background:#fff;border-top:1px solid var(--border);margin-top:80px;padding:56px 0 36px;font-size:13.5px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--pine-2);text-decoration:underline}
+.foot-cols{display:grid;gap:34px 28px;grid-template-columns:1fr}
+@media(min-width:620px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.foot-cols{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}}
+.foot-brand p{margin:12px 0 18px;max-width:34ch;line-height:1.65}
+.foot-mark{font-family:var(--display);font-weight:700;font-size:17px;color:var(--pine)}
+.foot-btn{display:inline-block;font-weight:600;font-size:13.5px;padding:10px 20px;border-radius:999px;
+  background:var(--spring-soft);color:var(--pine-2)!important;text-decoration:none!important}
+.foot-btn:hover{background:#D3E5F7}
+.foot-col h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--pine);margin-bottom:12px}
+.foot-col a{display:block;padding:5px 0;line-height:1.45}
+.foot-base{margin-top:40px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px}
+
+
+/* ---------- mobile nav: sticky logo bar + hamburger + persistent CTA ---------- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.hamburger{display:none}
+.mobile-cta{display:none}
+@media (max-width:1040px){
+  nav{position:sticky;top:0;padding:10px 14px;z-index:60}
+  .nav-pill{height:auto;min-height:56px;flex-wrap:wrap;border-radius:22px;padding:0 8px 0 16px;gap:0}
+  .wordmark{font-size:16.5px;order:1;padding:8px 0}
+  .wordmark svg{width:23px;height:23px}
+  .hamburger{display:flex;order:2;margin-left:auto;flex-direction:column;justify-content:center;align-items:center;
+    gap:5px;width:44px;height:44px;cursor:pointer;border-radius:12px;-webkit-tap-highlight-color:transparent}
+  .hamburger span{display:block;width:20px;height:2px;background:var(--pine);border-radius:2px;
+    transition:transform .22s ease,opacity .18s ease}
+  .nav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:4px 0 8px}
+  .nav-toggle:checked ~ .nav-links{display:flex}
+  .nav-links a{padding:13px 2px;font-size:15px;border-bottom:1px solid var(--border);color:var(--pine)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-pill .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;text-align:center;
+    padding:15px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;letter-spacing:.01em;
+    background:linear-gradient(135deg,#2F72C4,#1F5FA8);color:#fff;box-shadow:0 10px 30px rgba(31,95,168,.42)}
+  body{padding-bottom:86px}
+}
+@media (max-width:400px){
+  .wordmark{font-size:15px}
+  .mobile-cta{font-size:14.5px;padding:14px 18px}
+}
+
+/* ---------- lead capture (Netlify Forms) ---------- */
+.capture{background:linear-gradient(160deg,#0B2240,#153E6B);border-radius:var(--r-lg);
+  padding:44px 40px;margin:44px 0 10px;box-shadow:var(--shadow-lg)}
+.capture .eyebrow{background:rgba(255,255,255,.13);color:#C4DDF2}
+.capture .eyebrow::before{background:var(--mint)}
+.capture.capture h2{color:#fff;font-size:clamp(23px,3.1vw,31px);margin:16px 0 12px}
+.capture.capture>p{color:#D5E6F6;font-size:16px;max-width:56ch;margin-bottom:8px}
+.capture.capture ul{list-style:none;margin:16px 0 24px;display:grid;gap:8px}
+.capture.capture li{position:relative;padding-left:26px;color:#DCEAF7;font-size:15px}
+.capture.capture li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:700}
+.capture form{display:grid;gap:12px}
+@media(min-width:640px){.capture .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.capture label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:#9CC9F0;margin-bottom:6px}
+.capture input,.capture select{width:100%;font-family:var(--body);font-size:15.5px;color:#0E1B2E;
+  background:#fff;border:1.5px solid transparent;border-radius:14px;padding:13px 16px;-webkit-appearance:none}
+.capture select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%235B6B80' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.capture input:focus,.capture select:focus{outline:none;border-color:var(--spring);box-shadow:0 0 0 4px rgba(62,142,222,.28)}
+.capture button{margin-top:4px;justify-self:start;font-family:var(--body);font-weight:700;font-size:15.5px;
+  padding:14px 30px;border:none;border-radius:999px;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#3E8EDE,#2F72C4);box-shadow:0 10px 26px rgba(62,142,222,.36)}
+.capture button:hover{transform:translateY(-2px)}
+.capture .fine{color:#8FB4D6;font-size:12.5px;margin-top:4px;line-height:1.6}
+.capture .hp{position:absolute;left:-9999px}
+@media(max-width:600px){.capture{padding:34px 22px;border-radius:24px;margin:34px 0 6px}
+  .capture button{width:100%;justify-self:stretch;text-align:center}}
+
+.article{padding:56px 0 10px}
+.article .eyebrow{margin-bottom:16px}
+.article h1{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+.meta{color:var(--muted);font-size:13.5px;font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 34px}
+.tags span{font-size:12px;font-weight:600;color:var(--pine-2);background:var(--spring-soft);padding:6px 14px;border-radius:999px}
+.body{font-size:16.5px}
+.body h2{font-size:clamp(21px,3vw,27px);margin:38px 0 12px}
+.body h3{font-size:19px;margin:26px 0 8px}
+.body p{color:#33445A;margin-bottom:16px}
+.body ul,.body ol{margin:0 0 18px 22px;color:#33445A}
+.body li{margin-bottom:9px}
+.body strong{color:var(--ink)}
+.body table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.body th,.body td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.body thead th{background:var(--pine);color:#fff;font-family:var(--display);font-weight:600}
+.endcard{background:linear-gradient(135deg,#0B2240,#1F5FA8);border-radius:var(--r-lg);padding:44px 40px;text-align:center;color:#fff;margin:52px 0 10px}
+.endcard h3{color:#fff;font-size:25px;margin-bottom:10px}
+.endcard p{color:#C4DDF2;max-width:48ch;margin:0 auto 24px;font-size:15.5px}
+.backlink{display:inline-block;margin:26px 0 0;color:var(--pine-2);font-weight:600;text-decoration:none}
+.pillarlink{display:block;background:#fff;border:1px solid var(--border);border-left:4px solid var(--spring);
+  border-radius:0 16px 16px 0;padding:20px 24px;margin:34px 0 4px;text-decoration:none;box-shadow:var(--shadow)}
+.pillarlink:hover{border-color:var(--spring)}
+.pillarlink span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pillarlink strong{display:block;font-family:var(--display);font-size:18px;color:var(--pine);margin-top:6px;line-height:1.3}
+.pillarlink em{display:block;font-style:normal;color:var(--muted);font-size:14.5px;margin-top:6px}
+.related{margin:38px 0 0;padding-top:26px;border-top:1px solid var(--border)}
+.related h2{font-size:22px;margin-bottom:10px}
+.related ul{list-style:none}
+.related li a{display:block;padding:12px 0;border-bottom:1px solid var(--border);color:var(--pine);font-weight:600;text-decoration:none;line-height:1.4}
+.related li a:hover{color:var(--pine-2);text-decoration:underline}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-pill">
+    <a class="wordmark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="8" fill="#0B2240"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5 C 15.2 7.8, 17.8 7, 19.8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="0.1 4.4"/>
+        <path d="M6.5 19.5 C 10.5 18.5, 11 13.5, 13.2 10.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <circle cx="19.8" cy="7" r="2.4" fill="#3E8EDE"/>
+      </svg>
+      ClearPath&nbsp;Content
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="navToggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-links">
+      <a href="/#why">Why visibility</a>
+      <a href="/#method">Methodology</a>
+      <a href="/industries/">Industries</a>
+      <a href="/locations/">Locations</a>
+      <a href="/roi-calculator/">ROI calculator</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn green" href="/book/" data-cta="nav">Request access</a>
+    </div>
+  </div>
+</nav>
+<a class="mobile-cta" href="/book/" data-cta="mobile-bar">Request access</a>
+<main class="article">
+  <div class="narrow">
+    <span class="eyebrow">Measurement &amp; ROI</span>
+    <h1>Which Blog Articles Actually Get You Booked Jobs</h1>
+    <p class="meta">November 5, 2026 · 7 min read</p>
+    <div class="tags"><span>content attribution</span><span>booked jobs tracking</span><span>content ROI</span><span>assisted conversions</span><span>lead tracking</span></div>
+    <div class="body">
+<p>Most content dashboards are built to show you what's easy to count: sessions, keyword positions, time on page. None of those pay for a truck, a hygienist, or a billable hour. The question an owner actually cares about is narrower and harder: <em>which of these articles put money in the bank?</em></p><p>That question is answerable, but not with the default reports your analytics tool hands you. You have to build a thin chain of data that runs from the article a person read to the job you eventually invoiced. This piece walks through how that chain works, where it breaks, and how to measure it without hiring an analyst.</p><h2>Why page views and rankings don't tell you which articles earn</h2><p>A single article can rank for 40 keywords, pull 300 visitors a month, and generate zero jobs. Another can pull 25 visitors and produce two booked installs a month. If you rank articles by traffic, you'll kill the earner and double down on the tourist magnet.</p><p>The disconnect happens because a visit is not intent, and intent is not a booking. An article answering "how long does a furnace last" attracts people who are researching, often years from buying. An article answering "furnace replacement cost in [city]" attracts people with a dying furnace and a quote in hand. Same traffic numbers can hide completely different revenue.</p><p>To see the difference, you need to tie the article someone entered on to the action they eventually took: a form submission, a call, a chat, or a booked appointment. That means tracking the <strong>landing page</strong> — the first page of the visit — not just the page where the conversion happened. People rarely convert on the article itself. They read it, click to your service page or contact page, and book there. If you only look at where the form sits, every lead looks like it came from your contact page.</p><h2>The chain you have to build</h2><p>Four links connect an article to a booked job. Miss one and the measurement falls apart.</p><ol><li><strong>Entry page capture.</strong> Record which page started the session. Google Analytics 4 calls this the "landing page"; it's a standard dimension.</li><li><strong>Conversion capture.</strong> Fire an event when someone submits a form, calls a tracked number, or starts a chat. Tie that event back to the session's landing page.</li><li><strong>Lead-to-job match.</strong> Connect the lead record (name, phone, email) to your CRM or job-booking system so you know whether it closed and for how much.</li><li><strong>Revenue tag.</strong> When a job closes, write the job value back against the original lead. Now the article has a dollar figure attached.</li></ol><p>The first two links live in your website and analytics. The last two live in how you run your office. The break almost always happens between link two and link three — the lead comes in, someone books it over the phone, and nobody writes down where it originated.</p><h3>A low-tech version that works</h3><p>You don't need a six-tool stack. A workable minimum:</p><ul><li>A form that captures a hidden field for landing page and passes it into your email notification or CRM.</li><li>A call tracking number so phone leads carry a source instead of being invisible.</li><li>One question added to your intake script: "Do you remember what you were reading or searching when you found us?" It's imperfect, but combined with the data it catches the phone-only bookings.</li><li>A monthly habit of marking, in a spreadsheet or CRM field, which leads turned into jobs and their value.</li></ul><h2>How do I know which blog post led to a booked job?</h2><p>You trace the booked job back to the session's landing page, not the page where the form was submitted. Start in your CRM with closed jobs from the last 90 days. For each one, find the matching lead record and the landing page stored on it. Group the jobs by that landing page. The articles that show up repeatedly are your earners. If your form doesn't store the landing page, add a hidden field now and begin tagging; you'll have usable data within a few weeks. For phone bookings, rely on tracked numbers and the intake question. The goal isn't perfect attribution on every job — it's a clear enough pattern to see which three or four articles drive most of the revenue.</p><h2>The assisted conversion problem, and how to handle it</h2><p>Here's the trap that makes most content measurement wrong. Few people read one article and book immediately. The common path looks like this: they find your cost article in week one, leave, come back via a Google search for your brand name in week three, and book on your homepage. If you only credit the <em>last</em> page before booking, your homepage gets the trophy and the cost article — which actually started the relationship — gets nothing.</p>
+<!-- in-article snapshot form -->
+<div class="capture" id="cap-post" data-placement="article">
+  <span class="eyebrow">Free market snapshot</span>
+  <h2>Get a baseline before you spend more on content</h2>
+  <p>Send your email and website. We send back where you stand today on the searches that matter in your market.</p>
+  <ul>
+    <li>The real questions your buyers search before they call anyone</li>
+    <li>Which of those questions your site answers today — and which it does not</li>
+    <li>Who is capturing that traffic in your market right now</li>
+  </ul>
+  <form name="market-snapshot" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/snapshot-requested/">
+    <input type="hidden" name="form-name" value="market-snapshot">
+    <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
+    <!-- Two steps when JavaScript runs (assets/snapshot.js): email and website
+         first, the rest after. Without it, every field shows and it submits as
+         one form. All fields stay in the static HTML so Netlify detects them. -->
+    <div class="row2 cap-step1">
+      <div><label for="cap-post-email">Work email</label>
+        <input id="cap-post-email" name="email" type="email" autocomplete="email" required placeholder="jane@yourcompany.com"></div>
+      <div><label for="cap-post-site">Your website</label>
+        <input id="cap-post-site" name="website" type="text" autocomplete="url" placeholder="yourcompany.com"></div>
+    </div>
+    <div class="cap-step2">
+      <div class="row2">
+        <div><label for="cap-post-name">Your name</label>
+          <input id="cap-post-name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"></div>
+        <div><label for="cap-post-industry">Industry</label>
+          <select id="cap-post-industry" name="industry" required>
+            <option value="" selected disabled>Select one…</option>
+            <option>HVAC</option><option>Plumbing</option><option>Electrical</option><option>Roofing / Contracting</option><option>Pest control</option><option>Law firm</option><option>Dental practice</option><option>Real estate</option><option>Home services</option><option>B2B software</option><option>Professional services</option><option>Other</option>
+          </select></div>
+      </div>
+      <div class="row2">
+        <div><label for="cap-post-city">City / metro</label>
+          <input id="cap-post-city" name="city" type="text" autocomplete="address-level2" required placeholder="Your city"></div>
+        <div><label for="cap-post-state">State</label>
+          <select id="cap-post-state" name="state" required>
+            <option value="" selected disabled>Select a state…</option>
+            <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+          </select></div>
+      </div>
+    </div>
+    <button type="submit">Send me the snapshot</button>
+    <p class="fine">Your snapshot first, then at most three short follow-ups over the next two weeks. No newsletter, no list rental, and one click unsubscribes you from all of it.</p>
+  </form>
+
+</div>
+<!-- /in-article snapshot form -->
+<p>This is "assisted conversion": the article helped the booking without being the final click. If you measure only last-click, you'll systematically undervalue top-of-funnel articles that do real work early in the buying process.</p><p>You don't need a model with decaying weights. A simpler two-column view is enough for most service businesses:</p><table><thead><tr><th>Article</th><th>First-touch jobs</th><th>Last-touch jobs</th></tr></thead><tbody><tr><td>Furnace replacement cost in [city]</td><td>7</td><td>3</td></tr><tr><td>Signs your furnace is failing</td><td>5</td><td>1</td></tr><tr><td>AC vs heat pump comparison</td><td>4</td><td>0</td></tr><tr><td>Homepage</td><td>1</td><td>9</td></tr></tbody></table><p>Read that table and the story is obvious. The cost article and the "signs your furnace is failing" article start a lot of journeys; the homepage closes them. If you judged by last-touch alone, you'd conclude the blog does nothing. First-touch reveals the articles pulling people in. Keep both columns and you stop making the mistake of cutting the content that feeds your pipeline.</p><h2>A worked example, start to finish</h2><p>Suppose a dental practice in Columbus wants to know if its implant content earns. Here's the sequence over one quarter.</p><ol><li><strong>Tagging on.</strong> They add a hidden landing-page field to their consultation form and swap their main phone number for a tracked one on the website.</li><li><strong>Baseline.</strong> Over 90 days, 61 form and call leads come in. The landing page is recorded on 48 of them; the 13 phone-only leads get the intake question.</li><li><strong>Match to jobs.</strong> Front desk marks which leads became booked consultations and which consultations became treatment plans over $3,000.</li><li><strong>Group by entry page.</strong> They sort closed, high-value jobs by landing page. The article "dental implant cost in Columbus" shows 6 first-touch jobs. The general "are dental implants worth it" article shows 4 first-touch but only 1 last-touch.</li><li><strong>Decide.</strong> Both articles earn, in different ways. The cost page is close to the money; the "worth it" page is a reliable top-of-funnel feeder. Neither gets cut. A fourth article on a loosely related topic produced zero jobs across the quarter and gets reworked or retired.</li></ol><p>Notice what this gives the owner: not a vanity number, but a decision. Write more cost-and-comparison pages for the money moments, keep the feeders that start journeys, and stop spending effort on topics that attract readers who never book.</p><h2>How long before the numbers are trustworthy?</h2><p>Expect a usable pattern in about one sales cycle plus 30 days, which for most service businesses means two to three months. The reason is volume: attribution needs enough closed jobs per article to separate signal from noise. A single booking tells you nothing; five or six bookings traced to the same landing page is a pattern you can act on. Businesses with longer sales cycles — commercial contractors, B2B software — should expect to wait a full cycle before trusting the data, because a job booked today may trace to an article read months ago. Don't make cutting decisions on an article with fewer than a handful of attributed jobs; you're more likely to be reacting to randomness than to performance.</p><h2>Where this fits in a content program</h2><p>Measurement like this changes what you write next, which is the whole point. When you can see that cost and comparison pages start the most journeys, your editorial calendar stops being a guess. This is the loop a well-run program should close — publish, attribute, and let the booked-job data steer the next batch. It's part of how we think about the work at ClearPath Content: the article isn't finished when it ranks, it's finished when you know whether it earns.</p><p><strong>Practical takeaway:</strong> Add a hidden landing-page field to your forms and a tracked phone number today, then build the habit of marking which leads became jobs. Within a quarter, group closed jobs by their entry page and keep both a first-touch and last-touch count. That one table will tell you more about which articles to write than any ranking report ever will.</p>
+    </div>
+    <section class="related" aria-labelledby="rel-h">
+      <h2 id="rel-h">Keep reading</h2>
+      <ul><li><a href="/blog/content-metrics-that-predict-revenue/">Which Content Metrics Actually Predict Revenue</a></li><li><a href="/blog/attribute-leads-organic-content/">How to Attribute Leads to Your Blog Content</a></li><li><a href="/blog/reading-average-engagement-time-correctly/">What Average Engagement Time Actually Tells You</a></li><li><a href="/blog/track-assisted-conversions-from-blog-content/">How to Track Assisted Conversions From Blog Posts</a></li></ul>
+    </section>
+    <a class="pillarlink" href="/blog/content-marketing-roi/">
+      <span>Full guide</span>
+      <strong>Measuring Content Marketing ROI Without Fooling Yourself</strong>
+      <em>Traffic is a vanity metric. Which numbers actually predict revenue from content, what leading indicators to watch early, and how to attribute honestly.</em>
+    </a>
+    <div class="endcard">
+      <h3>This is what we do, every week, on autopilot.</h3>
+      <p>ClearPath Content runs the whole organic program — demand mapping, production, publication and interlinking — as a monthly subscription.</p>
+      <a class="btn" href="/book/" data-cta="article-end">Book a 30-minute call</a>
+    </div>
+    <a class="backlink" href="/blog/">← All field notes</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <span class="foot-mark">ClearPath Content</span>
+        <p>Visibility infrastructure for businesses across the United States. We publish the answers your buyers search — to your domain, on your schedule, one business per niche per metro.</p>
+        <a class="foot-btn" href="/book/" data-cta="footer">Request access</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h3>
+        <a href="/">Home</a>
+        <a href="/#method">Methodology</a>
+        <a href="/what-you-get/">What you get</a>
+        <a href="/roi-calculator/">ROI calculator</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/blog/">Field notes</a>
+      </div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <a href="/blog/organic-visibility-guide/">Organic visibility</a>
+        <a href="/blog/ai-search-optimization-guide/">AI search (AEO/GEO)</a>
+        <a href="/blog/local-seo-guide/">Local SEO</a>
+        <a href="/blog/content-marketing-roi/">Measuring ROI</a>
+        <a href="/blog/content-marketing-buying-guide/">Buyer's guide</a>
+        <a href="/blog/content-operations-guide/">Content operations</a>
+        <a href="/blog/industry-content-playbooks/">Industry playbooks</a>
+      </div>
+      <div class="foot-col">
+        <h3>Compare</h3>
+        <a href="/content-agency-vs-subscription/">Agency vs. subscription</a>
+        <a href="/diy-content-vs-outsourcing/">In-house vs. outsourcing</a>
+        <h3 style="margin-top:22px">Areas served</h3>
+        <a href="/content-marketing-new-york/">New York</a>
+        <a href="/content-marketing-los-angeles/">Los Angeles</a>
+        <a href="/content-marketing-chicago/">Chicago</a>
+        <a href="/content-marketing-houston/">Houston</a>
+        <a href="/content-marketing-dallas/">Dallas</a>
+        <a href="/content-marketing-atlanta/">Atlanta</a>
+        <a href="/content-marketing-phoenix/">Phoenix</a>
+        <a href="/locations/">All locations →</a>
+      </div>
+      <div class="foot-col">
+        <h3>Industries</h3>
+        <a href="/content-marketing-for-hvac-companies/">HVAC</a>
+        <a href="/content-marketing-for-plumbers/">Plumbers</a>
+        <a href="/content-marketing-for-electricians/">Electricians</a>
+        <a href="/content-marketing-for-contractors/">Contractors</a>
+        <a href="/content-marketing-for-pest-control/">Pest control</a>
+        <a href="/content-marketing-for-home-services/">Home services</a>
+        <a href="/content-marketing-for-law-firms/">Law firms</a>
+        <a href="/content-marketing-for-dental-practices/">Dental</a>
+        <a href="/content-marketing-for-real-estate/">Real estate</a>
+        <a href="/industries/">All industries →</a>
+      </div>
+    </div>
+    <div class="foot-base">© 2026 ClearPath Content (CPC) · All published work remains client property</div>
+  </div>
+</footer>
+<!-- Self-disabling on pages with no capture form, so it is safe to render everywhere. -->
+<script src="/assets/snapshot.js?v=20261020d" defer></script>
+<script src="/assets/capture-nudge.js?v=20261020d" defer></script>
+</body>
+</html>
