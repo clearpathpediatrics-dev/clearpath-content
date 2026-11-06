@@ -1,5 +1,63 @@
 [
   {
+    "slug": "target-keywords-with-no-search-volume",
+    "title": "Should You Target Keywords With Zero Search Volume?",
+    "excerpt": "Keyword tools under-report long, specific queries all the time. Here is how to tell which zero-volume keywords are worth a page and which are a waste of your time.",
+    "metaDescription": "Learn when a keyword with no reported search volume is worth targeting, how to judge intent over volume, and how to build pages that book real jobs.",
+    "tags": [
+      "zero search volume keywords",
+      "long-tail keywords",
+      "keyword research",
+      "organic visibility",
+      "content strategy"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "when to target a keyword with no reported search volume",
+    "iso": "2026-11-06",
+    "prettyDate": "November 6, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "When is a zero-volume keyword worth targeting?",
+        "a": "A zero-volume keyword is worth targeting when it has clear commercial intent, maps to something you actually sell, and is phrased the way a buyer near a decision would phrase it. Volume tells you how many people ask; intent tells you how many become customers. A page found 8 times a month that books 2 jobs beats one with 800 impressions and no bookings. If you can picture the exact person typing it, it's close to money, no good answer exists yet, and it fits a cluster you're building, write the page."
+      },
+      {
+        "q": "How many zero-volume pages should be in a content program?",
+        "a": "A healthy local service content program usually runs a mix rather than all-or-nothing — roughly a third of pages aimed at measurable head and mid-tail terms and the rest at specific, low-or-zero-volume questions that convert. The exact split depends on your market, but anchoring everything to measurable keywords leaves your most profitable searches uncovered. The real risk isn't writing too many zero-volume pages, it's writing them without a system, so every one needs a clear job, a clear reader, and at least two internal links."
+      }
+    ]
+  },
+  {
+    "slug": "content-marketing-for-funeral-homes",
+    "title": "Content Marketing for Funeral Homes That Earns Trust",
+    "excerpt": "Most funeral home websites talk about the business. Families search for help with decisions they are making under stress. Here is how to write content that meets them where they are and brings them to your door.",
+    "metaDescription": "A practical content marketing guide for funeral homes: the pages families actually search for, how to write them with care, and how to turn them into calls.",
+    "tags": [
+      "funeral home marketing",
+      "content marketing",
+      "funeral home SEO",
+      "local service content",
+      "end-of-life planning content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for funeral homes",
+    "iso": "2026-11-06",
+    "prettyDate": "November 6, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you write about funeral costs without sounding cold?",
+        "a": "Lead with the family's situation, not the price, then give real numbers in plain ranges. Open by acknowledging that the reader is trying to plan without overspending or being upsold, then provide honest ranges with what each option includes, plus a quiet offer to send the full price list. A page that only says 'call us for pricing' signals you will make a hard week harder."
+      },
+      {
+        "q": "Should a funeral home even have a blog?",
+        "a": "Not a traditional blog, but yes to a library of evergreen guides that answer real questions and stay useful for years. A funeral home does not need weekly posts; it needs ten strong, maintained reference pages on costs, decisions, first steps, and pre-planning. Obituary and tribute pages are the one exception worth updating regularly, handled with proper consent and care."
+      }
+    ]
+  },
+  {
     "slug": "brief-content-provider-first-month-useful",
     "title": "How to Brief a Content Provider So Month One Pays Off",
     "excerpt": "The first month with a content provider usually disappoints because the brief was thin. Here's what to hand over so the work comes back usable.",
