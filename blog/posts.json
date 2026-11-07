@@ -1,5 +1,63 @@
 [
   {
+    "slug": "switch-content-providers-without-losing-rankings",
+    "title": "How to Switch Content Providers Without Losing Rankings",
+    "excerpt": "Changing who writes your content doesn't have to cost you traffic. Here's what actually puts rankings at risk during a switch, and the steps that protect the pages already earning you work.",
+    "metaDescription": "A practical guide to switching content providers without losing rankings. Covers URL handling, redirects, a migration checklist, and what to protect first.",
+    "tags": [
+      "switching content providers",
+      "content migration",
+      "SEO rankings",
+      "redirects",
+      "content audit"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "switching content providers without losing rankings",
+    "iso": "2026-11-07",
+    "prettyDate": "November 7, 2026",
+    "readMinutes": 8,
+    "faq": [
+      {
+        "q": "Can I move my content to a new provider without losing rankings?",
+        "a": "Yes, as long as the URLs stay the same and the pages that already rank are left structurally intact. Google ranks URLs, not vendors, and has no idea who wrote your content. If your new provider keeps the same URLs, preserves the body and headings on top-performing pages, and maintains internal links, there's no mechanical reason for rankings to fall. Freeze your top 20 to 40 URLs during the transition and improve everything else gradually."
+      },
+      {
+        "q": "How long should I wait before judging the new provider?",
+        "a": "Give a new content provider at least 90 days, and longer for brand-new pages to mature. The first 30 days prove they didn't break anything: check that protected URLs still rank, nothing dropped out of the index, and existing traffic held. New articles are different, typically taking two to four months to settle into a stable position. So ask 'did the switch cost me anything?' by week four, and 'is the new work producing?' at six months."
+      }
+    ]
+  },
+  {
+    "slug": "content-marketing-property-management-companies",
+    "title": "Content That Wins Property Management Clients",
+    "excerpt": "Most property management content targets the wrong audience. Here is how to write pages that bring in rental owners looking for a manager, with a worked topic map and page structure you can copy.",
+    "metaDescription": "Content marketing for property management companies that attracts owners, not tenants. Learn which pages win doors, how to structure them, and what to skip.",
+    "tags": [
+      "property management marketing",
+      "content marketing for property managers",
+      "real estate content strategy",
+      "lead generation property management",
+      "local SEO"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for property management companies",
+    "iso": "2026-11-07",
+    "prettyDate": "November 7, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you write a property management cost page owners trust?",
+        "a": "Write the actual mechanics of how fees work, with real ranges, before you ask for any contact information. Open with an honest range like 8–12% of collected rent, break down each fee line (monthly, leasing, renewal, maintenance), name the fees you don't charge, show the math on a realistic example, and close with a direct next step instead of a gated quote form."
+      },
+      {
+        "q": "Is blogging worth it for a property management company?",
+        "a": "Yes, but only if the content targets rental property owners rather than tenants and you commit to a consistent cadence for at least six to nine months. Management agreements are researched purchases, so pages like fee explanations and DIY-vs-hire comparisons keep producing leads for years. Results vary by market and competition, so treat it as an ongoing program rather than a short campaign."
+      }
+    ]
+  },
+  {
     "slug": "target-keywords-with-no-search-volume",
     "title": "Should You Target Keywords With Zero Search Volume?",
     "excerpt": "Keyword tools under-report long, specific queries all the time. Here is how to tell which zero-volume keywords are worth a page and which are a waste of your time.",
