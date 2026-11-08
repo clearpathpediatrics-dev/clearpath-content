@@ -1,5 +1,63 @@
 [
   {
+    "slug": "how-often-ai-assistants-update-business-info",
+    "title": "How Often AI Assistants Update Info About You",
+    "excerpt": "AI assistants don't all learn about your business on the same schedule. Here's how the refresh cycle actually works and how to shorten the lag when your details change.",
+    "metaDescription": "How often AI assistants refresh what they know about your business, which data sources update fastest, and how to speed up corrections to outdated info.",
+    "tags": [
+      "answer engine optimization",
+      "ai search",
+      "business listings",
+      "local seo",
+      "content freshness"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how often AI assistants refresh what they know about a business",
+    "iso": "2026-11-08",
+    "prettyDate": "November 8, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How long until AI assistants show my updated business hours?",
+        "a": "Updated hours usually appear within a few days if you change them at the primary source like Google Business Profile, but a full refresh across every assistant can take two to six weeks. Speed depends on where you make the change and whether your sources agree with each other."
+      },
+      {
+        "q": "Does it help to just ask the AI to update its information?",
+        "a": "No. Telling an assistant to update your details in a chat does not change what it knows, because the correction isn't stored and doesn't feed any data source. The only reliable fix is to correct the underlying sources the assistant reads from, such as your business profile and website."
+      }
+    ]
+  },
+  {
+    "slug": "electrical-cost-guides-without-underselling",
+    "title": "How to Write Electrical Cost Guides That Don't Undersell You",
+    "excerpt": "Cost guides are some of the highest-intent pages an electrical contractor can publish. Written badly, they train buyers to shop on price alone. Written well, they filter tyre-kickers and warm up serious leads before the phone rings.",
+    "metaDescription": "Learn how to write electrical cost guides that rank, build trust, and price your work honestly without scaring off good leads or anchoring low.",
+    "tags": [
+      "electrical content marketing",
+      "cost guide pages",
+      "electrician SEO",
+      "pricing transparency",
+      "service business content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "writing electrical cost guides without underselling the work",
+    "iso": "2026-11-08",
+    "prettyDate": "November 8, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you show prices without scaring people off?",
+        "a": "Show ranges tied to specific scenarios, lead with the value the price buys rather than the number alone, and name the cheap-option risks explicitly so readers self-select. People are not scared off by high numbers, they are scared off by numbers they cannot make sense of. A high figure with a clear explanation of what it includes feels safer than a low figure that might balloon unexpectedly."
+      },
+      {
+        "q": "Should an electrician put prices on their website at all?",
+        "a": "Yes, publish ranges with context, because searches that include 'cost' or 'price' are among the highest-intent queries in the trade and ignoring them hands those leads to competitors and aggregator sites. The only thing not to publish is a firm, bindable quote, since real pricing requires seeing the property. State clearly that figures are typical ranges for planning and that a site visit produces the actual quote."
+      }
+    ]
+  },
+  {
     "slug": "switch-content-providers-without-losing-rankings",
     "title": "How to Switch Content Providers Without Losing Rankings",
     "excerpt": "Changing who writes your content doesn't have to cost you traffic. Here's what actually puts rankings at risk during a switch, and the steps that protect the pages already earning you work.",
