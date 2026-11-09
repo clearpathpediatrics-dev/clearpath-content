@@ -1,5 +1,63 @@
 [
   {
+    "slug": "content-idea-inbox-team-can-feed",
+    "title": "How to Set Up a Content Idea Inbox Your Team Uses",
+    "excerpt": "Your technicians, sales reps, and front desk hear the questions that make good articles. Here's how to build a simple inbox that captures those ideas before they evaporate.",
+    "metaDescription": "Set up a content idea inbox the whole team can feed with one form, clear fields, and a weekly review so good article ideas stop getting lost.",
+    "tags": [
+      "content operations",
+      "content idea inbox",
+      "editorial workflow",
+      "content planning",
+      "team content process"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "setting up a content inbox the whole team can feed",
+    "iso": "2026-11-09",
+    "prettyDate": "November 9, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What is the right way to review the content inbox?",
+        "a": "The right way to review the content inbox is a standing 20-minute slot once a week where one named owner triages every submission, tags it, and sorts it into write now, write later, merge with an existing idea, or not a fit. Ideas that appear repeatedly jump the queue, and narrow ideas get merged into broader planned pieces. Keep a visible status on each item so submitters see their idea move forward."
+      },
+      {
+        "q": "How do you keep the content inbox from dying after a month?",
+        "a": "You keep the inbox alive by closing the loop publicly and tying submissions to visible outcomes. When an article ships, post it in the same channel and name the person whose question sparked it. That habit, plus a short monthly recap of which ideas became pages, makes the inbox self-sustaining because people keep feeding a system when they see their input turn into real, useful content."
+      }
+    ]
+  },
+  {
+    "slug": "we-serve-the-area-copy-loses-ai-recommendations",
+    "title": "Why \"We Serve the Area\" Copy Loses AI Picks",
+    "excerpt": "When someone asks an AI assistant for a plumber in their town, the model needs concrete, verifiable detail to name you. \"We serve the surrounding area\" gives it nothing to work with. Here's what to write instead.",
+    "metaDescription": "Vague service-area copy keeps AI search from recommending you. Learn why \"we serve the surrounding area\" fails and how to write copy that gets you named.",
+    "tags": [
+      "answer engine optimization",
+      "local SEO",
+      "AI search",
+      "service area pages",
+      "content strategy"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "why vague 'we serve the area' copy loses AI recommendations",
+    "iso": "2026-11-09",
+    "prettyDate": "November 9, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why does vague copy specifically hurt AI recommendations and not just rankings?",
+        "a": "Vague copy hurts AI recommendations because an answer engine has to produce a confident, named response from a narrow window of text, while traditional search could rank you on many combined signals like backlinks and profile data. When an assistant collapses the selection step and names one to three businesses, text that doesn't make the place connection explicit makes you a weak candidate, so the model drops you for a source that spelled coverage out plainly and consistently."
+      },
+      {
+        "q": "How many towns should I list on my service-area page?",
+        "a": "List the towns you can genuinely service, usually between five and fifteen, ordered by how much work each drives. Below five you likely omit real coverage that could match queries; above fifteen you're either padding with places you can't reach or you're large enough to need structured regional pages instead of one long list. Make sure each named town also appears in natural sentences elsewhere on the site so the place name shows up in context, not just a list."
+      }
+    ]
+  },
+  {
     "slug": "how-often-ai-assistants-update-business-info",
     "title": "How Often AI Assistants Update Info About You",
     "excerpt": "AI assistants don't all learn about your business on the same schedule. Here's how the refresh cycle actually works and how to shorten the lag when your details change.",
