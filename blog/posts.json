@@ -1,5 +1,63 @@
 [
   {
+    "slug": "earn-local-press-links-help-rankings",
+    "title": "How to Earn Local Press Links That Help Rankings",
+    "excerpt": "Local press coverage can earn you the kind of authoritative backlinks that move rankings. Here's how to get covered without hiring a PR firm or inventing news.",
+    "metaDescription": "Learn how to earn local press coverage that builds real backlinks and improves local search rankings, with a repeatable pitch process you can run yourself.",
+    "tags": [
+      "local SEO",
+      "local press coverage",
+      "backlinks",
+      "digital PR",
+      "local search visibility"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "earning local press coverage that helps rankings",
+    "iso": "2026-11-10",
+    "prettyDate": "November 10, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I get my local business into the news without a PR firm?",
+        "a": "Get your business into local news by making yourself a ready, relevant source for stories reporters are already writing, then pitching a specific person a specific angle at the right moment. Build a short list of local outlets, identify the reporter who covers your beat, watch for timely moments like weather events or new legislation, and send a two-paragraph pitch that leads with value to their readers rather than to you. Respond within the hour, because reporters work on tight deadlines."
+      },
+      {
+        "q": "Do press mentions without a link still help SEO?",
+        "a": "Yes, unlinked press mentions still help, though less directly than a link. Search engines and AI answer tools read your business name alongside your location and topic, and repeated associations across trusted local sites reinforce who you are and what you do. These mentions feed the entity picture local algorithms use to judge your credibility. When possible, ask the reporter to link your name, but take the mention regardless and consider following up later to get the link added."
+      }
+    ]
+  },
+  {
+    "slug": "why-homepage-cant-rank-for-everything",
+    "title": "Why Your Homepage Can't Rank for Everything You Do",
+    "excerpt": "A homepage is built to introduce your business, not to answer every search in your market. Here's why one page can't carry all your services, and the page structure that actually ranks.",
+    "metaDescription": "Your homepage can't rank for every service you offer. Learn why one page can't cover a whole market and how dedicated pages win more searches.",
+    "tags": [
+      "organic visibility",
+      "site architecture",
+      "service pages",
+      "local SEO",
+      "content strategy"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "why your homepage cannot rank for everything you do",
+    "iso": "2026-11-10",
+    "prettyDate": "November 10, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why can't one strong page just rank for multiple services?",
+        "a": "One page can't rank well for multiple distinct services because each service is a different search with different intent, and a single page can only be deeply relevant to one of them. When a page tries to cover two unrelated services equally, it splits its relevance and neither topic reaches the depth a dedicated page would. Closely related variations of the same service can share a page, but genuinely different jobs need separate pages."
+      },
+      {
+        "q": "What should my homepage rank for instead?",
+        "a": "Your homepage should rank for your brand name and act as a hub that routes visitors to dedicated service pages. It introduces the business and carries trust signals, then links to the pages built to answer specific searches. Those service and supporting pages do the ranking for individual queries, while the homepage passes authority to them through internal links."
+      }
+    ]
+  },
+  {
     "slug": "content-idea-inbox-team-can-feed",
     "title": "How to Set Up a Content Idea Inbox Your Team Uses",
     "excerpt": "Your technicians, sales reps, and front desk hear the questions that make good articles. Here's how to build a simple inbox that captures those ideas before they evaporate.",
