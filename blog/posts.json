@@ -1,5 +1,63 @@
 [
   {
+    "slug": "turn-sales-objections-into-search-traffic",
+    "title": "Turn Sales Objections Into Search Traffic",
+    "excerpt": "The questions that slow down your sales calls are the same ones buyers type into search. Here's a repeatable way to mine objections and turn them into ranking content.",
+    "metaDescription": "Your sales objections are search queries in disguise. Here's how to turn the questions that stall deals into content that earns traffic and pre-sells buyers.",
+    "tags": [
+      "organic visibility",
+      "content strategy",
+      "sales enablement",
+      "keyword research",
+      "lead generation"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "turning sales objections into search traffic",
+    "iso": "2026-11-11",
+    "prettyDate": "November 11, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you collect sales objections systematically?",
+        "a": "Collect objections at the moment they happen by giving your sales conversations a simple capture habit. Keep a shared spreadsheet, log the prospect's exact words whenever a deal slows or stalls, review call recordings if you have them, and ask your team weekly what made deals slow down. After four to six weeks you'll have 20 to 40 distinct objections and a clear top handful to turn into content."
+      },
+      {
+        "q": "Does answering sales objections publicly give away your advantage?",
+        "a": "No — publishing your reasoning strengthens your position. The buyers who read your answer and still call you are already sold on your logic, and the ones who leave were never going to buy at your price anyway. Competitors can copy your article, but they can't copy being the one who published the definitive answer first and ranked for it."
+      }
+    ]
+  },
+  {
+    "slug": "multilingual-immigration-legal-guides",
+    "title": "Spanish Immigration Guides That Bring In Clients",
+    "excerpt": "Immigration clients search in their own language, often on a phone, often under stress. Here is how to build legal guides in Spanish and other languages that actually get found and turn into consultations.",
+    "metaDescription": "Learn how multilingual legal guides attract immigration clients, including translation, hreflang setup, and topic choices that turn readers into consultations.",
+    "tags": [
+      "immigration law marketing",
+      "multilingual content",
+      "legal guides",
+      "hreflang",
+      "law firm SEO"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "multilingual legal guides that attract immigration clients",
+    "iso": "2026-11-11",
+    "prettyDate": "November 11, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you translate legal guides so they rank in each language?",
+        "a": "Translate with a human who knows both the language and immigration terminology, then build each language as its own indexable page with proper hreflang tags. Machine translation misses terms of art like \"ajuste de estatus,\" and without hreflang, Google may serve the wrong language or treat versions as duplicate content. Each language version needs its own crawlable URL, fully translated navigation and contact forms, and hreflang annotations connecting it to every alternate version."
+      },
+      {
+        "q": "Should you translate your whole site or just the guides?",
+        "a": "Start with the high-intent guides and the pages a translated reader needs to convert, then expand only if traffic justifies it. You do not need a fully mirrored site immediately. Translate the guides that attract active cases, a translated consultation page, and the relevant service descriptions, then watch which language versions produce booked consultations and add depth to the languages that perform."
+      }
+    ]
+  },
+  {
     "slug": "earn-local-press-links-help-rankings",
     "title": "How to Earn Local Press Links That Help Rankings",
     "excerpt": "Local press coverage can earn you the kind of authoritative backlinks that move rankings. Here's how to get covered without hiring a PR firm or inventing news.",
