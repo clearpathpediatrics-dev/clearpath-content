@@ -1,5 +1,63 @@
 [
   {
+    "slug": "match-article-format-to-what-ranks",
+    "title": "Read the SERP Before You Write the Article",
+    "excerpt": "Before you write, the search results already tell you what format wins. Here's how to read that signal and build pages that actually compete.",
+    "metaDescription": "Learn how to match your article format to what already ranks before writing a word, so your organic visibility content competes instead of getting ignored.",
+    "tags": [
+      "organic visibility",
+      "content strategy",
+      "SERP analysis",
+      "search intent",
+      "content format"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "matching article format to what already ranks",
+    "iso": "2026-11-12",
+    "prettyDate": "November 12, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "When should you break format instead of matching it?",
+        "a": "Break format only when the current results are weak or the intent is clearly splitting. If the top results are thin forum posts, outdated pages, or generic content with no local angle, there is room for something better-structured. A mixed SERP with no dominant container also lets a well-built page define the answer. Break format based on evidence, not preference."
+      },
+      {
+        "q": "How do I match format without producing a copy of what already ranks?",
+        "a": "Match the container and required elements, then differentiate on specificity, accuracy, and the gaps competitors leave open. Format is the skeleton every ranking page shares; your advantage is the detail. Give local ranges where others give vague national ones, cover the step competitors skip, and answer the sub-questions they ignore. Originality lives in the content, not the structure."
+      }
+    ]
+  },
+  {
+    "slug": "check-ai-search-mentions-business",
+    "title": "How to Check If AI Search Mentions Your Business",
+    "excerpt": "A step-by-step method to see whether ChatGPT, Gemini and Perplexity recommend your business, built to finish in a single afternoon with a spreadsheet and a few repeatable prompts.",
+    "metaDescription": "Learn how to test your visibility across ChatGPT, Gemini and Perplexity in an afternoon, with a repeatable prompt set that shows exactly where you stand.",
+    "tags": [
+      "answer engine optimization",
+      "AI search visibility",
+      "ChatGPT for business",
+      "Perplexity SEO",
+      "local AI search"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "testing your visibility across ChatGPT, Gemini and Perplexity in an afternoon",
+    "iso": "2026-11-12",
+    "prettyDate": "November 12, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I know if ChatGPT recommends my business?",
+        "a": "Ask ChatGPT directly, \"Who are the best [your service] providers in [your city]?\" and check whether your name appears, where it ranks, and whether the description is accurate. Run it two or three times in fresh chats since answers vary, and also try a problem-first version of the question. If you never appear across phrasings and sessions, ChatGPT lacks a strong enough signal, and the fix is usually getting mentioned on the third-party pages and directories it draws from."
+      },
+      {
+        "q": "What should I do if AI tools get my business facts wrong?",
+        "a": "Fix the facts at the source, since assistants pull details from pages they trust rather than inventing them. Start with your Google Business Profile, website, and major directories, making sure name, address, phone, hours, and services match everywhere. Then request corrections on the third-party pages the assistants cited in your audit. Changes aren't instant, so recheck in a month or two."
+      }
+    ]
+  },
+  {
     "slug": "turn-sales-objections-into-search-traffic",
     "title": "Turn Sales Objections Into Search Traffic",
     "excerpt": "The questions that slow down your sales calls are the same ones buyers type into search. Here's a repeatable way to mine objections and turn them into ranking content.",
