@@ -1,5 +1,63 @@
 [
   {
+    "slug": "monthly-content-report-what-to-expect",
+    "title": "What a Good Content Report Should Show You Monthly",
+    "excerpt": "Most monthly content reports are padded with vanity metrics that hide whether the work is paying off. Here is the short list of things a report should actually show you, and the red flags that mean you are being managed, not served.",
+    "metaDescription": "Learn what a monthly content report should include, what to ignore, and the exact line items that prove your provider is earning the fee.",
+    "tags": [
+      "content reporting",
+      "content marketing metrics",
+      "content provider",
+      "SEO reporting",
+      "buying guide"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "the monthly reporting a content provider should send",
+    "iso": "2026-11-13",
+    "prettyDate": "November 13, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What should a monthly content report actually include?",
+        "a": "A monthly content report should include four things: what was published, how each piece is performing against the query it was built for, the leading indicators that predict future results, and a specific plan for the next month. If it only shows a production list and a total traffic number, it is an activity log, not a performance report."
+      },
+      {
+        "q": "How often should you get a content report, and who should read it?",
+        "a": "You should get a written report monthly, and the person who owns revenue should read it rather than just file it. Monthly is the right cadence because organic content moves slowly, so weekly reports mostly show noise and quarterly reports let problems run too long before anyone catches them."
+      }
+    ]
+  },
+  {
+    "slug": "write-for-buyers-before-theyre-ready",
+    "title": "Write for Buyers Before They're Ready to Buy",
+    "excerpt": "Most content targets the person ready to buy today. The bigger opportunity is the person who won't need you for weeks or months but is already researching. Here's how to catch them early and still be there at the sale.",
+    "metaDescription": "Learn how to write content for the buyer two steps before they need you, so your business is the name they already know when the search turns urgent.",
+    "tags": [
+      "organic visibility",
+      "content strategy",
+      "buyer journey",
+      "top of funnel content",
+      "search intent"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "writing for the buyer two steps before they need you",
+    "iso": "2026-11-13",
+    "prettyDate": "November 13, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Is writing for buyers early just top-of-funnel content that never converts?",
+        "a": "No — the difference is that every early-stage article is built with a specific forward path to the sale, so traffic moves toward your service pages instead of bouncing. It converts when there's a real commercial problem behind the query, the article answers it honestly, and a clear internal link leads to the next step."
+      },
+      {
+        "q": "How do I know which early-stage topics are worth writing?",
+        "a": "Write the early-stage topic if it meets three tests: a real buyer sits behind the question, the current search results are weak, and you can connect it to a service you sell within two internal links. If any one of those fails, skip the topic."
+      }
+    ]
+  },
+  {
     "slug": "match-article-format-to-what-ranks",
     "title": "Read the SERP Before You Write the Article",
     "excerpt": "Before you write, the search results already tell you what format wins. Here's how to read that signal and build pages that actually compete.",
