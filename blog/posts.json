@@ -1,5 +1,63 @@
 [
   {
+    "slug": "answer-density-vs-word-count-ai-citation",
+    "title": "Answer Density vs. Word Count for AI Citations",
+    "excerpt": "Long articles don't get cited more often than short ones. What gets cited is a clear, self-contained answer the model can lift without context. Here's how to build that into your pages.",
+    "metaDescription": "Answer density beats word count for AI citation. Learn how to pack clear, self-contained answers into your content so answer engines pull your pages.",
+    "tags": [
+      "answer engine optimization",
+      "AI citation",
+      "answer density",
+      "content length SEO",
+      "AEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "answer density versus article length for AI citation",
+    "iso": "2026-11-14",
+    "prettyDate": "November 14, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Does article length matter for AI citation at all?",
+        "a": "Length matters only as a byproduct of coverage, not as a target on its own. A longer article can cover more distinct questions, and each well-answered question is a separate citation opportunity — but padding a single answer to hit a word count lowers density and buries the extractable sentence."
+      },
+      {
+        "q": "Can a short article get cited more than a long one?",
+        "a": "Yes — a short article with high answer density often out-cites a longer, padded one, because the model can find and lift its answers with less ambiguity. Citation is a matching problem: the clearest, most self-contained answer to the specific question tends to win the pick, regardless of total page length."
+      }
+    ]
+  },
+  {
+    "slug": "track-leads-service-website-conversion-setup",
+    "title": "How to Track Leads on a Service Website",
+    "excerpt": "Most service businesses can't tell you which page produced last month's leads. Here's how to set up conversion tracking that answers that question without a developer or a bloated analytics stack.",
+    "metaDescription": "A practical guide to setting up conversion tracking on a service business website so you know which pages and content actually produce calls and form fills.",
+    "tags": [
+      "conversion tracking",
+      "service business marketing",
+      "lead tracking",
+      "GA4 setup",
+      "marketing ROI"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "setting up conversion tracking on a service business website",
+    "iso": "2026-11-14",
+    "prettyDate": "November 14, 2026",
+    "readMinutes": 8,
+    "faq": [
+      {
+        "q": "How do I track which page a lead came from?",
+        "a": "You track which page a lead came from by capturing the landing page or page path at the moment of conversion and tying it to the event. In GA4, the Landing page and Page path dimensions let you break key events down by the page that produced them. For forms, add a hidden field that captures the current URL and pass it into your CRM. For phone calls, call tracking with dynamic number insertion attributes the call to the source and page."
+      },
+      {
+        "q": "Do I need Google Ads conversion tracking if I only do SEO?",
+        "a": "No — if you're not running paid ads, you don't need Google Ads conversion tracking. Google Ads conversions exist to optimise ad bidding. For an organic-only business, GA4 key events plus call tracking tell you which pages convert, how many leads each produces, and where your traffic comes from. Add Ads tracking only when you start spending on ads."
+      }
+    ]
+  },
+  {
     "slug": "monthly-content-report-what-to-expect",
     "title": "What a Good Content Report Should Show You Monthly",
     "excerpt": "Most monthly content reports are padded with vanity metrics that hide whether the work is paying off. Here is the short list of things a report should actually show you, and the red flags that mean you are being managed, not served.",
