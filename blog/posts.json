@@ -1,5 +1,63 @@
 [
   {
+    "slug": "publishing-bursts-vs-steady-schedule",
+    "title": "Why Publishing in Bursts Beats a Steady Schedule",
+    "excerpt": "Dumping ten articles in one week and going quiet for two months feels productive. It usually isn't. Here's the mechanics of why steady publishing works better, and how to set a pace you can hold.",
+    "metaDescription": "Publishing in bursts underperforms a steady content schedule for organic visibility. Here's why cadence matters and how to set a pace you can actually keep.",
+    "tags": [
+      "content cadence",
+      "publishing schedule",
+      "organic visibility",
+      "content strategy",
+      "SEO consistency"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "why publishing in bursts underperforms a steady schedule",
+    "iso": "2026-11-15",
+    "prettyDate": "November 15, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Does Google penalise publishing a lot of content at once?",
+        "a": "Google does not issue a direct penalty for publishing many articles in a short window, but burst publishing tends to underperform for indirect reasons. Crawl and indexing attention gets split across all the pages at once so some sit unindexed longer, fast-produced batches are easier to assess as low value, and the silence afterward slows how quickly crawlers return. The practical effect is less visibility per article than a steady cadence produces."
+      },
+      {
+        "q": "How many articles per month should I publish for SEO?",
+        "a": "There is no universal number, but for most small and mid-sized service businesses a sustainable pace of four to eight well-researched articles a month, published on a consistent weekly or twice-weekly rhythm, outperforms larger irregular bursts. The right figure is the one you can hold for twelve months without stopping, so pick a number slightly below what feels ambitious."
+      }
+    ]
+  },
+  {
+    "slug": "seo-content-senior-care-home-health-agencies",
+    "title": "SEO Content for Home Care Agencies That Converts",
+    "excerpt": "Families researching home care ask a predictable set of questions over weeks. Here is how to map that question-space and write pages that get your agency into the shortlist.",
+    "metaDescription": "Learn how to build SEO content for senior care and home health agencies that answers family questions and turns searches into booked assessments.",
+    "tags": [
+      "home care SEO",
+      "senior care content marketing",
+      "home health agency marketing",
+      "local SEO",
+      "content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content for senior care and home health agencies",
+    "iso": "2026-11-15",
+    "prettyDate": "November 15, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I write home care content that AI assistants will cite?",
+        "a": "Answer the exact question in the first sentence of each section, then support it with specifics. AI answer engines pull from pages that state a clear, complete answer up front rather than burying it after paragraphs of introduction. Phrase headings the way people actually ask, keep each answer self-contained so it can be lifted on its own, and add local specifics like hospital names and regional cost ranges so you stand out from generic content."
+      },
+      {
+        "q": "Does an agency need separate content for home care and home health?",
+        "a": "Yes, because they are different services with different payers, regulations, and searchers, and blending them confuses both families and search engines. Home health is clinical, physician-ordered, and often Medicare-covered; home care is non-medical and usually private pay or long-term care insurance. Build two content tracks and link them only where they genuinely overlap, keeping the terminology precise so you attract the right searches."
+      }
+    ]
+  },
+  {
     "slug": "answer-density-vs-word-count-ai-citation",
     "title": "Answer Density vs. Word Count for AI Citations",
     "excerpt": "Long articles don't get cited more often than short ones. What gets cited is a clear, self-contained answer the model can lift without context. Here's how to build that into your pages.",
