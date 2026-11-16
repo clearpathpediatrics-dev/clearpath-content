@@ -1,5 +1,63 @@
 [
   {
+    "slug": "fix-wrong-facts-about-business-in-ai-answers",
+    "title": "How to Fix Wrong Facts About Your Business in AI Answers",
+    "excerpt": "AI assistants sometimes state the wrong hours, wrong service area, or wrong price for your business. Here is how to find the error, trace the source, and correct it so the answer updates.",
+    "metaDescription": "A practical guide to correcting wrong facts about your company in AI answers, covering why errors happen, what to fix first, and how to make changes stick.",
+    "tags": [
+      "AI search",
+      "answer engine optimization",
+      "business reputation",
+      "structured data",
+      "local SEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "correcting wrong facts about a company inside AI answers",
+    "iso": "2026-11-16",
+    "prettyDate": "November 16, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How long does it take for an AI answer to update after you fix the source?",
+        "a": "It varies from days to several months, and there is no setting that forces it. Some engines pull near-live search results and update within days once your corrected page is indexed, while others rely on a training snapshot that only changes when the model is updated. Fix everything you can, confirm the pages are indexed, and recheck on a schedule."
+      },
+      {
+        "q": "Can you ask an AI company to correct a fact directly?",
+        "a": "Some platforms offer feedback or reporting mechanisms, and for factual errors about a real business they are worth using, but they are slow and rarely confirm action. Treat them as a supplement to correcting the underlying sources, never a substitute. The durable fix is making the true version consistent and easy to find."
+      }
+    ]
+  },
+  {
+    "slug": "one-hour-content-gap-analysis-small-business",
+    "title": "A One-Hour Content Gap Analysis for Small Business",
+    "excerpt": "You don't need a subscription tool or an agency to find the holes in your content. Here's a spreadsheet method a small business owner can finish in an hour and act on the same day.",
+    "metaDescription": "Run a content gap analysis in about an hour with a simple spreadsheet method. Find the questions you should rank for and know exactly what to write next.",
+    "tags": [
+      "content gap analysis",
+      "organic visibility",
+      "small business SEO",
+      "keyword research",
+      "content strategy"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "a content gap analysis a small business can do in an hour",
+    "iso": "2026-11-16",
+    "prettyDate": "November 16, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I know which content gaps to fill first?",
+        "a": "Fill the gaps closest to a buying decision first, even if they have lower search volume. Rank your gap list by intent: price and cost questions, comparison ('vs.') questions, and 'how to choose' questions go at the top; general how-tos go lower. Within the same intent level, prefer the gaps where competitors are weakest, since those are easiest to rank for."
+      },
+      {
+        "q": "Do I need a paid keyword tool to do a content gap analysis?",
+        "a": "No. For a small service business, a paid keyword tool is optional for a first gap analysis, because your own sales conversations and the live search results give you better buyer-intent signal than volume data does. Use your inbox, call notes, Google autocomplete, 'People also ask' boxes, and related searches. A paid tool becomes useful later for finding the long tail."
+      }
+    ]
+  },
+  {
     "slug": "publishing-bursts-vs-steady-schedule",
     "title": "Why Publishing in Bursts Beats a Steady Schedule",
     "excerpt": "Dumping ten articles in one week and going quiet for two months feels productive. It usually isn't. Here's the mechanics of why steady publishing works better, and how to set a pace you can hold.",
