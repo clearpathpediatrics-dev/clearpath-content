@@ -1,5 +1,63 @@
 [
   {
+    "slug": "clear-service-area-ai-answers",
+    "title": "Make Your Service Area Clear for AI Answers",
+    "excerpt": "AI answer engines repeat whatever your site says about where you work. If that information is vague or scattered, you get leads from towns you don't serve and silence from towns you do. Here's how to state it so machines get it right.",
+    "metaDescription": "Learn how to state your service area so AI answers tell customers exactly where you work, cutting wasted leads and missed calls from the wrong towns.",
+    "tags": [
+      "service area optimization",
+      "AI search",
+      "local SEO",
+      "answer engine optimization",
+      "service business marketing"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "making service-area information unambiguous for AI answers",
+    "iso": "2026-11-17",
+    "prettyDate": "November 17, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How should I write my service area so AI answers get it right?",
+        "a": "Write a plain-text list of every city, county, or neighborhood you serve, place it on a dedicated page and repeat it on relevant service pages, and keep the wording identical across your website, Google Business Profile, and directories. Replace region words like \"surrounding areas\" with named places, then add any conditions such as travel fees or services limited to certain towns. Consistency matters: when every source names the same places, models treat it as settled fact."
+      },
+      {
+        "q": "Does naming more cities make me rank in all of them?",
+        "a": "No. Naming a city lets search engines and AI models associate you with it, but ranking and citation still depend on real relevance signals like a dedicated service page, local reviews, and links. Listing towns you don't genuinely serve is a spam pattern that tends to get discounted. Name the places you truly serve, give the important ones their own substantive pages, and keep marginal towns on a single shared service-area page."
+      }
+    ]
+  },
+  {
+    "slug": "true-cost-of-a-cheap-content-package",
+    "title": "What a $50 Blog Article Really Costs You",
+    "excerpt": "Cheap content looks like a deal until you add up the editing, the rewrites, and the months of ranking nothing. Here is where the real money goes.",
+    "metaDescription": "The true cost of a cheap content package isn't the price tag. See where the hidden costs land and how to tell a bargain from a liability before you buy.",
+    "tags": [
+      "content pricing",
+      "buying guides",
+      "content marketing",
+      "cheap content risks",
+      "SEO content"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "the true cost of a cheap content package",
+    "iso": "2026-11-17",
+    "prettyDate": "November 17, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Is cheap content ever the right call?",
+        "a": "Cheap content is the right call when the stakes are low and the topic is simple enough that accuracy and voice barely matter, such as basic category pages or internal descriptions. It fails for the high-stakes jobs most owners actually buy it for: ranking against real competition and representing expertise in technical or regulated fields."
+      },
+      {
+        "q": "How do I tell a good content deal from a false bargain?",
+        "a": "You tell them apart by looking at what the vendor does before they write, not just the finished price. Ask who researches each topic, how they handle your industry's specifics, to see a sample in a field you know cold, what happens when an article doesn't rank, and how the articles connect to each other. A higher per-article price that passes these is usually cheaper in total."
+      }
+    ]
+  },
+  {
     "slug": "fix-wrong-facts-about-business-in-ai-answers",
     "title": "How to Fix Wrong Facts About Your Business in AI Answers",
     "excerpt": "AI assistants sometimes state the wrong hours, wrong service area, or wrong price for your business. Here is how to find the error, trace the source, and correct it so the answer updates.",
