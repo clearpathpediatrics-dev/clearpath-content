@@ -1,5 +1,63 @@
 [
   {
+    "slug": "garage-door-repair-questions-worth-answering",
+    "title": "Garage Door Repair Questions Worth Answering",
+    "excerpt": "Most garage door companies publish generic blog posts nobody searches for. Here are the specific repair questions customers actually type before they call, and how to answer them so you win the job.",
+    "metaDescription": "The garage door repair questions customers search before they call, and how answering them online wins more service calls from local and AI search.",
+    "tags": [
+      "garage door marketing",
+      "local SEO",
+      "service business content",
+      "home services",
+      "content strategy"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "garage door repair questions worth answering online",
+    "iso": "2026-11-18",
+    "prettyDate": "November 18, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I know if my garage door spring is broken?",
+        "a": "A broken garage door spring usually shows one clear sign: the door feels extremely heavy or the opener strains and fails to lift it, because the spring carries the door's weight. Look at the torsion spring above the door; a two-to-three inch gap in the coil means it has snapped. A loud bang from the garage when nobody was using the door is often the spring breaking. Do not try to lift the door manually to test it, and leave the replacement to a technician with winding bars."
+      },
+      {
+        "q": "Is it worth repairing an old garage door or replacing it?",
+        "a": "Repair usually makes sense when the panels are sound and a single system has failed, while replacement makes sense when there is structural damage, multiple failing parts, or you want better insulation and security. A rough rule: if the repair costs less than a third of a new door and the door is under about 15 years old, fix it. If you face a cracked panel plus worn springs plus failing rollers on a door from the 1990s, replacement is the better value."
+      }
+    ]
+  },
+  {
+    "slug": "local-seo-no-storefront-job-sites",
+    "title": "Local SEO With No Storefront: A Field Guide",
+    "excerpt": "If your crews work at customer locations and you have no walk-in office, standard local SEO advice breaks down. Here is how service-area businesses actually rank.",
+    "metaDescription": "Local SEO for businesses that work from job sites and have no public office. Rank for service areas, handle Google addresses, and win nearby jobs.",
+    "tags": [
+      "local SEO",
+      "service area business",
+      "Google Business Profile",
+      "contractor marketing",
+      "local search visibility"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "local SEO for businesses that work from job sites",
+    "iso": "2026-11-18",
+    "prettyDate": "November 18, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Do service-area businesses rank in the map pack without an address?",
+        "a": "Yes, service-area businesses can rank in the local map pack without a visible address, but proximity to the searcher still drives most of the result, so you will rank strongest near your verified base and weaker the farther out a searcher is. To reach towns outside your immediate radius, build dedicated website pages for those areas."
+      },
+      {
+        "q": "How should I handle my address if I work out of my home?",
+        "a": "Enter your home address to verify the Google Business Profile, then hide it from public view in the settings so it never displays, and list your service areas instead. Do not use a PO box or virtual mailbox, and do not rent an office you never staff — both risk suspension and add no ranking benefit."
+      }
+    ]
+  },
+  {
     "slug": "clear-service-area-ai-answers",
     "title": "Make Your Service Area Clear for AI Answers",
     "excerpt": "AI answer engines repeat whatever your site says about where you work. If that information is vague or scattered, you get leads from towns you don't serve and silence from towns you do. Here's how to state it so machines get it right.",
