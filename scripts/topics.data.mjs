@@ -60,6 +60,23 @@ export const CLUSTERS = [
       "testing your visibility across ChatGPT, Gemini and Perplexity in an afternoon",
       "correcting wrong facts about a company inside AI answers",
       "structured data for services, prices and service areas",
+
+      // Added 2026-11-19: runway alarm fired (~7 days left); topped up by the
+      // scheduled publish check before the catalog ran dry.
+      "how AI shopping assistants compare local service providers",
+      "writing a 'who we are not right for' section that AI engines trust",
+      "why consistent business descriptions across the web help AI answers",
+      "getting indexed by Bing because ChatGPT search leans on it",
+      "how AI assistants answer questions about opening hours and availability",
+      "case studies written so AI engines can extract the outcome",
+      "glossary pages as a source AI assistants quote for definitions",
+      "why ChatGPT and Google Maps return different local recommendations",
+      "what happens to AI visibility when a site blocks AI crawlers",
+      "robots.txt decisions for GPTBot, ClaudeBot and PerplexityBot",
+      "citing sources inside your own content to earn AI citations",
+      "how AI answers treat sponsored and affiliate content",
+      "writing step-by-step how-to content AI engines reuse",
+      "why AI assistants recommend national chains over local firms",
     ],
   },
   {
@@ -105,6 +122,17 @@ export const CLUSTERS = [
       "matching article format to what already ranks",
       "when to target a keyword with no reported search volume",
       "linking blog posts to service pages without sounding salesy",
+
+      // Added 2026-11-19: runway alarm fired (~7 days left); topped up by the
+      // scheduled publish check before the catalog ran dry.
+      "writing title tags that earn clicks without clickbait",
+      "using the People Also Ask box to plan a month of content",
+      "when a blog post should become a downloadable guide",
+      "one page per search intent versus catch-all pages",
+      "why changing publish dates without real updates backfires",
+      "outranking directory sites for your own service",
+      "competing with Reddit and forum threads in search results",
+      "planning content around the questions that come after a purchase",
     ],
   },
   {
@@ -166,6 +194,23 @@ export const CLUSTERS = [
       "blog strategy for flooring companies",
       "seasonal infestation guides that bring in pest calls",
       "multilingual legal guides that attract immigration clients",
+
+      // Added 2026-11-19: runway alarm fired (~7 days left); topped up by the
+      // scheduled publish check before the catalog ran dry.
+      "content marketing for septic and drain services",
+      "SEO content for optometrists and eye care practices",
+      "blog strategy for concrete and paving contractors",
+      "content marketing for appliance repair businesses",
+      "answering custody and divorce questions for family law practices",
+      "content strategy for personal injury lawyers",
+      "blog strategy for car dealership service departments",
+      "content marketing for childcare and daycare centres",
+      "SEO content for counselling and therapy practices",
+      "marketing house painters with before-and-after project pages",
+      "emergency lockout content for locksmiths",
+      "content marketing for water damage restoration companies",
+      "content marketing for audiology and hearing clinics",
+      "blog strategy for wedding photographers",
     ],
   },
   {
@@ -205,6 +250,17 @@ export const CLUSTERS = [
       "earning local press coverage that helps rankings",
       "tracking local rankings across a whole service area",
       "recovering from a suspended Google Business Profile",
+
+      // Added 2026-11-19: runway alarm fired (~7 days left); topped up by the
+      // scheduled publish check before the catalog ran dry.
+      "choosing Google Business Profile categories that match how customers search",
+      "using Google Business Profile Q&A before someone else fills it",
+      "local SEO when two businesses share one address",
+      "why your business shows in the wrong town on Google Maps",
+      "getting reviews from customers who never leave reviews",
+      "the Apple Maps and Bing Places listings most businesses ignore",
+      "local SEO for businesses with seasonal opening hours",
+      "neighbourhood-level pages for dense metro service areas",
     ],
   },
   {
@@ -247,6 +303,17 @@ export const CLUSTERS = [
       "comparing organic leads and Google Ads leads fairly",
       "what a good click-through rate looks like in search results",
       "attributing revenue to content when customers call instead of filling in forms",
+
+      // Added 2026-11-19: runway alarm fired (~7 days left); topped up by the
+      // scheduled publish check before the catalog ran dry.
+      "setting a baseline before a content programme starts",
+      "reading impressions growth before clicks arrive",
+      "what a content audit spreadsheet should track",
+      "telling a seasonal traffic dip from a real problem",
+      "measuring branded search growth as a content outcome",
+      "using UTM tags on content without breaking reports",
+      "tracking AI referral traffic in Google Analytics",
+      "quarterly content reviews that decide what to write next",
     ],
   },
   {
@@ -288,6 +355,16 @@ export const CLUSTERS = [
       "budgeting for content as a share of marketing spend",
       "the true cost of a cheap content package",
       "what 'done for you' should include in a content service",
+
+      // Added 2026-11-19: runway alarm fired (~7 days left); topped up by the
+      // scheduled publish check before the catalog ran dry.
+      "the discovery questions a good content partner raises upfront",
+      "checking a content agency's references properly",
+      "fixed monthly pricing versus pay-per-word content",
+      "what happens to your content if you cancel a subscription",
+      "evaluating a content provider's sample article",
+      "local content specialists versus national content agencies",
+      "the human editing step AI-assisted articles still need",
     ],
   },
   {
@@ -321,6 +398,14 @@ export const CLUSTERS = [
       "coordinating content with seasonal promotions",
       "writing guidelines for regulated claims and disclaimers",
       "setting up a content inbox the whole team can feed",
+
+      // Added 2026-11-19: runway alarm fired (~7 days left); topped up by the
+      // scheduled publish check before the catalog ran dry.
+      "a style sheet for industry terms and product names",
+      "collecting customer photos and stories for content",
+      "turning job notes into publishable project write-ups",
+      "a pre-publish checklist for local service content",
+      "assigning one owner for website content updates",
     ],
   },
 ];
