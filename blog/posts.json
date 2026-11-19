@@ -1,5 +1,63 @@
 [
   {
+    "slug": "edit-ai-written-articles-before-publishing",
+    "title": "How to Edit AI-Written Articles Before You Publish",
+    "excerpt": "AI drafts a passable article in seconds. The difference between that draft and something that earns trust is the editing pass. Here is exactly what to check.",
+    "metaDescription": "A practical editing checklist for AI-written articles: catch fake facts, fix flat voice, and add real expertise before you publish content that converts.",
+    "tags": [
+      "AI content editing",
+      "AI-assisted writing",
+      "content quality",
+      "editing checklist",
+      "AI SEO content"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "the human editing step AI-assisted articles still need",
+    "iso": "2026-11-19",
+    "prettyDate": "November 19, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why do AI-written articles need a human editing step?",
+        "a": "AI-assisted articles need a human editing step because the model optimizes for plausible-sounding text, not for accuracy, specificity, or your actual expertise. It predicts the next likely word, which produces confident prose even when a claim is invented, generic, or wrong for your market. A human pass catches fabricated statistics, flat interchangeable voice, and missing operator knowledge that a grammar checker never will."
+      },
+      {
+        "q": "How long should editing an AI article take?",
+        "a": "A proper editing pass on a 1,200-word AI draft takes 30 to 60 minutes for someone who knows the subject. Spend about 10-15 minutes fact-checking, 15-20 minutes injecting expertise and fixing voice, and 10 minutes on structure and a read-through. Spending only five minutes means you're spell-checking, not editing, and you'll publish fabricated stats and flat voice intact."
+      }
+    ]
+  },
+  {
+    "slug": "timing-content-seasonal-promotions",
+    "title": "How to Time Content Around Seasonal Promotions",
+    "excerpt": "A promotion that goes live the same day as its supporting article is already late. Here's a publishing timeline that gets your pages indexed and ranking before demand peaks.",
+    "metaDescription": "Learn how to time seasonal promotion content so articles rank before your sale starts. A practical publishing timeline for small businesses that want traffic ready.",
+    "tags": [
+      "seasonal content planning",
+      "content operations",
+      "promotional SEO",
+      "content calendar",
+      "editorial planning"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "coordinating content with seasonal promotions",
+    "iso": "2026-11-19",
+    "prettyDate": "November 19, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "When should I start creating content for a seasonal promotion?",
+        "a": "Start eight to twelve weeks before customers begin searching, not before your sale begins. Commercial articles need weeks to index and settle into a ranking position, and seasonal demand usually ramps up ahead of the peak. Work backward from when search interest starts climbing, subtract two to three months for writing and indexing, and set your publish date there. The promotion gets attached later to pages that are already ranking."
+      },
+      {
+        "q": "Should I make a new page for each seasonal sale or reuse one?",
+        "a": "Reuse one stable offer page for recurring seasonal promotions rather than building a new URL each time. A page that has been live for several seasons has accumulated links and ranking history that reset to zero when you create a fresh URL. Keep a permanent page for the promotion type and update the offer, dates, and pricing inside it each season. A disposable page is only fine for a genuinely one-off event with no future equivalent."
+      }
+    ]
+  },
+  {
     "slug": "garage-door-repair-questions-worth-answering",
     "title": "Garage Door Repair Questions Worth Answering",
     "excerpt": "Most garage door companies publish generic blog posts nobody searches for. Here are the specific repair questions customers actually type before they call, and how to answer them so you win the job.",
