@@ -1,5 +1,63 @@
 [
   {
+    "slug": "how-to-content-ai-engines-reuse",
+    "title": "How to Write How-To Content AI Engines Reuse",
+    "excerpt": "AI answer engines pull from how-to content that's structured a specific way. Here's the format they reuse, with a worked example and a checklist.",
+    "metaDescription": "Learn how to write step-by-step how-to content that AI search engines quote and cite, with a concrete structure and checklist you can apply today.",
+    "tags": [
+      "answer engine optimization",
+      "how-to content",
+      "AI search",
+      "content structure",
+      "featured snippets"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "writing step-by-step how-to content AI engines reuse",
+    "iso": "2026-11-20",
+    "prettyDate": "November 20, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How long should each step be for AI to pick it up?",
+        "a": "Each step should be one or two sentences with a single action, understandable on its own. Include the action, the object, and the outcome, and lead with a verb. Steps that are too short lose the specifics engines need to trust them, and steps that cram multiple actions together get split badly or skipped."
+      },
+      {
+        "q": "Should I use HowTo schema markup for this?",
+        "a": "HowTo structured data is worth adding when your content genuinely follows a step sequence, but its direct impact on AI answers is uncertain and search engines have scaled back how they display it. Clean numbered lists and verb-first steps in your HTML do most of the work. Add schema to reinforce good structure, not to rescue mushy prose."
+      }
+    ]
+  },
+  {
+    "slug": "content-marketing-appliance-repair-businesses",
+    "title": "Content Marketing for Appliance Repair Companies",
+    "excerpt": "Most appliance repair content is written for other marketers, not for the person whose dryer stopped heating. Here is what actually brings in service calls.",
+    "metaDescription": "A practical content marketing guide for appliance repair businesses: which articles pull real jobs, how to structure them, and what to skip to win calls.",
+    "tags": [
+      "appliance repair marketing",
+      "content marketing",
+      "local seo",
+      "service business content",
+      "appliance repair leads"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "content marketing for appliance repair businesses",
+    "iso": "2026-11-20",
+    "prettyDate": "November 20, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do appliance repair customers actually search before they call?",
+        "a": "They search symptoms, brands, and error codes in that rough order, almost always from a phone and usually within an hour of hiring someone. They read two or three results to understand whether it's a quick fix or a real repair, then call the business that answered the question well and made booking obvious. Your content has to resolve the question and show a clear path to call."
+      },
+      {
+        "q": "Should an appliance repair company write about DIY fixes if it gives away work?",
+        "a": "Yes, because the jobs you give away by explaining a simple fix are the low-value ones you didn't want, while the trust you build wins the profitable repairs. Honest advice makes customers remember you and call back for the heating element, control board, or compressor jobs that are actually worth your drive."
+      }
+    ]
+  },
+  {
     "slug": "edit-ai-written-articles-before-publishing",
     "title": "How to Edit AI-Written Articles Before You Publish",
     "excerpt": "AI drafts a passable article in seconds. The difference between that draft and something that earns trust is the editing pass. Here is exactly what to check.",
