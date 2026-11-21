@@ -1,5 +1,63 @@
 [
   {
+    "slug": "how-ai-assistants-answer-business-hours-questions",
+    "title": "Where AI Gets Your Business Hours (And Gets It Wrong)",
+    "excerpt": "AI assistants pull your opening hours from a handful of sources, and when those sources disagree, customers get sent to a closed door. Here's how the answer gets built and how to control it.",
+    "metaDescription": "Learn how AI assistants answer questions about opening hours and availability, which sources they trust, and how to keep your business hours accurate everywhere.",
+    "tags": [
+      "AI search",
+      "answer engine optimization",
+      "business hours",
+      "local SEO",
+      "Google Business Profile"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "how AI assistants answer questions about opening hours and availability",
+    "iso": "2026-11-21",
+    "prettyDate": "November 21, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why does my business show the wrong hours in AI answers?",
+        "a": "The wrong hours almost always trace back to a conflict between your sources or a stale listing you don't manage. Common causes include an outdated Google Business Profile, missing holiday hours, a website footer that disagrees with your Google profile, old directory or Yelp listings, and duplicate profiles from a past move. Fixing one source doesn't fix the others, so you have to correct each one."
+      },
+      {
+        "q": "Do AI assistants update hours in real time?",
+        "a": "No, AI assistants do not pull your hours live at the moment of the question; they rely on data indexed earlier. Structured sources like Google update within a day or two after you edit them, while website changes depend on the next crawl. This is why holiday and seasonal hours should be entered ahead of the date so the data has time to propagate."
+      }
+    ]
+  },
+  {
+    "slug": "local-seo-two-businesses-one-address",
+    "title": "Two Businesses, One Address: Fix Your Local SEO",
+    "excerpt": "Two businesses at one address confuse Google, NAP citations, and AI answer engines. Here's how to separate them cleanly so each one ranks.",
+    "metaDescription": "When two businesses share one address, local SEO gets messy. Learn how to separate your Google listings, citations, and site so each ranks on its own.",
+    "tags": [
+      "local SEO",
+      "shared address",
+      "Google Business Profile",
+      "NAP consistency",
+      "multi-location SEO"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "local SEO when two businesses share one address",
+    "iso": "2026-11-21",
+    "prettyDate": "November 21, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Can two businesses use the same address on Google Business Profile?",
+        "a": "Yes, two businesses can use the same address on Google Business Profile as long as each is a genuinely distinct business with its own name, its own phone number, and ideally its own category and point of contact. Google allows multiple legitimate businesses at one location. What gets you suspended is creating duplicate listings for one business or using keyword-stuffed names. Use unique phone numbers, distinct categories, separate managers, and a suite number to keep both profiles healthy."
+      },
+      {
+        "q": "Why does sharing an address hurt local search for both businesses?",
+        "a": "Sharing an address hurts local search because address is one of the strongest trust signals Google and citation aggregators use to decide whether a business is real and distinct. When two names resolve to the same address and phone, systems may treat them as a duplicate or spam setup, merge their records, attach reviews to the wrong profile, or suspend a listing. Separating phone numbers, suite numbers, citations, websites, and content removes that ambiguity."
+      }
+    ]
+  },
+  {
     "slug": "how-to-content-ai-engines-reuse",
     "title": "How to Write How-To Content AI Engines Reuse",
     "excerpt": "AI answer engines pull from how-to content that's structured a specific way. Here's the format they reuse, with a worked example and a checklist.",
