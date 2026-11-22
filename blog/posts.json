@@ -1,5 +1,34 @@
 [
   {
+    "slug": "why-ai-recommends-chains-over-local-business",
+    "title": "Why AI Recommends Chains Over Your Local Business",
+    "excerpt": "AI assistants lean on national chains because those brands leave more machine-readable evidence across the web. Here is what that evidence looks like and how a local firm builds it.",
+    "metaDescription": "Learn why AI assistants recommend national chains over local firms, and get a practical checklist to make your business the answer an AI engine cites.",
+    "tags": [
+      "answer engine optimization",
+      "local business AI search",
+      "AI assistant recommendations",
+      "local SEO",
+      "entity SEO"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "why AI assistants recommend national chains over local firms",
+    "iso": "2026-11-22",
+    "prettyDate": "November 22, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Why does AI recommend national chains over local businesses?",
+        "a": "AI recommends national chains over local businesses because chains supply more consistent, structured, and corroborated information that an assistant can verify and repeat with confidence. The model is not ranking by quality of service; it is ranking by how reliably it can describe each option. A chain's name, services, and locations are stated the same way across hundreds of sources, so the model treats those facts as settled, while a local firm with a single uncorroborated mention registers as a weaker signal."
+      },
+      {
+        "q": "How can a local business get recommended by AI assistants?",
+        "a": "A local business gets recommended by AI assistants by making its core facts consistent, structured, and corroborated across the web. Use one exact business name everywhere, publish a dedicated plain-text page for each important service with the area served, answer real customer questions in a clear question-and-answer format, match your name and hours across every directory, and earn a few independent mentions that describe you the same way."
+      }
+    ]
+  },
+  {
     "slug": "when-blog-post-should-become-downloadable-guide",
     "title": "When a Blog Post Should Become a Downloadable Guide",
     "excerpt": "Most blog posts should stay blog posts. A few earn a downloadable version. Here are the signals that tell you which is which, and how to build the guide without gating away your traffic.",
