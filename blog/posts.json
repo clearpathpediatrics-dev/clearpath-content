@@ -1,5 +1,34 @@
 [
   {
+    "slug": "when-blog-post-should-become-downloadable-guide",
+    "title": "When a Blog Post Should Become a Downloadable Guide",
+    "excerpt": "Most blog posts should stay blog posts. A few earn a downloadable version. Here are the signals that tell you which is which, and how to build the guide without gating away your traffic.",
+    "metaDescription": "Learn when to turn a blog post into a downloadable guide, which posts qualify, and how to do it without hurting your organic visibility or search rankings.",
+    "tags": [
+      "content strategy",
+      "lead generation",
+      "downloadable guides",
+      "organic visibility",
+      "content repurposing"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "when a blog post should become a downloadable guide",
+    "iso": "2026-11-22",
+    "prettyDate": "November 22, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I know if a blog post should become a downloadable guide?",
+        "a": "Check whether the post is procedural, already drawing steady organic traffic, and read by someone making a decision. If all three are true, a guide is worth building. Ask whether a reader would want to take the content away from the screen and use it somewhere else — on a job site, in a vendor meeting, in a budget. If you can't name that offline moment, keep it as a blog post."
+      },
+      {
+        "q": "Should I put the guide behind an email form or leave it open?",
+        "a": "Gate the guide only when it is a new asset that goes beyond your public content, and leave your ranking posts fully open and crawlable. The ranking post is your traffic engine and needs to stay in the index. The gated guide is a separate, deeper document the post points to. If you gate your best-performing content, you lose the search visibility that was sending readers to the form in the first place."
+      }
+    ]
+  },
+  {
     "slug": "how-ai-assistants-answer-business-hours-questions",
     "title": "Where AI Gets Your Business Hours (And Gets It Wrong)",
     "excerpt": "AI assistants pull your opening hours from a handful of sources, and when those sources disagree, customers get sent to a closed door. Here's how the answer gets built and how to control it.",
