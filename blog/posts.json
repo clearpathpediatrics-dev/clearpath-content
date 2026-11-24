@@ -1,5 +1,67 @@
 [
   {
+    "slug": "who-we-are-not-right-for-section",
+    "title": "Write a \"Who We're Not Right For\" Section",
+    "excerpt": "A page that names the clients you can't help reads as honest to both buyers and AI answer engines. Here's how to write one without scaring off good leads.",
+    "metaDescription": "A 'who we are not right for' section builds trust with AI search engines and the right buyers. Here's how to write one that gets you recommended more.",
+    "tags": [
+      "answer engine optimization",
+      "AI search",
+      "trust signals",
+      "service business content",
+      "qualifying content"
+    ],
+    "cluster": "AI Search & Answer Engine Optimization",
+    "clusterKey": "aeo-geo",
+    "angle": "writing a 'who we are not right for' section that AI engines trust",
+    "iso": "2026-11-24",
+    "prettyDate": "November 24, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you write a disqualification section without losing good leads?",
+        "a": "Write it so every exclusion maps to a concrete reason, and every reason helps a reader judge whether they're the exception. Start each item with the disqualifying trait, then explain the mechanism behind it. The explanation filters out the wrong buyer while reassuring the right one, who reads it and thinks 'that's not me.' The leads you lose were likely to cancel or complain anyway."
+      },
+      {
+        "q": "Where should a 'who we are not right for' section live on your site?",
+        "a": "Put it on your main services or pricing page, after you describe what you do and before the contact prompt, so readers have context and get screened right before converting. A standalone 'is this right for me?' page also works and matches 'who is this for' queries that answer engines surface often. Keep it in visible body text, not hidden behind a FAQ accordion."
+      },
+      {
+        "q": "Why does naming your bad-fit clients make AI engines trust you more?",
+        "a": "Answer engines recommend sources whose specifics match a user's question, and a page claiming to serve everyone matches nothing precisely. Naming exclusions gives the model sharp, specific details to reason about and signals the page isn't pure sales copy. Content that admits limits reads as more credible, and credibility is what gets a source quoted."
+      }
+    ]
+  },
+  {
+    "slug": "who-owns-content-if-you-cancel-subscription",
+    "title": "Who Owns Your Content If You Cancel?",
+    "excerpt": "Cancel a content subscription and you can lose more than future articles. Here's how ownership, hosting, and interlinking actually work when you walk away.",
+    "metaDescription": "If you cancel a content subscription, what happens to your articles? Learn who owns the content, what stays live, and how to protect your work before you sign.",
+    "tags": [
+      "content ownership",
+      "content subscription",
+      "content marketing",
+      "agency contracts",
+      "subscription SEO"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "what happens to your content if you cancel a subscription",
+    "iso": "2026-11-24",
+    "prettyDate": "November 24, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Who owns the content you paid for?",
+        "a": "You own the content only if your agreement says so through a work-for-hire clause or copyright assignment on delivery. Without written transfer, copyright can default to the vendor or writer even though you paid. Look for language that transfers ownership on payment or publication and survives cancellation, with no clawback clause."
+      },
+      {
+        "q": "Will my articles keep ranking after I stop paying?",
+        "a": "Published articles on your own domain keep ranking after you cancel, because rankings are tied to the page and your site's authority, not to an active subscription. Search and AI engines don't track whether you're still paying. The caveat is that content decays over time, so plan to review and refresh your top pages a couple of times a year to protect their value."
+      }
+    ]
+  },
+  {
     "slug": "evaluate-content-provider-sample-article",
     "title": "How to Judge a Content Agency's Sample Article",
     "excerpt": "A sample article is the one piece of evidence you get before signing. Here is a practical way to read it so you can tell craft from filler.",
