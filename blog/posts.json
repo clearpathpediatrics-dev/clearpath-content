@@ -1,5 +1,63 @@
 [
   {
+    "slug": "evaluate-content-provider-sample-article",
+    "title": "How to Judge a Content Agency's Sample Article",
+    "excerpt": "A sample article is the one piece of evidence you get before signing. Here is a practical way to read it so you can tell craft from filler.",
+    "metaDescription": "Learn how to evaluate a content provider's sample article using nine concrete checks so you can spot filler before you sign a monthly contract.",
+    "tags": [
+      "content provider evaluation",
+      "sample article review",
+      "buying content services",
+      "content quality checklist",
+      "hiring a content agency"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "evaluating a content provider's sample article",
+    "iso": "2026-11-23",
+    "prettyDate": "November 23, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "What does a good sample article actually look like?",
+        "a": "A good sample article answers the reader's question within the first hundred words and then earns its length with specifics — named parts, price ranges, real mechanics a customer would not already know. It has a structure you could diagram, each section advancing the last, and it closes with a sensible next step rather than a generic call to contact the company."
+      },
+      {
+        "q": "How many samples should you ask for from a content provider?",
+        "a": "Ask for one sample written on a topic you choose rather than a polished portfolio piece, because a fresh sample on your topic shows what actual production looks like. If the provider will only share portfolio work, read three ordinary pieces from different clients to check whether quality holds across accounts instead of resting on one showcase article."
+      }
+    ]
+  },
+  {
+    "slug": "seo-content-therapy-counselling-practices",
+    "title": "SEO Content for Therapy Practices That Fills Your Caseload",
+    "excerpt": "Most therapy websites have one services page and a bare bio. Here is the content that actually brings the right clients to your intake form.",
+    "metaDescription": "A practical guide to SEO content for counselling and therapy practices: what to write, how to stay ethical, and how to turn searchers into booked clients.",
+    "tags": [
+      "therapy practice marketing",
+      "counselling SEO",
+      "content for therapists",
+      "private practice growth",
+      "mental health content"
+    ],
+    "cluster": "Industry Content Playbooks",
+    "clusterKey": "industry-playbooks",
+    "angle": "SEO content for counselling and therapy practices",
+    "iso": "2026-11-23",
+    "prettyDate": "November 23, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I write therapy content without giving clinical advice online?",
+        "a": "Write educationally about conditions and processes, not prescriptively about an individual reader's treatment. You can explain what a condition commonly involves and what a first session covers, but avoid diagnosing the reader, promising outcomes, or implying an article replaces care. Use general framing, include a crisis line reference on sensitive pages, keep the clinician's name and licence on bylined articles, and check anything near your scope against your ethics code."
+      },
+      {
+        "q": "What content gets a therapy practice found on Google fastest?",
+        "a": "Insurance and logistics pages tend to surface fastest because they have clear intent, little direct competition, and no clinical risk. A page naming the insurers you accept in a specific city answers a high-intent question that directories answer only generically. 'What to expect at your first session' is the next quickest win. Symptom pages take longer but bring the steadiest ongoing flow, so a sensible order is logistics first, expectation pages second, and symptom pages as the ongoing program."
+      }
+    ]
+  },
+  {
     "slug": "why-ai-recommends-chains-over-local-business",
     "title": "Why AI Recommends Chains Over Your Local Business",
     "excerpt": "AI assistants lean on national chains because those brands leave more machine-readable evidence across the web. Here is what that evidence looks like and how a local firm builds it.",
