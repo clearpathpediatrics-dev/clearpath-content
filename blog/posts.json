@@ -1,5 +1,63 @@
 [
   {
+    "slug": "attribute-revenue-content-phone-calls",
+    "title": "Track Revenue From Content When Customers Call You",
+    "excerpt": "Form fills are easy to track. Phone calls aren't. Here's a practical system for tying article-driven calls to real revenue without pretending you have perfect data.",
+    "metaDescription": "Learn how to attribute revenue to content when customers call instead of filling in forms, using call tracking and a simple source log that actually holds up.",
+    "tags": [
+      "content ROI",
+      "call tracking",
+      "revenue attribution",
+      "marketing measurement",
+      "phone call attribution"
+    ],
+    "cluster": "Measurement & ROI",
+    "clusterKey": "measurement",
+    "angle": "attributing revenue to content when customers call instead of filling in forms",
+    "iso": "2026-11-25",
+    "prettyDate": "November 25, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do you track which article drove a phone call?",
+        "a": "The most reliable method is dynamic number insertion through a call tracking tool, which swaps the phone number shown on your site based on how the visitor arrived and ties that number to their session and landing page. When an organic-search visitor calls the tracked number, the tool records that the call came from a specific article. It isn't perfect — someone can read on their phone and dial a different number — but it captures the direct path well enough to prove the pattern."
+      },
+      {
+        "q": "How do you handle calls where nobody mentions an article?",
+        "a": "Treat them as an attribution floor by comparing total organic-sourced call volume before and after you publish. You will never tie every call to a specific page, so measure the aggregate instead: pull your tracked organic call count for the months before a content push and the months after. A sustained lift with nothing else changed is content-driven even when individual callers can't name the article."
+      }
+    ]
+  },
+  {
+    "slug": "who-writes-content-service-articles",
+    "title": "Who Actually Writes Your Content Service's Articles?",
+    "excerpt": "The person who sold you the content package is almost never the person writing it. Here's how to find out who is, and why it changes what you should pay.",
+    "metaDescription": "Who writes the articles a content service delivers? Learn how to tell writers from editors from AI, and what questions expose the real production model.",
+    "tags": [
+      "content marketing",
+      "content agency",
+      "buying guides",
+      "ghostwriting",
+      "AI content"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "who actually writes the articles a content service delivers",
+    "iso": "2026-11-25",
+    "prettyDate": "November 25, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I find out who writes the content before I sign up?",
+        "a": "Ask the service to name the specific person who will write your articles, and ask for three samples that same person wrote. A service using real, dedicated writers can answer in one email. If the answer stays vague, like \"our team\" or \"a writer matched to your niche,\" the vagueness is the answer. Also ask who edits drafts and submit one trade-specific fact during onboarding to see whether it appears in the first draft."
+      },
+      {
+        "q": "Does it matter if AI writes the first draft of my articles?",
+        "a": "It matters far less than whether a knowledgeable human controls the final output. An AI-generated draft rebuilt by an editor who knows your industry can be excellent, while a human-written draft with no trade knowledge and no editing can be useless. Judge the finished article on whether it contains specific, correct, non-obvious details about your business, not on the tool that produced the first words. You still deserve a straight answer about whether AI is used and how editing works."
+      }
+    ]
+  },
+  {
     "slug": "who-we-are-not-right-for-section",
     "title": "Write a \"Who We're Not Right For\" Section",
     "excerpt": "A page that names the clients you can't help reads as honest to both buyers and AI answer engines. Here's how to write one without scaring off good leads.",
