@@ -1,5 +1,63 @@
 [
   {
+    "slug": "schema-markup-multi-service-local-business",
+    "title": "Schema Markup for Multi-Service Local Businesses",
+    "excerpt": "If you sell plumbing, drain cleaning, and water heater installs, one generic business schema buries most of what you do. Here's how to mark up each service so it registers.",
+    "metaDescription": "Learn how to structure local schema for businesses offering several services so search engines and AI tools understand every service you sell.",
+    "tags": [
+      "local schema",
+      "structured data",
+      "service schema",
+      "local SEO",
+      "multi-service business"
+    ],
+    "cluster": "Local Search Visibility",
+    "clusterKey": "local-seo",
+    "angle": "local schema for businesses offering several services",
+    "iso": "2026-11-26",
+    "prettyDate": "November 26, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I mark up services that cover different areas?",
+        "a": "Set a distinct areaServed on each individual Service object rather than relying only on the business-level area. When services have different footprints, the Service-level field lets you scope each one accurately using a city, state, GeoCircle with a radius, or a list of postal codes. If every service covers the same area, you can set it once at the business level instead."
+      },
+      {
+        "q": "Does service schema guarantee rich results or rankings?",
+        "a": "No. Service and OfferCatalog markup does not produce a guaranteed rich result and no schema guarantees a ranking. What it does is make your individual services machine-readable so search engines and AI tools understand the full scope of what you offer and match you to more specific queries. The benefit is correct understanding and broader query coverage, not guaranteed placement."
+      }
+    ]
+  },
+  {
+    "slug": "people-also-ask-box-plan-month-of-content",
+    "title": "Turn the People Also Ask Box Into a Month of Posts",
+    "excerpt": "The People Also Ask box is a free list of the exact questions your buyers type. Here's a repeatable way to mine it and turn it into four weeks of publishable content.",
+    "metaDescription": "Learn how to mine the People Also Ask box to plan a month of content, cluster related questions, and build pages that answer what buyers actually search.",
+    "tags": [
+      "people also ask",
+      "content planning",
+      "keyword research",
+      "organic visibility",
+      "content calendar"
+    ],
+    "cluster": "Organic Visibility Strategy",
+    "clusterKey": "organic-strategy",
+    "angle": "using the People Also Ask box to plan a month of content",
+    "iso": "2026-11-26",
+    "prettyDate": "November 26, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How do I know which People Also Ask questions are worth answering?",
+        "a": "Prioritize questions that sit close to a buying decision and that you can answer better than a generic national site. Score each question on two axes: how close it is to someone hiring you, and whether you have a genuine informational edge like local pricing, local code, or field experience. Write the questions that score high on both first, and drop pure-curiosity questions that never convert."
+      },
+      {
+        "q": "Does writing for People Also Ask questions actually help with AI answer engines?",
+        "a": "Yes, because the structure that works for PAA — a clear question as a heading followed immediately by a complete answer — is the same structure answer engines extract and quote. Phrasing an H2 as the literal question and putting the full answer in the first sentence makes it easy for snippets, chatbots, and voice assistants to lift the passage cleanly."
+      }
+    ]
+  },
+  {
     "slug": "attribute-revenue-content-phone-calls",
     "title": "Track Revenue From Content When Customers Call You",
     "excerpt": "Form fills are easy to track. Phone calls aren't. Here's a practical system for tying article-driven calls to real revenue without pretending you have perfect data.",
