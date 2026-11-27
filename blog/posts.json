@@ -1,5 +1,63 @@
 [
   {
+    "slug": "flat-monthly-vs-pay-per-word-content-pricing",
+    "title": "Flat Monthly Content Pricing vs Pay-Per-Word",
+    "excerpt": "Pay-per-word looks cheaper on a spreadsheet and often costs more in practice. Here's how to run the real math and pick the model that fits your cadence.",
+    "metaDescription": "Compare flat monthly content pricing versus pay-per-word rates to see which model actually costs less per published article and keeps output consistent.",
+    "tags": [
+      "content pricing",
+      "pay per word",
+      "content subscription",
+      "content marketing budget",
+      "freelance writer rates"
+    ],
+    "cluster": "Comparisons & Buying Guides",
+    "clusterKey": "buying-guides",
+    "angle": "fixed monthly pricing versus pay-per-word content",
+    "iso": "2026-11-27",
+    "prettyDate": "November 27, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "Is pay-per-word ever the cheaper option?",
+        "a": "Pay-per-word is cheaper when your volume is low, irregular, or you already handle the planning and publishing yourself. If you publish a couple of times a quarter, own your topic strategy, and drop drafts into your CMS yourself, you're only buying the draft — so paying only for the draft makes sense. It gets expensive when you add the invisible labor of briefs, topics, reviews, revisions, and publishing across many articles a month."
+      },
+      {
+        "q": "Which content pricing model keeps output consistent over a year?",
+        "a": "Flat monthly pricing keeps output consistent because the cadence is the product, not the individual draft. The schedule is baked in, so you make the decision to publish once instead of every month. Pay-per-word has no schedule, so each article is a fresh decision that often defaults to 'later' during busy stretches — which is why most content programs stall and lose to libraries that grow steadily."
+      }
+    ]
+  },
+  {
+    "slug": "30-minute-monthly-content-review",
+    "title": "A 30-Minute Monthly Content Review That Works",
+    "excerpt": "Most business owners never review the content they paid to publish. Here is a repeatable 30-minute monthly review that catches decaying posts and tells you what to write next.",
+    "metaDescription": "A 30-minute monthly content review process for busy business owners. Use this checklist to find decaying posts, fix underperformers, and plan what to write next.",
+    "tags": [
+      "content operations",
+      "content audit",
+      "content review process",
+      "SEO maintenance",
+      "editorial workflow"
+    ],
+    "cluster": "Content Operations",
+    "clusterKey": "operations",
+    "angle": "a monthly content review that takes thirty minutes",
+    "iso": "2026-11-27",
+    "prettyDate": "November 27, 2026",
+    "readMinutes": 7,
+    "faq": [
+      {
+        "q": "How often should I actually do a full content audit?",
+        "a": "A full content audit belongs on a once or twice a year schedule, not monthly. The monthly 30-minute review handles live, moving signals like decay, near-misses, and orphan pages. The annual audit handles structural questions a quick triage can't — whether a topic cluster is still relevant, whether thin posts should be merged, and whether site architecture still makes sense. Doing the monthly review consistently makes the annual audit far less painful."
+      },
+      {
+        "q": "Can I skip the monthly review if an agency handles my content?",
+        "a": "No. Even if an agency writes and publishes everything, you should still run the 30-minute review yourself, because you know which terms are worth money in a way an outside writer may not. You'll spot when a page ranking on the edge of page one maps to your highest-margin service, or when a popular post never prompts the reader to take the next step. A good provider does their own review, but your half hour is a cross-check that catches things they can't."
+      }
+    ]
+  },
+  {
     "slug": "schema-markup-multi-service-local-business",
     "title": "Schema Markup for Multi-Service Local Businesses",
     "excerpt": "If you sell plumbing, drain cleaning, and water heater installs, one generic business schema buries most of what you do. Here's how to mark up each service so it registers.",
